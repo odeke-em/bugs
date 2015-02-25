@@ -7,7 +7,7 @@ import (
 )
 
 type A struct {
-    Time time.Time `json:",string")`
+    Time time.Time `json:",string"`
 }
 
 func main() {
