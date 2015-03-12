@@ -1,0 +1,13 @@
+diff --git a/src/fmt/scan.go b/src/fmt/scan.go
+index d7befea..dc989f2 100644
+--- a/src/fmt/scan.go
++++ b/src/fmt/scan.go
+@@ -200,7 +200,7 @@ func (s *ss) ReadRune() (r rune, size int, err error) {
+ 
+ 	r, size, err = s.rr.ReadRune()
+ 	if err == nil {
+-		s.count++
++		// s.count++ <- Troublesome spot that causes the count to advance
+ 		s.prevRune = r
+ 	} else if err == io.EOF {
+ 		s.atEOF = true
