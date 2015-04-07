@@ -1,4 +1,5 @@
 // Author: @sykesm
+//     Built on Darwin 14.1.0, Go 1.4.2
 
 package main
 
