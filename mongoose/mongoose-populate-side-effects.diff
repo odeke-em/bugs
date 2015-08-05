@@ -1,0 +1,14 @@
+diff --git a/lib/model.js b/lib/model.js
+index 81b98d0..29bb4cd 100644
+--- a/lib/model.js
++++ b/lib/model.js
+@@ -2333,7 +2333,9 @@ function populate(model, docs, options, cb) {
+ 
+     if (mod.options.options && mod.options.options.limit) {
+       assignmentOpts.originalLimit = mod.options.options.limit;
++      console.log('\033[47mOptions before\033[01m', mod.options.options.limit, '\033[00m');
+       mod.options.options.limit = mod.options.options.limit * ids.length;
++      console.log('\033[41mOptions after\033[01m', mod.options.options.limit, '\033[00m');
+     }
+ 
+     mod.Model.find(match, select, mod.options.options, next.bind(this, mod.options, assignmentOpts));
