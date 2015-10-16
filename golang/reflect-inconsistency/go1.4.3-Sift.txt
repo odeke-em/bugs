@@ -1,0 +1,12 @@
+go version go1.4.3 linux/amd64
+fromTag hidden map[Hidden:true]
+stringified <bool Value>
+fromTag source map[Hidden:true]
+stringified "/home/emmanuel/drivemount"
+fromTag convert map[Hidden:true]
+stringified <bool Value>
+fromTag ocr map[Hidden:true]
+stringified <bool Value>
+fromTag ignore-checksum map[Hidden:true]
+stringified <bool Value>
+{"hidden":<bool Value>,"source":"/home/emmanuel/drivemount","convert":<bool Value>,"ocr":<bool Value>,"ignore-checksum":<bool Value>}
