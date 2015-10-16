@@ -1,0 +1,9 @@
+Author: Burcu Dogan @rakyll
+
+Steps to produce:
+1. Launch an app on Android.
+2. Print geom.Width and geom.Height. // prints 480pt and 360pt
+3. Rotate the screen and print Width and Height again.
+
+Expected result: 360pt and 480pt
+Actual result: 480pt and 360pt
