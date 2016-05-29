@@ -1,0 +1,32 @@
+--- orig.go	2016-02-11 03:44:56.000000000 -0800
++++ main.go	2016-02-11 03:44:57.000000000 -0800
+@@ -2,23 +2,24 @@
+ 
+ import (
+ 	"fmt"
++	"io"
+ 	"log"
+ 	"os/exec"
+ )
+ 
+ func main() {
+ 	cmd := exec.Command("/bin/echo")
+-	stdin, err := cmd.StdinPipe()
+-	if err != nil {
+-		log.Fatalf("StdinPipe: %v", err)
+-	}
++	pr, pw := io.Pipe()
++
++	cmd.Stdin = pr
+ 	if err := cmd.Start(); err != nil {
+ 		log.Fatalf("Start: %v", err)
+ 	}
+ 	wrote := make(chan bool)
+ 	go func() {
+ 		defer close(wrote)
+-		fmt.Fprint(stdin, "echo\n")
++		fmt.Fprint(pw, "echo\n")
++		_ = pw.Close()
+ 	}()
+ 	if err := cmd.Wait(); err != nil {
+ 		log.Fatalf("Wait: %v", err)
