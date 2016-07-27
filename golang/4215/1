@@ -1,0 +1,6 @@
+# command-line-arguments
+./tf.go:16: not enough arguments to return, got (untyped number) want (int, int)
+./tf.go:20: too many arguments to return, got (int,untyped number) want ()
+./tf.go:24: not enough arguments to return, got (untyped number) want (int, int, int, int)
+./tf.go:29: too many arguments to return, got (untyped number) want ()
+./tf.go:34: too many arguments to return, got (uint64) want ()
