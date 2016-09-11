@@ -14,7 +14,7 @@ func main() {
 	strs[1] = "alex"
 	strs[2] = "password"
 	strs[3] = "foo"
-	strs["4"] = "database"
+	// strs["4"] = "database"
 	strs[5] = "ar_test"
 	fmt.Println(strs)
 }

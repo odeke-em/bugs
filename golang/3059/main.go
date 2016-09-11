@@ -1,8 +1,8 @@
 package main
 
 func main() {
-    i := 0
-    go func() {
-        i = 1
-    }()
+	i := 0
+	go func() {
+		i = 1
+	}()
 }
