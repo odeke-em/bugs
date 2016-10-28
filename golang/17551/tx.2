@@ -1,0 +1,23 @@
+# command-line-arguments
+goto ret:: n.Type: string n: string
+goto ret:: n.Type: bool n: bool
+goto ret:: n.Type: float64 n: float64
+goto ret:: n.Type: int64 n: int64
+goto ret:: n.Type: uint64 n: uint64
+goto ret:: n.Type: complex128 n: complex128
+goto ret:: n.Type: int n: int
+goto ret:: n.Type: rune n: rune
+goto ret:: n.Type: uintptr n: uintptr
+goto ret:: n.Type: int32 n: int32
+goto ret:: n.Type: uint32 n: uint32
+goto ret:: n.Type: blank n: _
+goto ret:: n.Type: int n: ii
+goto ret:: n.Type: int n: ii
+goto ret:: n.Type: int n: i
+goto ret:: n.Type: bool n: ok
+goto ret:: n.Type: bool n: autotmp_0
+goto ret:: n.Type: int n: autotmp_1
+goto ret:: n.Type: int n: i
+goto ret:: n.Type: bool n: ok
+goto ret:: n.Type: untyped bool n: autotmp_2
+./fails.go:8: internal compiler error: got untyped bool for autotmp_2

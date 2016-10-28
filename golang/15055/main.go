@@ -5,4 +5,5 @@ func main() {
 	_ = string("a", "b")
 	_ = []byte()
 	_ = string()
+	_ = [][]interface{}("abcef", "efg", []string{"a", "b"})
 }
