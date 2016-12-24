@@ -1,0 +1,5 @@
+testing: warning: no tests to run
+BenchmarkTypeAssertSingleReturnValue-4   	200000000	         8.38 ns/op
+BenchmarkTypeAssertTwoReturnValues-4     	2000000000	         1.22 ns/op
+PASS
+ok  	_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/17405	5.066s [no tests to run]

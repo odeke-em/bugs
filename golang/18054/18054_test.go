@@ -1,0 +1,41 @@
+package bug_test
+
+import (
+	"io/ioutil"
+	"net/http"
+	"net/http/httptest"
+	"testing"
+)
+
+func Test(t *testing.T) {
+	fs := http.FileServer(http.Dir("/tmp"))
+	h := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		// Delete if-modified-since header so that ETags can be used instead of the standard cache policy.
+		r.Header.Del("If-Modified-Since")
+
+		// Set ETag to to uniquely identify the unchanged static asset.
+		w.Header().Set("Etag", "6")
+
+		fs.ServeHTTP(w, r)
+	})
+	ts := httptest.NewServer(h)
+
+	// Ensure /tmp/test.txt exists.
+	if err := ioutil.WriteFile("/tmp/test.txt", nil, 0664); err != nil {
+		t.Fatal(err)
+	}
+
+	var c http.Client
+	req, err := http.NewRequest("GET", ts.URL+"/test.txt", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	req.Header.Add("If-None-Match", "6") // Same Etag as above
+	resp, err := c.Do(req)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if got, want := resp.StatusCode, 304; got != want {
+		t.Errorf("got=%d want=%d", got, want)
+	}
+}
