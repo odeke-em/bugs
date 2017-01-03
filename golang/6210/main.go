@@ -3,23 +3,19 @@ package main
 import (
 	"fmt"
 	"math"
+	"runtime"
 	"time"
 )
 
 func main() {
-	now := time.Now()
-	max := time.Unix(math.MaxInt64, 0)
-	if now.Before(now) {
-		fmt.Println("Cool, not the end of the world yet")
+	var before, after uint64
+	m := new(runtime.MemStats)
+	runtime.ReadMemStats(m)
+	before = m.Alloc
+	if time.Now().Before(time.Unix(math.MaxInt64, 0)) {
 	} else {
-		fmt.Println("uh oh")
 	}
-	ts := []time.Time{now, max}
-	for i, t := range ts {
-	    fmt.Printf("#%d t.sec() %v t.nsec() %v\n", i, uint64(t.Sec()), uint64(t.NSec()))
-	}
+	runtime.ReadMemStats(m)
+	after = m.Alloc
+	fmt.Printf("diff: %d\n", after-before)
 }
-
-	
-
-	
