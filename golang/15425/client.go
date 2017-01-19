@@ -3,11 +3,9 @@ package main
 import (
 	"crypto/tls"
 	"io"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
-	"strings"
 
 	"golang.org/x/net/http2"
 )
@@ -34,21 +32,11 @@ func main() {
 		Transport: tr,
 	}
 
-	// Make a GigaByte of data
-	raw := strings.Repeat("A", 1024*1024*1024)
-	log.Printf("len(data)=%v\n", len(raw))
-	sr := strings.NewReader(raw)
-	req, err := http.NewRequest("POST", serverURL, sr)
+	res, err := client.Get(serverURL)
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("client.Do next\n")
-	res, err := client.Do(req)
-	log.Printf("client.Do done\n")
-	if err != nil {
-		log.Fatal(err)
-	}
-	n, err := io.Copy(ioutil.Discard, res.Body)
+	n, err := io.Copy(os.Stdout, res.Body)
 	log.Printf("done Reading the server response's body n=(%v) err=%v\nres.headers: %v\n", n, err, res.Header)
 	_ = res.Body.Close()
 }

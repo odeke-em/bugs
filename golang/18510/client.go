@@ -36,6 +36,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+log.Printf("res.Header: %#v\n", res.Header)
 	n, err := io.Copy(os.Stdout, res.Body)
 	log.Printf("done Reading the server response's body n=(%v) err=%v\nres.headers: %v\n", n, err, res.Header)
 	_ = res.Body.Close()
