@@ -1,0 +1,42 @@
+Benchmark start date: Sun  5 Feb 2017 15:16:13 MST
+BenchmarkHeaderSortSlice-4    	 2000000	       661 ns/op	     160 B/op	       4 allocs/op
+BenchmarkHeaderSortSorter-4   	 3000000	       505 ns/op	      64 B/op	       2 allocs/op
+PASS
+ok  	_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/header-sort-benchmarks	4.081s
+BenchmarkHeaderSortSlice-4    	 2000000	       664 ns/op	     160 B/op	       4 allocs/op
+BenchmarkHeaderSortSorter-4   	 3000000	       503 ns/op	      64 B/op	       2 allocs/op
+PASS
+ok  	_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/header-sort-benchmarks	4.019s
+BenchmarkHeaderSortSlice-4    	 2000000	       735 ns/op	     160 B/op	       4 allocs/op
+BenchmarkHeaderSortSorter-4   	 3000000	       493 ns/op	      64 B/op	       2 allocs/op
+PASS
+ok  	_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/header-sort-benchmarks	4.147s
+BenchmarkHeaderSortSlice-4    	 2000000	       653 ns/op	     160 B/op	       4 allocs/op
+BenchmarkHeaderSortSorter-4   	 3000000	       502 ns/op	      64 B/op	       2 allocs/op
+PASS
+ok  	_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/header-sort-benchmarks	4.005s
+BenchmarkHeaderSortSlice-4    	 2000000	       651 ns/op	     160 B/op	       4 allocs/op
+BenchmarkHeaderSortSorter-4   	 3000000	       497 ns/op	      64 B/op	       2 allocs/op
+PASS
+ok  	_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/header-sort-benchmarks	3.977s
+BenchmarkHeaderSortSlice-4    	 2000000	       662 ns/op	     160 B/op	       4 allocs/op
+BenchmarkHeaderSortSorter-4   	 3000000	       495 ns/op	      64 B/op	       2 allocs/op
+PASS
+ok  	_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/header-sort-benchmarks	3.983s
+BenchmarkHeaderSortSlice-4    	 2000000	       648 ns/op	     160 B/op	       4 allocs/op
+BenchmarkHeaderSortSorter-4   	 3000000	       496 ns/op	      64 B/op	       2 allocs/op
+PASS
+ok  	_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/header-sort-benchmarks	3.965s
+BenchmarkHeaderSortSlice-4    	 2000000	       654 ns/op	     160 B/op	       4 allocs/op
+BenchmarkHeaderSortSorter-4   	 3000000	       495 ns/op	      64 B/op	       2 allocs/op
+PASS
+ok  	_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/header-sort-benchmarks	3.970s
+BenchmarkHeaderSortSlice-4    	 2000000	       669 ns/op	     160 B/op	       4 allocs/op
+BenchmarkHeaderSortSorter-4   	 3000000	       497 ns/op	      64 B/op	       2 allocs/op
+PASS
+ok  	_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/header-sort-benchmarks	4.038s
+BenchmarkHeaderSortSlice-4    	 2000000	       671 ns/op	     160 B/op	       4 allocs/op
+BenchmarkHeaderSortSorter-4   	 3000000	       497 ns/op	      64 B/op	       2 allocs/op
+PASS
+ok  	_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/header-sort-benchmarks	4.039s
+Benchmark end date: Sun  5 Feb 2017 15:16:58 MST
