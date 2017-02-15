@@ -15,12 +15,18 @@ func main() {
 	}))
 	c := http.Cookie{
 		Name:  "name1",
-		Value: `"quoted"`,
+		Value: `abc"withquotesinner"outerpair`,
 		Path:  "/",
 	}
 	r, _ := http.NewRequest("GET", s.URL, nil)
 	r.AddCookie(&c)
-	r.Header.Add("Cookie", `name2="quoted"`)
+	r.AddCookie(&http.Cookie{
+		Name:  "name2",
+		Value: `quotednewonethere`,
+		Path:  "/",
+	})
+
+	r.Header.Add("Cookie", `name2="quoted"influence"hey`)
 	_, err := http.DefaultClient.Do(r)
 	if err != nil {
 		log.Fatal(err)

@@ -1,0 +1,36 @@
+diff --git a/src/encoding/xml/marshal.go b/src/encoding/xml/marshal.go
+index abb078c..4fa1de0 100644
+--- a/src/encoding/xml/marshal.go
++++ b/src/encoding/xml/marshal.go
+@@ -760,14 +760,6 @@
+ 		}
+ 		vf := finfo.value(val)
+ 
+-		// Dereference or skip nil pointer, interface values.
+-		switch vf.Kind() {
+-		case reflect.Ptr, reflect.Interface:
+-			if !vf.IsNil() {
+-				vf = vf.Elem()
+-			}
+-		}
+-
+ 		switch finfo.flags & fMode {
+ 		case fCDATA, fCharData:
+ 			emit := EscapeText
+@@ -800,6 +792,16 @@
+ 					continue
+ 				}
+ 			}
++			// Drill into interfaces and pointers.
++			// This can turn into an infinite loop given a cyclic chain,
++			// but it matches the Go 1 behavior.
++			for vf.Kind() == reflect.Interface || vf.Kind() == reflect.Ptr {
++				if vf.IsNil() {
++					return nil
++				}
++				vf = vf.Elem()
++			}
++
+ 			var scratch [64]byte
+ 			switch vf.Kind() {
+ 			case reflect.Int, reflect.Int8, reflect.Int16, reflect.Int32, reflect.Int64:
