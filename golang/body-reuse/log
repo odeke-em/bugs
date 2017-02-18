@@ -1,0 +1,42 @@
+PATCH / HTTP/1.1
+Host: 127.0.0.1:64022
+Accept-Encoding: gzip
+Content-Length: 5
+User-Agent: Go-http-client/1.1
+
+hello
+DELETE / HTTP/1.1
+Host: 127.0.0.1:64028
+Accept-Encoding: gzip
+Content-Length: 5
+User-Agent: Go-http-client/1.1
+
+hello
+POST / HTTP/1.1
+Host: 127.0.0.1:64034
+Accept-Encoding: gzip
+Content-Length: 5
+User-Agent: Go-http-client/1.1
+
+hello
+GET / HTTP/1.1
+Host: 127.0.0.1:64040
+Accept-Encoding: gzip
+Content-Length: 5
+User-Agent: Go-http-client/1.1
+
+hello
+PUT / HTTP/1.1
+Host: 127.0.0.1:64046
+Accept-Encoding: gzip
+Content-Length: 5
+User-Agent: Go-http-client/1.1
+
+hello
+AMETHOD / HTTP/1.1
+Host: 127.0.0.1:64052
+Accept-Encoding: gzip
+Content-Length: 5
+User-Agent: Go-http-client/1.1
+
+hello
