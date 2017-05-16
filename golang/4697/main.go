@@ -1,7 +1,7 @@
 package main
 
 func main() {
-    ch := make(chan int)    
+    ch := make(chan string)
     switch {
     case <-ch:
     default:

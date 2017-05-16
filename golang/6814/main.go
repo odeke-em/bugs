@@ -6,11 +6,16 @@ type Foo struct {
 	Bar string
 }
 
-func PrintBar(f Foo) {
-	fmt.Println(Foo.Bar)
+type Lm interface {
+	Baz() string
+}
+
+type Loo int
+
+func PrintBar(lm Lm) {
+	fmt.Println(Foo.Baz)
 }
 
 func main() {
-	f := Foo{"baz"}
-	PrintBar(f)
+	PrintBar(nil)
 }

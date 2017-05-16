@@ -6,5 +6,6 @@ type T struct {
 }
 
 func main() {
-	_ = T{0, 0}
+	x := T{0, 0}
+	_ = x
 }

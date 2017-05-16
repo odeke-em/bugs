@@ -98,11 +98,11 @@ func (Echo) Say(args *Args, reply *bool) error {
 // * * *
 
 func main() {
-	log.SetFlags(0)
+	// log.SetFlags(0)
 
 	CACertBlock, err := ioutil.ReadFile(caCert)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("readFile: %v", err)
 	}
 
 	certPool := x509.NewCertPool()
@@ -150,7 +150,7 @@ func main() {
 	err = client.Call("Echo.Say", args, &reply)
 	if err != nil {
 		client.Close()
-		log.Fatal(err)
+		log.Fatalf("client: %v", err)
 	}
 	fmt.Println("result:", reply)
 }
