@@ -2,20 +2,30 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 )
 
-var jsdata = []byte(`{ "A": ["1", "2", "3", "3333333333333333211", 2999] }`)
+var jsdata = []byte(`{ "y": ["1", "2", "3", "3333333333333333211", 2999], "B": [1, 3]}`)
 
 type foo struct {
-	A []int64
+	Y []int64
+}
+
+type bar struct {
+	Y []int64 `json:",string"`
+	B []int64
 }
 
 func main() {
-	var v foo
-	if err := json.Unmarshal(jsdata, &v); err != nil {
-		log.Fatal(err)
+	tests := []interface{}{
+		new(bar),
+		new(foo),
 	}
-	fmt.Println(v.A)
+	for i, recv := range tests {
+		if err := json.Unmarshal(jsdata, recv); err != nil {
+			log.Printf("err:: #%d: %v", i, err)
+		} else {
+			log.Printf("pass: #%d: %#v\n", i, recv)
+		}
+	}
 }
