@@ -76,12 +76,12 @@ func main() {
 
 	// Spin up the client, let it make a request to the server above,
 	// and while the connection is still alive, we'll put the client's
-	// process in pause at:
+	// process in pause and then revive it at:
 	//              maxIdleTimeout/3
 	// We'll then revive the process at:
 	//              maxIdleTimeout * 4/5
 	// way after the connection has been closed so that from the perspective of
-	// the client it sees a connection that hasn't yet expired and isn't idle
+	// the client it sees a fresh connection that hasn't yet been reused nor expired
 	// but the server would have already terminated it, thus triggering ECONNRESET.
 
 	stdoutStderr := os.Stdout
@@ -111,7 +111,7 @@ func main() {
 	// and it should have provided a now reused connection.
 	<-onLag
 	// Wait for:
-	//      maxIdleTimeout * 2/3
+	//      maxIdleTimeout * 5/3
 
 	<-time.After(5 * maxIdleTimeout / 3)
 	// Finally kill the client process.
@@ -162,7 +162,7 @@ func runClient(url string, stdout, stderr io.Writer) (cmd *exec.Cmd, done func()
 	cmd = exec.Command(clientBinaryPath)
 	cmd.Stdout = stdout
 	cmd.Stderr = stderr
-        cmd.Env =  append(os.Environ(), "GODEBUG=netdns=1")
+	cmd.Env = append(os.Environ(), "GODEBUG=netdns=1")
 	if err := cmd.Start(); err != nil {
 		return nil, nil, fmt.Errorf("Failed to start the client binary: %v", err)
 	}
@@ -174,7 +174,7 @@ var tmpl *template.Template
 
 func init() {
 	log.SetPrefix("server: ")
-	blob, err := ioutil.ReadFile("./client.go")
+	blob, err := ioutil.ReadFile("./client.tmpl")
 	if err != nil {
 		log.Fatalf("Failed to read the source code for client.go: %v", err)
 	}
