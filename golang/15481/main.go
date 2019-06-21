@@ -2,8 +2,9 @@ package main
 
 type m map[string]string
 
-var _ = map[string]string{}       // ok
-var _ = map[string]string{"": ""} // ok
+var _ = map[string]string{}         // ok
+var _ = map[string]string{"": ""}   // ok
+var _ = map[string]string{"a": "A"} // error: cannot use _ as value
 
 func main() {
 	var _ = map[string]string{}           // ok
