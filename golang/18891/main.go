@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"crypto/tls"
+	"flag"
 	"io"
 	"io/ioutil"
 	"log"
@@ -10,14 +11,21 @@ import (
 )
 
 func main() {
+	theURL := flag.String("url", "http://localhost:8888/", "the URL to invoke")
+	flag.Parse()
 	c := http.Client{}
 
 	// According to the CloudFront documentation for a request behavior, if the
 	// request is GET and includes a body, it returns a 403 Forbidden. See the
 	// documentation here:
 	// https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/RequestAndResponseBehaviorCustomOrigin.html#RequestCustom-get-body
-	var body bytes.Buffer
-	r, err := http.NewRequest("GET", "https://d1ytf8d9p4nfnz.cloudfront.net/optivpaid/optivpaid.js?cb=847742584", ioutil.NopCloser(&body))
+	var body io.Reader = func() io.Reader {
+		buf := new(bytes.Buffer)
+		buf.Write([]byte("a"))
+		return buf
+	}()
+	body = ioutil.NopCloser(new(bytes.Buffer))
+	r, err := http.NewRequest("GET", *theURL, body)
 	if err != nil {
 		log.Fatalf("error creating the request: %s", err)
 	}
@@ -35,7 +43,7 @@ func main() {
 	c.Transport = &http.Transport{
 		TLSNextProto: map[string]func(string, *tls.Conn) http.RoundTripper{},
 	}
-	r, err = http.NewRequest("GET", "https://d1ytf8d9p4nfnz.cloudfront.net/optivpaid/optivpaid.js?cb=847742584", ioutil.NopCloser(&body))
+	r, err = http.NewRequest("GET", *theURL, nil)
 	if err != nil {
 		log.Fatalf("error creating the request: %s", err)
 	}

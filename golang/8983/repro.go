@@ -1,11 +1,10 @@
-package main
+package p
 
 import "errors"
 
 type error int
+type int string
 
-func F() error {
-    return errors.New("x")
+func F() int {
+    return 10
 }
-
-func main() {}
