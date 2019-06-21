@@ -11,12 +11,13 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"sync/atomic"
 	"syscall"
 	"text/template"
 	"time"
 )
 
-const maxIdleTimeout = 10 * time.Second
+const maxIdleTimeout = 6 * time.Second
 
 func main() {
 	ln, err := net.Listen("tcp", ":0")
@@ -29,33 +30,61 @@ func main() {
 	url := "http://" + addr
 
 	mux := http.NewServeMux()
-	mux.HandleFunc("/initial", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("There you go!\n"))
-	})
-	mux.HandleFunc("/lag", func(w http.ResponseWriter, r *http.Request) {
+
+	var reqCounter int64
+	onLag := make(chan bool)
+	mux.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
+		log.Printf("Request from: %v\n\n", r.RemoteAddr)
+
+		n := atomic.AddInt64(&reqCounter, 1)
+		switch n {
+		case 1:
+			w.Write([]byte("Server responding ASAP"))
+			return
+		}
+
+		// An even connection count means that the previous one is being reused.
+		// This route is meant invoke conn.Close() to produce an ECONNRESET that'll
+		// then trigger the malfesence on the client's Transport
+		// as reported in https://golang.org/issues/29308
 		conn, _, err := w.(http.Hijacker).Hijack()
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
-		log.Printf("Request from: %v\n", r.RemoteAddr)
-		time.Sleep(maxIdleTimeout / 2)
+
+		onLag <- true
+		// Sleep for sometime and then close the connection.
+		lagTime := maxIdleTimeout / 2
+		log.Printf("Now going to lag for %s", lagTime)
+		time.Sleep(lagTime)
 		conn.(*net.TCPConn).SetLinger(0)
 		conn.Close()
 	})
 
 	log.Printf("Listening at %q", addr)
 
-	// revive it with SIGCONT and let it go on with its process.
 	go func() {
-		log.Fatal(http.Serve(ln, mux))
+		// Not doing:
+		//      log.Fatal(http.Serve(ln, mux))
+		// because when we invoke ln.Close() in the defer,
+		// it'll also cause http.Serve to fail with:
+		//      "accept tcp [::]:<port>: use of closed network connection"
+		// which is just a spurious error.
+		_ = http.Serve(ln, mux)
 	}()
 
-	// Per client, we'll make a request at maxIdleTimeout/2
-	// then send to the process SIGTSTP, and at 4/3 maxIdleTimeout
-	// Procedurally.
-	// Let it run itself first
-	stdoutStderr := new(bytes.Buffer)
+	// Spin up the client, let it make a request to the server above,
+	// and while the connection is still alive, we'll put the client's
+	// process in pause at:
+	//              maxIdleTimeout/3
+	// We'll then revive the process at:
+	//              maxIdleTimeout * 4/5
+	// way after the connection has been closed so that from the perspective of
+	// the client it sees a connection that hasn't yet expired and isn't idle
+	// but the server would have already terminated it, thus triggering ECONNRESET.
+
+	stdoutStderr := os.Stdout
 	cmd, done, err := runClient(url, stdoutStderr, stdoutStderr)
 	if err != nil {
 		log.Printf("Failed to run client command: %v", err)
@@ -63,16 +92,32 @@ func main() {
 	}
 	defer done()
 
+	// Wait until the client has hit the <-onLag point.
+	<-onLag
+
 	clientProc := cmd.Process
-	<-time.After(2 * maxIdleTimeout / 3)
+	// Now stop the client process.
 	clientProc.Signal(syscall.SIGTSTP)
-	<-time.After(2 + (maxIdleTimeout / 3))
+
+	// Wait for about:
+	//      maxIdleTimeout * 1/3
+	timeBeforeContinue := maxIdleTimeout / 3
+	log.Printf("Pausing for %s before reviving client with pid: %d\n", timeBeforeContinue, clientProc.Pid)
+	<-time.After(timeBeforeContinue)
+	// Revive the client.
 	clientProc.Signal(syscall.SIGCONT)
-	<-time.After(2 * maxIdleTimeout / 3)
+
+	// The client should see an ECONNRESET due to a now stale connection
+	// and it should have provided a now reused connection.
+	<-onLag
+	// Wait for:
+	//      maxIdleTimeout * 2/3
+
+	<-time.After(5 * maxIdleTimeout / 3)
+	// Finally kill the client process.
 	clientProc.Signal(syscall.SIGKILL)
 
-	err = cmd.Wait()
-        log.Printf("Waited till client terminated: err: %v\nOutput:\n%s\n\n", err, stdoutStderr.Bytes())
+	_ = cmd.Wait()
 }
 
 func runClient(url string, stdout, stderr io.Writer) (cmd *exec.Cmd, done func(), err error) {
@@ -117,6 +162,7 @@ func runClient(url string, stdout, stderr io.Writer) (cmd *exec.Cmd, done func()
 	cmd = exec.Command(clientBinaryPath)
 	cmd.Stdout = stdout
 	cmd.Stderr = stderr
+        cmd.Env =  append(os.Environ(), "GODEBUG=netdns=1")
 	if err := cmd.Start(); err != nil {
 		return nil, nil, fmt.Errorf("Failed to start the client binary: %v", err)
 	}
@@ -127,6 +173,7 @@ func runClient(url string, stdout, stderr io.Writer) (cmd *exec.Cmd, done func()
 var tmpl *template.Template
 
 func init() {
+	log.SetPrefix("server: ")
 	blob, err := ioutil.ReadFile("./client.go")
 	if err != nil {
 		log.Fatalf("Failed to read the source code for client.go: %v", err)
