@@ -103,17 +103,25 @@ func main() {
 	//      maxIdleTimeout * 1/3
 	timeBeforeContinue := maxIdleTimeout / 3
 	log.Printf("Pausing for %s before reviving client with pid: %d\n", timeBeforeContinue, clientProc.Pid)
-	<-time.After(timeBeforeContinue)
+	<-time.After(timeBeforeContinue * 3 * 5)
 	// Revive the client.
 	clientProc.Signal(syscall.SIGCONT)
 
 	// The client should see an ECONNRESET due to a now stale connection
 	// and it should have provided a now reused connection.
 	<-onLag
-	// Wait for:
-	//      maxIdleTimeout * 5/3
+	<-time.After(timeBeforeContinue / 6)
+
+	// Since we now have the fresh connection, let's also pause
+	// and wait for ECONNRESET to be triggered.
+	clientProc.Signal(syscall.SIGTSTP)
+	<-time.After(maxIdleTimeout)
+
+	// Now revive the client process back up.
+	clientProc.Signal(syscall.SIGCONT)
 
 	<-time.After(5 * maxIdleTimeout / 3)
+
 	// Finally kill the client process.
 	clientProc.Signal(syscall.SIGKILL)
 
