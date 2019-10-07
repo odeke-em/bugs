@@ -1,0 +1,902 @@
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:20 +0x2e fp=0xc420044378 sp=0xc420044370 pc=0x107f07e
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044388 sp=0xc420044378 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044398 sp=0xc420044388 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200443a8 sp=0xc420044398 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200443b8 sp=0xc4200443a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200443c8 sp=0xc4200443b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200443d8 sp=0xc4200443c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200443e8 sp=0xc4200443d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200443f8 sp=0xc4200443e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044408 sp=0xc4200443f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044418 sp=0xc420044408 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044428 sp=0xc420044418 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044438 sp=0xc420044428 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044448 sp=0xc420044438 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044458 sp=0xc420044448 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044468 sp=0xc420044458 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044478 sp=0xc420044468 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044488 sp=0xc420044478 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044498 sp=0xc420044488 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200444a8 sp=0xc420044498 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200444b8 sp=0xc4200444a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200444c8 sp=0xc4200444b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200444d8 sp=0xc4200444c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200444e8 sp=0xc4200444d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200444f8 sp=0xc4200444e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044508 sp=0xc4200444f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044518 sp=0xc420044508 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044528 sp=0xc420044518 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044538 sp=0xc420044528 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044548 sp=0xc420044538 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044558 sp=0xc420044548 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044568 sp=0xc420044558 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044578 sp=0xc420044568 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044588 sp=0xc420044578 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044598 sp=0xc420044588 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200445a8 sp=0xc420044598 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200445b8 sp=0xc4200445a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200445c8 sp=0xc4200445b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200445d8 sp=0xc4200445c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200445e8 sp=0xc4200445d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200445f8 sp=0xc4200445e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044608 sp=0xc4200445f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044618 sp=0xc420044608 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044628 sp=0xc420044618 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044638 sp=0xc420044628 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044648 sp=0xc420044638 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044658 sp=0xc420044648 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044668 sp=0xc420044658 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044678 sp=0xc420044668 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044688 sp=0xc420044678 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044698 sp=0xc420044688 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200446a8 sp=0xc420044698 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200446b8 sp=0xc4200446a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200446c8 sp=0xc4200446b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200446d8 sp=0xc4200446c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200446e8 sp=0xc4200446d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200446f8 sp=0xc4200446e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044708 sp=0xc4200446f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044718 sp=0xc420044708 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044728 sp=0xc420044718 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044738 sp=0xc420044728 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044748 sp=0xc420044738 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044758 sp=0xc420044748 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044768 sp=0xc420044758 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044778 sp=0xc420044768 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044788 sp=0xc420044778 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044798 sp=0xc420044788 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200447a8 sp=0xc420044798 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200447b8 sp=0xc4200447a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200447c8 sp=0xc4200447b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200447d8 sp=0xc4200447c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200447e8 sp=0xc4200447d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200447f8 sp=0xc4200447e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044808 sp=0xc4200447f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044818 sp=0xc420044808 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044828 sp=0xc420044818 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044838 sp=0xc420044828 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044848 sp=0xc420044838 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044858 sp=0xc420044848 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044868 sp=0xc420044858 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044878 sp=0xc420044868 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044888 sp=0xc420044878 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044898 sp=0xc420044888 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200448a8 sp=0xc420044898 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200448b8 sp=0xc4200448a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200448c8 sp=0xc4200448b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200448d8 sp=0xc4200448c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200448e8 sp=0xc4200448d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200448f8 sp=0xc4200448e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044908 sp=0xc4200448f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044918 sp=0xc420044908 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044928 sp=0xc420044918 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044938 sp=0xc420044928 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044948 sp=0xc420044938 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044958 sp=0xc420044948 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044968 sp=0xc420044958 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044978 sp=0xc420044968 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044988 sp=0xc420044978 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044998 sp=0xc420044988 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200449a8 sp=0xc420044998 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200449b8 sp=0xc4200449a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200449c8 sp=0xc4200449b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200449d8 sp=0xc4200449c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200449e8 sp=0xc4200449d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200449f8 sp=0xc4200449e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044a08 sp=0xc4200449f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044a18 sp=0xc420044a08 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044a28 sp=0xc420044a18 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044a38 sp=0xc420044a28 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044a48 sp=0xc420044a38 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044a58 sp=0xc420044a48 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044a68 sp=0xc420044a58 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044a78 sp=0xc420044a68 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044a88 sp=0xc420044a78 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044a98 sp=0xc420044a88 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044aa8 sp=0xc420044a98 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044ab8 sp=0xc420044aa8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044ac8 sp=0xc420044ab8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044ad8 sp=0xc420044ac8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044ae8 sp=0xc420044ad8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044af8 sp=0xc420044ae8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044b08 sp=0xc420044af8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044b18 sp=0xc420044b08 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044b28 sp=0xc420044b18 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044b38 sp=0xc420044b28 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044b48 sp=0xc420044b38 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044b58 sp=0xc420044b48 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044b68 sp=0xc420044b58 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044b78 sp=0xc420044b68 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044b88 sp=0xc420044b78 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044b98 sp=0xc420044b88 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044ba8 sp=0xc420044b98 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044bb8 sp=0xc420044ba8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044bc8 sp=0xc420044bb8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044bd8 sp=0xc420044bc8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044be8 sp=0xc420044bd8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044bf8 sp=0xc420044be8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044c08 sp=0xc420044bf8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044c18 sp=0xc420044c08 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044c28 sp=0xc420044c18 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044c38 sp=0xc420044c28 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044c48 sp=0xc420044c38 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044c58 sp=0xc420044c48 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044c68 sp=0xc420044c58 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044c78 sp=0xc420044c68 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044c88 sp=0xc420044c78 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044c98 sp=0xc420044c88 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044ca8 sp=0xc420044c98 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044cb8 sp=0xc420044ca8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044cc8 sp=0xc420044cb8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044cd8 sp=0xc420044cc8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044ce8 sp=0xc420044cd8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044cf8 sp=0xc420044ce8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044d08 sp=0xc420044cf8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044d18 sp=0xc420044d08 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044d28 sp=0xc420044d18 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044d38 sp=0xc420044d28 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044d48 sp=0xc420044d38 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044d58 sp=0xc420044d48 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044d68 sp=0xc420044d58 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044d78 sp=0xc420044d68 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044d88 sp=0xc420044d78 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044d98 sp=0xc420044d88 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044da8 sp=0xc420044d98 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044db8 sp=0xc420044da8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044dc8 sp=0xc420044db8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044dd8 sp=0xc420044dc8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044de8 sp=0xc420044dd8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044df8 sp=0xc420044de8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044e08 sp=0xc420044df8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044e18 sp=0xc420044e08 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044e28 sp=0xc420044e18 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044e38 sp=0xc420044e28 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044e48 sp=0xc420044e38 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044e58 sp=0xc420044e48 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044e68 sp=0xc420044e58 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044e78 sp=0xc420044e68 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044e88 sp=0xc420044e78 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044e98 sp=0xc420044e88 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044ea8 sp=0xc420044e98 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044eb8 sp=0xc420044ea8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044ec8 sp=0xc420044eb8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044ed8 sp=0xc420044ec8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044ee8 sp=0xc420044ed8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044ef8 sp=0xc420044ee8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044f08 sp=0xc420044ef8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044f18 sp=0xc420044f08 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044f28 sp=0xc420044f18 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044f38 sp=0xc420044f28 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044f48 sp=0xc420044f38 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044f58 sp=0xc420044f48 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044f68 sp=0xc420044f58 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044f78 sp=0xc420044f68 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044f88 sp=0xc420044f78 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044f98 sp=0xc420044f88 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044fa8 sp=0xc420044f98 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044fb8 sp=0xc420044fa8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420044fc8 sp=0xc420044fb8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420044fd8 sp=0xc420044fc8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420044fe8 sp=0xc420044fd8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420044ff8 sp=0xc420044fe8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045008 sp=0xc420044ff8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045018 sp=0xc420045008 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045028 sp=0xc420045018 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045038 sp=0xc420045028 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045048 sp=0xc420045038 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045058 sp=0xc420045048 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045068 sp=0xc420045058 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045078 sp=0xc420045068 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045088 sp=0xc420045078 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045098 sp=0xc420045088 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200450a8 sp=0xc420045098 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200450b8 sp=0xc4200450a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200450c8 sp=0xc4200450b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200450d8 sp=0xc4200450c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200450e8 sp=0xc4200450d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200450f8 sp=0xc4200450e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045108 sp=0xc4200450f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045118 sp=0xc420045108 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045128 sp=0xc420045118 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045138 sp=0xc420045128 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045148 sp=0xc420045138 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045158 sp=0xc420045148 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045168 sp=0xc420045158 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045178 sp=0xc420045168 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045188 sp=0xc420045178 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045198 sp=0xc420045188 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200451a8 sp=0xc420045198 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200451b8 sp=0xc4200451a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200451c8 sp=0xc4200451b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200451d8 sp=0xc4200451c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200451e8 sp=0xc4200451d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200451f8 sp=0xc4200451e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045208 sp=0xc4200451f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045218 sp=0xc420045208 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045228 sp=0xc420045218 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045238 sp=0xc420045228 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045248 sp=0xc420045238 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045258 sp=0xc420045248 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045268 sp=0xc420045258 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045278 sp=0xc420045268 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045288 sp=0xc420045278 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045298 sp=0xc420045288 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200452a8 sp=0xc420045298 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200452b8 sp=0xc4200452a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200452c8 sp=0xc4200452b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200452d8 sp=0xc4200452c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200452e8 sp=0xc4200452d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200452f8 sp=0xc4200452e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045308 sp=0xc4200452f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045318 sp=0xc420045308 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045328 sp=0xc420045318 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045338 sp=0xc420045328 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045348 sp=0xc420045338 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045358 sp=0xc420045348 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045368 sp=0xc420045358 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045378 sp=0xc420045368 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045388 sp=0xc420045378 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045398 sp=0xc420045388 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200453a8 sp=0xc420045398 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200453b8 sp=0xc4200453a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200453c8 sp=0xc4200453b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200453d8 sp=0xc4200453c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200453e8 sp=0xc4200453d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200453f8 sp=0xc4200453e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045408 sp=0xc4200453f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045418 sp=0xc420045408 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045428 sp=0xc420045418 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045438 sp=0xc420045428 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045448 sp=0xc420045438 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045458 sp=0xc420045448 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045468 sp=0xc420045458 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045478 sp=0xc420045468 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045488 sp=0xc420045478 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045498 sp=0xc420045488 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200454a8 sp=0xc420045498 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200454b8 sp=0xc4200454a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200454c8 sp=0xc4200454b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200454d8 sp=0xc4200454c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200454e8 sp=0xc4200454d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200454f8 sp=0xc4200454e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045508 sp=0xc4200454f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045518 sp=0xc420045508 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045528 sp=0xc420045518 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045538 sp=0xc420045528 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045548 sp=0xc420045538 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045558 sp=0xc420045548 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045568 sp=0xc420045558 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045578 sp=0xc420045568 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045588 sp=0xc420045578 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045598 sp=0xc420045588 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200455a8 sp=0xc420045598 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200455b8 sp=0xc4200455a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200455c8 sp=0xc4200455b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200455d8 sp=0xc4200455c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200455e8 sp=0xc4200455d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200455f8 sp=0xc4200455e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045608 sp=0xc4200455f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045618 sp=0xc420045608 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045628 sp=0xc420045618 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045638 sp=0xc420045628 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045648 sp=0xc420045638 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045658 sp=0xc420045648 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045668 sp=0xc420045658 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045678 sp=0xc420045668 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045688 sp=0xc420045678 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045698 sp=0xc420045688 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200456a8 sp=0xc420045698 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200456b8 sp=0xc4200456a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200456c8 sp=0xc4200456b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200456d8 sp=0xc4200456c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200456e8 sp=0xc4200456d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200456f8 sp=0xc4200456e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045708 sp=0xc4200456f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045718 sp=0xc420045708 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045728 sp=0xc420045718 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045738 sp=0xc420045728 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045748 sp=0xc420045738 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045758 sp=0xc420045748 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045768 sp=0xc420045758 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045778 sp=0xc420045768 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045788 sp=0xc420045778 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045798 sp=0xc420045788 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200457a8 sp=0xc420045798 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200457b8 sp=0xc4200457a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200457c8 sp=0xc4200457b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200457d8 sp=0xc4200457c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200457e8 sp=0xc4200457d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200457f8 sp=0xc4200457e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045808 sp=0xc4200457f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045818 sp=0xc420045808 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045828 sp=0xc420045818 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045838 sp=0xc420045828 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045848 sp=0xc420045838 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045858 sp=0xc420045848 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045868 sp=0xc420045858 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045878 sp=0xc420045868 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045888 sp=0xc420045878 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045898 sp=0xc420045888 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200458a8 sp=0xc420045898 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200458b8 sp=0xc4200458a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200458c8 sp=0xc4200458b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200458d8 sp=0xc4200458c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200458e8 sp=0xc4200458d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200458f8 sp=0xc4200458e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045908 sp=0xc4200458f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045918 sp=0xc420045908 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045928 sp=0xc420045918 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045938 sp=0xc420045928 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045948 sp=0xc420045938 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045958 sp=0xc420045948 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045968 sp=0xc420045958 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045978 sp=0xc420045968 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045988 sp=0xc420045978 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045998 sp=0xc420045988 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200459a8 sp=0xc420045998 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200459b8 sp=0xc4200459a8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc4200459c8 sp=0xc4200459b8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc4200459d8 sp=0xc4200459c8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc4200459e8 sp=0xc4200459d8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc4200459f8 sp=0xc4200459e8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045a08 sp=0xc4200459f8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045a18 sp=0xc420045a08 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045a28 sp=0xc420045a18 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045a38 sp=0xc420045a28 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045a48 sp=0xc420045a38 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045a58 sp=0xc420045a48 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045a68 sp=0xc420045a58 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045a78 sp=0xc420045a68 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045a88 sp=0xc420045a78 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045a98 sp=0xc420045a88 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045aa8 sp=0xc420045a98 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045ab8 sp=0xc420045aa8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045ac8 sp=0xc420045ab8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045ad8 sp=0xc420045ac8 pc=0x107f010
+main.f4()
+		/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045ae8 sp=0xc420045ad8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045af8 sp=0xc420045ae8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045b08 sp=0xc420045af8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045b18 sp=0xc420045b08 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045b28 sp=0xc420045b18 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045b38 sp=0xc420045b28 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045b48 sp=0xc420045b38 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045b58 sp=0xc420045b48 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045b68 sp=0xc420045b58 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045b78 sp=0xc420045b68 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045b88 sp=0xc420045b78 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045b98 sp=0xc420045b88 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045ba8 sp=0xc420045b98 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045bb8 sp=0xc420045ba8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045bc8 sp=0xc420045bb8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045bd8 sp=0xc420045bc8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045be8 sp=0xc420045bd8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045bf8 sp=0xc420045be8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045c08 sp=0xc420045bf8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045c18 sp=0xc420045c08 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045c28 sp=0xc420045c18 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045c38 sp=0xc420045c28 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045c48 sp=0xc420045c38 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045c58 sp=0xc420045c48 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045c68 sp=0xc420045c58 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045c78 sp=0xc420045c68 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045c88 sp=0xc420045c78 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045c98 sp=0xc420045c88 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045ca8 sp=0xc420045c98 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045cb8 sp=0xc420045ca8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045cc8 sp=0xc420045cb8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045cd8 sp=0xc420045cc8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045ce8 sp=0xc420045cd8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045cf8 sp=0xc420045ce8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045d08 sp=0xc420045cf8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045d18 sp=0xc420045d08 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045d28 sp=0xc420045d18 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045d38 sp=0xc420045d28 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045d48 sp=0xc420045d38 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045d58 sp=0xc420045d48 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045d68 sp=0xc420045d58 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045d78 sp=0xc420045d68 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045d88 sp=0xc420045d78 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045d98 sp=0xc420045d88 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045da8 sp=0xc420045d98 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045db8 sp=0xc420045da8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045dc8 sp=0xc420045db8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045dd8 sp=0xc420045dc8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045de8 sp=0xc420045dd8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045df8 sp=0xc420045de8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045e08 sp=0xc420045df8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045e18 sp=0xc420045e08 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045e28 sp=0xc420045e18 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045e38 sp=0xc420045e28 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045e48 sp=0xc420045e38 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045e58 sp=0xc420045e48 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045e68 sp=0xc420045e58 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045e78 sp=0xc420045e68 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045e88 sp=0xc420045e78 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045e98 sp=0xc420045e88 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045ea8 sp=0xc420045e98 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045eb8 sp=0xc420045ea8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045ec8 sp=0xc420045eb8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045ed8 sp=0xc420045ec8 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045ee8 sp=0xc420045ed8 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045ef8 sp=0xc420045ee8 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045f08 sp=0xc420045ef8 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045f18 sp=0xc420045f08 pc=0x107f010
+main.f4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:25 +0x20 fp=0xc420045f28 sp=0xc420045f18 pc=0x107f0a0
+main.f3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:21 +0x20 fp=0xc420045f38 sp=0xc420045f28 pc=0x107f070
+main.f2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:17 +0x20 fp=0xc420045f48 sp=0xc420045f38 pc=0x107f040
+main.f1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:13 +0x20 fp=0xc420045f58 sp=0xc420045f48 pc=0x107f010
+main.recurse()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:9 +0x2f fp=0xc420045f78 sp=0xc420045f58 pc=0x107efdf
+main.main()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/main.go:29 +0x20 fp=0xc420045f88 sp=0xc420045f78 pc=0x107f0d0
+runtime.main()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:195 +0x200 fp=0xc420045fe0 sp=0xc420045f88 pc=0x1027d20
+runtime.goexit()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/asm_amd64.s:2374 +0x1 fp=0xc420045fe8 sp=0xc420045fe0 pc=0x104f021

@@ -1,0 +1,68 @@
+&{Name sync/atomic ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0xb6, numFileEntries:3, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0000b01a0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name internal/cpu ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x261, numFileEntries:5, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0000b02c0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name runtime/internal/atomic ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x778, numFileEntries:2, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc00000c540), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name internal/bytealg ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x969, numFileEntries:5, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0000b0420), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name runtime ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x2622, numFileEntries:89, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0000b0620), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name runtime/cgo ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x21002, numFileEntries:3, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001ccfc0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name sync ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x212ac, numFileEntries:10, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001cd160), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name internal/reflectlite ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x22177, numFileEntries:3, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0002b09c0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name errors ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x22f23, numFileEntries:3, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001cdc40), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name internal/oserror ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x23007, numFileEntries:3, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0002b0b20), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name syscall ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x234ee, numFileEntries:15, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0002b0d80), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name math ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x24694, numFileEntries:2, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0002b1d60), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name unicode/utf8 ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x24715, numFileEntries:2, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001cdd20), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name strconv ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x24ca8, numFileEntries:11, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001cdfc0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name unicode ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x268a7, numFileEntries:2, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0003db0e0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name reflect ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x27044, numFileEntries:8, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc00007e9a0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name sort ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x2d36a, numFileEntries:2, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001950e0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name internal/fmtsort ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x2d6ab, numFileEntries:4, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc00007ebe0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name io ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x2e1ae, numFileEntries:3, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc000195520), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name internal/testlog ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x2e2e7, numFileEntries:3, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc00007edc0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name time ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x2e662, numFileEntries:11, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc00007eee0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name os ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x30d8c, numFileEntries:23, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001dc1e0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name internal/poll ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x3243c, numFileEntries:13, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001f69a0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name internal/syscall/unix ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x32d9b, numFileEntries:2, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001dcf60), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name fmt ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x33041, numFileEntries:10, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001f6ba0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name main ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x3606f, numFileEntries:4, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001f7a60), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name /tmp/go-build/main.cgo2.c ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x3612f, numFileEntries:3, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001dd0c0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/cgo/gcc_context.c ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x36274, numFileEntries:4, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001f7bc0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/cgo/gcc_darwin_amd64.c ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x3657d, numFileEntries:11, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001f7d20), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/cgo/gcc_libinit.c ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x368bc, numFileEntries:11, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0002460c0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/cgo/gcc_setenv.c ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x36a2f, numFileEntries:2, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc0001dd4c0), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/cgo/gcc_traceback.c ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x36b6f, numFileEntries:4, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc000246320), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/cgo/gcc_util.c ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x36c9d, numFileEntries:4, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc000246540), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+
+&{Name gcc_amd64.S ClassString}: <nil>:<nil> dwarf.LineReaderPos{off:0x36cfa, numFileEntries:2, state:dwarf.LineEntry{Address:0x0, OpIndex:0, File:(*dwarf.LineFile)(0xc000246700), Line:1, Column:0, IsStmt:true, BasicBlock:false, PrologueEnd:false, EpilogueBegin:false, ISA:0, Discriminator:0, EndSequence:false}, fileIndex:1}
+

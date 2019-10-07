@@ -1,0 +1,1844 @@
+Waiting now
+SIGQUIT: quit
+PC=0x7fff581dd86a m=0 sigcode=0
+
+goroutine 0 [idle]:
+runtime.pthread_cond_wait(0x1183548, 0x1183508, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/sys_darwin.go:378 +0x39
+runtime.semasleep(0xffffffffffffffff, 0x7ffeefbfd6a0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:63 +0x85
+runtime.notesleep(0x1183308)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/lock_sema.go:173 +0xe0
+runtime.stopm()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:1929 +0xc0
+runtime.exitsyscall0(0xc000114780)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:3141 +0x111
+runtime.mcall(0x1050ad6)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/asm_amd64.s:318 +0x5b
+
+goroutine 1 [runnable]:
+main.main()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:44 +0x390
+
+goroutine 33 [IO wait]:
+internal/poll.runtime_pollWait(0x1591ea8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000640d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000640c0, 0xc0000ce784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e018, 0xc0000ce784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x0)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 34 [IO wait]:
+internal/poll.runtime_pollWait(0x1591d08, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009c0d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009c0c0, 0xc0000cef84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a010, 0xc0000cef84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x1)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 35 [IO wait]:
+internal/poll.runtime_pollWait(0x1591b68, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009c198, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009c180, 0xc0000cf784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a020, 0xc0000cf784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x2)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 36 [IO wait]:
+internal/poll.runtime_pollWait(0x15919c8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064138, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064120, 0xc0000cff84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e028, 0xc0000cff84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x3)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 37 [IO wait]:
+internal/poll.runtime_pollWait(0x1591828, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000641f8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000641e0, 0xc0000d0784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e038, 0xc0000d0784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x4)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 38 [IO wait]:
+internal/poll.runtime_pollWait(0x1591688, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064258, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064240, 0xc0000d0f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e040, 0xc0000d0f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x5)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 39 [IO wait]:
+internal/poll.runtime_pollWait(0x15914e8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064318, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064300, 0xc0000d1784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e050, 0xc0000d1784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x6)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 40 [IO wait]:
+internal/poll.runtime_pollWait(0x1591348, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009c318, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009c300, 0xc0000d1f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a040, 0xc0000d1f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x7)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 41 [IO wait]:
+internal/poll.runtime_pollWait(0x15911a8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000643d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000643c0, 0xc0000ca784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e060, 0xc0000ca784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x8)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 42 [IO wait]:
+internal/poll.runtime_pollWait(0x1591008, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009c3d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009c3c0, 0xc0000caf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a050, 0xc0000caf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x9)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 43 [IO wait]:
+internal/poll.runtime_pollWait(0x1592d48, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064498, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064480, 0xc0000cb784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e070, 0xc0000cb784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0xa)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 44 [IO wait]:
+internal/poll.runtime_pollWait(0x1592ba8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009c498, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009c480, 0xc0000cbf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a060, 0xc0000cbf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0xb)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 45 [IO wait]:
+internal/poll.runtime_pollWait(0x1592a08, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064558, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064540, 0xc0000cc784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e080, 0xc0000cc784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0xc)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 46 [IO wait]:
+internal/poll.runtime_pollWait(0x1592868, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009c558, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009c540, 0xc0000ccf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a070, 0xc0000ccf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0xd)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 47 [IO wait]:
+internal/poll.runtime_pollWait(0x15926c8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009c618, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009c600, 0xc0000cd784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a080, 0xc0000cd784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0xe)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 48 [IO wait]:
+internal/poll.runtime_pollWait(0x1592528, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064618, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064600, 0xc0000cdf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e090, 0xc0000cdf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0xf)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 49 [IO wait]:
+internal/poll.runtime_pollWait(0x1592388, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009c6d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009c6c0, 0xc0000d8784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a090, 0xc0000d8784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x10)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 50 [IO wait]:
+internal/poll.runtime_pollWait(0x15921e8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000646d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000646c0, 0xc0000d8f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e0a0, 0xc0000d8f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x11)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 51 [IO wait]:
+internal/poll.runtime_pollWait(0x1592048, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064798, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064780, 0xc0000d9784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e0b0, 0xc0000d9784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x12)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 52 [IO wait]:
+internal/poll.runtime_pollWait(0x1593d88, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064858, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064840, 0xc0000d9f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e0c0, 0xc0000d9f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x13)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 53 [IO wait]:
+internal/poll.runtime_pollWait(0x1593be8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009c798, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009c780, 0xc0000da784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a0a0, 0xc0000da784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x14)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 54 [IO wait]:
+internal/poll.runtime_pollWait(0x1593a48, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064918, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064900, 0xc0000daf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e0d0, 0xc0000daf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x15)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 55 [IO wait]:
+internal/poll.runtime_pollWait(0x15938a8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009c858, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009c840, 0xc0000db784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a0b0, 0xc0000db784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x16)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 56 [IO wait]:
+internal/poll.runtime_pollWait(0x1593708, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000649d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000649c0, 0xc0000dbf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e0e0, 0xc0000dbf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x17)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 57 [IO wait]:
+internal/poll.runtime_pollWait(0x1593568, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064a38, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064a20, 0xc0000d4784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e0e8, 0xc0000d4784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x18)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 58 [IO wait]:
+internal/poll.runtime_pollWait(0x15933c8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009c978, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009c960, 0xc0000d4f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a0c8, 0xc0000d4f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x19)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 59 [IO wait]:
+internal/poll.runtime_pollWait(0x1593228, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009c9d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009c9c0, 0xc0000d5784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a0d0, 0xc0000d5784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x1a)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 60 [IO wait]:
+internal/poll.runtime_pollWait(0x1593088, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064af8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064ae0, 0xc0000d5f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e0f8, 0xc0000d5f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x1b)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 61 [IO wait]:
+internal/poll.runtime_pollWait(0x1592ee8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064b58, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064b40, 0xc0000d6784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e100, 0xc0000d6784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x1c)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 62 [IO wait]:
+internal/poll.runtime_pollWait(0x15d1dd8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064bb8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064ba0, 0xc0000d6f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e108, 0xc0000d6f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x1d)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 63 [IO wait]:
+internal/poll.runtime_pollWait(0x15d1c38, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064c78, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064c60, 0xc0000d7784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e118, 0xc0000d7784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x1e)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 64 [IO wait]:
+internal/poll.runtime_pollWait(0x15d1a98, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009cb58, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009cb40, 0xc0000d7f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a0f0, 0xc0000d7f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x1f)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 65 [IO wait]:
+internal/poll.runtime_pollWait(0x15d18f8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064d38, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064d20, 0xc0000f6784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e128, 0xc0000f6784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x20)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 66 [IO wait]:
+internal/poll.runtime_pollWait(0x15d1758, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009cc18, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009cc00, 0xc0000f6f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a100, 0xc0000f6f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x21)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 67 [IO wait]:
+internal/poll.runtime_pollWait(0x15d15b8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009cc78, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009cc60, 0xc0000f7784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a108, 0xc0000f7784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x22)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 68 [IO wait]:
+internal/poll.runtime_pollWait(0x15d1418, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064eb8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064ea0, 0xc0000f7f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e148, 0xc0000f7f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x23)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 69 [IO wait]:
+internal/poll.runtime_pollWait(0x15d1278, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000064f78, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000064f60, 0xc0000f8784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e158, 0xc0000f8784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x24)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 70 [IO wait]:
+internal/poll.runtime_pollWait(0x15d10d8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009cd38, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009cd20, 0xc0000f8f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a118, 0xc0000f8f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x25)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 71 [IO wait]:
+internal/poll.runtime_pollWait(0x1594cf8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065038, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065020, 0xc0000f9784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e168, 0xc0000f9784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x26)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 72 [IO wait]:
+internal/poll.runtime_pollWait(0x1594b58, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009cdf8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009cde0, 0xc0000f9f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a128, 0xc0000f9f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x27)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 73 [IO wait]:
+internal/poll.runtime_pollWait(0x15949b8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000650f8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000650e0, 0xc0000f2784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e178, 0xc0000f2784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x28)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 74 [IO wait]:
+internal/poll.runtime_pollWait(0x1594818, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065158, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065140, 0xc0000f2f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e180, 0xc0000f2f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x29)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 75 [IO wait]:
+internal/poll.runtime_pollWait(0x1594678, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009cf18, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009cf00, 0xc0000f3784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a140, 0xc0000f3784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x2a)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 76 [IO wait]:
+internal/poll.runtime_pollWait(0x15944d8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000651b8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000651a0, 0xc0000f3f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e188, 0xc0000f3f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x2b)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 77 [IO wait]:
+internal/poll.runtime_pollWait(0x1594338, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009cfd8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009cfc0, 0xc0000f4784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a150, 0xc0000f4784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x2c)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 78 [IO wait]:
+internal/poll.runtime_pollWait(0x1594198, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000652d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000652c0, 0xc0000f4f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e1a0, 0xc0000f4f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x2d)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 79 [IO wait]:
+internal/poll.runtime_pollWait(0x1593ff8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065398, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065380, 0xc0000f5784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e1b0, 0xc0000f5784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x2e)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 80 [IO wait]:
+internal/poll.runtime_pollWait(0x1593e58, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065458, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065440, 0xc0000f5f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e1c0, 0xc0000f5f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x2f)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 81 [IO wait]:
+internal/poll.runtime_pollWait(0x15d2d48, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009d098, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009d080, 0xc000108784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a160, 0xc000108784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x30)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 82 [IO wait]:
+internal/poll.runtime_pollWait(0x15d2ba8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009d0f8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009d0e0, 0xc000108f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a168, 0xc000108f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x31)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 83 [IO wait]:
+internal/poll.runtime_pollWait(0x15d2a08, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009d1b8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009d1a0, 0xc000109784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a178, 0xc000109784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x32)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 84 [IO wait]:
+internal/poll.runtime_pollWait(0x15d2868, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065578, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065560, 0xc000109f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e1d8, 0xc000109f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x33)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 85 [IO wait]:
+internal/poll.runtime_pollWait(0x15d26c8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009d278, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009d260, 0xc00010a784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a188, 0xc00010a784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x34)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 86 [IO wait]:
+internal/poll.runtime_pollWait(0x15d2528, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065638, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065620, 0xc00010af84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e1e8, 0xc00010af84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x35)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 87 [IO wait]:
+internal/poll.runtime_pollWait(0x15d2388, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000656f8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000656e0, 0xc00010b784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e1f8, 0xc00010b784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x36)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 88 [IO wait]:
+internal/poll.runtime_pollWait(0x15d21e8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009d2d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009d2c0, 0xc00010bf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a190, 0xc00010bf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x37)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 89 [IO wait]:
+internal/poll.runtime_pollWait(0x15d2048, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065818, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065800, 0xc000104784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e210, 0xc000104784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x38)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 90 [IO wait]:
+internal/poll.runtime_pollWait(0x15d3d88, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009d398, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009d380, 0xc000104f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a1a0, 0xc000104f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x39)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 91 [IO wait]:
+internal/poll.runtime_pollWait(0x15d3be8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000658d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000658c0, 0xc000105784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e220, 0xc000105784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x3a)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 92 [IO wait]:
+internal/poll.runtime_pollWait(0x15d3a48, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065938, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065920, 0xc000105f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e228, 0xc000105f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x3b)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 93 [IO wait]:
+internal/poll.runtime_pollWait(0x15d38a8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009d4b8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009d4a0, 0xc000106784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a1b8, 0xc000106784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x3c)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 94 [IO wait]:
+internal/poll.runtime_pollWait(0x15d3708, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065998, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065980, 0xc000106f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e230, 0xc000106f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x3d)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 95 [IO wait]:
+internal/poll.runtime_pollWait(0x15d3568, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065a58, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065a40, 0xc000107784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e240, 0xc000107784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x3e)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 96 [IO wait]:
+internal/poll.runtime_pollWait(0x15d33c8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009d5d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009d5c0, 0xc000107f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a1d0, 0xc000107f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x3f)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 97 [IO wait]:
+internal/poll.runtime_pollWait(0x15d3228, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065b18, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065b00, 0xc00011c784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e250, 0xc00011c784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x40)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 98 [IO wait]:
+internal/poll.runtime_pollWait(0x15d3088, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009d698, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009d680, 0xc00011cf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a1e0, 0xc00011cf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x41)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 99 [IO wait]:
+internal/poll.runtime_pollWait(0x15d2ee8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009d758, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009d740, 0xc00011d784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a1f0, 0xc00011d784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x42)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 100 [IO wait]:
+internal/poll.runtime_pollWait(0x1595b98, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065bd8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065bc0, 0xc00011df84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e260, 0xc00011df84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x43)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 101 [IO wait]:
+internal/poll.runtime_pollWait(0x15959f8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065c98, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065c80, 0xc00011e784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e270, 0xc00011e784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x44)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 102 [IO wait]:
+internal/poll.runtime_pollWait(0x1595858, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065d58, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065d40, 0xc00011ef84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e280, 0xc00011ef84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x45)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 103 [IO wait]:
+internal/poll.runtime_pollWait(0x15956b8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009d818, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009d800, 0xc00011f784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a200, 0xc00011f784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x46)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 104 [IO wait]:
+internal/poll.runtime_pollWait(0x1595518, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065e18, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065e00, 0xc00011ff84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e290, 0xc00011ff84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x47)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 105 [IO wait]:
+internal/poll.runtime_pollWait(0x1595378, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065ed8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065ec0, 0xc000118784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e2a0, 0xc000118784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x48)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 106 [IO wait]:
+internal/poll.runtime_pollWait(0x15951d8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009d8d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009d8c0, 0xc000118f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a210, 0xc000118f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x49)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 107 [IO wait]:
+internal/poll.runtime_pollWait(0x1595038, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000065f98, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000065f80, 0xc000119784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e2b0, 0xc000119784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x4a)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 108 [IO wait]:
+internal/poll.runtime_pollWait(0x1594e98, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c4078, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c4060, 0xc000119f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e2c0, 0xc000119f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x4b)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 109 [IO wait]:
+internal/poll.runtime_pollWait(0x1596bd8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c40d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c40c0, 0xc00011a784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e2c8, 0xc00011a784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x4c)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 110 [IO wait]:
+internal/poll.runtime_pollWait(0x1596a38, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c4138, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c4120, 0xc00011af84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e2d0, 0xc00011af84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x4d)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 111 [IO wait]:
+internal/poll.runtime_pollWait(0x1596898, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c4198, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c4180, 0xc00011b784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e2d8, 0xc00011b784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x4e)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 112 [IO wait]:
+internal/poll.runtime_pollWait(0x15966f8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c4258, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c4240, 0xc00011bf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e2e8, 0xc00011bf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x4f)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 113 [IO wait]:
+internal/poll.runtime_pollWait(0x1596558, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009da58, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009da40, 0xc00014a784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a230, 0xc00014a784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x50)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 114 [IO wait]:
+internal/poll.runtime_pollWait(0x15963b8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009dab8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009daa0, 0xc00014af84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a238, 0xc00014af84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x51)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 115 [IO wait]:
+internal/poll.runtime_pollWait(0x1596218, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c43d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c43c0, 0xc00014b784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e308, 0xc00014b784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x52)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 116 [IO wait]:
+internal/poll.runtime_pollWait(0x1596078, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009db78, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009db60, 0xc00014bf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a248, 0xc00014bf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x53)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 117 [IO wait]:
+internal/poll.runtime_pollWait(0x1595ed8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c4498, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c4480, 0xc00014c784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e318, 0xc00014c784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x54)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 118 [IO wait]:
+internal/poll.runtime_pollWait(0x1595d38, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009dc38, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009dc20, 0xc00014cf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a258, 0xc00014cf84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x55)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 119 [IO wait]:
+internal/poll.runtime_pollWait(0x1597a78, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c4558, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c4540, 0xc00014d784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e328, 0xc00014d784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x56)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 120 [IO wait]:
+internal/poll.runtime_pollWait(0x15978d8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009dcf8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009dce0, 0xc00014df84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a268, 0xc00014df84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x57)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 121 [IO wait]:
+internal/poll.runtime_pollWait(0x1597738, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c4618, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c4600, 0xc000146784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e338, 0xc000146784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x58)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 122 [IO wait]:
+internal/poll.runtime_pollWait(0x1597598, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009ddb8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009dda0, 0xc000146f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a278, 0xc000146f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x59)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 123 [IO wait]:
+internal/poll.runtime_pollWait(0x15973f8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c46d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c46c0, 0xc000147784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e348, 0xc000147784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x5a)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 124 [IO wait]:
+internal/poll.runtime_pollWait(0x1597258, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009de78, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009de60, 0xc000147f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a288, 0xc000147f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x5b)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 125 [IO wait]:
+internal/poll.runtime_pollWait(0x15970b8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c4798, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c4780, 0xc000148784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e358, 0xc000148784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x5c)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 126 [IO wait]:
+internal/poll.runtime_pollWait(0x1596f18, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c47f8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c47e0, 0xc000148f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e360, 0xc000148f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x5d)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 127 [IO wait]:
+internal/poll.runtime_pollWait(0x1596d78, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00009df98, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00009df80, 0xc000149784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a2a0, 0xc000149784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x5e)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 128 [IO wait]:
+internal/poll.runtime_pollWait(0x15d4cf8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c6078, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c6060, 0xc000149f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a2b0, 0xc000149f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x5f)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 129 [IO wait]:
+internal/poll.runtime_pollWait(0x15d4b58, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c60d8, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c60c0, 0xc000164784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00009a2b8, 0xc000164784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x60)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 130 [IO wait]:
+internal/poll.runtime_pollWait(0x15d49b8, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c4918, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c4900, 0xc000164f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e378, 0xc000164f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x61)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 131 [IO wait]:
+internal/poll.runtime_pollWait(0x15d4818, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c4978, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c4960, 0xc000165784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e380, 0xc000165784, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x62)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+goroutine 132 [IO wait]:
+internal/poll.runtime_pollWait(0x15d4678, 0x72, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0000c4a38, 0x72, 0x1, 0x4, 0xffffffffffffffff)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0000c4a20, 0xc000165f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x22b
+os.(*File).read(...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:259
+os.(*File).Read(0xc00000e390, 0xc000165f84, 0x4, 0x4, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:116 +0x71
+main.main.func1(0xc0000c8000, 0xc0000ac020, 0x63)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:35 +0x8d
+created by main.main
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/main.go:31 +0x320
+
+rax    0x104
+rbx    0x2
+rcx    0x7ffeefbfd4d8
+rdx    0x600
+rdi    0x1183548
+rsi    0x60100000700
+rbp    0x7ffeefbfd560
+rsp    0x7ffeefbfd4d8
+r8     0x0
+r9     0xa0
+r10    0x0
+r11    0x202
+r12    0x1183548
+r13    0x16
+r14    0x60100000700
+r15    0x7a715c0
+rip    0x7fff581dd86a
+rflags 0x203
+cs     0x7
+fs     0x0
+gs     0x0
+exit status 2

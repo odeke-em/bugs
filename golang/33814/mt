@@ -1,0 +1,14 @@
+package main
+
+import (
+	"log"
+	"os"
+)
+
+func main() {
+	proc, err := os.FindProcess(111111)
+	if err != nil {
+		log.Printf("FindProcess error: %v", err)
+	}
+	log.Printf("%#v\n", proc)
+}

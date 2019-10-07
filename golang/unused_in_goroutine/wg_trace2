@@ -1,0 +1,71 @@
+
+before walk main
+.   DCL l(4)
+.   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) int
+
+.   AS l(4) colas(true) tc(1)
+.   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) int
+.   .   LITERAL-0 l(4) tc(1) int
+
+.   INLMARK l(10) x(0)
+
+.   DCL l(6)
+.   .   NAME-main.i a(true) l(6) x(0) class(PAUTO) tc(1) used int
+
+.   AS l(6) colas(true) tc(1)
+.   .   NAME-main.i a(true) l(6) x(0) class(PAUTO) tc(1) used int
+.   .   LITERAL-5 l(6) tc(1) int
+
+.   IF l(7) tc(1)
+.   .   EQ l(7) tc(1) bool
+.   .   .   AND l(7) tc(1) int
+.   .   .   .   NAME-main.i a(true) l(6) x(0) class(PAUTO) tc(1) used int
+.   .   .   .   LITERAL-2 l(7) tc(1) int
+.   .   .   LITERAL-0 l(7) tc(1) int
+.   IF-body
+.   .   PANIC l(8) tc(1)
+.   .   .   NAME-main..stmp_0 a(true) l(8) x(0) class(PEXTERN) tc(1) used string
+
+.   LABEL l(10) tc(1) main..i0
+
+before walk main.func1
+.   DCL l(6)
+.   .   NAME-main.i a(true) g(1) l(6) x(0) class(PAUTO) tc(1) used int
+
+.   AS l(6) colas(true) tc(1)
+.   .   NAME-main.i a(true) g(1) l(6) x(0) class(PAUTO) tc(1) used int
+.   .   LITERAL-5 l(6) tc(1) int
+
+.   IF l(7) tc(1)
+.   .   EQ l(7) tc(1) bool
+.   .   .   AND l(7) tc(1) int
+.   .   .   .   NAME-main.i a(true) g(1) l(6) x(0) class(PAUTO) tc(1) used int
+.   .   .   .   LITERAL-2 l(7) tc(1) int
+.   .   .   LITERAL-0 l(7) tc(1) int
+.   IF-body
+.   .   PANIC l(8) tc(1)
+.   .   .   NAME-main..stmp_1 a(true) l(8) x(0) class(PEXTERN) tc(1) used string
+after walk main.func1
+.   DCL l(6)
+.   .   NAME-main.i a(true) g(1) l(6) x(0) class(PAUTO) tc(1) used int
+
+.   AS l(6) colas(true) tc(1)
+.   .   NAME-main.i a(true) g(1) l(6) x(0) class(PAUTO) tc(1) used int
+.   .   LITERAL-5 l(6) tc(1) int
+
+.   IF l(7) tc(1)
+.   .   EQ l(7) tc(1) bool
+.   .   .   AND l(7) tc(1) int
+.   .   .   .   NAME-main.i a(true) g(1) l(6) x(0) class(PAUTO) tc(1) used int
+.   .   .   .   LITERAL-2 l(7) tc(1) int
+.   .   .   LITERAL-0 l(7) tc(1) int
+.   IF-body
+.   .   CALLFUNC l(8) tc(1) hascall
+.   .   .   NAME-runtime.gopanic a(true) x(0) class(PFUNC) tc(1) used FUNC-func(interface {})
+.   .   CALLFUNC-rlist
+.   .   .   EFACE l(8) tc(1) INTER-interface {}
+.   .   .   .   ADDR a(true) l(8) tc(1) PTR-*uint8
+.   .   .   .   .   NAME-type.string a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   ADDR l(8) tc(1) PTR-*string
+.   .   .   .   .   NAME-main..stmp_1 a(true) l(8) x(0) class(PEXTERN) tc(1) addrtaken used string
+with_goroutine.go:4:2: i declared and not used

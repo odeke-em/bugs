@@ -1,0 +1,29 @@
+
+before walk main
+.   DCL l(4)
+.   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) int
+
+.   AS l(4) colas(true) tc(1)
+.   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) int
+.   .   LITERAL-0 l(4) tc(1) int
+
+.   INLMARK l(7) x(0)
+
+.   DCL l(6)
+.   .   NAME-main.i a(true) l(6) x(0) class(PAUTO) tc(1) used int
+
+.   AS l(6) colas(true) tc(1)
+.   .   NAME-main.i a(true) l(6) x(0) class(PAUTO) tc(1) used int
+.   .   LITERAL-5 l(6) tc(1) int
+
+.   LABEL l(7) tc(1) main..i0
+
+before walk main.func1
+.   DCL l(6)
+.   .   NAME-main.i a(true) g(1) l(6) x(0) class(PAUTO) tc(1) int
+
+.   AS l(6) colas(true) tc(1)
+.   .   NAME-main.i a(true) g(1) l(6) x(0) class(PAUTO) tc(1) int
+.   .   LITERAL-5 l(6) tc(1) int
+with_goroutine.go:4:2: i declared and not used
+with_goroutine.go:6:13: i declared and not used

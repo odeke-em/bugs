@@ -1,0 +1,10 @@
+BenchmarkStrings-8   	47444811	        22.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStrings-8   	52504305	        21.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStrings-8   	51552976	        22.9 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStrings-8   	52688972	        23.2 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStrings-8   	50756905	        22.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStrings-8   	52382007	        23.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStrings-8   	52419543	        21.8 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStrings-8   	55156130	        22.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStrings-8   	54932143	        22.0 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStrings-8   	54728373	        22.0 ns/op	       0 B/op	       0 allocs/op

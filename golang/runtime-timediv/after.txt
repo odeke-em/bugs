@@ -1,0 +1,14 @@
+goos: darwin
+goarch: amd64
+BenchmarkContention-8   	    5000	    381378 ns/op
+BenchmarkContention-8   	    5000	    319117 ns/op
+BenchmarkContention-8   	    5000	    325899 ns/op
+BenchmarkContention-8   	    5000	    314314 ns/op
+BenchmarkContention-8   	    5000	    317121 ns/op
+BenchmarkContention-8   	    5000	    321437 ns/op
+BenchmarkContention-8   	    5000	    320572 ns/op
+BenchmarkContention-8   	    5000	    324285 ns/op
+BenchmarkContention-8   	    5000	    320851 ns/op
+BenchmarkContention-8   	    5000	    323767 ns/op
+PASS
+ok  	_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/runtime-timediv	16.681s

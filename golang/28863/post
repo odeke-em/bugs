@@ -1,0 +1,260 @@
+# command-line-arguments
+walk [0xc420337770]
+.   NAME-main.key a(true) g(1) l(6) x(0) class(PAUTO) f(1) tc(1) assigned used SLICE-[]byte
+walk [0xc420309860]
+.   NAME-runtime.stringtoslicebyte a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*[32]byte, string) []byte
+walk [0xc420337d10]
+.   NAME-main..autotmp_3 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[32]uint8
+walk [0xc420301c00]
+.   ADDR l(6) tc(1) PTR64-*[32]uint8
+.   .   NAME-main..autotmp_3 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[32]uint8
+walk [0xc420301700]
+.   LITERAL-"Hello" l(6) tc(1) string
+walk [0xc420301c80]
+.   CALLFUNC l(6) tc(1) hascall SLICE-[]byte
+.   .   NAME-runtime.stringtoslicebyte a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*[32]byte, string) []byte
+.   CALLFUNC-list
+.   .   AS l(6) tc(1)
+.   .   .   INDREGSP-SP a(true) l(6) x(0) tc(1) addrtaken main.__ PTR64-*[32]byte
+.   .   .   ADDR l(6) tc(1) PTR64-*[32]uint8
+.   .   .   .   NAME-main..autotmp_3 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[32]uint8
+
+.   .   AS l(6) tc(1)
+.   .   .   INDREGSP-SP a(true) l(6) x(8) tc(1) addrtaken main.__ string
+.   .   .   LITERAL-"Hello" l(6) tc(1) string
+walk [0xc420301c80]
+.   CALLFUNC l(6) tc(1) hascall SLICE-[]byte
+.   .   NAME-runtime.stringtoslicebyte a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*[32]byte, string) []byte
+.   CALLFUNC-list
+.   .   AS l(6) tc(1)
+.   .   .   INDREGSP-SP a(true) l(6) x(0) tc(1) addrtaken main.__ PTR64-*[32]byte
+.   .   .   ADDR l(6) tc(1) PTR64-*[32]uint8
+.   .   .   .   NAME-main..autotmp_3 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[32]uint8
+
+.   .   AS l(6) tc(1)
+.   .   .   INDREGSP-SP a(true) l(6) x(8) tc(1) addrtaken main.__ string
+.   .   .   LITERAL-"Hello" l(6) tc(1) string
+walk [0xc420301280]
+.   AS l(6) colas(true) tc(1) hascall
+.   .   NAME-main.key a(true) g(1) l(6) x(0) class(PAUTO) f(1) tc(1) assigned used SLICE-[]byte
+.   .   CALLFUNC l(6) tc(1) hascall SLICE-[]byte
+.   .   .   NAME-runtime.stringtoslicebyte a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*[32]byte, string) []byte
+.   .   CALLFUNC-list
+.   .   .   AS l(6) tc(1)
+.   .   .   .   INDREGSP-SP a(true) l(6) x(0) tc(1) addrtaken main.__ PTR64-*[32]byte
+.   .   .   .   ADDR l(6) tc(1) PTR64-*[32]uint8
+.   .   .   .   .   NAME-main..autotmp_3 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[32]uint8
+
+.   .   .   AS l(6) tc(1)
+.   .   .   .   INDREGSP-SP a(true) l(6) x(8) tc(1) addrtaken main.__ string
+.   .   .   .   LITERAL-"Hello" l(6) tc(1) string
+walk [0xc420337770]
+.   NAME-main.key a(true) g(1) l(6) x(0) class(PAUTO) f(1) tc(1) assigned used SLICE-[]byte
+walk [0xc420337770]
+.   NAME-main.key a(true) g(1) l(6) x(0) class(PAUTO) f(1) tc(1) assigned used SLICE-[]byte
+walk [0xc420301780]
+.   LITERAL-16 l(7) tc(1) int
+walk [0xc420301380]
+.   SLICE l(7) tc(1) hascall SLICE-[]byte
+.   .   NAME-main.key a(true) g(1) l(6) x(0) class(PAUTO) f(1) tc(1) assigned used SLICE-[]byte
+.   SLICE-list<N>
+
+.   .   LITERAL-16 l(7) tc(1) int
+walk [0xc420301480]
+.   AS l(7) tc(1) hascall
+.   .   NAME-main.key a(true) g(1) l(6) x(0) class(PAUTO) f(1) tc(1) assigned used SLICE-[]byte
+.   .   SLICE l(7) tc(1) hascall SLICE-[]byte
+.   .   .   NAME-main.key a(true) g(1) l(6) x(0) class(PAUTO) f(1) tc(1) assigned used SLICE-[]byte
+.   .   SLICE-list<N>
+
+.   .   .   LITERAL-16 l(7) tc(1) int
+walk [0xc420337c20]
+.   NAME-main..autotmp_2 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+walk [0xc420337770]
+.   NAME-main.key a(true) g(1) l(6) x(0) class(PAUTO) f(1) tc(1) assigned used SLICE-[]byte
+walk [0xc420301600]
+.   LEN l(8) tc(1) int
+.   .   NAME-main.key a(true) g(1) l(6) x(0) class(PAUTO) f(1) tc(1) assigned used SLICE-[]byte
+walk [0xc420301a00]
+.   AS l(8) tc(1)
+.   .   NAME-main..autotmp_2 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   LEN l(8) tc(1) int
+.   .   .   NAME-main.key a(true) g(1) l(6) x(0) class(PAUTO) f(1) tc(1) assigned used SLICE-[]byte
+walk [0xc42032d0e0]
+.   NAME-fmt.Println a(true) l(3) x(0) class(PFUNC) tc(1) used FUNC-func(...interface {}) (int, error)
+walk [0xc420337c20]
+.   NAME-main..autotmp_2 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+walk [0xc420301f80]
+.   NAME-runtime.convT2E64 a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, *int) interface {}
+walk [0xc4203a81e0]
+.   NAME-type.int a(true) x(0) class(PEXTERN) tc(1) uint8
+walk [0xc420301e80]
+.   ADDR a(true) l(8) tc(1) PTR64-*uint8
+.   .   NAME-type.int a(true) x(0) class(PEXTERN) tc(1) uint8
+walk [0xc420337c20]
+.   NAME-main..autotmp_2 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used int
+walk [0xc420301f00]
+.   ADDR l(8) tc(1) PTR64-*int
+.   .   NAME-main..autotmp_2 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used int
+walk [0xc4203aa000]
+.   CALLFUNC l(8) tc(1) hascall INTER-interface {}
+.   .   NAME-runtime.convT2E64 a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, *int) interface {}
+.   CALLFUNC-list
+.   .   AS l(8) tc(1)
+.   .   .   INDREGSP-SP a(true) l(8) x(0) tc(1) addrtaken main.__ PTR64-*byte
+.   .   .   ADDR a(true) l(8) tc(1) PTR64-*uint8
+.   .   .   .   NAME-type.int a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   AS l(8) tc(1)
+.   .   .   INDREGSP-SP a(true) l(8) x(8) tc(1) addrtaken main.__ PTR64-*int
+.   .   .   ADDR l(8) tc(1) PTR64-*int
+.   .   .   .   NAME-main..autotmp_2 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used int
+walk [0xc4203aa000]
+.   CALLFUNC l(8) tc(1) hascall INTER-interface {}
+.   .   NAME-runtime.convT2E64 a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, *int) interface {}
+.   CALLFUNC-list
+.   .   AS l(8) tc(1)
+.   .   .   INDREGSP-SP a(true) l(8) x(0) tc(1) addrtaken main.__ PTR64-*byte
+.   .   .   ADDR a(true) l(8) tc(1) PTR64-*uint8
+.   .   .   .   NAME-type.int a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   AS l(8) tc(1)
+.   .   .   INDREGSP-SP a(true) l(8) x(8) tc(1) addrtaken main.__ PTR64-*int
+.   .   .   ADDR l(8) tc(1) PTR64-*int
+.   .   .   .   NAME-main..autotmp_2 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used int
+walk [0xc4203a85a0]
+.   NAME-main..autotmp_5 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR64-*[1]interface {}
+walk [0xc420337b30]
+.   NAME-main..autotmp_1 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+walk [0xc4203aa400]
+.   ADDR l(8) tc(1) PTR64-*[1]interface {}
+.   .   NAME-main..autotmp_1 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+walk [0xc4203aa480]
+.   AS l(8) tc(1)
+.   .   NAME-main..autotmp_5 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR64-*[1]interface {}
+.   .   ADDR l(8) tc(1) PTR64-*[1]interface {}
+.   .   .   NAME-main..autotmp_1 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+walk [0xc4203a8690]
+.   NAME-main..autotmp_6 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+walk [0xc4203aa000]
+.   CALLFUNC l(8) tc(1) hascall INTER-interface {}
+.   .   NAME-runtime.convT2E64 a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, *int) interface {}
+.   CALLFUNC-list
+.   .   AS l(8) tc(1)
+.   .   .   INDREGSP-SP a(true) l(8) x(0) tc(1) addrtaken main.__ PTR64-*byte
+.   .   .   ADDR a(true) l(8) tc(1) PTR64-*uint8
+.   .   .   .   NAME-type.int a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   AS l(8) tc(1)
+.   .   .   INDREGSP-SP a(true) l(8) x(8) tc(1) addrtaken main.__ PTR64-*int
+.   .   .   ADDR l(8) tc(1) PTR64-*int
+.   .   .   .   NAME-main..autotmp_2 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used int
+walk [0xc4203aa780]
+.   AS l(8) tc(1) hascall
+.   .   NAME-main..autotmp_6 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   CALLFUNC l(8) tc(1) hascall INTER-interface {}
+.   .   .   NAME-runtime.convT2E64 a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, *int) interface {}
+.   .   CALLFUNC-list
+.   .   .   AS l(8) tc(1)
+.   .   .   .   INDREGSP-SP a(true) l(8) x(0) tc(1) addrtaken main.__ PTR64-*byte
+.   .   .   .   ADDR a(true) l(8) tc(1) PTR64-*uint8
+.   .   .   .   .   NAME-type.int a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   .   AS l(8) tc(1)
+.   .   .   .   INDREGSP-SP a(true) l(8) x(8) tc(1) addrtaken main.__ PTR64-*int
+.   .   .   .   ADDR l(8) tc(1) PTR64-*int
+.   .   .   .   .   NAME-main..autotmp_2 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used int
+walk [0xc4203a85a0]
+.   NAME-main..autotmp_5 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR64-*[1]interface {}
+walk [0xc4203aa680]
+.   IND l(8) tc(1) implicit(true) assigned hascall ARRAY-[1]interface {}
+.   .   NAME-main..autotmp_5 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR64-*[1]interface {}
+walk [0xc4203aa700]
+.   LITERAL-0 a(true) l(8) tc(1) int
+walk [0xc4203aa580]
+.   INDEX l(8) tc(1) assigned bounded hascall INTER-interface {}
+.   .   IND l(8) tc(1) implicit(true) assigned hascall ARRAY-[1]interface {}
+.   .   .   NAME-main..autotmp_5 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR64-*[1]interface {}
+.   .   LITERAL-0 a(true) l(8) tc(1) int
+walk [0xc4203a8690]
+.   NAME-main..autotmp_6 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+walk [0xc4203aa600]
+.   AS l(8) tc(1) hascall
+.   .   INDEX l(8) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   IND l(8) tc(1) implicit(true) assigned hascall ARRAY-[1]interface {}
+.   .   .   .   NAME-main..autotmp_5 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR64-*[1]interface {}
+.   .   .   LITERAL-0 a(true) l(8) tc(1) int
+.   .   NAME-main..autotmp_6 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+walk [0xc4203a84b0]
+.   NAME-main..autotmp_4 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]interface {}
+walk [0xc4203a85a0]
+.   NAME-main..autotmp_5 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR64-*[1]interface {}
+walk [0xc4203aa900]
+.   SLICEARR l(8) tc(1) hascall SLICE-[]interface {}
+.   .   NAME-main..autotmp_5 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR64-*[1]interface {}
+walk [0xc4203aa980]
+.   AS l(8) tc(1) hascall
+.   .   NAME-main..autotmp_4 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]interface {}
+.   .   SLICEARR l(8) tc(1) hascall SLICE-[]interface {}
+.   .   .   NAME-main..autotmp_5 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR64-*[1]interface {}
+walk [0xc4203a84b0]
+.   NAME-main..autotmp_4 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]interface {}
+walk [0xc420301500]
+.   CALLFUNC l(8) tc(1) hascall STRUCT-(int, error)
+.   .   NAME-fmt.Println a(true) l(3) x(0) class(PFUNC) tc(1) used FUNC-func(...interface {}) (int, error)
+.   .   DDDARG l(8) esc(no) PTR64-*[1]interface {}
+.   CALLFUNC-list
+.   .   AS l(8) tc(1)
+.   .   .   INDREGSP-SP a(true) l(8) x(0) tc(1) addrtaken main.__ SLICE-[]interface {}
+.   .   .   NAME-main..autotmp_4 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]interface {}
+walk [0xc4202e10e0]
+.   NAME-_ a(true) x(0) tc(1) assigned blank
+walk [0xc420337770]
+.   NAME-main.key a(true) g(1) l(6) x(0) class(PAUTO) f(1) tc(1) assigned used SLICE-[]byte
+walk [0xc420301680]
+.   AS l(9) tc(1)
+.   .   NAME-_ a(true) x(0) tc(1) assigned blank
+.   .   NAME-main.key a(true) g(1) l(6) x(0) class(PAUTO) f(1) tc(1) assigned used SLICE-[]byte
+walk [0xc4203a8960]
+.   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+walk [0xc4203ab700]
+.   LITERAL-1 a(true) l(1) tc(1) uint8
+walk [0xc4203ab100]
+.   GT l(1) tc(1) bool
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-1 a(true) l(1) tc(1) uint8
+walk [0xc4203a8960]
+.   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+walk [0xc4203ab780]
+.   LITERAL-1 a(true) l(1) tc(1) uint8
+walk [0xc4203ab300]
+.   EQ l(1) tc(1) bool
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-1 a(true) l(1) tc(1) uint8
+walk [0xc4202e1b30]
+.   NAME-runtime.throwinit a(true) x(0) class(PFUNC) tc(1) used FUNC-func()
+walk [0xc4203ab380]
+.   CALLFUNC l(1) tc(1) hascall
+.   .   NAME-runtime.throwinit a(true) x(0) class(PFUNC) tc(1) used FUNC-func()
+walk [0xc4203a8960]
+.   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+walk [0xc4203ab800]
+.   LITERAL-1 a(true) l(1) tc(1) uint8
+walk [0xc4203ab480]
+.   AS l(1) tc(1)
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-1 a(true) l(1) tc(1) uint8
+walk [0xc420337590]
+.   NAME-fmt.init a(true) l(3) x(0) class(PFUNC) tc(1) used FUNC-func()
+walk [0xc4203ab500]
+.   CALLFUNC l(1) tc(1) hascall
+.   .   NAME-fmt.init a(true) l(3) x(0) class(PFUNC) tc(1) used FUNC-func()
+walk [0xc4203a8960]
+.   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+walk [0xc4203ab880]
+.   LITERAL-2 a(true) l(1) tc(1) uint8
+walk [0xc4203ab600]
+.   AS l(1) tc(1)
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-2 a(true) l(1) tc(1) uint8
+16

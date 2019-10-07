@@ -1,0 +1,1683 @@
+
+before walk main
+.   DCL l(6)
+.   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) used MAP-map[string]*person
+
+.   AS l(6) colas(true) tc(1)
+.   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) used MAP-map[string]*person
+.   .   MAPLIT l(6) esc(no) tc(1) MAP-map[string]*person
+.   .   MAPLIT-list
+.   .   .   KEY l(7)
+.   .   .   .   LITERAL-"a" l(7) tc(1) string
+.   .   .   .   PTRLIT l(7) esc(h) tc(1) PTR-*person
+.   .   .   .   .   STRUCTLIT l(7) tc(1) main.person
+
+.   .   .   KEY l(8)
+.   .   .   .   LITERAL-"b" l(8) tc(1) string
+.   .   .   .   PTRLIT l(8) esc(h) tc(1) PTR-*person
+.   .   .   .   .   STRUCTLIT l(8) tc(1) main.person
+
+.   .   .   KEY l(9)
+.   .   .   .   LITERAL-"c" l(9) tc(1) string
+.   .   .   .   PTRLIT l(9) esc(h) tc(1) PTR-*person
+.   .   .   .   .   STRUCTLIT l(9) tc(1) main.person
+
+.   CALLFUNC l(12) tc(1)
+.   .   NAME-main.tip a(true) l(27) x(0) class(PFUNC) tc(1) used FUNC-func(map[string]*person, ...string)
+.   .   DDDARG l(12) esc(no) PTR-*[2]string
+.   CALLFUNC-list
+.   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) used MAP-map[string]*person
+
+.   .   LITERAL-"a" l(12) tc(1) string
+
+.   .   LITERAL-"c" l(12) tc(1) string
+
+.   VARKILL l(12) tc(1)
+.   .   NAME-main..autotmp_3 a(true) l(12) x(0) class(PAUTO) esc(N) used ARRAY-[2]string
+
+.   CALLFUNC l(13) tc(1)
+.   .   NAME-main.tip a(true) l(27) x(0) class(PFUNC) tc(1) used FUNC-func(map[string]*person, ...string)
+.   .   DDDARG l(13) esc(no) PTR-*[3]string
+.   CALLFUNC-list
+.   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) used MAP-map[string]*person
+
+.   .   LITERAL-"b" l(13) tc(1) string
+
+.   .   LITERAL-"c" l(13) tc(1) string
+
+.   .   LITERAL-"b" l(13) tc(1) string
+
+.   VARKILL l(13) tc(1)
+.   .   NAME-main..autotmp_4 a(true) l(13) x(0) class(PAUTO) esc(N) used ARRAY-[3]string
+
+.   CALLFUNC l(14) tc(1)
+.   .   NAME-main.tip a(true) l(27) x(0) class(PFUNC) tc(1) used FUNC-func(map[string]*person, ...string)
+.   .   DDDARG l(14) esc(no) PTR-*[5]string
+.   CALLFUNC-list
+.   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) used MAP-map[string]*person
+
+.   .   LITERAL-"a" l(14) tc(1) string
+
+.   .   LITERAL-"c" l(14) tc(1) string
+
+.   .   LITERAL-"c" l(14) tc(1) string
+
+.   .   LITERAL-"c" l(14) tc(1) string
+
+.   .   LITERAL-"c" l(14) tc(1) string
+
+.   VARKILL l(14) tc(1)
+.   .   NAME-main..autotmp_5 a(true) l(14) x(0) class(PAUTO) esc(N) used ARRAY-[5]string
+
+.   DCL l(16)
+.   .   NAME-main.id a(true) g(2) l(16) x(0) class(PAUTO) tc(1) assigned used string
+
+.   DCL l(16)
+.   .   NAME-main.p a(true) g(3) l(16) x(0) class(PAUTO) tc(1) assigned used PTR-*person
+
+.   AS l(16) tc(1)
+.   .   NAME-main..autotmp_6 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used MAP-map[string]*person
+.   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) used MAP-map[string]*person
+
+.   AS l(16) tc(1)
+.   .   NAME-main..autotmp_7 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used STRUCT-map.iter[string]*person
+
+.   RANGE l(16) colas(true) tc(1) MAP-map[string]*person
+.   .   NAME-main..autotmp_6 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used MAP-map[string]*person
+.   RANGE-list
+.   .   NAME-main.id a(true) g(2) l(16) x(0) class(PAUTO) tc(1) assigned used string
+
+.   .   NAME-main.p a(true) g(3) l(16) x(0) class(PAUTO) tc(1) assigned used PTR-*person
+.   RANGE-body
+.   .   AS l(17) tc(1)
+.   .   .   NAME-main..autotmp_9 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   .   .   NAME-main.p a(true) g(3) l(16) x(0) class(PAUTO) tc(1) assigned used PTR-*person
+
+.   .   CALLFUNC l(17) tc(1) STRUCT-(int, error)
+.   .   .   NAME-fmt.Printf a(true) l(207) x(0) class(PFUNC) tc(1) used FUNC-func(string, ...interface {}) (int, error)
+.   .   .   DDDARG l(17) esc(no) PTR-*[2]interface {}
+.   .   CALLFUNC-list
+.   .   .   LITERAL-"Id=%q Person=%+v\n" l(17) tc(1) string
+
+.   .   .   CONVIFACE l(17) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-main.id a(true) g(2) l(16) x(0) class(PAUTO) tc(1) assigned used string
+
+.   .   .   CONVIFACE l(17) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-main..autotmp_9 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+
+.   .   VARKILL l(17) tc(1)
+.   .   .   NAME-main..autotmp_9 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+
+.   .   VARKILL l(17) tc(1)
+.   .   .   NAME-main..autotmp_8 a(true) l(17) x(0) class(PAUTO) esc(N) used ARRAY-[2]interface {}
+
+.   VARKILL l(16) tc(1)
+.   .   NAME-main..autotmp_7 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used STRUCT-map.iter[string]*person
+
+.   VARKILL l(16) tc(1)
+.   .   NAME-main..autotmp_6 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used MAP-map[string]*person
+after walk main
+.   DCL l(6)
+.   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) assigned used MAP-map[string]*person
+
+.   EMPTY-init
+.   .   AS l(6) tc(1)
+.   .   .   NAME-main..autotmp_10 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.hdr[string]*person
+
+.   .   AS l(6) tc(1)
+.   .   .   NAME-main..autotmp_11 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.bucket[string]*person
+
+.   .   AS l(6) tc(1)
+.   .   .   DOTPTR l(6) x(16) tc(1) assigned .buckets PTR-*map.bucket[string]*person
+.   .   .   .   ADDR l(6) tc(1) PTR-*map.hdr[string]*person
+.   .   .   .   .   NAME-main..autotmp_10 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.hdr[string]*person
+.   .   .   ADDR l(6) tc(1) PTR-*map.bucket[string]*person
+.   .   .   .   NAME-main..autotmp_11 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.bucket[string]*person
+
+.   .   AS l(6) tc(1)
+.   .   .   NAME-main..autotmp_12 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*map.hdr[string]*person
+.   .   .   ADDR l(6) tc(1) PTR-*map.hdr[string]*person
+.   .   .   .   NAME-main..autotmp_10 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.hdr[string]*person
+
+.   .   AS l(6) tc(1) hascall
+.   .   .   DOTPTR l(6) x(12) tc(1) assigned hascall .hash0 uint32
+.   .   .   .   NAME-main..autotmp_12 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*map.hdr[string]*person
+.   .   .   CALLFUNC l(6) tc(1) hascall uint32
+.   .   .   .   NAME-runtime.fastrand a(true) x(0) class(PFUNC) tc(1) used FUNC-func() uint32
+
+.   .   AS l(6) tc(1)
+.   .   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) assigned used MAP-map[string]*person
+.   .   .   CONVNOP l(6) tc(1) MAP-map[string]*person
+.   .   .   .   ADDR l(6) tc(1) PTR-*map.hdr[string]*person
+.   .   .   .   .   NAME-main..autotmp_10 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.hdr[string]*person
+
+.   .   AS l(7) tc(1)
+.   .   .   NAME-main..autotmp_13 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   LITERAL-"a" l(7) tc(1) string
+
+.   .   AS-init
+.   .   .   AS l(7) tc(1)
+.   .   .   .   NAME-main..autotmp_15 a(true) l(7) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   .   .   .   CALLFUNC l(7) tc(1) nonnil hascall PTR-*person
+.   .   .   .   .   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *person
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   ADDR a(true) l(7) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type."".person a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   .   AS l(7) tc(1) hascall
+.   .   .   .   DEREF l(7) tc(1) assigned hascall main.person
+.   .   .   .   .   NAME-main..autotmp_15 a(true) l(7) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   .   AS l(7) tc(1) hascall
+.   .   .   NAME-main..autotmp_14 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   .   .   NAME-main..autotmp_15 a(true) l(7) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+
+.   .   AS-init
+.   .   .   AS l(7) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_16 a(true) l(7) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-**person
+.   .   .   .   CALLFUNC l(7) tc(1) nonnil hascall PTR-**person
+.   .   .   .   .   NAME-runtime.mapassign_faststr a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, map[string]*person, string) **person
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   ADDR a(true) l(7) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.map[string]*"".person a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   .   .   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) assigned used MAP-map[string]*person
+
+.   .   .   .   .   NAME-main..autotmp_13 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   AS l(7) tc(1) hascall
+.   .   .   DEREF l(7) tc(1) hascall PTR-*person
+.   .   .   .   NAME-main..autotmp_16 a(true) l(7) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-**person
+.   .   .   NAME-main..autotmp_14 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+
+.   .   AS l(8) tc(1)
+.   .   .   NAME-main..autotmp_13 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   LITERAL-"b" l(8) tc(1) string
+
+.   .   AS-init
+.   .   .   AS l(8) tc(1)
+.   .   .   .   NAME-main..autotmp_17 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   .   .   .   CALLFUNC l(8) tc(1) nonnil hascall PTR-*person
+.   .   .   .   .   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *person
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   ADDR a(true) l(8) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type."".person a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   .   AS l(8) tc(1) hascall
+.   .   .   .   DEREF l(8) tc(1) assigned hascall main.person
+.   .   .   .   .   NAME-main..autotmp_17 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   .   AS l(8) tc(1) hascall
+.   .   .   NAME-main..autotmp_14 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   .   .   NAME-main..autotmp_17 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+
+.   .   AS-init
+.   .   .   AS l(8) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_18 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-**person
+.   .   .   .   CALLFUNC l(8) tc(1) nonnil hascall PTR-**person
+.   .   .   .   .   NAME-runtime.mapassign_faststr a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, map[string]*person, string) **person
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   ADDR a(true) l(8) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.map[string]*"".person a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   .   .   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) assigned used MAP-map[string]*person
+
+.   .   .   .   .   NAME-main..autotmp_13 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   AS l(8) tc(1) hascall
+.   .   .   DEREF l(8) tc(1) hascall PTR-*person
+.   .   .   .   NAME-main..autotmp_18 a(true) l(8) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-**person
+.   .   .   NAME-main..autotmp_14 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+
+.   .   AS l(9) tc(1)
+.   .   .   NAME-main..autotmp_13 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   LITERAL-"c" l(9) tc(1) string
+
+.   .   AS-init
+.   .   .   AS l(9) tc(1)
+.   .   .   .   NAME-main..autotmp_19 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   .   .   .   CALLFUNC l(9) tc(1) nonnil hascall PTR-*person
+.   .   .   .   .   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *person
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   ADDR a(true) l(9) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type."".person a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   .   AS l(9) tc(1) hascall
+.   .   .   .   DEREF l(9) tc(1) assigned hascall main.person
+.   .   .   .   .   NAME-main..autotmp_19 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   .   AS l(9) tc(1) hascall
+.   .   .   NAME-main..autotmp_14 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   .   .   NAME-main..autotmp_19 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+
+.   .   AS-init
+.   .   .   AS l(9) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_20 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-**person
+.   .   .   .   CALLFUNC l(9) tc(1) nonnil hascall PTR-**person
+.   .   .   .   .   NAME-runtime.mapassign_faststr a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, map[string]*person, string) **person
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   ADDR a(true) l(9) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.map[string]*"".person a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   .   .   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) assigned used MAP-map[string]*person
+
+.   .   .   .   .   NAME-main..autotmp_13 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   AS l(9) tc(1) hascall
+.   .   .   DEREF l(9) tc(1) hascall PTR-*person
+.   .   .   .   NAME-main..autotmp_20 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-**person
+.   .   .   NAME-main..autotmp_14 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+
+.   .   VARKILL l(9) tc(1)
+.   .   .   NAME-main..autotmp_13 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+
+.   .   VARKILL l(9) tc(1)
+.   .   .   NAME-main..autotmp_14 a(true) l(6) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   EMPTY l(6) colas(true) tc(1) hascall
+.   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) assigned used MAP-map[string]*person
+
+.   CALLFUNC-init
+.   .   VARDEF l(12)
+.   .   .   NAME-main..autotmp_3 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[2]string
+
+.   .   AS l(12) tc(1)
+.   .   .   NAME-main..autotmp_22 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[2]string
+.   .   .   ADDR l(12) tc(1) PTR-*[2]string
+.   .   .   .   NAME-main..autotmp_3 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[2]string
+
+.   .   AS l(12) tc(1) hascall
+.   .   .   DEREF l(12) tc(1) assigned hascall ARRAY-[2]string
+.   .   .   .   NAME-main..autotmp_22 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[2]string
+.   .   .   NAME-main..stmp_0 a(true) l(12) x(0) class(PEXTERN) tc(1) assigned used ARRAY-[2]string
+
+.   .   BLOCK l(12)
+.   .   BLOCK-list
+.   .   .   AS l(12) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_21 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+.   .   .   .   SLICEARR l(12) tc(1) hascall SLICE-[]string
+.   .   .   .   .   NAME-main..autotmp_22 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[2]string
+.   CALLFUNC l(12) tc(1) hascall
+.   .   NAME-main.tip a(true) l(27) x(0) class(PFUNC) tc(1) used FUNC-func(map[string]*person, ...string)
+.   .   DDDARG l(12) esc(no) PTR-*[2]string
+.   CALLFUNC-rlist
+.   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) assigned used MAP-map[string]*person
+
+.   .   NAME-main..autotmp_21 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+
+.   VARKILL l(12) tc(1)
+.   .   NAME-main..autotmp_3 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[2]string
+
+.   CALLFUNC-init
+.   .   VARDEF l(13)
+.   .   .   NAME-main..autotmp_4 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[3]string
+
+.   .   AS l(13) tc(1)
+.   .   .   NAME-main..autotmp_24 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[3]string
+.   .   .   ADDR l(13) tc(1) PTR-*[3]string
+.   .   .   .   NAME-main..autotmp_4 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[3]string
+
+.   .   AS l(13) tc(1) hascall
+.   .   .   DEREF l(13) tc(1) assigned hascall ARRAY-[3]string
+.   .   .   .   NAME-main..autotmp_24 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[3]string
+.   .   .   NAME-main..stmp_1 a(true) l(13) x(0) class(PEXTERN) tc(1) assigned used ARRAY-[3]string
+
+.   .   BLOCK l(13)
+.   .   BLOCK-list
+.   .   .   AS l(13) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_23 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+.   .   .   .   SLICEARR l(13) tc(1) hascall SLICE-[]string
+.   .   .   .   .   NAME-main..autotmp_24 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[3]string
+.   CALLFUNC l(13) tc(1) hascall
+.   .   NAME-main.tip a(true) l(27) x(0) class(PFUNC) tc(1) used FUNC-func(map[string]*person, ...string)
+.   .   DDDARG l(13) esc(no) PTR-*[3]string
+.   CALLFUNC-rlist
+.   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) assigned used MAP-map[string]*person
+
+.   .   NAME-main..autotmp_23 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+
+.   VARKILL l(13) tc(1)
+.   .   NAME-main..autotmp_4 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[3]string
+
+.   CALLFUNC-init
+.   .   VARDEF l(14)
+.   .   .   NAME-main..autotmp_5 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[5]string
+
+.   .   AS l(14) tc(1)
+.   .   .   NAME-main..autotmp_26 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[5]string
+.   .   .   ADDR l(14) tc(1) PTR-*[5]string
+.   .   .   .   NAME-main..autotmp_5 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[5]string
+
+.   .   AS l(14) tc(1) hascall
+.   .   .   DEREF l(14) tc(1) assigned hascall ARRAY-[5]string
+.   .   .   .   NAME-main..autotmp_26 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[5]string
+.   .   .   NAME-main..stmp_2 a(true) l(14) x(0) class(PEXTERN) tc(1) assigned used ARRAY-[5]string
+
+.   .   BLOCK l(14)
+.   .   BLOCK-list
+.   .   .   AS l(14) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_25 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+.   .   .   .   SLICEARR l(14) tc(1) hascall SLICE-[]string
+.   .   .   .   .   NAME-main..autotmp_26 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[5]string
+.   CALLFUNC l(14) tc(1) hascall
+.   .   NAME-main.tip a(true) l(27) x(0) class(PFUNC) tc(1) used FUNC-func(map[string]*person, ...string)
+.   .   DDDARG l(14) esc(no) PTR-*[5]string
+.   CALLFUNC-rlist
+.   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) assigned used MAP-map[string]*person
+
+.   .   NAME-main..autotmp_25 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+
+.   VARKILL l(14) tc(1)
+.   .   NAME-main..autotmp_5 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) addrtaken used ARRAY-[5]string
+
+.   DCL l(16)
+.   .   NAME-main.id a(true) g(2) l(16) x(0) class(PAUTO) tc(1) assigned used string
+
+.   DCL l(16)
+.   .   NAME-main.p a(true) g(3) l(16) x(0) class(PAUTO) tc(1) assigned used PTR-*person
+
+.   AS l(16) tc(1)
+.   .   NAME-main..autotmp_6 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used MAP-map[string]*person
+.   .   NAME-main.people a(true) g(1) l(6) x(0) class(PAUTO) tc(1) assigned used MAP-map[string]*person
+
+.   AS l(16) tc(1)
+.   .   NAME-main..autotmp_7 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.iter[string]*person
+
+.   FOR-init
+.   .   CALLFUNC l(16) tc(1) hascall
+.   .   .   NAME-runtime.mapiterinit a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, map[string]*person, *map.iter[string]*person)
+.   .   CALLFUNC-rlist
+.   .   .   ADDR a(true) l(16) tc(1) PTR-*uint8
+.   .   .   .   NAME-type.map[string]*"".person a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   .   NAME-main..autotmp_6 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used MAP-map[string]*person
+
+.   .   .   ADDR l(16) tc(1) PTR-*map.iter[string]*person
+.   .   .   .   NAME-main..autotmp_7 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.iter[string]*person
+.   FOR l(16) colas(true) tc(1) MAP-map[string]*person
+.   .   NE l(16) tc(1) bool
+.   .   .   DOT l(16) x(0) tc(1) .key PTR-*string
+.   .   .   .   NAME-main..autotmp_7 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.iter[string]*person
+.   .   .   LITERAL-0 l(16) tc(1) PTR-*string
+.   .   CALLFUNC l(16) tc(1) hascall
+.   .   .   NAME-runtime.mapiternext a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*map.iter[string]*person)
+.   .   CALLFUNC-rlist
+.   .   .   ADDR l(16) tc(1) PTR-*map.iter[string]*person
+.   .   .   .   NAME-main..autotmp_7 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.iter[string]*person
+.   FOR-body
+.   .   BLOCK l(16)
+.   .   BLOCK-list
+.   .   .   AS l(16) tc(1)
+.   .   .   .   NAME-main..autotmp_27 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   .   .   .   DEREF l(16) tc(1) hascall PTR-*person
+.   .   .   .   .   DOT l(16) x(8) tc(1) .val PTR-**person
+.   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.iter[string]*person
+
+.   .   .   AS l(16) tc(1) hascall
+.   .   .   .   NAME-main.id a(true) g(2) l(16) x(0) class(PAUTO) tc(1) assigned used string
+.   .   .   .   DEREF l(16) tc(1) hascall string
+.   .   .   .   .   DOT l(16) x(0) tc(1) .key PTR-*string
+.   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.iter[string]*person
+
+.   .   .   AS l(16) tc(1) hascall
+.   .   .   .   NAME-main.p a(true) g(3) l(16) x(0) class(PAUTO) tc(1) assigned used PTR-*person
+.   .   .   .   NAME-main..autotmp_27 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+
+.   .   AS l(17) tc(1)
+.   .   .   NAME-main..autotmp_9 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+.   .   .   NAME-main.p a(true) g(3) l(16) x(0) class(PAUTO) tc(1) assigned used PTR-*person
+
+.   .   CALLFUNC-init
+.   .   .   AS l(17) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_28 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used UNSAFEPTR-unsafe.Pointer
+.   .   .   .   CALLFUNC l(17) tc(1) hascall UNSAFEPTR-unsafe.Pointer
+.   .   .   .   .   NAME-runtime.convTstring a(true) x(0) class(PFUNC) tc(1) used FUNC-func(string) unsafe.Pointer
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   NAME-main.id a(true) g(2) l(16) x(0) class(PAUTO) tc(1) assigned used string
+
+.   .   .   AS l(17) tc(1)
+.   .   .   .   NAME-main..autotmp_8 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[2]interface {}
+
+.   .   .   AS l(17) tc(1)
+.   .   .   .   NAME-main..autotmp_30 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[2]interface {}
+.   .   .   .   ADDR l(17) tc(1) PTR-*[2]interface {}
+.   .   .   .   .   NAME-main..autotmp_8 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[2]interface {}
+
+.   .   .   BLOCK l(17)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(17) tc(1) hascall
+.   .   .   .   .   INDEX l(17) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(17) tc(1) implicit(true) assigned hascall ARRAY-[2]interface {}
+.   .   .   .   .   .   .   NAME-main..autotmp_30 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[2]interface {}
+.   .   .   .   .   .   LITERAL-0 l(17) tc(1) int
+.   .   .   .   .   EFACE l(17) tc(1) INTER-interface {}
+.   .   .   .   .   .   ADDR a(true) l(17) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   NAME-type.string a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   .   NAME-main..autotmp_28 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used UNSAFEPTR-unsafe.Pointer
+
+.   .   .   BLOCK l(17)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(17) tc(1) hascall
+.   .   .   .   .   INDEX l(17) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(17) tc(1) implicit(true) assigned hascall ARRAY-[2]interface {}
+.   .   .   .   .   .   .   NAME-main..autotmp_30 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[2]interface {}
+.   .   .   .   .   .   LITERAL-1 l(17) tc(1) int
+.   .   .   .   .   EFACE l(17) tc(1) INTER-interface {}
+.   .   .   .   .   .   ADDR a(true) l(17) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   NAME-type.*"".person a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   .   NAME-main..autotmp_9 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+
+.   .   .   BLOCK l(17)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(17) tc(1) hascall
+.   .   .   .   .   NAME-main..autotmp_29 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]interface {}
+.   .   .   .   .   SLICEARR l(17) tc(1) hascall SLICE-[]interface {}
+.   .   .   .   .   .   NAME-main..autotmp_30 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[2]interface {}
+.   .   CALLFUNC l(17) tc(1) hascall STRUCT-(int, error)
+.   .   .   NAME-fmt.Printf a(true) l(207) x(0) class(PFUNC) tc(1) used FUNC-func(string, ...interface {}) (int, error)
+.   .   .   DDDARG l(17) esc(no) PTR-*[2]interface {}
+.   .   CALLFUNC-rlist
+.   .   .   LITERAL-"Id=%q Person=%+v\n" l(17) tc(1) string
+
+.   .   .   NAME-main..autotmp_29 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]interface {}
+
+.   .   VARKILL l(17) tc(1)
+.   .   .   NAME-main..autotmp_9 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*person
+
+.   .   VARKILL l(17) tc(1)
+.   .   .   NAME-main..autotmp_8 a(true) l(17) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[2]interface {}
+
+.   VARKILL l(16) tc(1)
+.   .   NAME-main..autotmp_7 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-map.iter[string]*person
+
+.   VARKILL l(16) tc(1)
+.   .   NAME-main..autotmp_6 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used MAP-map[string]*person
+
+before walk type..hash.[2]string
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   RANGE l(1) colas(true) tc(1) ARRAY-[2]string
+.   .   DEREF l(1) tc(1) ARRAY-[2]string
+.   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]string
+.   RANGE-list
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   RANGE-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   .   CALLFUNC l(1) tc(1) uintptr
+.   .   .   .   NAME-runtime.strhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*string, uintptr) uintptr
+.   .   .   CALLFUNC-list
+.   .   .   .   ADDR l(1) tc(1) PTR-*string
+.   .   .   .   .   INDEX l(1) tc(1) addrtaken bounded string
+.   .   .   .   .   .   DEREF l(1) tc(1) implicit(true) addrtaken ARRAY-[2]string
+.   .   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]string
+.   .   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   .   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+after walk type..hash.[2]string
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   FOR-init
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LITERAL-2 l(1) tc(1) int
+.   FOR l(1) colas(true) tc(1) ARRAY-[2]string
+.   .   LT l(1) tc(1) bool
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   ADD l(1) tc(1) int
+.   .   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LITERAL-1 l(1) tc(1) int
+.   FOR-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1) hascall
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   .   CALLFUNC l(1) tc(1) hascall uintptr
+.   .   .   .   NAME-runtime.strhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*string, uintptr) uintptr
+.   .   .   CALLFUNC-list
+.   .   .   .   AS l(1) tc(1) hascall
+.   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*string
+.   .   .   .   .   ADDR l(1) tc(1) hascall PTR-*string
+.   .   .   .   .   .   INDEX l(1) tc(1) addrtaken bounded hascall string
+.   .   .   .   .   .   .   DEREF l(1) tc(1) implicit(true) addrtaken hascall ARRAY-[2]string
+.   .   .   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]string
+.   .   .   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   CALLFUNC-rlist
+.   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*string
+
+.   .   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+enter type..hash.[2]string
+.   AS l(1)
+.   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+
+before walk type..eq.[2]string
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   RANGE l(1) colas(true) tc(1) ARRAY-[2]string
+.   .   DEREF l(1) tc(1) ARRAY-[2]string
+.   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]string
+.   RANGE-list
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   RANGE-body
+.   .   IF l(1) tc(1)
+.   .   .   NE l(1) tc(1) bool
+.   .   .   .   INDEX l(1) tc(1) bounded string
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) ARRAY-[2]string
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]string
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   .   INDEX l(1) tc(1) bounded string
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) ARRAY-[2]string
+.   .   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*[2]string
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   IF-body
+.   .   .   RETURN l(1) tc(1)
+.   .   .   RETURN-list
+.   .   .   .   LITERAL-false l(1) tc(1) bool
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   LITERAL-true l(1) tc(1) bool
+after walk type..eq.[2]string
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   FOR-init
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LITERAL-2 l(1) tc(1) int
+.   FOR l(1) colas(true) tc(1) ARRAY-[2]string
+.   .   LT l(1) tc(1) bool
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   ADD l(1) tc(1) int
+.   .   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LITERAL-1 l(1) tc(1) int
+.   FOR-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   IF-init
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   INDEX l(1) tc(1) bounded hascall string
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) hascall ARRAY-[2]string
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]string
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   INDEX l(1) tc(1) bounded hascall string
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) hascall ARRAY-[2]string
+.   .   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*[2]string
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   IF l(1) tc(1)
+.   .   .   OROR l(1) tc(1) hascall bool
+.   .   .   .   NE l(1) tc(1) bool
+.   .   .   .   .   CONV l(1) tc(1) uintptr
+.   .   .   .   .   .   LEN l(1) tc(1) int
+.   .   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   .   CONV l(1) tc(1) uintptr
+.   .   .   .   .   .   LEN l(1) tc(1) int
+.   .   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   NOT l(1) tc(1) hascall bool
+.   .   .   .   .   CALLFUNC l(1) tc(1) hascall bool
+.   .   .   .   .   .   NAME-runtime.memequal a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*uint8, *uint8, uintptr) bool
+.   .   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   .   SPTR l(1) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+
+.   .   .   .   .   .   SPTR l(1) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+
+.   .   .   .   .   .   CONV l(1) tc(1) uintptr
+.   .   .   .   .   .   .   LEN l(1) tc(1) int
+.   .   .   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   IF-body
+.   .   .   RETURN l(1) tc(1)
+.   .   .   RETURN-list
+.   .   .   .   AS l(1) tc(1)
+.   .   .   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   .   .   LITERAL-false l(1) tc(1) bool
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   LITERAL-true l(1) tc(1) bool
+enter type..eq.[2]string
+.   AS l(1)
+.   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+
+before walk type..hash.[3]string
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   RANGE l(1) colas(true) tc(1) ARRAY-[3]string
+.   .   DEREF l(1) tc(1) ARRAY-[3]string
+.   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[3]string
+.   RANGE-list
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   RANGE-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   .   CALLFUNC l(1) tc(1) uintptr
+.   .   .   .   NAME-runtime.strhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*string, uintptr) uintptr
+.   .   .   CALLFUNC-list
+.   .   .   .   ADDR l(1) tc(1) PTR-*string
+.   .   .   .   .   INDEX l(1) tc(1) addrtaken bounded string
+.   .   .   .   .   .   DEREF l(1) tc(1) implicit(true) addrtaken ARRAY-[3]string
+.   .   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[3]string
+.   .   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   .   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+after walk type..hash.[3]string
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   FOR-init
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LITERAL-3 l(1) tc(1) int
+.   FOR l(1) colas(true) tc(1) ARRAY-[3]string
+.   .   LT l(1) tc(1) bool
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   ADD l(1) tc(1) int
+.   .   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LITERAL-1 l(1) tc(1) int
+.   FOR-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1) hascall
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   .   CALLFUNC l(1) tc(1) hascall uintptr
+.   .   .   .   NAME-runtime.strhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*string, uintptr) uintptr
+.   .   .   CALLFUNC-list
+.   .   .   .   AS l(1) tc(1) hascall
+.   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*string
+.   .   .   .   .   ADDR l(1) tc(1) hascall PTR-*string
+.   .   .   .   .   .   INDEX l(1) tc(1) addrtaken bounded hascall string
+.   .   .   .   .   .   .   DEREF l(1) tc(1) implicit(true) addrtaken hascall ARRAY-[3]string
+.   .   .   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[3]string
+.   .   .   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   CALLFUNC-rlist
+.   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*string
+
+.   .   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+enter type..hash.[3]string
+.   AS l(1)
+.   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+
+before walk type..eq.[3]string
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   RANGE l(1) colas(true) tc(1) ARRAY-[3]string
+.   .   DEREF l(1) tc(1) ARRAY-[3]string
+.   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[3]string
+.   RANGE-list
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   RANGE-body
+.   .   IF l(1) tc(1)
+.   .   .   NE l(1) tc(1) bool
+.   .   .   .   INDEX l(1) tc(1) bounded string
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) ARRAY-[3]string
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[3]string
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   .   INDEX l(1) tc(1) bounded string
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) ARRAY-[3]string
+.   .   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*[3]string
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   IF-body
+.   .   .   RETURN l(1) tc(1)
+.   .   .   RETURN-list
+.   .   .   .   LITERAL-false l(1) tc(1) bool
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   LITERAL-true l(1) tc(1) bool
+after walk type..eq.[3]string
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   FOR-init
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LITERAL-3 l(1) tc(1) int
+.   FOR l(1) colas(true) tc(1) ARRAY-[3]string
+.   .   LT l(1) tc(1) bool
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   ADD l(1) tc(1) int
+.   .   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LITERAL-1 l(1) tc(1) int
+.   FOR-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   IF-init
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   INDEX l(1) tc(1) bounded hascall string
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) hascall ARRAY-[3]string
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[3]string
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   INDEX l(1) tc(1) bounded hascall string
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) hascall ARRAY-[3]string
+.   .   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*[3]string
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   IF l(1) tc(1)
+.   .   .   OROR l(1) tc(1) hascall bool
+.   .   .   .   NE l(1) tc(1) bool
+.   .   .   .   .   CONV l(1) tc(1) uintptr
+.   .   .   .   .   .   LEN l(1) tc(1) int
+.   .   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   .   CONV l(1) tc(1) uintptr
+.   .   .   .   .   .   LEN l(1) tc(1) int
+.   .   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   NOT l(1) tc(1) hascall bool
+.   .   .   .   .   CALLFUNC l(1) tc(1) hascall bool
+.   .   .   .   .   .   NAME-runtime.memequal a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*uint8, *uint8, uintptr) bool
+.   .   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   .   SPTR l(1) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+
+.   .   .   .   .   .   SPTR l(1) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+
+.   .   .   .   .   .   CONV l(1) tc(1) uintptr
+.   .   .   .   .   .   .   LEN l(1) tc(1) int
+.   .   .   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   IF-body
+.   .   .   RETURN l(1) tc(1)
+.   .   .   RETURN-list
+.   .   .   .   AS l(1) tc(1)
+.   .   .   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   .   .   LITERAL-false l(1) tc(1) bool
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   LITERAL-true l(1) tc(1) bool
+enter type..eq.[3]string
+.   AS l(1)
+.   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+
+before walk type..hash.[5]string
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   RANGE l(1) colas(true) tc(1) ARRAY-[5]string
+.   .   DEREF l(1) tc(1) ARRAY-[5]string
+.   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[5]string
+.   RANGE-list
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   RANGE-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   .   CALLFUNC l(1) tc(1) uintptr
+.   .   .   .   NAME-runtime.strhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*string, uintptr) uintptr
+.   .   .   CALLFUNC-list
+.   .   .   .   ADDR l(1) tc(1) PTR-*string
+.   .   .   .   .   INDEX l(1) tc(1) addrtaken bounded string
+.   .   .   .   .   .   DEREF l(1) tc(1) implicit(true) addrtaken ARRAY-[5]string
+.   .   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[5]string
+.   .   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   .   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+after walk type..hash.[5]string
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   FOR-init
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LITERAL-5 l(1) tc(1) int
+.   FOR l(1) colas(true) tc(1) ARRAY-[5]string
+.   .   LT l(1) tc(1) bool
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   ADD l(1) tc(1) int
+.   .   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LITERAL-1 l(1) tc(1) int
+.   FOR-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1) hascall
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   .   CALLFUNC l(1) tc(1) hascall uintptr
+.   .   .   .   NAME-runtime.strhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*string, uintptr) uintptr
+.   .   .   CALLFUNC-list
+.   .   .   .   AS l(1) tc(1) hascall
+.   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*string
+.   .   .   .   .   ADDR l(1) tc(1) hascall PTR-*string
+.   .   .   .   .   .   INDEX l(1) tc(1) addrtaken bounded hascall string
+.   .   .   .   .   .   .   DEREF l(1) tc(1) implicit(true) addrtaken hascall ARRAY-[5]string
+.   .   .   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[5]string
+.   .   .   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   CALLFUNC-rlist
+.   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*string
+
+.   .   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+enter type..hash.[5]string
+.   AS l(1)
+.   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+
+before walk type..eq.[5]string
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   RANGE l(1) colas(true) tc(1) ARRAY-[5]string
+.   .   DEREF l(1) tc(1) ARRAY-[5]string
+.   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[5]string
+.   RANGE-list
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   RANGE-body
+.   .   IF l(1) tc(1)
+.   .   .   NE l(1) tc(1) bool
+.   .   .   .   INDEX l(1) tc(1) bounded string
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) ARRAY-[5]string
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[5]string
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   .   INDEX l(1) tc(1) bounded string
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) ARRAY-[5]string
+.   .   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*[5]string
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   IF-body
+.   .   .   RETURN l(1) tc(1)
+.   .   .   RETURN-list
+.   .   .   .   LITERAL-false l(1) tc(1) bool
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   LITERAL-true l(1) tc(1) bool
+after walk type..eq.[5]string
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   FOR-init
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LITERAL-5 l(1) tc(1) int
+.   FOR l(1) colas(true) tc(1) ARRAY-[5]string
+.   .   LT l(1) tc(1) bool
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   ADD l(1) tc(1) int
+.   .   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LITERAL-1 l(1) tc(1) int
+.   FOR-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   IF-init
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   INDEX l(1) tc(1) bounded hascall string
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) hascall ARRAY-[5]string
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[5]string
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   INDEX l(1) tc(1) bounded hascall string
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) hascall ARRAY-[5]string
+.   .   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*[5]string
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   IF l(1) tc(1)
+.   .   .   OROR l(1) tc(1) hascall bool
+.   .   .   .   NE l(1) tc(1) bool
+.   .   .   .   .   CONV l(1) tc(1) uintptr
+.   .   .   .   .   .   LEN l(1) tc(1) int
+.   .   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   .   CONV l(1) tc(1) uintptr
+.   .   .   .   .   .   LEN l(1) tc(1) int
+.   .   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   NOT l(1) tc(1) hascall bool
+.   .   .   .   .   CALLFUNC l(1) tc(1) hascall bool
+.   .   .   .   .   .   NAME-runtime.memequal a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*uint8, *uint8, uintptr) bool
+.   .   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   .   SPTR l(1) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+
+.   .   .   .   .   .   SPTR l(1) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+
+.   .   .   .   .   .   CONV l(1) tc(1) uintptr
+.   .   .   .   .   .   .   LEN l(1) tc(1) int
+.   .   .   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   IF-body
+.   .   .   RETURN l(1) tc(1)
+.   .   .   RETURN-list
+.   .   .   .   AS l(1) tc(1)
+.   .   .   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   .   .   LITERAL-false l(1) tc(1) bool
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   LITERAL-true l(1) tc(1) bool
+enter type..eq.[5]string
+.   AS l(1)
+.   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+
+before walk type..hash."".person
+.   AS l(1) tc(1)
+.   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   CALLFUNC l(1) tc(1) uintptr
+.   .   .   NAME-runtime.f64hash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*float64, uintptr) uintptr
+.   .   CALLFUNC-list
+.   .   .   ADDR l(1) tc(1) PTR-*float64
+.   .   .   .   DOTPTR l(1) x(0) tc(1) addrtaken main.Age float64
+.   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*person
+
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   AS l(1) tc(1)
+.   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   CALLFUNC l(1) tc(1) uintptr
+.   .   .   NAME-runtime.f64hash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*float64, uintptr) uintptr
+.   .   CALLFUNC-list
+.   .   .   ADDR l(1) tc(1) PTR-*float64
+.   .   .   .   DOTPTR l(1) x(8) tc(1) addrtaken main.Tips float64
+.   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*person
+
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   AS l(1) tc(1)
+.   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   CALLFUNC l(1) tc(1) uintptr
+.   .   .   NAME-runtime.memhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*int, uintptr, uintptr) uintptr
+.   .   CALLFUNC-list
+.   .   .   ADDR l(1) tc(1) PTR-*int
+.   .   .   .   DOTPTR l(1) x(16) tc(1) addrtaken main.Department int
+.   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*person
+
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   .   .   LITERAL-8 l(1) tc(1) uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+after walk type..hash."".person
+.   AS l(1) tc(1) hascall
+.   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   CALLFUNC l(1) tc(1) hascall uintptr
+.   .   .   NAME-runtime.f64hash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*float64, uintptr) uintptr
+.   .   CALLFUNC-list
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_3 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*float64
+.   .   .   .   ADDR l(1) tc(1) hascall PTR-*float64
+.   .   .   .   .   DOTPTR l(1) x(0) tc(1) addrtaken hascall main.Age float64
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*person
+.   .   CALLFUNC-rlist
+.   .   .   NAME-main..autotmp_3 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*float64
+
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   AS l(1) tc(1) hascall
+.   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   CALLFUNC l(1) tc(1) hascall uintptr
+.   .   .   NAME-runtime.f64hash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*float64, uintptr) uintptr
+.   .   CALLFUNC-list
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*float64
+.   .   .   .   ADDR l(1) tc(1) hascall PTR-*float64
+.   .   .   .   .   DOTPTR l(1) x(8) tc(1) addrtaken hascall main.Tips float64
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*person
+.   .   CALLFUNC-rlist
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*float64
+
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   AS l(1) tc(1) hascall
+.   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   CALLFUNC l(1) tc(1) hascall uintptr
+.   .   .   NAME-runtime.memhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*int, uintptr, uintptr) uintptr
+.   .   CALLFUNC-list
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*int
+.   .   .   .   ADDR l(1) tc(1) hascall PTR-*int
+.   .   .   .   .   DOTPTR l(1) x(16) tc(1) addrtaken hascall main.Department int
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*person
+.   .   CALLFUNC-rlist
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*int
+
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   .   .   LITERAL-8 l(1) tc(1) uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+enter type..hash."".person
+.   AS l(1)
+.   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+
+before walk type..eq."".person
+.   AS l(1) tc(1)
+.   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   EQ l(1) tc(1) bool
+.   .   .   DOTPTR l(1) x(0) tc(1) main.Age float64
+.   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*person
+.   .   .   DOTPTR l(1) x(0) tc(1) main.Age float64
+.   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*person
+
+.   IF l(1)
+.   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   IF-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   .   EQ l(1) tc(1) bool
+.   .   .   .   DOTPTR l(1) x(8) tc(1) main.Tips float64
+.   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*person
+.   .   .   .   DOTPTR l(1) x(8) tc(1) main.Tips float64
+.   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*person
+
+.   AS l(1) tc(1)
+.   .   NAME-main..autotmp_3 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   IF l(1)
+.   .   NAME-main..autotmp_3 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   IF-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_3 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   .   EQ l(1) tc(1) bool
+.   .   .   .   DOTPTR l(1) x(16) tc(1) main.Department int
+.   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*person
+.   .   .   .   DOTPTR l(1) x(16) tc(1) main.Department int
+.   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*person
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   NAME-main..autotmp_3 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   VARKILL l(1) tc(1)
+.   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   VARKILL l(1) tc(1)
+.   .   NAME-main..autotmp_3 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+after walk type..eq."".person
+.   AS l(1) tc(1) hascall
+.   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   EQ l(1) tc(1) hascall bool
+.   .   .   DOTPTR l(1) x(0) tc(1) hascall main.Age float64
+.   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*person
+.   .   .   DOTPTR l(1) x(0) tc(1) hascall main.Age float64
+.   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*person
+
+.   IF l(1)
+.   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   IF-body
+.   .   AS l(1) tc(1) hascall
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   .   EQ l(1) tc(1) hascall bool
+.   .   .   .   DOTPTR l(1) x(8) tc(1) hascall main.Tips float64
+.   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*person
+.   .   .   .   DOTPTR l(1) x(8) tc(1) hascall main.Tips float64
+.   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*person
+
+.   AS l(1) tc(1)
+.   .   NAME-main..autotmp_3 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   IF l(1)
+.   .   NAME-main..autotmp_3 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   IF-body
+.   .   AS l(1) tc(1) hascall
+.   .   .   NAME-main..autotmp_3 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   .   EQ l(1) tc(1) hascall bool
+.   .   .   .   DOTPTR l(1) x(16) tc(1) hascall main.Department int
+.   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*person
+.   .   .   .   DOTPTR l(1) x(16) tc(1) hascall main.Department int
+.   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*person
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   NAME-main..autotmp_3 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   VARKILL l(1) tc(1)
+.   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   VARKILL l(1) tc(1)
+.   .   NAME-main..autotmp_3 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+enter type..eq."".person
+.   AS l(1)
+.   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+
+before walk type..hash.[2]interface {}
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   RANGE l(1) colas(true) tc(1) ARRAY-[2]interface {}
+.   .   DEREF l(1) tc(1) ARRAY-[2]interface {}
+.   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   RANGE-list
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   RANGE-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   .   CALLFUNC l(1) tc(1) uintptr
+.   .   .   .   NAME-runtime.nilinterhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*interface {}, uintptr) uintptr
+.   .   .   CALLFUNC-list
+.   .   .   .   ADDR l(1) tc(1) PTR-*interface {}
+.   .   .   .   .   INDEX l(1) tc(1) addrtaken bounded INTER-interface {}
+.   .   .   .   .   .   DEREF l(1) tc(1) implicit(true) addrtaken ARRAY-[2]interface {}
+.   .   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   .   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   .   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+after walk type..hash.[2]interface {}
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   FOR-init
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LITERAL-2 l(1) tc(1) int
+.   FOR l(1) colas(true) tc(1) ARRAY-[2]interface {}
+.   .   LT l(1) tc(1) bool
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   ADD l(1) tc(1) int
+.   .   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LITERAL-1 l(1) tc(1) int
+.   FOR-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1) hascall
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   .   CALLFUNC l(1) tc(1) hascall uintptr
+.   .   .   .   NAME-runtime.nilinterhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*interface {}, uintptr) uintptr
+.   .   .   CALLFUNC-list
+.   .   .   .   AS l(1) tc(1) hascall
+.   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*interface {}
+.   .   .   .   .   ADDR l(1) tc(1) hascall PTR-*interface {}
+.   .   .   .   .   .   INDEX l(1) tc(1) addrtaken bounded hascall INTER-interface {}
+.   .   .   .   .   .   .   DEREF l(1) tc(1) implicit(true) addrtaken hascall ARRAY-[2]interface {}
+.   .   .   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   .   .   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   CALLFUNC-rlist
+.   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*interface {}
+
+.   .   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+enter type..hash.[2]interface {}
+.   AS l(1)
+.   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+
+before walk type..eq.[2]interface {}
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   RANGE l(1) colas(true) tc(1) ARRAY-[2]interface {}
+.   .   DEREF l(1) tc(1) ARRAY-[2]interface {}
+.   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   RANGE-list
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   RANGE-body
+.   .   IF l(1) tc(1)
+.   .   .   NE l(1) tc(1) bool
+.   .   .   .   INDEX l(1) tc(1) bounded INTER-interface {}
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) ARRAY-[2]interface {}
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   .   INDEX l(1) tc(1) bounded INTER-interface {}
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) ARRAY-[2]interface {}
+.   .   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   IF-body
+.   .   .   RETURN l(1) tc(1)
+.   .   .   RETURN-list
+.   .   .   .   LITERAL-false l(1) tc(1) bool
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   LITERAL-true l(1) tc(1) bool
+after walk type..eq.[2]interface {}
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   FOR-init
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LITERAL-2 l(1) tc(1) int
+.   FOR l(1) colas(true) tc(1) ARRAY-[2]interface {}
+.   .   LT l(1) tc(1) bool
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   ADD l(1) tc(1) int
+.   .   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LITERAL-1 l(1) tc(1) int
+.   FOR-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   IF-init
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   INDEX l(1) tc(1) bounded hascall INTER-interface {}
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) hascall ARRAY-[2]interface {}
+.   .   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   INDEX l(1) tc(1) bounded hascall INTER-interface {}
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) hascall ARRAY-[2]interface {}
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   IF l(1) tc(1)
+.   .   .   OROR l(1) tc(1) hascall bool
+.   .   .   .   NE l(1) tc(1) bool
+.   .   .   .   .   ITAB l(1) tc(1) PTR-*uintptr
+.   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   .   ITAB l(1) tc(1) PTR-*uintptr
+.   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   NOT l(1) tc(1) hascall bool
+.   .   .   .   .   CALLFUNC l(1) tc(1) hascall bool
+.   .   .   .   .   .   NAME-runtime.efaceeq a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*uintptr, unsafe.Pointer, unsafe.Pointer) bool
+.   .   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   .   ITAB l(1) tc(1) PTR-*uintptr
+.   .   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   .   .   .   .   IDATA l(1) tc(1) UNSAFEPTR-unsafe.Pointer
+.   .   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   .   .   .   .   IDATA l(1) tc(1) UNSAFEPTR-unsafe.Pointer
+.   .   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   IF-body
+.   .   .   RETURN l(1) tc(1)
+.   .   .   RETURN-list
+.   .   .   .   AS l(1) tc(1)
+.   .   .   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   .   .   LITERAL-false l(1) tc(1) bool
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   LITERAL-true l(1) tc(1) bool
+enter type..eq.[2]interface {}
+.   AS l(1)
+.   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+
+before walk tip
+.   DCL l(28)
+.   .   NAME-main.id a(true) g(3) l(28) x(0) class(PAUTO) tc(1) assigned used string
+
+.   AS l(28) tc(1)
+.   .   NAME-main..autotmp_4 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+.   .   NAME-main.ids a(true) g(2) l(27) x(8) class(PPARAM) esc(no) tc(1) isddd(true) used SLICE-[]string
+
+.   RANGE l(28) colas(true) tc(1) SLICE-[]string
+.   .   NAME-main..autotmp_4 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+.   RANGE-list
+.   .   NAME-_ a(true) x(0) tc(1) assigned blank
+
+.   .   NAME-main.id a(true) g(3) l(28) x(0) class(PAUTO) tc(1) assigned used string
+.   RANGE-body
+.   .   DCL l(29)
+.   .   .   NAME-main.ok a(true) g(4) l(29) x(0) class(PAUTO) tc(1) assigned used bool
+
+.   .   AS2MAPR l(29) colas(true) tc(1)
+.   .   AS2MAPR-list
+.   .   .   NAME-_ a(true) x(0) tc(1) assigned blank
+
+.   .   .   NAME-main..autotmp_5 a(true) l(29) x(0) class(PAUTO) esc(N) tc(1) used bool
+.   .   AS2MAPR-rlist
+.   .   .   INDEXMAP l(29) tc(1) PTR-*person
+.   .   .   .   NAME-main.people a(true) g(1) l(27) x(0) class(PPARAM) esc(no) tc(1) used MAP-map[string]*person
+.   .   .   .   NAME-main.id a(true) g(3) l(28) x(0) class(PAUTO) tc(1) assigned used string
+
+.   .   AS l(29) tc(1)
+.   .   .   NAME-main.ok a(true) g(4) l(29) x(0) class(PAUTO) tc(1) assigned used bool
+.   .   .   NAME-main..autotmp_5 a(true) l(29) x(0) class(PAUTO) esc(N) tc(1) used bool
+
+.   .   VARKILL l(29) tc(1)
+.   .   .   NAME-main..autotmp_5 a(true) l(29) x(0) class(PAUTO) esc(N) tc(1) used bool
+
+.   .   IF l(29) tc(1)
+.   .   .   NOT l(29) tc(1) bool
+.   .   .   .   NAME-main.ok a(true) g(4) l(29) x(0) class(PAUTO) tc(1) assigned used bool
+.   .   IF-body
+.   .   .   CONTINUE l(30) tc(1)
+
+.   .   IF l(32) tc(1)
+.   .   .   GE l(32) tc(1) bool
+.   .   .   .   DOTPTR l(32) x(8) tc(1) main.Tips float64
+.   .   .   .   .   INDEXMAP l(32) tc(1) PTR-*person
+.   .   .   .   .   .   NAME-main.people a(true) g(1) l(27) x(0) class(PPARAM) esc(no) tc(1) used MAP-map[string]*person
+.   .   .   .   .   .   NAME-main.id a(true) g(3) l(28) x(0) class(PAUTO) tc(1) assigned used string
+.   .   .   .   LITERAL-100 l(32) tc(1) float64
+.   .   IF-body
+.   .   .   CONTINUE l(33) tc(1)
+
+.   .   ASOP-ADD l(35) tc(1) float64
+.   .   .   DOTPTR l(35) x(8) tc(1) assigned main.Tips float64
+.   .   .   .   INDEXMAP l(35) tc(1) PTR-*person
+.   .   .   .   .   NAME-main.people a(true) g(1) l(27) x(0) class(PPARAM) esc(no) tc(1) used MAP-map[string]*person
+.   .   .   .   .   NAME-main.id a(true) g(3) l(28) x(0) class(PAUTO) tc(1) assigned used string
+.   .   .   LITERAL-1.2 l(35) tc(1) float64
+
+.   .   ASOP-ADD l(36) tc(1) float64
+.   .   .   DOTPTR l(36) x(0) tc(1) assigned main.Age float64
+.   .   .   .   INDEXMAP l(36) tc(1) PTR-*person
+.   .   .   .   .   NAME-main.people a(true) g(1) l(27) x(0) class(PPARAM) esc(no) tc(1) used MAP-map[string]*person
+.   .   .   .   .   NAME-main.id a(true) g(3) l(28) x(0) class(PAUTO) tc(1) assigned used string
+.   .   .   LITERAL-0.01 l(36) tc(1) float64
+
+.   VARKILL l(28) tc(1)
+.   .   NAME-main..autotmp_4 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+after walk tip
+.   DCL l(28)
+.   .   NAME-main.id a(true) g(3) l(28) x(0) class(PAUTO) tc(1) assigned used string
+
+.   AS l(28) tc(1)
+.   .   NAME-main..autotmp_4 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+.   .   NAME-main.ids a(true) g(2) l(27) x(8) class(PPARAM) esc(no) tc(1) isddd(true) used SLICE-[]string
+
+.   IF-init
+.   .   AS l(28) tc(1)
+.   .   .   NAME-main..autotmp_6 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(28) tc(1)
+.   .   .   NAME-main..autotmp_7 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LEN l(28) tc(1) int
+.   .   .   .   NAME-main..autotmp_4 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+
+.   .   AS l(28) tc(1) hascall
+.   .   .   NAME-main..autotmp_8 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*string
+.   .   .   ADDR l(28) tc(1) hascall PTR-*string
+.   .   .   .   INDEX l(28) tc(1) addrtaken bounded hascall string
+.   .   .   .   .   NAME-main..autotmp_4 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+.   .   .   .   .   LITERAL-0 l(28) tc(1) int
+.   IF l(28) tc(1)
+.   .   LT l(28) tc(1) bool
+.   .   .   NAME-main..autotmp_6 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_7 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   IF-body
+.   .   FORUNTIL l(28) colas(true) tc(1) SLICE-[]string
+.   .   .   LT l(28) tc(1) bool
+.   .   .   .   NAME-main..autotmp_6 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   NAME-main..autotmp_7 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   AS l(28) tc(1)
+.   .   .   .   NAME-main..autotmp_6 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   ADD l(28) tc(1) int
+.   .   .   .   .   NAME-main..autotmp_6 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   .   LITERAL-1 l(28) tc(1) int
+.   .   FORUNTIL-list
+.   .   .   AS l(28) tc(1)
+.   .   .   .   NAME-main..autotmp_8 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*string
+.   .   .   .   CONVNOP l(28) tc(1) PTR-*string
+.   .   .   .   .   ADD l(28) tc(1) uintptr
+.   .   .   .   .   .   CONVNOP l(28) tc(1) uintptr
+.   .   .   .   .   .   .   NAME-main..autotmp_8 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*string
+.   .   .   .   .   .   LITERAL-16 l(28) tc(1) uintptr
+.   .   FORUNTIL-body
+.   .   .   BLOCK l(28)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(28) tc(1)
+.   .   .   .   .   NAME-main..autotmp_9 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+.   .   .   .   .   DEREF l(28) tc(1) hascall string
+.   .   .   .   .   .   NAME-main..autotmp_8 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*string
+
+.   .   .   .   AS l(28) tc(1)
+.   .   .   .   .   NAME-_ a(true) x(0) tc(1) assigned blank
+.   .   .   .   .   NAME-main..autotmp_6 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   .   .   AS l(28) tc(1) hascall
+.   .   .   .   .   NAME-main.id a(true) g(3) l(28) x(0) class(PAUTO) tc(1) assigned used string
+.   .   .   .   .   NAME-main..autotmp_9 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used string
+
+.   .   .   DCL l(29)
+.   .   .   .   NAME-main.ok a(true) g(4) l(29) x(0) class(PAUTO) tc(1) assigned used bool
+
+.   .   .   BLOCK-init
+.   .   .   .   CALLFUNC l(29) tc(1) hascall STRUCT-(**person, bool)
+.   .   .   .   .   NAME-runtime.mapaccess2_faststr a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, map[string]*person, string) (**person, bool)
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   ADDR a(true) l(29) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.map[string]*"".person a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   .   .   .   NAME-main.people a(true) g(1) l(27) x(0) class(PPARAM) esc(no) tc(1) used MAP-map[string]*person
+
+.   .   .   .   .   NAME-main.id a(true) g(3) l(28) x(0) class(PAUTO) tc(1) assigned used string
+.   .   .   BLOCK l(29) hascall
+.   .   .   BLOCK-list
+.   .   .   .   AS l(29) tc(1)
+.   .   .   .   .   NAME-main..autotmp_5 a(true) l(29) x(0) class(PAUTO) esc(N) tc(1) used bool
+.   .   .   .   .   INDREGSP-SP a(true) l(29) x(40) tc(1) addrtaken main.__ bool
+
+.   .   .   AS l(29) tc(1)
+.   .   .   .   NAME-main.ok a(true) g(4) l(29) x(0) class(PAUTO) tc(1) assigned used bool
+.   .   .   .   NAME-main..autotmp_5 a(true) l(29) x(0) class(PAUTO) esc(N) tc(1) used bool
+
+.   .   .   VARKILL l(29) tc(1)
+.   .   .   .   NAME-main..autotmp_5 a(true) l(29) x(0) class(PAUTO) esc(N) tc(1) used bool
+
+.   .   .   IF l(29) tc(1)
+.   .   .   .   NOT l(29) tc(1) bool
+.   .   .   .   .   NAME-main.ok a(true) g(4) l(29) x(0) class(PAUTO) tc(1) assigned used bool
+.   .   .   IF-body
+.   .   .   .   CONTINUE l(30) tc(1)
+
+.   .   .   IF l(32) tc(1)
+.   .   .   .   GE l(32) tc(1) hascall bool
+.   .   .   .   .   DOTPTR l(32) x(8) tc(1) hascall main.Tips float64
+.   .   .   .   .   .   DEREF l(32) tc(1) hascall PTR-*person
+.   .   .   .   .   .   .   CALLFUNC l(32) tc(1) nonnil hascall PTR-**person
+.   .   .   .   .   .   .   .   NAME-runtime.mapaccess1_faststr a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, map[string]*person, string) **person
+.   .   .   .   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   .   .   .   ADDR a(true) l(32) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   .   .   NAME-type.map[string]*"".person a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   .   .   .   .   .   .   NAME-main.people a(true) g(1) l(27) x(0) class(PPARAM) esc(no) tc(1) used MAP-map[string]*person
+
+.   .   .   .   .   .   .   .   NAME-main.id a(true) g(3) l(28) x(0) class(PAUTO) tc(1) assigned used string
+.   .   .   .   .   LITERAL-100 l(32) tc(1) float64
+.   .   .   IF-body
+.   .   .   .   CONTINUE l(33) tc(1)
+
+.   .   .   AS-init
+.   .   .   .   AS l(35) tc(1) hascall
+.   .   .   .   .   NAME-main..autotmp_10 a(true) l(35) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-**person
+.   .   .   .   .   CALLFUNC l(35) tc(1) nonnil hascall PTR-**person
+.   .   .   .   .   .   NAME-runtime.mapaccess1_faststr a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, map[string]*person, string) **person
+.   .   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   .   ADDR a(true) l(35) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   NAME-type.map[string]*"".person a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   .   .   .   .   NAME-main.people a(true) g(1) l(27) x(0) class(PPARAM) esc(no) tc(1) used MAP-map[string]*person
+
+.   .   .   .   .   .   NAME-main.id a(true) g(3) l(28) x(0) class(PAUTO) tc(1) assigned used string
+.   .   .   AS l(35) tc(1) hascall float64
+.   .   .   .   DOTPTR l(35) x(8) tc(1) assigned hascall main.Tips float64
+.   .   .   .   .   DEREF l(35) tc(1) hascall PTR-*person
+.   .   .   .   .   .   NAME-main..autotmp_10 a(true) l(35) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-**person
+.   .   .   .   ADD l(35) tc(1) hascall float64
+.   .   .   .   .   DOTPTR l(35) x(8) tc(1) assigned hascall main.Tips float64
+.   .   .   .   .   .   DEREF l(35) tc(1) hascall PTR-*person
+.   .   .   .   .   .   .   NAME-main..autotmp_10 a(true) l(35) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-**person
+.   .   .   .   .   LITERAL-1.2 l(35) tc(1) float64
+
+.   .   .   AS-init
+.   .   .   .   AS l(36) tc(1) hascall
+.   .   .   .   .   NAME-main..autotmp_11 a(true) l(36) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-**person
+.   .   .   .   .   CALLFUNC l(36) tc(1) nonnil hascall PTR-**person
+.   .   .   .   .   .   NAME-runtime.mapaccess1_faststr a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte, map[string]*person, string) **person
+.   .   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   .   ADDR a(true) l(36) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   NAME-type.map[string]*"".person a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   .   .   .   .   .   NAME-main.people a(true) g(1) l(27) x(0) class(PPARAM) esc(no) tc(1) used MAP-map[string]*person
+
+.   .   .   .   .   .   NAME-main.id a(true) g(3) l(28) x(0) class(PAUTO) tc(1) assigned used string
+.   .   .   AS l(36) tc(1) hascall float64
+.   .   .   .   DOTPTR l(36) x(0) tc(1) assigned hascall main.Age float64
+.   .   .   .   .   DEREF l(36) tc(1) hascall PTR-*person
+.   .   .   .   .   .   NAME-main..autotmp_11 a(true) l(36) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-**person
+.   .   .   .   ADD l(36) tc(1) hascall float64
+.   .   .   .   .   DOTPTR l(36) x(0) tc(1) assigned hascall main.Age float64
+.   .   .   .   .   .   DEREF l(36) tc(1) hascall PTR-*person
+.   .   .   .   .   .   .   NAME-main..autotmp_11 a(true) l(36) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-**person
+.   .   .   .   .   LITERAL-0.01 l(36) tc(1) float64
+
+.   VARKILL l(28) tc(1)
+.   .   NAME-main..autotmp_4 a(true) l(28) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]string
+
+before walk init
+.   IF l(1) tc(1)
+.   .   GT l(1) tc(1) bool
+.   .   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   .   LITERAL-1 l(1) tc(1) uint8
+.   IF-body
+.   .   RETURN l(1) tc(1)
+
+.   IF l(1) tc(1)
+.   .   EQ l(1) tc(1) bool
+.   .   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   .   LITERAL-1 l(1) tc(1) uint8
+.   IF-body
+.   .   CALLFUNC l(1) tc(1)
+.   .   .   NAME-runtime.throwinit a(true) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   AS l(1) tc(1)
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-1 l(1) tc(1) uint8
+
+.   CALLFUNC l(1) tc(1)
+.   .   NAME-fmt.init a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   AS l(1) tc(1)
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-2 l(1) tc(1) uint8
+
+.   RETURN l(1) tc(1)
+after walk init
+.   IF l(1) tc(1)
+.   .   GT l(1) tc(1) bool
+.   .   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   .   LITERAL-1 l(1) tc(1) uint8
+.   IF-body
+.   .   RETURN l(1) tc(1)
+
+.   IF l(1) tc(1)
+.   .   EQ l(1) tc(1) bool
+.   .   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   .   LITERAL-1 l(1) tc(1) uint8
+.   IF-body
+.   .   CALLFUNC l(1) tc(1) hascall
+.   .   .   NAME-runtime.throwinit a(true) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   AS l(1) tc(1)
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-1 l(1) tc(1) uint8
+
+.   CALLFUNC l(1) tc(1) hascall
+.   .   NAME-fmt.init a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   AS l(1) tc(1)
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-2 l(1) tc(1) uint8
+
+.   RETURN l(1) tc(1)

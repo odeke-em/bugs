@@ -1,0 +1,102 @@
+Sym: %!L(*types.Sym=0xc00037b200)
+
+before walk main
+.   DCL l(4)
+.   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) addrtaken assigned used int
+
+.   AS l(4) colas(true) tc(1)
+.   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) addrtaken assigned used int
+.   .   LITERAL-0 l(4) tc(1) int
+
+.   DCL l(7)
+.   .   NAME-main.&i a(true) l(7) x(0) class(PAUTO) tc(1) assigned used PTR-*int
+
+.   AS l(7) tc(1)
+.   .   NAME-main.&i a(true) l(7) x(0) class(PAUTO) tc(1) assigned used PTR-*int
+.   .   ADDR l(7) esc(no) tc(1) PTR-*int
+.   .   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) addrtaken assigned used int
+
+.   INLMARK l(7) x(0)
+
+.   AS l(6) tc(1)
+.   .   DEREF l(7) tc(1) int
+.   .   .   NAME-main.&i a(true) l(7) x(0) class(PAUTO) tc(1) assigned used PTR-*int
+.   .   LITERAL-5 l(6) tc(1) int
+
+.   LABEL l(7) tc(1) main..i0
+after walk expr [0xc0003783c0]
+.   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) addrtaken assigned used int
+after walk expr [0xc000360100]
+.   AS l(4) colas(true) tc(1)
+.   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) addrtaken assigned used int
+.   .   LITERAL-0 l(4) tc(1) int
+after walk expr [0xc000378870]
+.   NAME-main.&i a(true) l(7) x(0) class(PAUTO) tc(1) assigned used PTR-*int
+after walk expr [0xc0003783c0]
+.   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) addrtaken assigned used int
+after walk expr [0xc000360800]
+.   ADDR l(7) esc(no) tc(1) PTR-*int
+.   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) addrtaken assigned used int
+after walk expr [0xc000360880]
+.   AS l(7) tc(1)
+.   .   NAME-main.&i a(true) l(7) x(0) class(PAUTO) tc(1) assigned used PTR-*int
+.   .   ADDR l(7) esc(no) tc(1) PTR-*int
+.   .   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) addrtaken assigned used int
+after walk expr [0xc000378870]
+.   NAME-main.&i a(true) l(7) x(0) class(PAUTO) tc(1) assigned used PTR-*int
+after walk expr [0xc000360900]
+.   DEREF l(7) tc(1) hascall int
+.   .   NAME-main.&i a(true) l(7) x(0) class(PAUTO) tc(1) assigned used PTR-*int
+after walk expr [0xc000360b00]
+.   LITERAL-5 l(6) tc(1) int
+after walk expr [0xc000360a80]
+.   AS l(6) tc(1) hascall
+.   .   DEREF l(7) tc(1) hascall int
+.   .   .   NAME-main.&i a(true) l(7) x(0) class(PAUTO) tc(1) assigned used PTR-*int
+.   .   LITERAL-5 l(6) tc(1) int
+after walk main
+.   DCL l(4)
+.   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) addrtaken assigned used int
+
+.   AS l(4) colas(true) tc(1)
+.   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) addrtaken assigned used int
+.   .   LITERAL-0 l(4) tc(1) int
+
+.   DCL l(7)
+.   .   NAME-main.&i a(true) l(7) x(0) class(PAUTO) tc(1) assigned used PTR-*int
+
+.   AS l(7) tc(1)
+.   .   NAME-main.&i a(true) l(7) x(0) class(PAUTO) tc(1) assigned used PTR-*int
+.   .   ADDR l(7) esc(no) tc(1) PTR-*int
+.   .   .   NAME-main.i a(true) g(1) l(4) x(0) class(PAUTO) tc(1) addrtaken assigned used int
+
+.   INLMARK l(7) x(0)
+
+.   AS l(6) tc(1) hascall
+.   .   DEREF l(7) tc(1) hascall int
+.   .   .   NAME-main.&i a(true) l(7) x(0) class(PAUTO) tc(1) assigned used PTR-*int
+.   .   LITERAL-5 l(6) tc(1) int
+
+.   LABEL l(7) tc(1) main..i0
+
+before walk main.func1
+.   AS l(6) tc(1)
+.   .   NAME-main.i l(6) x(0) class(PAUTOHEAP) tc(1) assigned int
+.   .   LITERAL-5 l(6) tc(1) int
+after walk expr [0xc000378960]
+.   NAME-main.&i a(true) l(5) x(0) class(PPARAM) tc(1) used PTR-*int
+after walk expr [0xc0004ca000]
+.   DEREF l(6) tc(1) hascall int
+.   .   NAME-main.&i a(true) l(5) x(0) class(PPARAM) tc(1) used PTR-*int
+after walk expr [0xc000360600]
+.   LITERAL-5 l(6) tc(1) int
+after walk expr [0xc000360400]
+.   AS l(6) tc(1) hascall
+.   .   DEREF l(6) tc(1) hascall int
+.   .   .   NAME-main.&i a(true) l(5) x(0) class(PPARAM) tc(1) nonnil used PTR-*int
+.   .   LITERAL-5 l(6) tc(1) int
+after walk main.func1
+.   AS l(6) tc(1) hascall
+.   .   DEREF l(6) tc(1) hascall int
+.   .   .   NAME-main.&i a(true) l(5) x(0) class(PPARAM) tc(1) nonnil used PTR-*int
+.   .   LITERAL-5 l(6) tc(1) int

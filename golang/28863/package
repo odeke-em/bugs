@@ -1,0 +1,12 @@
+package main
+
+import "fmt"
+
+func main() {
+	key := []byte("Hello")
+	key = key[:16]
+	for i := 0; i < 16; i += 1 {
+		fmt.Println(key[i])
+	}
+	fmt.Println(key)
+}

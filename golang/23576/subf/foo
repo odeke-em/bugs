@@ -1,0 +1,12 @@
+void sigHandler(const int sig) {
+  printf("got this signal: %d\n", sig);
+  exit(0);
+}
+
+void foo(Walk *walk, Foo *af) {
+if (0) {
+  struct sigaction sa;
+  sa.sa_handler = sigHandler;
+  sigaction(SIGSEGV, &sa, NULL);
+  sigaction(SIGINT, &sa, NULL);
+}

@@ -1,0 +1,428 @@
+# command-line-arguments
+after walk expr [0xc0000fba40]
+.   NAME-runtime.gopanic a(true) x(0) class(PFUNC) tc(1) used FUNC-func(interface {})
+after walk expr [0xc000396a50]
+.   NAME-main.statictmp_0 a(true) l(6) x(0) class(PEXTERN) tc(1) used string
+after walk expr [0xc000392180]
+.   EFACE l(6) tc(1) INTER-interface {}
+.   .   ADDR a(true) l(6) tc(1) PTR-*uint8
+.   .   .   NAME-type.string a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   ADDR l(6) tc(1) PTR-*string
+.   .   .   NAME-main.statictmp_0 a(true) l(6) x(0) class(PEXTERN) tc(1) addrtaken used string
+after walk expr [0xc0003a2200]
+.   CALLFUNC l(6) tc(1) hascall
+.   .   NAME-runtime.gopanic a(true) x(0) class(PFUNC) tc(1) used FUNC-func(interface {})
+.   CALLFUNC-rlist
+.   .   EFACE l(6) tc(1) INTER-interface {}
+.   .   .   ADDR a(true) l(6) tc(1) PTR-*uint8
+.   .   .   .   NAME-type.string a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   ADDR l(6) tc(1) PTR-*string
+.   .   .   .   NAME-main.statictmp_0 a(true) l(6) x(0) class(PEXTERN) tc(1) addrtaken used string
+after walk expr [0xc0003a2200]
+.   CALLFUNC l(6) tc(1) hascall
+.   .   NAME-runtime.gopanic a(true) x(0) class(PFUNC) tc(1) used FUNC-func(interface {})
+.   CALLFUNC-rlist
+.   .   EFACE l(6) tc(1) INTER-interface {}
+.   .   .   ADDR a(true) l(6) tc(1) PTR-*uint8
+.   .   .   .   NAME-type.string a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   ADDR l(6) tc(1) PTR-*string
+.   .   .   .   NAME-main.statictmp_0 a(true) l(6) x(0) class(PEXTERN) tc(1) addrtaken used string
+after walk expr [0xc000373950]
+.   NAME-main.p a(true) g(1) l(10) x(0) class(PAUTO) tc(1) used PTR-*P
+after walk expr [0xc0003a2680]
+.   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *P
+after walk expr [0xc000396b40]
+.   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc0003a2700]
+.   ADDR a(true) l(10) tc(1) PTR-*uint8
+.   .   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc0003a2780]
+.   CALLFUNC l(10) tc(1) hascall PTR-*P
+.   .   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *P
+.   CALLFUNC-rlist
+.   .   ADDR a(true) l(10) tc(1) PTR-*uint8
+.   .   .   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc0003a2780]
+.   CALLFUNC l(10) tc(1) nonnil hascall PTR-*P
+.   .   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *P
+.   CALLFUNC-rlist
+.   .   ADDR a(true) l(10) tc(1) PTR-*uint8
+.   .   .   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc00035e580]
+.   AS l(10) colas(true) tc(1) hascall
+.   .   NAME-main.p a(true) g(1) l(10) x(0) class(PAUTO) tc(1) used PTR-*P
+.   .   CALLFUNC l(10) tc(1) nonnil hascall PTR-*P
+.   .   .   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *P
+.   .   CALLFUNC-rlist
+.   .   .   ADDR a(true) l(10) tc(1) PTR-*uint8
+.   .   .   .   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc0000fb1d0]
+.   NAME-_ a(true) x(0) tc(1) assigned blank
+after walk expr [0xc0003a2e80]
+.   ADDR l(11) tc(1) PTR-*struct { F uintptr; R *P }
+.   .   NAME-main..autotmp_2 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-struct { F uintptr; R *P }
+after walk expr [0xc000396c30]
+.   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc0003a2f80]
+.   DEREF l(11) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc0003a3000]
+.   DOT l(11) x(0) tc(1) assigned hascall main.F uintptr
+.   .   DEREF l(11) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc0003a2a80]
+.   CFUNC a(true) l(11) tc(1) uintptr
+.   .   NAME-main.(*P).Foo-fm a(true) l(11) x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0003a3080]
+.   AS l(11) tc(1) hascall
+.   .   DOT l(11) x(0) tc(1) assigned hascall main.F uintptr
+.   .   .   DEREF l(11) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   .   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+.   .   CFUNC a(true) l(11) tc(1) uintptr
+.   .   .   NAME-main.(*P).Foo-fm a(true) l(11) x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc000396c30]
+.   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc0003a2f80]
+.   DEREF l(11) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000392280]
+.   DOT l(11) x(8) tc(1) assigned hascall main.R PTR-*P
+.   .   DEREF l(11) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000373950]
+.   NAME-main.p a(true) g(1) l(10) x(0) class(PAUTO) tc(1) used PTR-*P
+after walk expr [0xc000392300]
+.   AS l(11) tc(1) hascall
+.   .   DOT l(11) x(8) tc(1) assigned hascall main.R PTR-*P
+.   .   .   DEREF l(11) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   .   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+.   .   NAME-main.p a(true) g(1) l(10) x(0) class(PAUTO) tc(1) used PTR-*P
+after walk expr [0xc000396c30]
+.   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc0003a2b00]
+.   CONVNOP l(11) tc(1) FUNC-func()
+.   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc0003a2b00]
+.   CONVNOP l(11) tc(1) FUNC-func()
+.   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc00035e800]
+.   AS l(11) tc(1)
+.   .   NAME-_ a(true) x(0) tc(1) assigned blank
+.   .   CONVNOP l(11) tc(1) FUNC-func()
+.   .   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc0003a3a00]
+.   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *P
+after walk expr [0xc000396b40]
+.   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc0003a3a80]
+.   ADDR a(true) l(15) tc(1) PTR-*uint8
+.   .   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc0003a3b00]
+.   CALLFUNC l(15) tc(1) hascall PTR-*P
+.   .   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *P
+.   CALLFUNC-rlist
+.   .   ADDR a(true) l(15) tc(1) PTR-*uint8
+.   .   .   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc000396870]
+.   NAME-main.&p a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*P
+after walk expr [0xc0003a3b00]
+.   CALLFUNC l(15) tc(1) nonnil hascall PTR-*P
+.   .   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *P
+.   CALLFUNC-rlist
+.   .   ADDR a(true) l(15) tc(1) PTR-*uint8
+.   .   .   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc0003a3b80]
+.   AS l(15) colas(true) tc(1) hascall
+.   .   NAME-main.&p a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*P
+.   .   CALLFUNC l(15) tc(1) nonnil hascall PTR-*P
+.   .   .   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *P
+.   .   CALLFUNC-rlist
+.   .   .   ADDR a(true) l(15) tc(1) PTR-*uint8
+.   .   .   .   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc000396870]
+.   NAME-main.&p a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*P
+after walk expr [0xc000392400]
+.   DEREF l(15) tc(1) hascall main.P
+.   .   NAME-main.&p a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*P
+after walk expr [0xc00035ea00]
+.   AS l(15) tc(1) hascall
+.   .   DEREF l(15) tc(1) hascall main.P
+.   .   .   NAME-main.&p a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned nonnil used PTR-*P
+after walk expr [0xc000373c20]
+.   NAME-main.f a(true) g(2) l(16) x(0) class(PAUTO) tc(1) used FUNC-func()
+after walk expr [0xc000392b00]
+.   ADDR l(16) tc(1) PTR-*struct { F uintptr; R *P }
+.   .   NAME-main..autotmp_4 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-struct { F uintptr; R *P }
+after walk expr [0xc0003f22d0]
+.   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000392c00]
+.   DEREF l(16) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000392c80]
+.   DOT l(16) x(0) tc(1) assigned hascall main.F uintptr
+.   .   DEREF l(16) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   .   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000392700]
+.   CFUNC a(true) l(16) tc(1) uintptr
+.   .   NAME-main.(*P).Foo-fm a(true) l(11) x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc000392d00]
+.   AS l(16) tc(1) hascall
+.   .   DOT l(16) x(0) tc(1) assigned hascall main.F uintptr
+.   .   .   DEREF l(16) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   .   .   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+.   .   CFUNC a(true) l(16) tc(1) uintptr
+.   .   .   NAME-main.(*P).Foo-fm a(true) l(11) x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0003f22d0]
+.   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000392c00]
+.   DEREF l(16) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000392e00]
+.   DOT l(16) x(8) tc(1) assigned hascall main.R PTR-*P
+.   .   DEREF l(16) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   .   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000396870]
+.   NAME-main.&p a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned nonnil used PTR-*P
+after walk expr [0xc000392f80]
+.   DEREF l(16) tc(1) hascall main.P
+.   .   NAME-main.&p a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned nonnil used PTR-*P
+after walk expr [0xc00035f900]
+.   ADDR l(16) esc(h) tc(1) implicit(true) hascall PTR-*P
+.   .   DEREF l(16) tc(1) hascall main.P
+.   .   .   NAME-main.&p a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned nonnil used PTR-*P
+after walk expr [0xc000392e80]
+.   AS l(16) tc(1) hascall
+.   .   DOT l(16) x(8) tc(1) assigned hascall main.R PTR-*P
+.   .   .   DEREF l(16) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   .   .   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+.   .   ADDR l(16) esc(h) tc(1) implicit(true) hascall PTR-*P
+.   .   .   DEREF l(16) tc(1) hascall main.P
+.   .   .   .   NAME-main.&p a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned nonnil used PTR-*P
+after walk expr [0xc0003f22d0]
+.   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000392780]
+.   CONVNOP l(16) tc(1) FUNC-func()
+.   .   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000392780]
+.   CONVNOP l(16) tc(1) FUNC-func()
+.   .   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc00035ec00]
+.   AS l(16) tc(1)
+.   .   NAME-main.f a(true) g(2) l(16) x(0) class(PAUTO) tc(1) used FUNC-func()
+.   .   CONVNOP l(16) tc(1) FUNC-func()
+.   .   .   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000373c20]
+.   NAME-main.f a(true) g(2) l(16) x(0) class(PAUTO) tc(1) used FUNC-func()
+after walk expr [0xc00035ed00]
+.   CALLFUNC l(17) tc(1) hascall
+.   .   NAME-main.f a(true) g(2) l(16) x(0) class(PAUTO) tc(1) used FUNC-func()
+after walk expr [0xc00043e200]
+.   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *P
+after walk expr [0xc000396b40]
+.   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc00043e280]
+.   ADDR a(true) l(21) tc(1) PTR-*uint8
+.   .   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc00043e300]
+.   CALLFUNC l(21) tc(1) hascall PTR-*P
+.   .   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *P
+.   CALLFUNC-rlist
+.   .   ADDR a(true) l(21) tc(1) PTR-*uint8
+.   .   .   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc000396960]
+.   NAME-main.&p a(true) l(21) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*P
+after walk expr [0xc00043e300]
+.   CALLFUNC l(21) tc(1) nonnil hascall PTR-*P
+.   .   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *P
+.   CALLFUNC-rlist
+.   .   ADDR a(true) l(21) tc(1) PTR-*uint8
+.   .   .   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc00043e380]
+.   AS l(21) colas(true) tc(1) hascall
+.   .   NAME-main.&p a(true) l(21) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*P
+.   .   CALLFUNC l(21) tc(1) nonnil hascall PTR-*P
+.   .   .   NAME-runtime.newobject a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*byte) *P
+.   .   CALLFUNC-rlist
+.   .   .   ADDR a(true) l(21) tc(1) PTR-*uint8
+.   .   .   .   NAME-type."".P a(true) x(0) class(PEXTERN) tc(1) uint8
+after walk expr [0xc000396960]
+.   NAME-main.&p a(true) l(21) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*P
+after walk expr [0xc000393000]
+.   DEREF l(21) tc(1) hascall main.P
+.   .   NAME-main.&p a(true) l(21) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*P
+after walk expr [0xc00035ee80]
+.   AS l(21) tc(1) hascall
+.   .   DEREF l(21) tc(1) hascall main.P
+.   .   .   NAME-main.&p a(true) l(21) x(0) class(PAUTO) esc(N) tc(1) assigned nonnil used PTR-*P
+after walk expr [0xc000373ef0]
+.   NAME-main.f a(true) g(2) l(22) x(0) class(PAUTO) tc(1) used FUNC-func()
+after walk expr [0xc000393700]
+.   ADDR l(22) tc(1) PTR-*struct { F uintptr; R *P }
+.   .   NAME-main..autotmp_4 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-struct { F uintptr; R *P }
+after walk expr [0xc0003f24b0]
+.   NAME-main..autotmp_3 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000393800]
+.   DEREF l(22) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   NAME-main..autotmp_3 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000393880]
+.   DOT l(22) x(0) tc(1) assigned hascall main.F uintptr
+.   .   DEREF l(22) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   .   NAME-main..autotmp_3 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000393300]
+.   CFUNC a(true) l(22) tc(1) uintptr
+.   .   NAME-main.(*P).Foo-fm a(true) l(11) x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc000393900]
+.   AS l(22) tc(1) hascall
+.   .   DOT l(22) x(0) tc(1) assigned hascall main.F uintptr
+.   .   .   DEREF l(22) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   .   .   NAME-main..autotmp_3 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+.   .   CFUNC a(true) l(22) tc(1) uintptr
+.   .   .   NAME-main.(*P).Foo-fm a(true) l(11) x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0003f24b0]
+.   NAME-main..autotmp_3 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000393800]
+.   DEREF l(22) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   NAME-main..autotmp_3 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc00043e400]
+.   DOT l(22) x(8) tc(1) assigned hascall main.R PTR-*P
+.   .   DEREF l(22) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   .   NAME-main..autotmp_3 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000396960]
+.   NAME-main.&p a(true) l(21) x(0) class(PAUTO) esc(N) tc(1) assigned nonnil used PTR-*P
+after walk expr [0xc000393a00]
+.   DEREF l(22) tc(1) hascall main.P
+.   .   NAME-main.&p a(true) l(21) x(0) class(PAUTO) esc(N) tc(1) assigned nonnil used PTR-*P
+after walk expr [0xc00035f980]
+.   ADDR l(22) esc(h) tc(1) implicit(true) hascall PTR-*P
+.   .   DEREF l(22) tc(1) hascall main.P
+.   .   .   NAME-main.&p a(true) l(21) x(0) class(PAUTO) esc(N) tc(1) assigned nonnil used PTR-*P
+after walk expr [0xc00043e480]
+.   AS l(22) tc(1) hascall
+.   .   DOT l(22) x(8) tc(1) assigned hascall main.R PTR-*P
+.   .   .   DEREF l(22) tc(1) assigned hascall STRUCT-struct { F uintptr; R *P }
+.   .   .   .   NAME-main..autotmp_3 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+.   .   ADDR l(22) esc(h) tc(1) implicit(true) hascall PTR-*P
+.   .   .   DEREF l(22) tc(1) hascall main.P
+.   .   .   .   NAME-main.&p a(true) l(21) x(0) class(PAUTO) esc(N) tc(1) assigned nonnil used PTR-*P
+after walk expr [0xc0003f24b0]
+.   NAME-main..autotmp_3 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000393380]
+.   CONVNOP l(22) tc(1) FUNC-func()
+.   .   NAME-main..autotmp_3 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000393380]
+.   CONVNOP l(22) tc(1) FUNC-func()
+.   .   NAME-main..autotmp_3 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc00035f100]
+.   AS l(22) tc(1)
+.   .   NAME-main.f a(true) g(2) l(22) x(0) class(PAUTO) tc(1) used FUNC-func()
+.   .   CONVNOP l(22) tc(1) FUNC-func()
+.   .   .   NAME-main..autotmp_3 a(true) l(22) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R *P }
+after walk expr [0xc000373ef0]
+.   NAME-main.f a(true) g(2) l(22) x(0) class(PAUTO) tc(1) used FUNC-func()
+after walk expr [0xc00035f200]
+.   CALLFUNC l(23) tc(1) hascall
+.   .   NAME-main.f a(true) g(2) l(22) x(0) class(PAUTO) tc(1) used FUNC-func()
+after walk expr [0xc000396000]
+.   NAME-main.__debug_modinfo__ a(true) l(4) x(0) class(PEXTERN) tc(1) assigned string
+after walk expr [0xc00035fa80]
+.   LITERAL-"0w\xaf\f\x92t\b\x02A\xe1\xc1\a\xe6\xd6\x18\xe6path\tgithub.com/odeke-em/bugs/golang/26839\nmod\tgithub.com/odeke-em/bugs\t(devel)\t\n\xf92C1\x86\x18 r\x00\x82B\x10A\x16\xd8\xf2" l(5) tc(1) string
+after walk expr [0xc00035f400]
+.   AS l(5) tc(1)
+.   .   NAME-main.__debug_modinfo__ a(true) l(4) x(0) class(PEXTERN) tc(1) assigned string
+.   .   LITERAL-"0w\xaf\f\x92t\b\x02A\xe1\xc1\a\xe6\xd6\x18\xe6path\tgithub.com/odeke-em/bugs/golang/26839\nmod\tgithub.com/odeke-em/bugs\t(devel)\t\n\xf92C1\x86\x18 r\x00\x82B\x10A\x16\xd8\xf2" l(5) tc(1) string
+after walk expr [0xc0003963c0]
+.   NAME-main..this a(true) g(1) l(11) x(0) class(PAUTO) tc(1) assigned used PTR-*P
+after walk expr [0xc00035f700]
+.   CLOSUREVAR a(true) l(11) x(8) tc(1) PTR-*P
+after walk expr [0xc00035f780]
+.   AS l(11) tc(1)
+.   .   NAME-main..this a(true) g(1) l(11) x(0) class(PAUTO) tc(1) assigned used PTR-*P
+.   .   CLOSUREVAR a(true) l(11) x(8) tc(1) PTR-*P
+after walk expr [0xc000396780]
+.   NAME-main.p a(true) l(11) x(0) class(PAUTO) tc(1) assigned used PTR-*P
+after walk expr [0xc0003963c0]
+.   NAME-main..this a(true) g(1) l(11) x(0) class(PAUTO) tc(1) assigned used PTR-*P
+after walk expr [0xc00035fe80]
+.   AS l(11) tc(1)
+.   .   NAME-main.p a(true) l(11) x(0) class(PAUTO) tc(1) assigned used PTR-*P
+.   .   NAME-main..this a(true) g(1) l(11) x(0) class(PAUTO) tc(1) assigned used PTR-*P
+after walk expr [0xc0000fba40]
+.   NAME-runtime.gopanic a(true) x(0) class(PFUNC) tc(1) used FUNC-func(interface {})
+after walk expr [0xc0000fa000]
+.   NAME-main.statictmp_1 a(true) l(6) x(0) class(PEXTERN) tc(1) used string
+after walk expr [0xc0000c6200]
+.   EFACE l(6) tc(1) INTER-interface {}
+.   .   ADDR a(true) l(6) tc(1) PTR-*uint8
+.   .   .   NAME-type.string a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   ADDR l(6) tc(1) PTR-*string
+.   .   .   NAME-main.statictmp_1 a(true) l(6) x(0) class(PEXTERN) tc(1) addrtaken used string
+after walk expr [0xc0000c6000]
+.   CALLFUNC l(6) tc(1) hascall
+.   .   NAME-runtime.gopanic a(true) x(0) class(PFUNC) tc(1) used FUNC-func(interface {})
+.   CALLFUNC-rlist
+.   .   EFACE l(6) tc(1) INTER-interface {}
+.   .   .   ADDR a(true) l(6) tc(1) PTR-*uint8
+.   .   .   .   NAME-type.string a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   ADDR l(6) tc(1) PTR-*string
+.   .   .   .   NAME-main.statictmp_1 a(true) l(6) x(0) class(PEXTERN) tc(1) addrtaken used string
+after walk expr [0xc0000c6000]
+.   CALLFUNC l(6) tc(1) hascall
+.   .   NAME-runtime.gopanic a(true) x(0) class(PFUNC) tc(1) used FUNC-func(interface {})
+.   CALLFUNC-rlist
+.   .   EFACE l(6) tc(1) INTER-interface {}
+.   .   .   ADDR a(true) l(6) tc(1) PTR-*uint8
+.   .   .   .   NAME-type.string a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   ADDR l(6) tc(1) PTR-*string
+.   .   .   .   NAME-main.statictmp_1 a(true) l(6) x(0) class(PEXTERN) tc(1) addrtaken used string
+after walk expr [0xc0003f2690]
+.   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+after walk expr [0xc0000c7900]
+.   LITERAL-1 l(1) tc(1) uint8
+after walk expr [0xc0000c7300]
+.   GT l(1) tc(1) bool
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-1 l(1) tc(1) uint8
+after walk expr [0xc0003f2690]
+.   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+after walk expr [0xc0000c7980]
+.   LITERAL-1 l(1) tc(1) uint8
+after walk expr [0xc0000c7500]
+.   EQ l(1) tc(1) bool
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-1 l(1) tc(1) uint8
+after walk expr [0xc0000fb860]
+.   NAME-runtime.throwinit a(true) x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0000c7580]
+.   CALLFUNC l(1) tc(1) hascall
+.   .   NAME-runtime.throwinit a(true) x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0003f2690]
+.   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+after walk expr [0xc0000c7a00]
+.   LITERAL-1 l(1) tc(1) uint8
+after walk expr [0xc0000c7680]
+.   AS l(1) tc(1)
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-1 l(1) tc(1) uint8
+after walk expr [0xc0003960f0]
+.   NAME-main.init.0 a(true) l(5) x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0000c7700]
+.   CALLFUNC l(1) tc(1) hascall
+.   .   NAME-main.init.0 a(true) l(5) x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk expr [0xc0003f2690]
+.   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+after walk expr [0xc0000c7a80]
+.   LITERAL-2 l(1) tc(1) uint8
+after walk expr [0xc0000c7800]
+.   AS l(1) tc(1)
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-2 l(1) tc(1) uint8
+panic: panic
+
+goroutine 1 [running]:
+main.(*P).Foo(...)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/26839/main.go:6
+main.(*P).Foo-fm()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/26839/main.go:11 +0x39
+main.main()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/26839/main.go:23 +0x57
+exit status 2

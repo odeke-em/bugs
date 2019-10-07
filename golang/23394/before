@@ -1,0 +1,6 @@
+prog.go:5:10: cannot convert 'r' to type string
+prog.go:5:10: invalid operation: 'r' != s (mismatched types rune and string)
+prog.go:6:8: cannot convert 1 to type string
+prog.go:6:8: invalid operation: 1 != s (mismatched types int and string)
+prog.go:7:10: cannot convert 1.1 to type string
+prog.go:7:10: invalid operation: 1.1 != s (mismatched types float64 and string)

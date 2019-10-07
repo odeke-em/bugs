@@ -1,0 +1,1571 @@
+SCHED 0ms: gomaxprocs=8 idleprocs=6 threads=4 spinningthreads=1 idlethreads=0 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=1 schedtick=0 syscalltick=0 m=0 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=0 syscalltick=0 m=3 runqsize=0 gfreecnt=0
+  P2: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M3: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=0 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=1
+  G1: status=1() m=-1 lockedm=0
+  G17: status=6() m=1 lockedm=1
+  G2: status=1() m=-1 lockedm=-1
+# _/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284_test [_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284.test]
+SCHED 0ms: gomaxprocs=8 idleprocs=6 threads=3 spinningthreads=1 idlethreads=0 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=0 syscalltick=0 m=2 runqsize=0 gfreecnt=0
+  P2: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M2: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=1
+  G1: status=4(chan receive) m=-1 lockedm=0
+  G2: status=1() m=-1 lockedm=-1
+  G3: status=1() m=-1 lockedm=-1
+# _/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284
+SCHED 0ms: gomaxprocs=8 idleprocs=6 threads=5 spinningthreads=1 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=1 schedtick=1 syscalltick=0 m=0 runqsize=0 gfreecnt=0
+  P1: status=0 schedtick=1 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=0 syscalltick=0 m=4 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M4: p=2 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=true blocked=false lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M1: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M0: p=0 curg=1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=1
+  G1: status=2(chan receive) m=0 lockedm=0
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+# _/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284_test
+SCHED 0ms: gomaxprocs=8 idleprocs=5 threads=5 spinningthreads=1 idlethreads=0 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=1 schedtick=0 syscalltick=0 m=3 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=1 syscalltick=0 m=2 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=0 syscalltick=0 m=4 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M4: p=2 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=true blocked=false lockedg=-1
+  M3: p=0 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=true blocked=false lockedg=-1
+  M1: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=1
+  G1: status=1(chan receive) m=-1 lockedm=0
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+# _/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284.test
+SCHED 0ms: gomaxprocs=8 idleprocs=6 threads=3 spinningthreads=1 idlethreads=0 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=0 syscalltick=0 m=2 runqsize=0 gfreecnt=0
+  P2: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M2: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=1
+  G1: status=4(chan receive) m=-1 lockedm=0
+  G2: status=1() m=-1 lockedm=-1
+  G3: status=1() m=-1 lockedm=-1
+SCHED 207ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=10 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1304 syscalltick=5171 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=195 syscalltick=2974 m=-1 runqsize=0 gfreecnt=6
+  P4: status=0 schedtick=988 syscalltick=1266 m=-1 runqsize=0 gfreecnt=5
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=3 curg=54 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=3(select) m=6 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G21: status=6() m=-1 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G65: status=6() m=-1 lockedm=-1
+  G48: status=4(IO wait) m=-1 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G45: status=6() m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+# _/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284.test
+SCHED 0ms: gomaxprocs=8 idleprocs=7 threads=5 spinningthreads=0 idlethreads=3 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=1 schedtick=1 syscalltick=0 m=0 runqsize=0 gfreecnt=0
+  P1: status=0 schedtick=1 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P2: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M1: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M0: p=0 curg=1 mallocing=0 throwing=0 preemptoff= locks=2 dying=0 spinning=false blocked=false lockedg=1
+  G1: status=2(chan receive) m=0 lockedm=0
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G4: status=1() m=-1 lockedm=-1
+SCHED 0ms: gomaxprocs=8 idleprocs=7 threads=3 spinningthreads=0 idlethreads=0 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=1 schedtick=1 syscalltick=0 m=0 runqsize=0 gfreecnt=0
+  P1: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P2: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=0 curg=1 mallocing=0 throwing=0 preemptoff= locks=2 dying=0 spinning=false blocked=false lockedg=1
+  G1: status=2() m=0 lockedm=0
+  G17: status=6() m=1 lockedm=1
+  G2: status=1() m=-1 lockedm=-1
+goroutine 19 [running]:
+runtime/debug.Stack(0x118f159, 0x10a5891, 0x1303358)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/debug/stack.go:24 +0xb5
+runtime/debug.PrintStack()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/debug/stack.go:16 +0x34
+_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284_test.TestRaceGoroutineID.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284/race_test.go:13 +0x69
+_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284_test.TestRaceGoroutineID(0xc0000da100)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284/race_test.go:19 +0xd8
+testing.tRunner(0xc0000da100, 0x11e1c48)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/testing/testing.go:850 +0x163
+created by testing.(*T).Run
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/testing/testing.go:901 +0x67f
+goroutine 20 [running]:
+runtime/debug.Stack(0x118f159, 0x10a5891, 0x1303358)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/debug/stack.go:24 +0xb5
+runtime/debug.PrintStack()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/debug/stack.go:16 +0x34
+_/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284_test.TestRaceGoroutineID.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284/race_test.go:13 +0x69
+created by _/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284_test.TestRaceGoroutineID
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284/race_test.go:18 +0xce
+==================
+WARNING: DATA RACE
+Write at 0x00c0000a6080 by goroutine 7:
+  _/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284_test.TestRaceGoroutineID.func1()
+      /Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284/race_test.go:15 +0x78
+
+Previous write at 0x00c0000a6080 by goroutine 6:
+  _/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284_test.TestRaceGoroutineID.func1()
+      /Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284/race_test.go:15 +0x78
+  _/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284_test.TestRaceGoroutineID()
+      /Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284/race_test.go:19 +0xd7
+  testing.tRunner()
+      /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/testing/testing.go:850 +0x162
+
+Goroutine 7 (running) created at:
+  _/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284_test.TestRaceGoroutineID()
+      /Users/emmanuelodeke/Desktop/openSrc/bugs/golang/28284/race_test.go:18 +0xcd
+  testing.tRunner()
+      /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/testing/testing.go:850 +0x162
+
+Goroutine 6 (running) created at:
+  testing.(*T).Run()
+      /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/testing/testing.go:901 +0x67e
+  testing.runTests.func1()
+      /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/testing/testing.go:1142 +0xa8
+  testing.tRunner()
+      /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/testing/testing.go:850 +0x162
+  testing.runTests()
+      /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/testing/testing.go:1140 +0x4ee
+  testing.(*M).Run()
+      /Users/emmanuelodeke/go/src/go.googlesource.com/go/src/testing/testing.go:1057 +0x2ef
+  main.main()
+      _testmain.go:44 +0x221
+==================
+SCHED 413ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 209ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=10 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=11 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=19 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=2() m=0 lockedm=-1
+  G20: status=1() m=-1 lockedm=-1
+SCHED 619ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 411ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=19 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=20 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=19 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=2() m=0 lockedm=-1
+  G20: status=1() m=-1 lockedm=-1
+SCHED 823ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 618ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=28 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=29 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=19 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=2() m=0 lockedm=-1
+  G20: status=1() m=-1 lockedm=-1
+SCHED 1032ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 830ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=38 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=38 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=20 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=1() m=-1 lockedm=-1
+  G20: status=2() m=3 lockedm=-1
+SCHED 1237ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 1038ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=47 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=48 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=19 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=2() m=0 lockedm=-1
+  G20: status=1() m=-1 lockedm=-1
+SCHED 1438ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 1241ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=56 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=57 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=19 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=2() m=0 lockedm=-1
+  G20: status=1() m=-1 lockedm=-1
+SCHED 1647ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 1445ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=65 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=66 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=19 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=2() m=0 lockedm=-1
+  G20: status=1() m=-1 lockedm=-1
+SCHED 1850ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 1650ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=74 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=75 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=19 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=2() m=0 lockedm=-1
+  G20: status=1() m=-1 lockedm=-1
+SCHED 2058ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 1855ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=83 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=84 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=19 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=2() m=0 lockedm=-1
+  G20: status=1() m=-1 lockedm=-1
+SCHED 2268ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 2063ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=92 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=93 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=19 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=2() m=0 lockedm=-1
+  G20: status=1() m=-1 lockedm=-1
+SCHED 2477ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 2274ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=101 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=102 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=19 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=2() m=0 lockedm=-1
+  G20: status=1() m=-1 lockedm=-1
+SCHED 2684ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 2477ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=110 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=111 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=19 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=2() m=0 lockedm=-1
+  G20: status=1() m=-1 lockedm=-1
+SCHED 2893ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 2677ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=119 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=119 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=20 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=1() m=-1 lockedm=-1
+  G20: status=2() m=3 lockedm=-1
+SCHED 3098ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+SCHED 2888ms: gomaxprocs=8 idleprocs=6 threads=7 spinningthreads=0 idlethreads=2 runqueue=0 gcwaiting=0 nmidlelocked=0 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=2 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P1: status=1 schedtick=128 syscalltick=1 m=3 runqsize=0 gfreecnt=0
+  P2: status=1 schedtick=128 syscalltick=7 m=0 runqsize=0 gfreecnt=0
+  P3: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P4: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P5: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  P7: status=0 schedtick=0 syscalltick=0 m=-1 runqsize=0 gfreecnt=0
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=1 curg=20 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=2 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  G1: status=4(chan receive) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G3: status=4(GC sweep wait) m=-1 lockedm=-1
+  G18: status=4(finalizer wait) m=-1 lockedm=-1
+  G19: status=1() m=-1 lockedm=-1
+  G20: status=2() m=3 lockedm=-1
+SCHED 3302ms: gomaxprocs=8 idleprocs=8 threads=16 spinningthreads=0 idlethreads=8 runqueue=0 gcwaiting=0 nmidlelocked=1 stopwait=0 sysmonwait=0
+  P0: status=0 schedtick=1306 syscalltick=5172 m=-1 runqsize=0 gfreecnt=4
+  P1: status=0 schedtick=483 syscalltick=5581 m=-1 runqsize=0 gfreecnt=1
+  P2: status=0 schedtick=835 syscalltick=1018 m=-1 runqsize=0 gfreecnt=1
+  P3: status=0 schedtick=198 syscalltick=3118 m=-1 runqsize=0 gfreecnt=5
+  P4: status=0 schedtick=989 syscalltick=1267 m=-1 runqsize=0 gfreecnt=3
+  P5: status=0 schedtick=694 syscalltick=716 m=-1 runqsize=0 gfreecnt=0
+  P6: status=0 schedtick=244 syscalltick=575 m=-1 runqsize=0 gfreecnt=2
+  P7: status=0 schedtick=51 syscalltick=246 m=-1 runqsize=0 gfreecnt=0
+  M15: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M14: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M13: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M12: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M11: p=-1 curg=49 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M10: p=4 curg=72 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=-1
+  M9: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M8: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M7: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M6: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=130
+  M5: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M4: p=-1 curg=35 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M3: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  M2: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=1 dying=0 spinning=false blocked=false lockedg=-1
+  M1: p=-1 curg=17 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=false lockedg=17
+  M0: p=-1 curg=-1 mallocing=0 throwing=0 preemptoff= locks=0 dying=0 spinning=false blocked=true lockedg=-1
+  G1: status=4(semacquire) m=-1 lockedm=-1
+  G17: status=6() m=1 lockedm=1
+  G2: status=4(force gc (idle)) m=-1 lockedm=-1
+  G18: status=4(GC sweep wait) m=-1 lockedm=-1
+  G34: status=4(finalizer wait) m=-1 lockedm=-1
+  G35: status=3() m=4 lockedm=-1
+  G37: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G38: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G39: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G50: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G40: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G41: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G51: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G42: status=4(GC worker (idle)) m=-1 lockedm=-1
+  G52: status=4(select) m=-1 lockedm=-1
+  G53: status=4(select) m=-1 lockedm=-1
+  G54: status=4(select) m=-1 lockedm=-1
+  G55: status=4(select) m=-1 lockedm=-1
+  G56: status=4(select) m=-1 lockedm=-1
+  G57: status=4(select) m=-1 lockedm=-1
+  G58: status=4(select) m=-1 lockedm=-1
+  G59: status=4(select) m=-1 lockedm=-1
+  G68: status=6() m=-1 lockedm=-1
+  G84: status=6() m=-1 lockedm=-1
+  G72: status=3() m=10 lockedm=-1
+  G47: status=6() m=-1 lockedm=-1
+  G63: status=6() m=-1 lockedm=-1
+  G62: status=6() m=-1 lockedm=-1
+  G22: status=6() m=-1 lockedm=-1
+  G130: status=4(select) m=-1 lockedm=6
+  G49: status=3() m=11 lockedm=-1
+  G70: status=6() m=-1 lockedm=-1
+  G5: status=6() m=-1 lockedm=-1
+  G44: status=6() m=-1 lockedm=-1
+  G46: status=6() m=-1 lockedm=-1
+  G64: status=6() m=-1 lockedm=-1
+  G116: status=6() m=-1 lockedm=-1
+  G115: status=6() m=-1 lockedm=-1
+  G117: status=6() m=-1 lockedm=-1
+  G118: status=6() m=-1 lockedm=-1
+  G71: status=4(chan receive) m=-1 lockedm=-1
+  G23: status=6() m=-1 lockedm=-1
+--- FAIL: TestRaceGoroutineID (3.00s)
+    race_test.go:20: 5
+    testing.go:794: race detected during execution of test

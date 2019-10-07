@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+#include <sys/sysctl.h>
+
+int main() {
+  char str[256];
+  size_t size = sizeof(str);
+  memset(str, 0, size);
+  sysctlbyname("kern.osrelease", str, &size, NULL, 0);
+  printf("OS X release: %s\n", str);
+}

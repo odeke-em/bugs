@@ -1,0 +1,289 @@
+# command-line-arguments
+
+before walk a.do
+.   PANIC l(6) tc(1)
+.   .   NAME-main.statictmp_0 a(true) l(6) x(0) class(PEXTERN) tc(1) used string
+after walk a.do
+.   CALLFUNC l(6) tc(1) hascall
+.   .   NAME-runtime.gopanic a(true) x(0) class(PFUNC) tc(1) used FUNC-func(interface {})
+.   CALLFUNC-rlist
+.   .   EFACE l(6) tc(1) INTER-interface {}
+.   .   .   ADDR a(true) l(6) tc(1) PTR-*uint8
+.   .   .   .   NAME-type.string a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   ADDR l(6) tc(1) PTR-*string
+.   .   .   .   NAME-main.statictmp_0 a(true) l(6) x(0) class(PEXTERN) tc(1) addrtaken used string
+
+before walk foo
+.   DCL l(10) tc(1)
+.   .   NAME-main.x a(true) g(1) l(10) x(0) class(PAUTO) tc(1) assigned used main.a
+
+.   AS l(10) tc(1)
+.   .   NAME-main.x a(true) g(1) l(10) x(0) class(PAUTO) tc(1) assigned used main.a
+
+.   AS l(11) tc(1)
+.   .   NAME-_ a(true) x(0) tc(1) assigned blank
+.   .   CALLPART l(11) esc(no) tc(1) main.a.do FUNC-func()
+.   .   .   NAME-main.x a(true) g(1) l(10) x(0) class(PAUTO) tc(1) assigned used main.a
+.   .   .   NAME-main.do a(true) l(11) x(0)
+after walk foo
+.   DCL l(10) tc(1)
+.   .   NAME-main.x a(true) g(1) l(10) x(0) class(PAUTO) tc(1) assigned used main.a
+
+.   AS l(10) tc(1)
+.   .   NAME-main.x a(true) g(1) l(10) x(0) class(PAUTO) tc(1) assigned used main.a
+
+.   AS-init
+.   .   AS l(11) tc(1)
+.   .   .   NAME-main..autotmp_2 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-struct { F uintptr; R a }
+
+.   .   AS l(11) tc(1)
+.   .   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R a }
+.   .   .   ADDR l(11) tc(1) PTR-*struct { F uintptr; R a }
+.   .   .   .   NAME-main..autotmp_2 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-struct { F uintptr; R a }
+
+.   .   BLOCK l(11)
+.   .   BLOCK-list
+.   .   .   AS l(11) tc(1) hascall
+.   .   .   .   DOT l(11) x(0) tc(1) assigned hascall main.F uintptr
+.   .   .   .   .   DEREF l(11) tc(1) assigned hascall STRUCT-struct { F uintptr; R a }
+.   .   .   .   .   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R a }
+.   .   .   .   CFUNC a(true) l(11) tc(1) uintptr
+.   .   .   .   .   NAME-main.a.do-fm a(true) l(11) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   .   BLOCK l(11)
+.   .   BLOCK-list
+.   .   .   AS l(11) tc(1) hascall
+.   .   .   .   DOT l(11) x(8) tc(1) assigned hascall main.R main.a
+.   .   .   .   .   DEREF l(11) tc(1) assigned hascall STRUCT-struct { F uintptr; R a }
+.   .   .   .   .   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R a }
+.   .   .   .   NAME-main.x a(true) g(1) l(10) x(0) class(PAUTO) tc(1) assigned used main.a
+.   AS l(11) tc(1) hascall
+.   .   NAME-_ a(true) x(0) tc(1) assigned blank
+.   .   CONVNOP l(11) tc(1) FUNC-func()
+.   .   .   NAME-main..autotmp_1 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R a }
+
+before walk bar
+.   DCL l(15) tc(1)
+.   .   NAME-main.m a(true) g(1) l(15) x(0) class(PAUTO) tc(1) assigned used main.a
+
+.   AS l(15) tc(1)
+.   .   NAME-main.m a(true) g(1) l(15) x(0) class(PAUTO) tc(1) assigned used main.a
+
+.   DCL l(16)
+.   .   NAME-main.f a(true) g(2) l(16) x(0) class(PAUTO) tc(1) used FUNC-func()
+
+.   AS l(16) colas(true) tc(1)
+.   .   NAME-main.f a(true) g(2) l(16) x(0) class(PAUTO) tc(1) used FUNC-func()
+.   .   CALLPART l(16) esc(no) tc(1) main.a.do FUNC-func()
+.   .   .   NAME-main.m a(true) g(1) l(15) x(0) class(PAUTO) tc(1) assigned used main.a
+.   .   .   NAME-main.do a(true) l(16) x(0)
+
+.   CALLFUNC l(17) tc(1)
+.   .   NAME-main.f a(true) g(2) l(16) x(0) class(PAUTO) tc(1) used FUNC-func()
+after walk bar
+.   DCL l(15) tc(1)
+.   .   NAME-main.m a(true) g(1) l(15) x(0) class(PAUTO) tc(1) assigned used main.a
+
+.   AS l(15) tc(1)
+.   .   NAME-main.m a(true) g(1) l(15) x(0) class(PAUTO) tc(1) assigned used main.a
+
+.   DCL l(16)
+.   .   NAME-main.f a(true) g(2) l(16) x(0) class(PAUTO) tc(1) used FUNC-func()
+
+.   AS-init
+.   .   AS l(16) tc(1)
+.   .   .   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-struct { F uintptr; R a }
+
+.   .   AS l(16) tc(1)
+.   .   .   NAME-main..autotmp_2 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R a }
+.   .   .   ADDR l(16) tc(1) PTR-*struct { F uintptr; R a }
+.   .   .   .   NAME-main..autotmp_3 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used STRUCT-struct { F uintptr; R a }
+
+.   .   BLOCK l(16)
+.   .   BLOCK-list
+.   .   .   AS l(16) tc(1) hascall
+.   .   .   .   DOT l(16) x(0) tc(1) assigned hascall main.F uintptr
+.   .   .   .   .   DEREF l(16) tc(1) assigned hascall STRUCT-struct { F uintptr; R a }
+.   .   .   .   .   .   NAME-main..autotmp_2 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R a }
+.   .   .   .   CFUNC a(true) l(16) tc(1) uintptr
+.   .   .   .   .   NAME-main.a.do-fm a(true) l(11) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   .   BLOCK l(16)
+.   .   BLOCK-list
+.   .   .   AS l(16) tc(1) hascall
+.   .   .   .   DOT l(16) x(8) tc(1) assigned hascall main.R main.a
+.   .   .   .   .   DEREF l(16) tc(1) assigned hascall STRUCT-struct { F uintptr; R a }
+.   .   .   .   .   .   NAME-main..autotmp_2 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R a }
+.   .   .   .   NAME-main.m a(true) g(1) l(15) x(0) class(PAUTO) tc(1) assigned used main.a
+.   AS l(16) colas(true) tc(1) hascall
+.   .   NAME-main.f a(true) g(2) l(16) x(0) class(PAUTO) tc(1) used FUNC-func()
+.   .   CONVNOP l(16) tc(1) FUNC-func()
+.   .   .   NAME-main..autotmp_2 a(true) l(16) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*struct { F uintptr; R a }
+
+.   CALLFUNC l(17) tc(1) hascall
+.   .   NAME-main.f a(true) g(2) l(16) x(0) class(PAUTO) tc(1) used FUNC-func()
+
+before walk main
+.   CALLFUNC l(21) tc(1)
+.   .   NAME-main.bar a(true) l(14) x(0) class(PFUNC) tc(1) used FUNC-func()
+after walk main
+.   CALLFUNC l(21) tc(1) hascall
+.   .   NAME-main.bar a(true) l(14) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+before walk init.0
+.   AS l(5) tc(1)
+.   .   NAME-main.__debug_modinfo__ a(true) l(4) x(0) class(PEXTERN) tc(1) assigned string
+.   .   LITERAL-"0w\xaf\f\x92t\b\x02A\xe1\xc1\a\xe6\xd6\x18\xe6path\tgithub.com/odeke-em/bugs/golang/26839/repro\nmod\tgithub.com/odeke-em/bugs\t(devel)\t\n\xf92C1\x86\x18 r\x00\x82B\x10A\x16\xd8\xf2" l(5) tc(1) string
+after walk init.0
+.   AS l(5) tc(1)
+.   .   NAME-main.__debug_modinfo__ a(true) l(4) x(0) class(PEXTERN) tc(1) assigned string
+.   .   LITERAL-"0w\xaf\f\x92t\b\x02A\xe1\xc1\a\xe6\xd6\x18\xe6path\tgithub.com/odeke-em/bugs/golang/26839/repro\nmod\tgithub.com/odeke-em/bugs\t(devel)\t\n\xf92C1\x86\x18 r\x00\x82B\x10A\x16\xd8\xf2" l(5) tc(1) string
+
+before walk a.do-fm
+.   AS l(11) tc(1)
+.   .   NAME-main..this a(true) g(1) l(11) x(0) class(PAUTO) tc(1) assigned used PTR-*a
+.   .   ADDR l(11) esc(h) tc(1) PTR-*a
+.   .   .   CLOSUREVAR l(11) x(8) tc(1) addrtaken main.a
+
+.   AS l(11) tc(1)
+.   .   NAME-_ a(true) x(0) tc(1) assigned blank
+.   .   DEREF l(11) tc(1) implicit(true) main.a
+.   .   .   NAME-main..this a(true) g(1) l(11) x(0) class(PAUTO) tc(1) assigned used PTR-*a
+
+.   PANIC l(6) tc(1)
+.   .   NAME-main.statictmp_1 a(true) l(6) x(0) class(PEXTERN) tc(1) used string
+
+.   LABEL l(11) tc(1) main..i0
+after walk a.do-fm
+.   AS l(11) tc(1)
+.   .   NAME-main..this a(true) g(1) l(11) x(0) class(PAUTO) tc(1) assigned used PTR-*a
+.   .   ADDR l(11) esc(h) tc(1) PTR-*a
+.   .   .   CLOSUREVAR a(true) l(11) x(8) tc(1) addrtaken main.a
+
+.   AS l(11) tc(1) hascall
+.   .   NAME-_ a(true) x(0) tc(1) assigned blank
+.   .   DEREF l(11) tc(1) implicit(true) hascall main.a
+.   .   .   NAME-main..this a(true) g(1) l(11) x(0) class(PAUTO) tc(1) assigned used PTR-*a
+
+.   CALLFUNC l(6) tc(1) hascall
+.   .   NAME-runtime.gopanic a(true) x(0) class(PFUNC) tc(1) used FUNC-func(interface {})
+.   CALLFUNC-rlist
+.   .   EFACE l(6) tc(1) INTER-interface {}
+.   .   .   ADDR a(true) l(6) tc(1) PTR-*uint8
+.   .   .   .   NAME-type.string a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   ADDR l(6) tc(1) PTR-*string
+.   .   .   .   NAME-main.statictmp_1 a(true) l(6) x(0) class(PEXTERN) tc(1) addrtaken used string
+
+.   LABEL l(11) tc(1) main..i0
+
+before walk init
+.   IF l(1) tc(1)
+.   .   GT l(1) tc(1) bool
+.   .   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   .   LITERAL-1 l(1) tc(1) uint8
+.   IF-body
+.   .   RETURN l(1) tc(1)
+
+.   IF l(1) tc(1)
+.   .   EQ l(1) tc(1) bool
+.   .   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   .   LITERAL-1 l(1) tc(1) uint8
+.   IF-body
+.   .   CALLFUNC l(1) tc(1)
+.   .   .   NAME-runtime.throwinit a(true) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   AS l(1) tc(1)
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-1 l(1) tc(1) uint8
+
+.   CALLFUNC l(1) tc(1)
+.   .   NAME-main.init.0 a(true) l(5) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   AS l(1) tc(1)
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-2 l(1) tc(1) uint8
+
+.   RETURN l(1) tc(1)
+after walk init
+.   IF l(1) tc(1)
+.   .   GT l(1) tc(1) bool
+.   .   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   .   LITERAL-1 l(1) tc(1) uint8
+.   IF-body
+.   .   RETURN l(1) tc(1)
+
+.   IF l(1) tc(1)
+.   .   EQ l(1) tc(1) bool
+.   .   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   .   LITERAL-1 l(1) tc(1) uint8
+.   IF-body
+.   .   CALLFUNC l(1) tc(1) hascall
+.   .   .   NAME-runtime.throwinit a(true) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   AS l(1) tc(1)
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-1 l(1) tc(1) uint8
+
+.   CALLFUNC l(1) tc(1) hascall
+.   .   NAME-main.init.0 a(true) l(5) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   AS l(1) tc(1)
+.   .   NAME-main.initdone· a(true) l(1) x(0) class(PEXTERN) tc(1) assigned used uint8
+.   .   LITERAL-2 l(1) tc(1) uint8
+
+.   RETURN l(1) tc(1)
+
+before walk (*a).do
+.   IF l(1) tc(1)
+.   .   EQ l(1) tc(1) bool
+.   .   .   NAME-main..this a(true) g(1) l(1) x(0) class(PPARAM) esc(no) tc(1) used PTR-*a
+.   .   .   LITERAL-0 l(1) tc(1) PTR-*a
+.   IF-body
+.   .   CALLFUNC l(1) tc(1)
+.   .   .   NAME-runtime.panicwrap a(true) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   AS l(1) tc(1)
+.   .   NAME-_ a(true) x(0) tc(1) assigned blank
+.   .   DEREF l(1) tc(1) implicit(true) main.a
+.   .   .   NAME-main..this a(true) g(1) l(1) x(0) class(PPARAM) esc(no) tc(1) used PTR-*a
+
+.   PANIC l(6) tc(1)
+.   .   NAME-main.statictmp_2 a(true) l(6) x(0) class(PEXTERN) tc(1) used string
+
+.   LABEL l(1) tc(1) main..i0
+after walk (*a).do
+.   IF l(1) tc(1)
+.   .   EQ l(1) tc(1) bool
+.   .   .   NAME-main..this a(true) g(1) l(1) x(0) class(PPARAM) esc(no) tc(1) used PTR-*a
+.   .   .   LITERAL-0 l(1) tc(1) PTR-*a
+.   IF-body
+.   .   CALLFUNC l(1) tc(1) hascall
+.   .   .   NAME-runtime.panicwrap a(true) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   AS l(1) tc(1) hascall
+.   .   NAME-_ a(true) x(0) tc(1) assigned blank
+.   .   DEREF l(1) tc(1) implicit(true) hascall main.a
+.   .   .   NAME-main..this a(true) g(1) l(1) x(0) class(PPARAM) esc(no) tc(1) used PTR-*a
+
+.   CALLFUNC l(6) tc(1) hascall
+.   .   NAME-runtime.gopanic a(true) x(0) class(PFUNC) tc(1) used FUNC-func(interface {})
+.   CALLFUNC-rlist
+.   .   EFACE l(6) tc(1) INTER-interface {}
+.   .   .   ADDR a(true) l(6) tc(1) PTR-*uint8
+.   .   .   .   NAME-type.string a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   ADDR l(6) tc(1) PTR-*string
+.   .   .   .   NAME-main.statictmp_2 a(true) l(6) x(0) class(PEXTERN) tc(1) addrtaken used string
+
+.   LABEL l(1) tc(1) main..i0
+panic: panic
+
+goroutine 1 [running]:
+main.a.do(...)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/26839/repro/main.go:6
+main.a.do-fm()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/26839/repro/main.go:11 +0x39
+main.bar()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/26839/repro/main.go:17 +0x42
+main.main()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/26839/repro/main.go:21 +0x20
+exit status 2

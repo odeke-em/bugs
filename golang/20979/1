@@ -1,0 +1,104 @@
+2017/07/11 01:25:03 http2: Transport failed to get client conn for precious.jp:443: http2: no cached connection was available
+2017/07/11 01:25:04 http2: Transport creating client conn 0xc42014c1a0 to 202.238.151.220:443
+2017/07/11 01:25:04 http2: Framer 0xc42044d0a0: wrote SETTINGS len=18, settings: ENABLE_PUSH=0, INITIAL_WINDOW_SIZE=4194304, MAX_HEADER_LIST_SIZE=10485760
+2017/07/11 01:25:04 http2: Framer 0xc42044d0a0: wrote WINDOW_UPDATE len=4 (conn) incr=1073741824
+2017/07/11 01:25:04 http2: Transport encoding header ":authority" = "precious.jp"
+2017/07/11 01:25:04 http2: Transport encoding header ":method" = "GET"
+2017/07/11 01:25:04 http2: Transport encoding header ":path" = "/"
+2017/07/11 01:25:04 http2: Transport encoding header ":scheme" = "https"
+2017/07/11 01:25:04 http2: Transport encoding header "accept-encoding" = "gzip"
+2017/07/11 01:25:04 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2017/07/11 01:25:04 http2: Framer 0xc42044d0a0: wrote HEADERS flags=END_STREAM|END_HEADERS stream=1 len=33
+2017/07/11 01:25:04 http2: Framer 0xc42044d0a0: read SETTINGS len=18, settings: MAX_CONCURRENT_STREAMS=100, INITIAL_WINDOW_SIZE=32768, MAX_HEADER_LIST_SIZE=32768
+2017/07/11 01:25:04 http2: Transport received SETTINGS len=18, settings: MAX_CONCURRENT_STREAMS=100, INITIAL_WINDOW_SIZE=32768, MAX_HEADER_LIST_SIZE=32768
+2017/07/11 01:25:04 Unhandled Setting: [MAX_HEADER_LIST_SIZE = 32768]
+2017/07/11 01:25:04 http2: Framer 0xc42044d0a0: wrote SETTINGS flags=ACK len=0
+2017/07/11 01:25:04 http2: Framer 0xc42044d0a0: read GOAWAY len=8 LastStreamID=0 ErrCode=NO_ERROR Debug=""
+2017/07/11 01:25:04 http2: Transport received GOAWAY len=8 LastStreamID=0 ErrCode=NO_ERROR Debug=""
+2017/07/11 01:25:04 http2: Transport failed to get client conn for precious.jp:443: http2: no cached connection was available
+2017/07/11 01:25:05 http2: Transport creating client conn 0xc42014c4e0 to 202.238.151.220:443
+2017/07/11 01:25:05 http2: Framer 0xc42044d500: wrote SETTINGS len=18, settings: ENABLE_PUSH=0, INITIAL_WINDOW_SIZE=4194304, MAX_HEADER_LIST_SIZE=10485760
+2017/07/11 01:25:05 http2: Framer 0xc42044d500: wrote WINDOW_UPDATE len=4 (conn) incr=1073741824
+2017/07/11 01:25:05 http2: Transport encoding header ":authority" = "precious.jp"
+2017/07/11 01:25:05 http2: Transport encoding header ":method" = "GET"
+2017/07/11 01:25:05 http2: Transport encoding header ":path" = "/"
+2017/07/11 01:25:05 http2: Transport encoding header ":scheme" = "https"
+2017/07/11 01:25:05 http2: Transport encoding header "accept-encoding" = "gzip"
+2017/07/11 01:25:05 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2017/07/11 01:25:05 http2: Framer 0xc42044d500: wrote HEADERS flags=END_STREAM|END_HEADERS stream=1 len=33
+2017/07/11 01:25:05 http2: Framer 0xc42044d500: read SETTINGS len=18, settings: MAX_CONCURRENT_STREAMS=100, INITIAL_WINDOW_SIZE=32768, MAX_HEADER_LIST_SIZE=32768
+2017/07/11 01:25:05 http2: Transport received SETTINGS len=18, settings: MAX_CONCURRENT_STREAMS=100, INITIAL_WINDOW_SIZE=32768, MAX_HEADER_LIST_SIZE=32768
+2017/07/11 01:25:05 Unhandled Setting: [MAX_HEADER_LIST_SIZE = 32768]
+2017/07/11 01:25:05 http2: Framer 0xc42044d500: wrote SETTINGS flags=ACK len=0
+2017/07/11 01:25:05 http2: Framer 0xc42044d500: read GOAWAY len=8 LastStreamID=0 ErrCode=NO_ERROR Debug=""
+2017/07/11 01:25:05 http2: Transport received GOAWAY len=8 LastStreamID=0 ErrCode=NO_ERROR Debug=""
+2017/07/11 01:25:05 http2: Transport failed to get client conn for precious.jp:443: http2: no cached connection was available
+2017/07/11 01:25:06 http2: Transport creating client conn 0xc42014c820 to 202.238.151.220:443
+2017/07/11 01:25:06 http2: Framer 0xc42044d960: wrote SETTINGS len=18, settings: ENABLE_PUSH=0, INITIAL_WINDOW_SIZE=4194304, MAX_HEADER_LIST_SIZE=10485760
+2017/07/11 01:25:06 http2: Framer 0xc42044d960: wrote WINDOW_UPDATE len=4 (conn) incr=1073741824
+2017/07/11 01:25:06 http2: Transport encoding header ":authority" = "precious.jp"
+2017/07/11 01:25:06 http2: Transport encoding header ":method" = "GET"
+2017/07/11 01:25:06 http2: Transport encoding header ":path" = "/"
+2017/07/11 01:25:06 http2: Transport encoding header ":scheme" = "https"
+2017/07/11 01:25:06 http2: Transport encoding header "accept-encoding" = "gzip"
+2017/07/11 01:25:06 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2017/07/11 01:25:06 http2: Framer 0xc42044d960: read SETTINGS len=18, settings: MAX_CONCURRENT_STREAMS=100, INITIAL_WINDOW_SIZE=32768, MAX_HEADER_LIST_SIZE=32768
+2017/07/11 01:25:06 http2: Transport received SETTINGS len=18, settings: MAX_CONCURRENT_STREAMS=100, INITIAL_WINDOW_SIZE=32768, MAX_HEADER_LIST_SIZE=32768
+2017/07/11 01:25:06 http2: Framer 0xc42044d960: wrote HEADERS flags=END_STREAM|END_HEADERS stream=1 len=33
+2017/07/11 01:25:06 Unhandled Setting: [MAX_HEADER_LIST_SIZE = 32768]
+2017/07/11 01:25:06 http2: Framer 0xc42044d960: wrote SETTINGS flags=ACK len=0
+2017/07/11 01:25:06 http2: Framer 0xc42044d960: read GOAWAY len=8 LastStreamID=0 ErrCode=NO_ERROR Debug=""
+2017/07/11 01:25:06 http2: Transport received GOAWAY len=8 LastStreamID=0 ErrCode=NO_ERROR Debug=""
+2017/07/11 01:25:06 http2: Transport failed to get client conn for precious.jp:443: http2: no cached connection was available
+2017/07/11 01:25:06 http2: Transport creating client conn 0xc420488340 to 202.238.151.220:443
+2017/07/11 01:25:06 http2: Framer 0xc4201481c0: wrote SETTINGS len=18, settings: ENABLE_PUSH=0, INITIAL_WINDOW_SIZE=4194304, MAX_HEADER_LIST_SIZE=10485760
+2017/07/11 01:25:06 http2: Framer 0xc4201481c0: wrote WINDOW_UPDATE len=4 (conn) incr=1073741824
+2017/07/11 01:25:06 http2: Transport encoding header ":authority" = "precious.jp"
+2017/07/11 01:25:06 http2: Transport encoding header ":method" = "GET"
+2017/07/11 01:25:06 http2: Transport encoding header ":path" = "/"
+2017/07/11 01:25:06 http2: Transport encoding header ":scheme" = "https"
+2017/07/11 01:25:06 http2: Transport encoding header "accept-encoding" = "gzip"
+2017/07/11 01:25:06 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2017/07/11 01:25:06 http2: Framer 0xc4201481c0: wrote HEADERS flags=END_STREAM|END_HEADERS stream=1 len=33
+2017/07/11 01:25:06 http2: Framer 0xc4201481c0: read SETTINGS len=18, settings: MAX_CONCURRENT_STREAMS=100, INITIAL_WINDOW_SIZE=32768, MAX_HEADER_LIST_SIZE=32768
+2017/07/11 01:25:06 http2: Transport received SETTINGS len=18, settings: MAX_CONCURRENT_STREAMS=100, INITIAL_WINDOW_SIZE=32768, MAX_HEADER_LIST_SIZE=32768
+2017/07/11 01:25:06 Unhandled Setting: [MAX_HEADER_LIST_SIZE = 32768]
+2017/07/11 01:25:06 http2: Framer 0xc4201481c0: wrote SETTINGS flags=ACK len=0
+2017/07/11 01:25:06 http2: Framer 0xc4201481c0: read GOAWAY len=8 LastStreamID=0 ErrCode=NO_ERROR Debug=""
+2017/07/11 01:25:06 http2: Transport received GOAWAY len=8 LastStreamID=0 ErrCode=NO_ERROR Debug=""
+2017/07/11 01:25:06 http2: Transport failed to get client conn for precious.jp:443: http2: no cached connection was available
+2017/07/11 01:25:07 http2: Transport creating client conn 0xc42014cb60 to 202.238.151.220:443
+2017/07/11 01:25:07 http2: Framer 0xc42044ddc0: wrote SETTINGS len=18, settings: ENABLE_PUSH=0, INITIAL_WINDOW_SIZE=4194304, MAX_HEADER_LIST_SIZE=10485760
+2017/07/11 01:25:07 http2: Framer 0xc42044ddc0: wrote WINDOW_UPDATE len=4 (conn) incr=1073741824
+2017/07/11 01:25:07 http2: Transport encoding header ":authority" = "precious.jp"
+2017/07/11 01:25:07 http2: Framer 0xc42044ddc0: read SETTINGS len=18, settings: MAX_CONCURRENT_STREAMS=100, INITIAL_WINDOW_SIZE=32768, MAX_HEADER_LIST_SIZE=32768
+2017/07/11 01:25:07 http2: Transport received SETTINGS len=18, settings: MAX_CONCURRENT_STREAMS=100, INITIAL_WINDOW_SIZE=32768, MAX_HEADER_LIST_SIZE=32768
+2017/07/11 01:25:07 http2: Transport encoding header ":method" = "GET"
+2017/07/11 01:25:07 http2: Transport encoding header ":path" = "/"
+2017/07/11 01:25:07 http2: Transport encoding header ":scheme" = "https"
+2017/07/11 01:25:07 http2: Transport encoding header "accept-encoding" = "gzip"
+2017/07/11 01:25:07 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2017/07/11 01:25:07 http2: Framer 0xc42044ddc0: wrote HEADERS flags=END_STREAM|END_HEADERS stream=1 len=33
+2017/07/11 01:25:07 Unhandled Setting: [MAX_HEADER_LIST_SIZE = 32768]
+2017/07/11 01:25:07 http2: Framer 0xc42044ddc0: wrote SETTINGS flags=ACK len=0
+2017/07/11 01:25:07 http2: Framer 0xc42044ddc0: read GOAWAY len=8 LastStreamID=0 ErrCode=NO_ERROR Debug=""
+2017/07/11 01:25:07 http2: Transport received GOAWAY len=8 LastStreamID=0 ErrCode=NO_ERROR Debug=""
+2017/07/11 01:25:07 http2: Transport failed to get client conn for precious.jp:443: http2: no cached connection was available
+2017/07/11 01:25:08 http2: Transport creating client conn 0xc42014cea0 to 202.238.151.220:443
+2017/07/11 01:25:08 http2: Framer 0xc4202288c0: wrote SETTINGS len=18, settings: ENABLE_PUSH=0, INITIAL_WINDOW_SIZE=4194304, MAX_HEADER_LIST_SIZE=10485760
+2017/07/11 01:25:08 http2: Framer 0xc4202288c0: wrote WINDOW_UPDATE len=4 (conn) incr=1073741824
+2017/07/11 01:25:08 http2: Transport encoding header ":authority" = "precious.jp"
+2017/07/11 01:25:08 http2: Transport encoding header ":method" = "GET"
+2017/07/11 01:25:08 http2: Transport encoding header ":path" = "/"
+2017/07/11 01:25:08 http2: Transport encoding header ":scheme" = "https"
+2017/07/11 01:25:08 http2: Transport encoding header "accept-encoding" = "gzip"
+2017/07/11 01:25:08 http2: Framer 0xc4202288c0: read SETTINGS len=18, settings: MAX_CONCURRENT_STREAMS=100, INITIAL_WINDOW_SIZE=32768, MAX_HEADER_LIST_SIZE=32768
+2017/07/11 01:25:08 http2: Transport received SETTINGS len=18, settings: MAX_CONCURRENT_STREAMS=100, INITIAL_WINDOW_SIZE=32768, MAX_HEADER_LIST_SIZE=32768
+2017/07/11 01:25:08 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2017/07/11 01:25:08 http2: Framer 0xc4202288c0: wrote HEADERS flags=END_STREAM|END_HEADERS stream=1 len=33
+2017/07/11 01:25:08 Unhandled Setting: [MAX_HEADER_LIST_SIZE = 32768]
+2017/07/11 01:25:08 http2: Framer 0xc4202288c0: wrote SETTINGS flags=ACK len=0
+2017/07/11 01:25:08 http2: Framer 0xc4202288c0: read GOAWAY len=8 LastStreamID=0 ErrCode=NO_ERROR Debug=""
+2017/07/11 01:25:08 http2: Transport received GOAWAY len=8 LastStreamID=0 ErrCode=NO_ERROR Debug=""
+2017/07/11 01:25:08 http2: Transport failed to get client conn for precious.jp:443: http2: no cached connection was available
+signal: interrupt

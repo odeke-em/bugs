@@ -1,0 +1,5 @@
+BenchmarkCopyValues-8    	  722953	      1666 ns/op	    2128 B/op	      21 allocs/op
+BenchmarkCopyValues-8    	  737083	      1664 ns/op	    2128 B/op	      21 allocs/op
+BenchmarkCopyValues-8    	  736978	      1670 ns/op	    2128 B/op	      21 allocs/op
+BenchmarkCopyValues-8    	  723520	      1668 ns/op	    2128 B/op	      21 allocs/op
+BenchmarkCopyValues-8    	  729348	      1662 ns/op	    2128 B/op	      21 allocs/op

@@ -1,0 +1,191 @@
+[
+  {
+    "Offset": 348085,
+    "Tag": 52,
+    "Children": false,
+    "Field": [
+      {
+        "Attr": 3,
+        "Val": "x",
+        "Class": 12
+      },
+      {
+        "Attr": 59,
+        "Val": 10,
+        "Class": 3
+      },
+      {
+        "Attr": 73,
+        "Val": 206900,
+        "Class": 10
+      },
+      {
+        "Attr": 2,
+        "Val": 274527,
+        "Class": 7
+      }
+    ]
+  },
+  {
+    "Offset": 348097,
+    "Tag": 52,
+    "Children": false,
+    "Field": [
+      {
+        "Attr": 3,
+        "Val": "a",
+        "Class": 12
+      },
+      {
+        "Attr": 59,
+        "Val": 11,
+        "Class": 3
+      },
+      {
+        "Attr": 73,
+        "Val": 206900,
+        "Class": 10
+      },
+      {
+        "Attr": 2,
+        "Val": 274582,
+        "Class": 7
+      }
+    ]
+  },
+  {
+    "Offset": 348109,
+    "Tag": 52,
+    "Children": false,
+    "Field": [
+      {
+        "Attr": 3,
+        "Val": "s",
+        "Class": 12
+      },
+      {
+        "Attr": 59,
+        "Val": 12,
+        "Class": 3
+      },
+      {
+        "Attr": 73,
+        "Val": 206916,
+        "Class": 10
+      },
+      {
+        "Attr": 2,
+        "Val": 274637,
+        "Class": 7
+      }
+    ]
+  },
+  {
+    "Offset": 348244,
+    "Tag": 52,
+    "Children": false,
+    "Field": [
+      {
+        "Attr": 3,
+        "Val": "x",
+        "Class": 12
+      },
+      {
+        "Attr": 59,
+        "Val": 10,
+        "Class": 3
+      },
+      {
+        "Attr": 73,
+        "Val": 206900,
+        "Class": 10
+      },
+      {
+        "Attr": 2,
+        "Val": 274704,
+        "Class": 7
+      }
+    ]
+  },
+  {
+    "Offset": 348256,
+    "Tag": 52,
+    "Children": false,
+    "Field": [
+      {
+        "Attr": 3,
+        "Val": "a",
+        "Class": 12
+      },
+      {
+        "Attr": 59,
+        "Val": 11,
+        "Class": 3
+      },
+      {
+        "Attr": 73,
+        "Val": 206900,
+        "Class": 10
+      },
+      {
+        "Attr": 2,
+        "Val": 274759,
+        "Class": 7
+      }
+    ]
+  },
+  {
+    "Offset": 348268,
+    "Tag": 52,
+    "Children": false,
+    "Field": [
+      {
+        "Attr": 3,
+        "Val": "s",
+        "Class": 12
+      },
+      {
+        "Attr": 59,
+        "Val": 12,
+        "Class": 3
+      },
+      {
+        "Attr": 73,
+        "Val": 206916,
+        "Class": 10
+      },
+      {
+        "Attr": 2,
+        "Val": 274814,
+        "Class": 7
+      }
+    ]
+  },
+  {
+    "Offset": 348406,
+    "Tag": 52,
+    "Children": false,
+    "Field": [
+      {
+        "Attr": 3,
+        "Val": "main..inittask",
+        "Class": 12
+      },
+      {
+        "Attr": 2,
+        "Val": "AwCSDQEAAAAA",
+        "Class": 4
+      },
+      {
+        "Attr": 73,
+        "Val": 232960,
+        "Class": 10
+      },
+      {
+        "Attr": 63,
+        "Val": true,
+        "Class": 5
+      }
+    ]
+  }
+]

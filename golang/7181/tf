@@ -1,0 +1,216 @@
+runtime: goroutine stack exceeds 10000-byte limit
+fatal error: stack overflow
+
+runtime stack:
+runtime.throw(0x10abfb3, 0xe)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/panic.go:598 +0x72
+runtime.newstack()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/stack.go:1054 +0x729
+runtime.morestack()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/asm_amd64.s:481 +0x8f
+
+goroutine 1 [running]:
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x35 fp=0xc00004c370 sp=0xc00004c368 pc=0x107bfc5
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c380 sp=0xc00004c370 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004c390 sp=0xc00004c380 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004c3a0 sp=0xc00004c390 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004c3b0 sp=0xc00004c3a0 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c3c0 sp=0xc00004c3b0 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004c3d0 sp=0xc00004c3c0 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004c3e0 sp=0xc00004c3d0 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004c3f0 sp=0xc00004c3e0 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c400 sp=0xc00004c3f0 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004c410 sp=0xc00004c400 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004c420 sp=0xc00004c410 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004c430 sp=0xc00004c420 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c440 sp=0xc00004c430 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004c450 sp=0xc00004c440 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004c460 sp=0xc00004c450 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004c470 sp=0xc00004c460 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c480 sp=0xc00004c470 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004c490 sp=0xc00004c480 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004c4a0 sp=0xc00004c490 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004c4b0 sp=0xc00004c4a0 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c4c0 sp=0xc00004c4b0 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004c4d0 sp=0xc00004c4c0 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004c4e0 sp=0xc00004c4d0 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004c4f0 sp=0xc00004c4e0 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c500 sp=0xc00004c4f0 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004c510 sp=0xc00004c500 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004c520 sp=0xc00004c510 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004c530 sp=0xc00004c520 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c540 sp=0xc00004c530 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004c550 sp=0xc00004c540 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004c560 sp=0xc00004c550 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004c570 sp=0xc00004c560 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c580 sp=0xc00004c570 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004c590 sp=0xc00004c580 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004c5a0 sp=0xc00004c590 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004c5b0 sp=0xc00004c5a0 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c5c0 sp=0xc00004c5b0 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004c5d0 sp=0xc00004c5c0 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004c5e0 sp=0xc00004c5d0 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004c5f0 sp=0xc00004c5e0 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c600 sp=0xc00004c5f0 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004c610 sp=0xc00004c600 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004c620 sp=0xc00004c610 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004c630 sp=0xc00004c620 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c640 sp=0xc00004c630 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004c650 sp=0xc00004c640 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004c660 sp=0xc00004c650 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004c670 sp=0xc00004c660 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004c680 sp=0xc00004c670 pc=0x107bf77
+
+... (346 stack frames omitted)
+
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004dc30 sp=0xc00004dc20 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004dc40 sp=0xc00004dc30 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004dc50 sp=0xc00004dc40 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004dc60 sp=0xc00004dc50 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004dc70 sp=0xc00004dc60 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004dc80 sp=0xc00004dc70 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004dc90 sp=0xc00004dc80 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004dca0 sp=0xc00004dc90 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004dcb0 sp=0xc00004dca0 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004dcc0 sp=0xc00004dcb0 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004dcd0 sp=0xc00004dcc0 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004dce0 sp=0xc00004dcd0 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004dcf0 sp=0xc00004dce0 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004dd00 sp=0xc00004dcf0 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004dd10 sp=0xc00004dd00 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004dd20 sp=0xc00004dd10 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004dd30 sp=0xc00004dd20 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004dd40 sp=0xc00004dd30 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004dd50 sp=0xc00004dd40 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004dd60 sp=0xc00004dd50 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004dd70 sp=0xc00004dd60 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004dd80 sp=0xc00004dd70 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004dd90 sp=0xc00004dd80 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004dda0 sp=0xc00004dd90 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004ddb0 sp=0xc00004dda0 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004ddc0 sp=0xc00004ddb0 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004ddd0 sp=0xc00004ddc0 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004dde0 sp=0xc00004ddd0 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004ddf0 sp=0xc00004dde0 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004de00 sp=0xc00004ddf0 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004de10 sp=0xc00004de00 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004de20 sp=0xc00004de10 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004de30 sp=0xc00004de20 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004de40 sp=0xc00004de30 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004de50 sp=0xc00004de40 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004de60 sp=0xc00004de50 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004de70 sp=0xc00004de60 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004de80 sp=0xc00004de70 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004de90 sp=0xc00004de80 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004dea0 sp=0xc00004de90 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004deb0 sp=0xc00004dea0 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004dec0 sp=0xc00004deb0 pc=0x107bf77
+main.recurse.func4()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:13 +0x24 fp=0xc00004ded0 sp=0xc00004dec0 pc=0x107c034
+main.recurse.func3()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:12 +0x27 fp=0xc00004dee0 sp=0xc00004ded0 pc=0x107bff7
+main.recurse.func2()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:11 +0x27 fp=0xc00004def0 sp=0xc00004dee0 pc=0x107bfb7
+main.recurse.func1()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:10 +0x27 fp=0xc00004df00 sp=0xc00004def0 pc=0x107bf77
+main.recurse()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:15 +0xab fp=0xc00004df78 sp=0xc00004df00 pc=0x107bf0b
+main.main()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/7181/simpler.go:19 +0x20 fp=0xc00004df88 sp=0xc00004df78 pc=0x107bf40
+runtime.main()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:198 +0x207 fp=0xc00004dfe0 sp=0xc00004df88 pc=0x1028327
+runtime.goexit()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/asm_amd64.s:1385 +0x1 fp=0xc00004dfe8 sp=0xc00004dfe0 pc=0x104df01
+exit status 2

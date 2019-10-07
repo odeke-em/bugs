@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><link type="text/css" rel="stylesheet" href="/AzulLeve/javax.faces.resource/theme.css.jsf?ln=primefaces-redmond" /><link type="text/css" rel="stylesheet" href="/AzulLeve/javax.faces.resource/primefaces.css.jsf?ln=primefaces&amp;v=5.3&amp;v=5.3&amp;v=5.3" /><script type="text/javascript" src="/AzulLeve/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=5.3&amp;v=5.3&amp;v=5.3"></script><script type="text/javascript" src="/AzulLeve/javax.faces.resource/primefaces.js.jsf?ln=primefaces&amp;v=5.3&amp;v=5.3&amp;v=5.3"></script><script type="text/javascript" src="/AzulLeve/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=5.3&amp;v=5.3&amp;v=5.3"></script><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.projectStage='Development';}</script>
+
+	<title>
+		AZUL AUTO LEVE / POPULAR	
+	</title>
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="/AzulLeve/resources/css/application.css" type="text/css" />
+				<script type="text/javascript" src="/AzulLeve/resources/js/AzulLeve.js">
+		</script></head><body>
+		<div name="mensagens"><div id="messages" class="ui-messages ui-widget" aria-live="polite"></div>			
+		</div>	
+		
+		<main class="content">
+	
+	<link rel="stylesheet" href="/AzulLeve/resources/css/combo.css" type="text/css" />
+<form id="formOrcamento" name="formOrcamento" method="post" action="/AzulLeve/pages/orcamento.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formOrcamento" value="formOrcamento" />
+<div id="j_idt8" class="ui-tabmenu ui-widget ui-widget-content ui-corner-all abaLevePopular"><ul class="ui-tabmenu-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist"><li class="ui-tabmenuitem ui-state-default ui-state-active ui-corner-top" role="tab" aria-expanded="true"><a tabindex="-1" class="ui-menuitem-link ui-corner-all labelazul" href="/AzulLeve/pages/orcamento.jsf?i=0"><span class="ui-menuitem-text">AZUL AUTO LEVE</span></a></li></ul></div><script id="j_idt8_s" type="text/javascript">PrimeFaces.cw("TabMenu","widget_j_idt8",{id:"j_idt8"});</script><div id="j_idt13" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-content ui-widget-content"><img id="j_idt14" src="/AzulLeve/resources/img/ajax-loader.gif?pfdrid_c=true" alt="" /></div></div><script id="j_idt13_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","processando",{id:"j_idt13",draggable:false,resizable:false});});</script><div id="j_idt15"></div><script id="j_idt15_s" type="text/javascript">$(function(){PrimeFaces.cw("AjaxStatus","widget_j_idt15",{id:"j_idt15",start:function(){PF('processando').show()},success:function(){PF('processando').hide()}});});</script><div id="j_idt16" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt16"><div id="j_idt16_content" class="ui-panel-content ui-widget-content"><div id="j_idt17" class="ui-outputpanel ui-widget titulogrupo"><label id="j_idt18" class="ui-outputlabel ui-widget avisos">Avisos: </label>
+							<p><label id="j_idt20" class="ui-outputlabel ui-widget">- O pagamento no cartão de crédito Mastercard/Visa/Diners possui parcelamento em até 6 vezes.</label>
+							</p>
+							<p><label id="j_idt23" class="ui-outputlabel ui-widget">- Para proposta com forma de pagamento Débito em Conta, o respectivo banco somente validará o débito cujo CPF/CNPJ informado seja do próprio correntista.</label>
+							</p>
+							<p><label id="j_idt26" class="ui-outputlabel ui-widget">- Cobertura de dano moral e estético não contratada.</label>
+							</p>
+							<p><label id="j_idt222" class="ui-outputlabel ui-widget">- Se a tabela FIPE, divulgada no site www.fipe.org.br for extinta ou deixar de ser publicada a indenização integral terá como base o valor que constar na tabela Molicar (www.molicar.com.br).</label>
+							</p></div>
+		
+				<p class="textorcamento"><label id="j_idt29" class="ui-outputlabel ui-widget">Vigência da Apólice: </label><label id="j_idt30" class="ui-outputlabel ui-widget">Início: </label><label id="j_idt31" class="ui-outputlabel ui-widget">08/12/2018</label><label id="j_idt32" class="ui-outputlabel ui-widget"> Fim: </label><label id="j_idt33" class="ui-outputlabel ui-widget">08/12/2019</label>
+				</p>
+				<p class="negrito"><label id="j_idt35" class="ui-outputlabel ui-widget">Cálculo Válido até </label><label id="j_idt36" class="ui-outputlabel ui-widget">18/12/2018</label>
+				</p>
+
+	<div class="table-block">
+
+		<table>
+			<tr>
+				<th class="col3 colunaconteudo"></th>
+						<th class=" col3  colunaConteudo">
+							<div class="holder">Sugestão 1</div>
+						</th>
+						<th class=" col3  colunaConteudo">
+							<div class="holder">Sugestão 2</div>
+						</th>
+						<th class=" col3  colunaConteudo">
+							<div class="holder">Sugestão 3</div>
+						</th>
+						<th class=" col3  colunaConteudo">
+							<div class="holder">Sugestão 4</div>
+						</th>
+			</tr>
+
+			<tr>
+				<th class="col1 colunaconteudo">
+<script type="text/javascript" src="/AzulLeve/javax.faces.resource/jsf.js.jsf?ln=javax.faces&amp;stage=Development"></script>
+<a href="#" onclick="mojarra.jsfcljs(document.getElementById('formOrcamento'),{'j_idt44':'j_idt44'},'');return false"><img id="j_idt45" src="/AzulLeve/resources/img/print_icon.png?pfdrid_c=true" alt="" class="impressora" /></a>
+				</th>
+						<td class=" colunaconteudo">
+							<div>
+								<span class="value value-dezx">10x de</span> <span class="total-price">R$ 219,32</span><span class="mark"><span>ou</span> 5% de desconto à vista</span>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<span class="value value-dezx">8x de</span> <span class="total-price">R$ 54,72</span><span class="mark"><span>ou</span> 5% de desconto à vista</span>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<span class="value value-dezx">10x de</span> <span class="total-price">R$ 144,41</span><span class="mark"><span>ou</span> 5% de desconto à vista</span>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<span class="value value-dezx">10x de</span> <span class="total-price">R$ 205,86</span><span class="mark"><span>ou</span> 5% de desconto à vista</span>
+							</div>
+						</td>
+			</tr>
+			
+			<tr>
+				<th class="col1 colunaconteudo">
+					<div class="holder">
+						<strong class="title">Prêmio Total Auto</strong>
+					</div>
+				</th>
+						  <td class=" colunaconteudo"><div><span class="value value-franquia">R$ 2.193,17</span></div></td>
+						  <td class=" colunaconteudo"><div><span class="value value-franquia">R$ 437,78</span></div></td>
+						  <td class=" colunaconteudo"><div><span class="value value-franquia">R$ 1.444,14</span></div></td>
+						  <td class=" colunaconteudo"><div><span class="value value-franquia">R$ 2.058,58</span></div></td>
+			</tr>
+
+			<tr class="accordion-item">
+				<th class="col1 colunaconteudo">
+					<div class="holder">
+						<strong class="title">Cobertura Casco <em>Compreensiva</em></strong>
+					</div>
+				</th>
+						<td class=" colunaconteudo">
+							        <div>
+										100,00% <em>Valor referenciado</em>R$	72.277,00
+									</div>
+						</td>
+						<td class=" colunaconteudo">
+									<p>Não Contratado</p>
+						</td>
+						<td class=" colunaconteudo">
+							        <div>
+										80,00% <em>Valor referenciado</em>R$	57.821,60
+									</div>
+						</td>
+						<td class=" colunaconteudo">
+							        <div>
+										90,00% <em>Valor referenciado</em>R$	65.049,30
+									</div>
+						</td>
+			</tr>
+
+			<tr class="accordion-item">
+				<th class="col1 colunaconteudo">
+					<div class="holder">
+						<strong class="title">Franquia</strong>
+					</div>
+				</th>
+						<td class=" colunaconteudo">
+								        <p>100,00% da obrigatória</p> R$ 5.352,00
+								    
+						</td>
+						<td class=" colunaconteudo">
+								        <p>Não Contratado</p>
+						</td>
+						<td class=" colunaconteudo">
+								        <p>200,00% da obrigatória</p> R$ 10.704,00
+								    
+						</td>
+						<td class=" colunaconteudo">
+								        <p>100,00% da obrigatória</p> R$ 5.352,00
+								    
+						</td>
+			</tr>
+
+			<tr class="accordion-item">
+				<th class="col1 colunaconteudo">
+					<div class="holder">
+						<strong class="title">Danos Materiais</strong>
+					</div>
+				</th>
+						<td class=" colunaconteudo">
+							<div>
+								<strong>L.M.I</strong>
+								        <p>R$ 50.000,00</p>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<strong>L.M.I</strong>
+								        <p>R$ 50.000,00</p>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<strong>L.M.I</strong>
+								        <p>Não Contratado</p>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<strong>L.M.I</strong>
+								        <p>R$ 50.000,00</p>
+							</div>
+						</td>
+			</tr>
+			
+			<tr class="accordion-item">
+				<th class="col1 colunaconteudo">
+					<div class="holder">
+						<strong class="title">Danos Corporais</strong>
+					</div>
+				</th>
+						<td class=" colunaconteudo">
+							<div>
+								<strong>L.M.I</strong>
+								        <p>R$ 50.000,00</p>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<strong>L.M.I</strong>
+								        <p>R$ 50.000,00</p>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<strong>L.M.I</strong>
+								        <p>Não Contratado</p>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<strong>L.M.I</strong>
+								        <p>R$ 50.000,00</p>
+							</div>
+						</td>
+			</tr>			
+
+			<tr class="accordion-item">
+				<th class="col1 colunaconteudo">
+					<div class="holder">
+						<strong class="title">Danos Morais e Estéticos</strong>
+					</div>
+				</th>
+						<td class=" colunaconteudo">
+							<div>
+								<strong>L.M.I</strong>
+								        <p>Não Contratado</p>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<strong>L.M.I</strong>
+								        <p>Não Contratado</p>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<strong>L.M.I</strong>
+								        <p>Não Contratado</p>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<strong>L.M.I</strong>
+								        <p>Não Contratado</p>
+							</div>
+						</td>
+			</tr>
+			
+			<tr class="accordion-item">
+				<th class="col1 colunaconteudo">
+					<div class="holder">
+						<strong class="title">Vidros</strong>
+					</div>
+				</th>
+						<td class=" colunaconteudo">
+							<div>
+								        <p>Não Contratado</p>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								        <p>Não Contratado</p>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								        <p>Não Contratado</p>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								        <p>Não Contratado</p>
+							</div>
+						</td>
+			</tr>
+			
+			<tr class="accordion-item">
+				<th class="col1 colunaconteudo">
+					<div class="holder">
+						<strong class="title">Carro Extra</strong>
+					</div>
+				</th>
+						<td class=" colunaconteudo">
+							<div>
+								        <p>Não Contratado</p>									
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								        <p>Não Contratado</p>									
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								        <p>Não Contratado</p>									
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								        <p>Não Contratado</p>									
+							</div>
+						</td>
+			</tr>
+			
+			<tr class="accordion-item">
+				<th class="col1 colunaconteudo">
+					<div class="holder">
+						<strong class="title">Assistência 24 horas</strong>
+					</div>
+				</th>
+						<td class=" colunaconteudo">
+							<div>
+								<p class="franquia-content">
+									<span class="note note-franquia">37C - Básica 200 KM - Gratuita</span><a id="grow_0" name="grow_0" href="" class="tooltip">?</a>
+								</p><div id="toolTipGrow" class="ui-tooltip ui-widget ui-widget-content ui-shadow ui-corner-all textoTooltip">
+									<span>-Auxílio na falta de combustível<br />
+										-Substituição de pneu furado<br /> -Socorro volante<br />
+										-Reboque em decorrência de pane ou acidente<br />
+										-Chaveiro<br />
+									<br />*Para maiores informações consulte as Condições Gerais do	seguro.
+									</span></div><script id="toolTipGrow_s" type="text/javascript">$(function(){PrimeFaces.cw("Tooltip","widget_toolTipGrow",{id:"toolTipGrow",showEffect:"clip",hideEffect:"clip",target:"grow_0"});});</script>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<p class="franquia-content">
+									<span class="note note-franquia">37C - Básica 200 KM - Gratuita</span><a id="grow_1" name="grow_1" href="" class="tooltip">?</a>
+								</p><div id="j_idt156" class="ui-tooltip ui-widget ui-widget-content ui-shadow ui-corner-all textoTooltip">
+									<span>-Auxílio na falta de combustível<br />
+										-Substituição de pneu furado<br /> -Socorro volante<br />
+										-Reboque em decorrência de pane ou acidente<br />
+										-Chaveiro<br />
+									<br />*Para maiores informações consulte as Condições Gerais do	seguro.
+									</span></div><script id="j_idt156_s" type="text/javascript">$(function(){PrimeFaces.cw("Tooltip","widget_j_idt156",{id:"j_idt156",showEffect:"clip",hideEffect:"clip",target:"grow_1"});});</script>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<p class="franquia-content">
+									<span class="note note-franquia">37C - Básica 200 KM - Gratuita</span><a id="grow_2" name="grow_2" href="" class="tooltip">?</a>
+								</p><div id="j_idt162" class="ui-tooltip ui-widget ui-widget-content ui-shadow ui-corner-all textoTooltip">
+									<span>-Auxílio na falta de combustível<br />
+										-Substituição de pneu furado<br /> -Socorro volante<br />
+										-Reboque em decorrência de pane ou acidente<br />
+										-Chaveiro<br />
+									<br />*Para maiores informações consulte as Condições Gerais do	seguro.
+									</span></div><script id="j_idt162_s" type="text/javascript">$(function(){PrimeFaces.cw("Tooltip","widget_j_idt162",{id:"j_idt162",showEffect:"clip",hideEffect:"clip",target:"grow_2"});});</script>
+							</div>
+						</td>
+						<td class=" colunaconteudo">
+							<div>
+								<p class="franquia-content">
+									<span class="note note-franquia">37C - Básica 200 KM - Gratuita</span><a id="grow_3" name="grow_3" href="" class="tooltip">?</a>
+								</p><div id="j_idt168" class="ui-tooltip ui-widget ui-widget-content ui-shadow ui-corner-all textoTooltip">
+									<span>-Auxílio na falta de combustível<br />
+										-Substituição de pneu furado<br /> -Socorro volante<br />
+										-Reboque em decorrência de pane ou acidente<br />
+										-Chaveiro<br />
+									<br />*Para maiores informações consulte as Condições Gerais do	seguro.
+									</span></div><script id="j_idt168_s" type="text/javascript">$(function(){PrimeFaces.cw("Tooltip","widget_j_idt168",{id:"j_idt168",showEffect:"clip",hideEffect:"clip",target:"grow_3"});});</script>
+							</div>
+						</td>
+			</tr>
+			
+			<tr class="last btns">
+				<td class="col1 colunaconteudo"></td>
+						<td class="colunaconteudo">
+							<div><button id="j_idt173" name="j_idt173" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn-contratar" onclick="PrimeFaces.ab({s:&quot;j_idt173&quot;,p:&quot;@all&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Contratar</span></button><script id="j_idt173_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt173",{id:"j_idt173"});</script>
+							</div>
+						</td>
+						<td class="colunaconteudo">
+							<div><button id="j_idt176" name="j_idt176" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn-contratar" onclick="PrimeFaces.ab({s:&quot;j_idt176&quot;,p:&quot;@all&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Contratar</span></button><script id="j_idt176_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt176",{id:"j_idt176"});</script>
+							</div>
+						</td>
+						<td class="colunaconteudo">
+							<div><button id="j_idt179" name="j_idt179" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn-contratar" onclick="PrimeFaces.ab({s:&quot;j_idt179&quot;,p:&quot;@all&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Contratar</span></button><script id="j_idt179_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt179",{id:"j_idt179"});</script>
+							</div>
+						</td>
+						<td class="colunaconteudo">
+							<div><button id="j_idt182" name="j_idt182" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only btn-contratar" onclick="PrimeFaces.ab({s:&quot;j_idt182&quot;,p:&quot;@all&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Contratar</span></button><script id="j_idt182_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt182",{id:"j_idt182"});</script>
+							</div>
+						</td>
+			</tr>
+			
+		</table>
+	</div><div id="dialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="dialog_title" class="ui-dialog-title">Imprimir</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><label id="j_idt185" class="ui-outputlabel ui-widget negrito" for="comboImpressao">Selecione o orçamento que deseja imprimir:</label><table id="comboImpressao">
+	<tr>
+<td>
+<input type="radio" checked="checked" name="comboImpressao" id="comboImpressao:0" value="0" /><label for="comboImpressao:0"> Sugestão 1</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="comboImpressao" id="comboImpressao:1" value="1" /><label for="comboImpressao:1"> Sugestão 2</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="comboImpressao" id="comboImpressao:2" value="2" /><label for="comboImpressao:2"> Sugestão 3</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="comboImpressao" id="comboImpressao:3" value="3" /><label for="comboImpressao:3"> Sugestão 4</label></td>
+	</tr>
+</table>
+		   	
+   	<div style="align:right"><a href="#" onclick="mojarra.jsfcljs(document.getElementById('formOrcamento'),{'j_idt188':'j_idt188'},'_blank');return false"><img id="j_idt189" src="/AzulLeve/resources/img/imprimir.png?pfdrid_c=true" alt="" class="btn-imprimir" /></a>
+   	
+   	</div></div></div><script id="dialog_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","impressao",{id:"dialog",resizable:false,modal:true,width:"25%",height:"20%"});});</script></div></div><script id="j_idt16_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt16",{id:"j_idt16"});</script><div id="j_idt191" class="ui-panel ui-widget ui-widget-content ui-corner-all rodapeLevePopular" data-widget="widget_j_idt191"><div id="j_idt191_content" class="ui-panel-content ui-widget-content"><button id="btnConfigurar" name="btnConfigurar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;btnConfigurar&quot;,p:&quot;@all&quot;,u:&quot;configCombo&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Configurar Combo</span></button><script id="btnConfigurar_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_btnConfigurar",{id:"btnConfigurar"});</script><button id="btnSalvar" name="btnSalvar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;btnSalvar&quot;,p:&quot;@all&quot;,u:&quot;formOrcamento&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Salvar</span></button><script id="btnSalvar_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_btnSalvar",{id:"btnSalvar"});</script><button id="btSair" name="btSair" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;btSair&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Sair</span></button><script id="btSair_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_btSair",{id:"btSair"});</script></div></div><script id="j_idt191_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt191",{id:"j_idt191"});</script><div id="j_idt192" class="ui-blockui-content ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow">
+					<p>Salvando...</p><img id="j_idt194" src="/AzulLeve/resources/img/ajax-loader.gif?pfdrid_c=true" alt="" /></div><script id="j_idt192_s" type="text/javascript">$(function(){PrimeFaces.cw("BlockUI","widget_j_idt192",{id:"j_idt192",block:"formOrcamento",triggers:"btnSalvar"});});</script><div id="j_idt195" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="j_idt195_title" class="ui-dialog-title">Redefinir Sugestão 1</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content"><table id="configCombo" style="margin-bottom:10px">
+<tbody>
+<tr>
+<td><label id="lbl_capcasco_calc" class="ui-outputlabel ui-widget" for="capcasco_calc">Capital:</label></td>
+<td><input id="capcasco_calc" name="capcasco_calc" type="text" value="72.277,00" maxlength="11" size="11" onkeydown="formatarMoeda(this,20,event,2)" disabled="disabled" style="width:130px;" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled" /><script id="capcasco_calc_s" type="text/javascript">PrimeFaces.cw("InputText","widget_capcasco_calc",{id:"capcasco_calc"});</script></td>
+</tr>
+<tr>
+<td><label id="lbl_perc_ajuste_fipe_2" class="ui-outputlabel ui-widget required">Cobertura Casco</label></td>
+<td><div id="perc_ajuste_fipe_2" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all" style="width:130px;"><div class="ui-helper-hidden-accessible"><input id="perc_ajuste_fipe_2_focus" name="perc_ajuste_fipe_2_focus" type="text" autocomplete="off" role="combobox" aria-haspopup="true" aria-expanded="false" /></div><div class="ui-helper-hidden-accessible"><select id="perc_ajuste_fipe_2_input" name="perc_ajuste_fipe_2_input" tabindex="-1" onchange="PrimeFaces.ab({s:&quot;perc_ajuste_fipe_2&quot;,e:&quot;valueChange&quot;,p:&quot;perc_ajuste_fipe_2 vidros carroExtra&quot;,u:&quot;configCombo&quot;,ps:true});"><option value="">Não Contratado</option><option value="80,00">80,00</option><option value="90,00">90,00</option><option value="100,00" selected="selected">100,00</option></select></div><label id="perc_ajuste_fipe_2_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="perc_ajuste_fipe_2_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><div class="ui-selectonemenu-items-wrapper" style="height:auto"><ul id="perc_ajuste_fipe_2_items" class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset" role="listbox"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Não Contratado" tabindex="-1" role="option">Não Contratado</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="80,00" tabindex="-1" role="option">80,00</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="90,00" tabindex="-1" role="option">90,00</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="100,00" tabindex="-1" role="option">100,00</li></ul></div></div></div><script id="perc_ajuste_fipe_2_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_perc_ajuste_fipe_2",{id:"perc_ajuste_fipe_2",behaviors:{valueChange:function(ext,event) {PrimeFaces.ab({s:"perc_ajuste_fipe_2",e:"valueChange",p:"perc_ajuste_fipe_2 vidros carroExtra",u:"configCombo",ps:true},ext);}}});});</script></td>
+</tr>
+<tr>
+<td><label id="lbl_franquia" class="ui-outputlabel ui-widget required" for="franquia_focus">Franquia:</label></td>
+<td><div id="franquia" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all" style="width:130px;"><div class="ui-helper-hidden-accessible"><input id="franquia_focus" name="franquia_focus" type="text" autocomplete="off" role="combobox" aria-haspopup="true" aria-expanded="false" aria-labelledby="lbl_franquia" /></div><div class="ui-helper-hidden-accessible"><select id="franquia_input" name="franquia_input" tabindex="-1"><option value="1" selected="selected">Básica</option><option value="7">150% Básica</option><option value="2">200% Básica</option></select></div><label id="franquia_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="franquia_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><div class="ui-selectonemenu-items-wrapper" style="height:auto"><ul id="franquia_items" class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset" role="listbox"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Básica" tabindex="-1" role="option">Básica</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="150% Básica" tabindex="-1" role="option">150% Básica</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="200% Básica" tabindex="-1" role="option">200% Básica</li></ul></div></div></div><script id="franquia_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_franquia",{id:"franquia"});});</script></td>
+</tr>
+<tr>
+<td><label id="j_idt201" class="ui-outputlabel ui-widget" for="vlDm_focus">RCF (DM)</label></td>
+<td><div id="vlDm" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all" style="width:130px;"><div class="ui-helper-hidden-accessible"><input id="vlDm_focus" name="vlDm_focus" type="text" autocomplete="off" role="combobox" aria-haspopup="true" aria-expanded="false" aria-labelledby="j_idt201" /></div><div class="ui-helper-hidden-accessible"><select id="vlDm_input" name="vlDm_input" tabindex="-1"><option value="">Não Contratado</option><option value="50.000,00" selected="selected">50.000,00</option><option value="75.000,00">75.000,00</option><option value="100.000,00">100.000,00</option></select></div><label id="vlDm_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="vlDm_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><div class="ui-selectonemenu-items-wrapper" style="height:auto"><ul id="vlDm_items" class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset" role="listbox"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Não Contratado" tabindex="-1" role="option">Não Contratado</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="50.000,00" tabindex="-1" role="option">50.000,00</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="75.000,00" tabindex="-1" role="option">75.000,00</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="100.000,00" tabindex="-1" role="option">100.000,00</li></ul></div></div></div><script id="vlDm_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_vlDm",{id:"vlDm"});});</script></td>
+</tr>
+<tr>
+<td><label id="j_idt206" class="ui-outputlabel ui-widget" for="vlDc_focus">RCF (DC)</label></td>
+<td><div id="vlDc" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all" style="width:130px;"><div class="ui-helper-hidden-accessible"><input id="vlDc_focus" name="vlDc_focus" type="text" autocomplete="off" role="combobox" aria-haspopup="true" aria-expanded="false" aria-labelledby="j_idt206" /></div><div class="ui-helper-hidden-accessible"><select id="vlDc_input" name="vlDc_input" tabindex="-1"><option value="">Não Contratado</option><option value="50.000,00" selected="selected">50.000,00</option><option value="75.000,00">75.000,00</option><option value="100.000,00">100.000,00</option></select></div><label id="vlDc_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="vlDc_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><div class="ui-selectonemenu-items-wrapper" style="height:auto"><ul id="vlDc_items" class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset" role="listbox"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Não Contratado" tabindex="-1" role="option">Não Contratado</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="50.000,00" tabindex="-1" role="option">50.000,00</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="75.000,00" tabindex="-1" role="option">75.000,00</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="100.000,00" tabindex="-1" role="option">100.000,00</li></ul></div></div></div><script id="vlDc_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_vlDc",{id:"vlDc"});});</script></td>
+</tr>
+<tr>
+<td><label id="j_idt211" class="ui-outputlabel ui-widget" for="vidros_focus">Vidros</label></td>
+<td><div id="vidros" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all" style="width:130px;"><div class="ui-helper-hidden-accessible"><input id="vidros_focus" name="vidros_focus" type="text" autocomplete="off" role="combobox" aria-haspopup="true" aria-expanded="false" aria-labelledby="j_idt211" /></div><div class="ui-helper-hidden-accessible"><select id="vidros_input" name="vidros_input" tabindex="-1"><option value="00" selected="selected">Não Contratado</option><option value="14">Vidros, Ret., Far. e Lant. - Rede Referenciada</option><option value="18">Vidros, Ret., Far. e Lant. - Livre Escolha</option></select></div><label id="vidros_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="vidros_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><div class="ui-selectonemenu-items-wrapper" style="height:auto"><ul id="vidros_items" class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset" role="listbox"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Não Contratado" tabindex="-1" role="option">Não Contratado</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Vidros, Ret., Far. e Lant. - Rede Referenciada" tabindex="-1" role="option">Vidros, Ret., Far. e Lant. - Rede Referenciada</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Vidros, Ret., Far. e Lant. - Livre Escolha" tabindex="-1" role="option">Vidros, Ret., Far. e Lant. - Livre Escolha</li></ul></div></div></div><script id="vidros_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_vidros",{id:"vidros"});});</script></td>
+</tr>
+<tr>
+<td><label id="j_idt215" class="ui-outputlabel ui-widget" for="carroExtra_focus">Carro Extra</label></td>
+<td><div id="carroExtra" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all" style="width:130px;"><div class="ui-helper-hidden-accessible"><input id="carroExtra_focus" name="carroExtra_focus" type="text" autocomplete="off" role="combobox" aria-haspopup="true" aria-expanded="false" aria-labelledby="j_idt215" /></div><div class="ui-helper-hidden-accessible"><select id="carroExtra_input" name="carroExtra_input" tabindex="-1"><option value="00" selected="selected">Não Contratado</option><option value="10">7 dias (rede referenciada)</option><option value="11">7 dias (livre escolha)</option></select></div><label id="carroExtra_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="carroExtra_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow"><div class="ui-selectonemenu-items-wrapper" style="height:auto"><ul id="carroExtra_items" class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset" role="listbox"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Não Contratado" tabindex="-1" role="option">Não Contratado</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="7 dias (rede referenciada)" tabindex="-1" role="option">7 dias (rede referenciada)</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="7 dias (livre escolha)" tabindex="-1" role="option">7 dias (livre escolha)</li></ul></div></div></div><script id="carroExtra_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_carroExtra",{id:"carroExtra"});});</script></td>
+</tr>
+<tr>
+<td><label id="lbl_comissao" class="ui-outputlabel ui-widget" for="comissaoLeve">Comissão:</label></td>
+<td><input id="comissaoLeve" name="comissaoLeve" type="text" value="15,00" maxlength="5" size="11" onkeydown="formatarMoeda(this,4,event,2)" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" /><script id="comissaoLeve_s" type="text/javascript">PrimeFaces.cw("InputText","widget_comissaoLeve",{id:"comissaoLeve"});</script></td>
+</tr>
+</tbody>
+</table>
+<button id="btnCalcular" name="btnCalcular" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;btnCalcular&quot;,p:&quot;formOrcamento&quot;,u:&quot;configCombo&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Redefinir</span></button><script id="btnCalcular_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_btnCalcular",{id:"btnCalcular"});</script><button id="btnCancelar" name="btnCancelar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({s:&quot;btnCancelar&quot;});return false;" type="submit"><span class="ui-button-text ui-c">Sair</span></button><script id="btnCancelar_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_btnCancelar",{id:"btnCancelar"});</script></div></div><script id="j_idt195_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","configCombo",{id:"j_idt195",resizable:false,modal:true,width:"420",height:"330"});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="2627325973075922734:2516928821061248463" autocomplete="off" />
+</form> 
+		</main></body>
+</html>

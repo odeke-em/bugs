@@ -1,0 +1,12 @@
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x18 pc=0x10a690a]
+
+goroutine 1 [running]:
+main.md5_code.func1(0xc42001e3f0, 0x68, 0x0, 0x0, 0x10f00e0, 0xc420082270, 0x0, 0x0)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/23650/tool2/src/md5_res/md5_res.go:218 +0xba
+path/filepath.Walk(0xc42001e3f0, 0x68, 0xc420062240, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/path/filepath/path.go:401 +0x6c
+main.md5_code(0xc42001e3f0, 0x68, 0xc42001e460, 0x68, 0x8)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/23650/tool2/src/md5_res/md5_res.go:215 +0x14b
+main.main()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/23650/tool2/src/md5_res/md5_res.go:35 +0x3cc

@@ -1,0 +1,278 @@
+^\SIGQUIT: quit
+PC=0x10494d3 m=0 sigcode=0
+
+goroutine 0 [idle]:
+runtime.mach_semaphore_timedwait(0xa00000a03, 0x3b9a9b82, 0x7fff5fbfdbcc, 0xa, 0x3b9a9b825fbfdbe8, 0x10c1400, 0x7fff5fbfdc00, 0x1044373, 0x28fa67f82, 0x102b042, ...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/sys_darwin_amd64.s:552 +0x13 fp=0x7fff5fbfdba8 sp=0x7fff5fbfdba0 pc=0x10494d3
+runtime.semasleep1(0x28fa67f82, 0x102b042)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:406 +0xdf fp=0x7fff5fbfdbe8 sp=0x7fff5fbfdba8 pc=0x1020ccf
+runtime.semasleep.func1()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:436 +0x33 fp=0x7fff5fbfdc10 sp=0x7fff5fbfdbe8 pc=0x1044373
+runtime.systemstack(0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/asm_amd64.s:409 +0x79 fp=0x7fff5fbfdc18 sp=0x7fff5fbfdc10 pc=0x10459e9
+runtime.mstart()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:1170 fp=0x7fff5fbfdc20 sp=0x7fff5fbfdc18 pc=0x1026c30
+
+goroutine 4 [syscall]:
+runtime.notetsleepg(0x10c3c60, 0x28fa67f82, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/lock_sema.go:280 +0x4b fp=0xc42003b760 sp=0xc42003b720 pc=0x100b33b
+runtime.timerproc(0x10c3c40)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/time.go:260 +0x2de fp=0xc42003b7d8 sp=0xc42003b760 pc=0x103b1ee
+runtime.goexit()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/asm_amd64.s:2361 +0x1 fp=0xc42003b7e0 sp=0xc42003b7d8 pc=0x1047ef1
+created by runtime.(*timersBucket).addtimerLocked
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/time.go:159 +0x107
+
+goroutine 1 [chan receive]:
+runtime.gopark(0x107ea18, 0xc4200620b8, 0x107a1aa, 0xc, 0x103ae17, 0x3)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:291 +0x11a fp=0xc42004fe18 sp=0xc42004fdf8 pc=0x102441a
+runtime.goparkunlock(0xc4200620b8, 0x107a1aa, 0xc, 0x17, 0x3)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:297 +0x5e fp=0xc42004fe58 sp=0xc42004fe18 pc=0x10244ce
+runtime.chanrecv(0xc420062060, 0x0, 0xc420088001, 0xc420062060)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/chan.go:518 +0x2f2 fp=0xc42004fef0 sp=0xc42004fe58 pc=0x1004052
+runtime.chanrecv1(0xc420062060, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/chan.go:400 +0x2b fp=0xc42004ff20 sp=0xc42004fef0 pc=0x1003d4b
+main.spawnThem(0x100000000, 0x0, 0x28fa6ae00)
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/21356/main.go:14 +0x8c fp=0xc42004ff50 sp=0xc42004ff20 pc=0x105928c
+main.main()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/21356/main.go:24 +0xab fp=0xc42004ff88 sp=0xc42004ff50 pc=0x105935b
+runtime.main()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:198 +0x212 fp=0xc42004ffe0 sp=0xc42004ff88 pc=0x1023fd2
+runtime.goexit()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/asm_amd64.s:2361 +0x1 fp=0xc42004ffe8 sp=0xc42004ffe0 pc=0x1047ef1
+
+goroutine 2 [force gc (idle)]:
+runtime.gopark(0x107ea18, 0x10c1040, 0x107a5e4, 0xf, 0x107e914, 0x1)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:291 +0x11a fp=0xc42003a768 sp=0xc42003a748 pc=0x102441a
+runtime.goparkunlock(0x10c1040, 0x107a5e4, 0xf, 0x14, 0x1)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:297 +0x5e fp=0xc42003a7a8 sp=0xc42003a768 pc=0x10244ce
+runtime.forcegchelper()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:248 +0xcc fp=0xc42003a7e0 sp=0xc42003a7a8 pc=0x102425c
+runtime.goexit()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/asm_amd64.s:2361 +0x1 fp=0xc42003a7e8 sp=0xc42003a7e0 pc=0x1047ef1
+created by runtime.init.4
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:237 +0x35
+
+goroutine 3 [GC sweep wait]:
+runtime.gopark(0x107ea18, 0x10c1120, 0x107a30b, 0xd, 0x1018f14, 0x1)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:291 +0x11a fp=0xc42003af60 sp=0xc42003af40 pc=0x102441a
+runtime.goparkunlock(0x10c1120, 0x107a30b, 0xd, 0x14, 0x1)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:297 +0x5e fp=0xc42003afa0 sp=0xc42003af60 pc=0x10244ce
+runtime.bgsweep(0xc42001e380)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/mgcsweep.go:52 +0xa3 fp=0xc42003afd8 sp=0xc42003afa0 pc=0x1018fe3
+runtime.goexit()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/asm_amd64.s:2361 +0x1 fp=0xc42003afe0 sp=0xc42003afd8 pc=0x1047ef1
+created by runtime.gcenable
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/mgc.go:216 +0x58
+
+rax    0xe
+rbx    0xa
+rcx    0x7fff5fbfdba0
+rdx    0x3b9a9b82
+rdi    0xa03
+rsi    0xa
+rbp    0x7fff5fbfdbd8
+rsp    0x7fff5fbfdba0
+r8     0xc420000f00
+r9     0x76
+r10    0x16e6cc174
+r11    0x206
+r12    0x60620de101a4
+r13    0xf1
+r14    0x11
+r15    0x0
+rip    0x10494d3
+rflags 0x206
+cs     0x7
+fs     0x0
+gs     0x0
+
+-----
+
+SIGQUIT: quit
+PC=0x10494d3 m=1 sigcode=0
+
+goroutine 0 [idle]:
+runtime.mach_semaphore_timedwait(0x3c00001103, 0x0, 0xc42004de44, 0x3c, 0x0, 0xc420000480, 0xc42004de78, 0x1044373, 0xdf8475800, 0x0, ...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/sys_darwin_amd64.s:552 +0x13 fp=0xc42004de20 sp=0xc42004de18 pc=0x10494d3
+runtime.semasleep1(0xdf8475800, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:406 +0xdf fp=0xc42004de60 sp=0xc42004de20 pc=0x1020ccf
+runtime.semasleep.func1()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:436 +0x33 fp=0xc42004de88 sp=0xc42004de60 pc=0x1044373
+runtime.semasleep(0xdf8475800, 0xc42004ded0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:435 +0x44 fp=0xc42004dec0 sp=0xc42004de88 pc=0x1020d74
+runtime.notetsleep_internal(0x10c13b0, 0xdf8475800, 0xc420000480, 0xdf84b34a8, 0x14)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/lock_sema.go:218 +0x112 fp=0xc42004def0 sp=0xc42004dec0 pc=0x100b0d2
+runtime.notetsleep(0x10c13b0, 0xdf8475800, 0xc420040000)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/lock_sema.go:269 +0x6b fp=0xc42004df28 sp=0xc42004def0 pc=0x100b2ab
+runtime.sysmon()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:4233 +0x178 fp=0xc42004dfb0 sp=0xc42004df28 pc=0x102dfb8
+runtime.mstart1(0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:1222 +0xe7 fp=0xc42004dfd8 sp=0xc42004dfb0 pc=0x1026da7
+runtime.mstart()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:1188 +0x76 fp=0xc42004e000 sp=0xc42004dfd8 pc=0x1026ca6
+rax    0xe
+rbx    0x3c
+rcx    0xc42004de18
+rdx    0x0
+rdi    0x1103
+rsi    0x3c
+rbp    0xc42004de50
+rsp    0xc42004de18
+r8     0x1003
+r9     0x76
+r10    0x16e6cc174
+r11    0x206
+r12    0x60620de101a4
+r13    0x0
+r14    0x0
+r15    0x0
+rip    0x10494d3
+rflags 0x206
+cs     0x7
+fs     0x0
+gs     0x0
+
+-----
+
+SIGQUIT: quit
+PC=0x10494bb m=2 sigcode=0
+
+goroutine 0 [idle]:
+runtime.mach_semaphore_wait(0xc400000903, 0x0, 0x20000c42003e400, 0xc420078000, 0x10ef6c8, 0xc420000900, 0xc420049e08, 0x1044373, 0xffffffffffffffff, 0xc42006e000, ...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/sys_darwin_amd64.s:542 +0xb fp=0xc420049db0 sp=0xc420049da8 pc=0x10494bb
+runtime.semasleep1(0xffffffffffffffff, 0xc42006e000)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:417 +0x52 fp=0xc420049df0 sp=0xc420049db0 pc=0x1020c42
+runtime.semasleep.func1()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:436 +0x33 fp=0xc420049e18 sp=0xc420049df0 pc=0x1044373
+runtime.semasleep(0xffffffffffffffff, 0x107e9e8)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:435 +0x44 fp=0xc420049e50 sp=0xc420049e18 pc=0x1020d74
+runtime.notesleep(0xc42003e548)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/lock_sema.go:167 +0xe9 fp=0xc420049e88 sp=0xc420049e50 pc=0x100af59
+runtime.stopm()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:1947 +0xe5 fp=0xc420049eb0 sp=0xc420049e88 pc=0x1028235
+runtime.findrunnable(0xc42002a500, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:2404 +0x4fa fp=0xc420049f58 sp=0xc420049eb0 pc=0x10293ea
+runtime.schedule()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:2530 +0x13b fp=0xc420049fa0 sp=0xc420049f58 pc=0x1029edb
+runtime.park_m(0xc420000600)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:2593 +0xb6 fp=0xc420049fd0 sp=0xc420049fa0 pc=0x102a206
+runtime.mcall(0x10493d2)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/asm_amd64.s:351 +0x5b fp=0xc420049fe0 sp=0xc420049fd0 pc=0x104594b
+rax    0xe
+rbx    0xc42003e400
+rcx    0xc420049da8
+rdx    0xc420049e28
+rdi    0x903
+rsi    0x1
+rbp    0xc420049de0
+rsp    0xc420049da8
+r8     0x3
+r9     0xc420000900
+r10    0x0
+r11    0x286
+r12    0x0
+r13    0xf1
+r14    0x11
+r15    0x0
+rip    0x10494bb
+rflags 0x286
+cs     0x7
+fs     0x0
+gs     0x0
+
+-----
+
+SIGQUIT: quit
+PC=0x10494bb m=3 sigcode=0
+
+goroutine 0 [idle]:
+runtime.mach_semaphore_wait(0xc03, 0x0, 0x0, 0x0, 0x0, 0xc420000d80, 0xc42004be80, 0x1044373, 0xffffffffffffffff, 0xc42004be90, ...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/sys_darwin_amd64.s:542 +0xb fp=0xc42004be28 sp=0xc42004be20 pc=0x10494bb
+runtime.semasleep1(0xffffffffffffffff, 0xc42004be90)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:417 +0x52 fp=0xc42004be68 sp=0xc42004be28 pc=0x1020c42
+runtime.semasleep.func1()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:436 +0x33 fp=0xc42004be90 sp=0xc42004be68 pc=0x1044373
+runtime.semasleep(0xffffffffffffffff, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:435 +0x44 fp=0xc42004bec8 sp=0xc42004be90 pc=0x1020d74
+runtime.notesleep(0xc42003e948)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/lock_sema.go:167 +0xe9 fp=0xc42004bf00 sp=0xc42004bec8 pc=0x100af59
+runtime.stopm()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:1947 +0xe5 fp=0xc42004bf28 sp=0xc42004bf00 pc=0x1028235
+runtime.startlockedm(0xc420000180)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:2126 +0x99 fp=0xc42004bf58 sp=0xc42004bf28 pc=0x1028c09
+runtime.schedule()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:2543 +0x6f fp=0xc42004bfa0 sp=0xc42004bf58 pc=0x1029e0f
+runtime.park_m(0xc420000a80)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:2593 +0xb6 fp=0xc42004bfd0 sp=0xc42004bfa0 pc=0x102a206
+runtime.mcall(0x10493d2)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/asm_amd64.s:351 +0x5b fp=0xc42004bfe0 sp=0xc42004bfd0 pc=0x104594b
+rax    0xe
+rbx    0xc42003e800
+rcx    0xc42004be20
+rdx    0xc42004bea0
+rdi    0xc03
+rsi    0x3
+rbp    0xc42004be58
+rsp    0xc42004be20
+r8     0xb03
+r9     0x0
+r10    0x100
+r11    0x286
+r12    0x0
+r13    0x0
+r14    0x0
+r15    0x0
+rip    0x10494bb
+rflags 0x286
+cs     0x7
+fs     0x0
+gs     0x0
+
+-----
+
+SIGQUIT: quit
+PC=0x10494bb m=4 sigcode=0
+
+goroutine 0 [idle]:
+runtime.mach_semaphore_wait(0xf03, 0x0, 0x0, 0x0, 0x0, 0xc42006e180, 0xc42007de18, 0x1044373, 0xffffffffffffffff, 0xc400000000, ...)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/sys_darwin_amd64.s:542 +0xb fp=0xc42007ddc0 sp=0xc42007ddb8 pc=0x10494bb
+runtime.semasleep1(0xffffffffffffffff, 0xc400000000)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:417 +0x52 fp=0xc42007de00 sp=0xc42007ddc0 pc=0x1020c42
+runtime.semasleep.func1()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:436 +0x33 fp=0xc42007de28 sp=0xc42007de00 pc=0x1044373
+runtime.semasleep(0xffffffffffffffff, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/os_darwin.go:435 +0x44 fp=0xc42007de60 sp=0xc42007de28 pc=0x1020d74
+runtime.notesleep(0xc42006c148)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/lock_sema.go:167 +0xe9 fp=0xc42007de98 sp=0xc42007de60 pc=0x100af59
+runtime.stopm()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:1947 +0xe5 fp=0xc42007dec0 sp=0xc42007de98 pc=0x1028235
+runtime.findrunnable(0xc42002ca00, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:2404 +0x4fa fp=0xc42007df68 sp=0xc42007dec0 pc=0x10293ea
+runtime.schedule()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:2530 +0x13b fp=0xc42007dfb0 sp=0xc42007df68 pc=0x1029edb
+runtime.mstart1(0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:1232 +0x9e fp=0xc42007dfd8 sp=0xc42007dfb0 pc=0x1026d5e
+runtime.mstart()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:1188 +0x76 fp=0xc42007e000 sp=0xc42007dfd8 pc=0x1026ca6
+rax    0xe
+rbx    0xc42006c000
+rcx    0xc42007ddb8
+rdx    0xc42007de38
+rdi    0xf03
+rsi    0x1
+rbp    0xc42007ddf0
+rsp    0xc42007ddb8
+r8     0x0
+r9     0x0
+r10    0x100
+r11    0x286
+r12    0x0
+r13    0x0
+r14    0x0
+r15    0x0
+rip    0x10494bb
+rflags 0x286
+cs     0x7
+fs     0x0
+gs     0x0

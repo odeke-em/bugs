@@ -1,0 +1,25 @@
+package main
+
+import (
+	"log"
+	"time"
+
+	"github.com/google/go-cmp/cmp"
+)
+
+type ts struct {
+	Timestamp time.Time
+}
+
+func main() {
+	want := []*ts{{}}
+
+	got1 := &ts{}
+	if diff := cmp.Diff(got1, want[0], roundToMicros); diff != "" {
+		log.Fatalf("mismatch got - want +\n%s", diff)
+	}
+}
+
+// Round times to the microsecond for comparison purposes.
+var roundToMicros = cmp.Transformer("RoundToMicros",
+	func(t time.Time) time.Time { return t.Round(time.Microsecond) })

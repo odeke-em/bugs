@@ -1,0 +1,2435 @@
+# command-line-arguments
+
+before walk main
+.   DCL l(10)
+.   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   AS l(10) colas(true) tc(1)
+.   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   LITERAL-0 l(10) tc(1) int
+
+.   FOR l(10) tc(1)
+.   .   LT-init
+.   .   .   AS l(10) tc(1)
+.   .   .   .   NAME-main..autotmp_41 a(true) l(10) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LEN l(10) tc(1) int
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   LT l(10) tc(1) hascall bool
+.   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_41 a(true) l(10) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   BLOCK l(10)
+.   .   BLOCK-list
+.   .   .   ASOP-ADD l(10) tc(1) int
+.   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   LITERAL-4 l(10) tc(1) int
+.   FOR-body
+.   .   VARKILL l(10) tc(1)
+.   .   .   NAME-main..autotmp_41 a(true) l(10) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   DCL l(11)
+.   .   .   NAME-fmt.a a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   DCL l(11)
+.   .   .   NAME-fmt.n a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(11)
+.   .   .   NAME-fmt.err a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(11) tc(1)
+.   .   .   NAME-main..autotmp_42 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used uint32
+.   .   .   CALLFUNC l(11) tc(1) uint32
+.   .   .   .   NAME-main.readLittleEndian32_1 a(true) l(21) x(0) class(PFUNC) tc(1) used FUNC-func(byte, byte, byte, byte) uint32
+.   .   .   CALLFUNC-list
+.   .   .   .   INDEX l(11) tc(1) byte
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   .   INDEX l(11) tc(1) byte
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   ADD l(11) tc(1) int
+.   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   LITERAL-1 l(11) tc(1) int
+
+.   .   .   .   INDEX l(11) tc(1) byte
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   ADD l(11) tc(1) int
+.   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   LITERAL-2 l(11) tc(1) int
+
+.   .   .   .   INDEX l(11) tc(1) byte
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   ADD l(11) tc(1) int
+.   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   LITERAL-3 l(11) tc(1) int
+
+.   .   AS2 l(11) tc(1)
+.   .   AS2-list
+.   .   .   NAME-main.~arg0 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   AS2-rlist
+.   .   .   CONVIFACE l(11) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-main..autotmp_42 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used uint32
+
+.   .   VARKILL l(11) tc(1)
+.   .   .   NAME-main..autotmp_42 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used uint32
+
+.   .   AS l(11) tc(1)
+.   .   .   NAME-fmt.a a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   .   SLICELIT l(11) esc(no) tc(1) SLICE-[]interface {}
+.   .   .   .   LITERAL-1 l(11) untyped number
+.   .   .   SLICELIT-list
+.   .   .   .   NAME-main.~arg0 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   AS l(11) tc(1)
+.   .   .   NAME-fmt.n a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(11) tc(1)
+.   .   .   NAME-fmt.err a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   INLMARK l(11) x(1)
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   AS2FUNC l(274) tc(1)
+.   .   AS2FUNC-list
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+.   .   AS2FUNC-rlist
+.   .   .   CALLFUNC l(274) tc(1) isddd(true) STRUCT-(int, error)
+.   .   .   .   NAME-fmt.Fprintln a(true) l(262) x(0) class(PFUNC) tc(1) used FUNC-func(io.Writer, ...interface {}) (int, error)
+.   .   .   CALLFUNC-list
+.   .   .   .   CONVIFACE l(274) esc(h) tc(1) io.Writer
+.   .   .   .   .   NAME-os.Stdout a(true) l(60) x(0) class(PEXTERN) tc(1) used PTR-*os.File
+
+.   .   .   .   NAME-fmt.a a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   AS2 l(274) tc(1)
+.   .   AS2-list
+.   .   .   NAME-fmt..autotmp_3 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt..autotmp_4 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   AS2-rlist
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   AS2 l(11) tc(1)
+.   .   AS2-list
+.   .   .   NAME-fmt.n a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt.err a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   AS2-rlist
+.   .   .   NAME-fmt..autotmp_3 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt..autotmp_4 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   GOTO l(11) tc(1) main..i0
+
+.   .   LABEL l(11) tc(1) main..i0
+
+.   .   DCL l(12)
+.   .   .   NAME-fmt.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   DCL l(12)
+.   .   .   NAME-fmt.n a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(12)
+.   .   .   NAME-fmt.err a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   DCL l(12)
+.   .   .   NAME-main.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(12)
+.   .   .   NAME-main.b a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(12)
+.   .   .   NAME-main.c a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(12)
+.   .   .   NAME-main.d a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(12)
+.   .   .   NAME-main.~r4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+
+.   .   AS2 l(12) tc(1)
+.   .   AS2-list
+.   .   .   NAME-main.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   .   NAME-main.b a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   .   NAME-main.c a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   .   NAME-main.d a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   AS2-rlist
+.   .   .   INDEX l(12) tc(1) byte
+.   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   INDEX l(12) tc(1) byte
+.   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   ADD l(12) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-1 l(12) tc(1) int
+
+.   .   .   INDEX l(12) tc(1) byte
+.   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   ADD l(12) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-2 l(12) tc(1) int
+
+.   .   .   INDEX l(12) tc(1) byte
+.   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   ADD l(12) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-3 l(12) tc(1) int
+
+.   .   AS l(12) tc(1)
+.   .   .   NAME-main.~r4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+
+.   .   INLMARK l(12) x(2)
+
+.   .   AS2 l(12) tc(1)
+.   .   AS2-list
+.   .   .   NAME-main.~r4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+.   .   AS2-rlist
+.   .   .   OR l(31) tc(1) uint32
+.   .   .   .   OR l(31) tc(1) uint32
+.   .   .   .   .   OR l(31) tc(1) uint32
+.   .   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   .   NAME-main.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   LSH l(31) tc(1) uint32
+.   .   .   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   .   .   NAME-main.b a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   .   LITERAL-8 l(31) tc(1) uint
+.   .   .   .   .   LSH l(31) tc(1) uint32
+.   .   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   .   NAME-main.c a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   LITERAL-16 l(31) tc(1) uint
+.   .   .   .   LSH l(31) tc(1) uint32
+.   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   NAME-main.d a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   LITERAL-24 l(31) tc(1) uint
+
+.   .   GOTO l(12) tc(1) main..i1
+
+.   .   LABEL l(12) tc(1) main..i1
+
+.   .   AS2 l(12) tc(1)
+.   .   AS2-list
+.   .   .   NAME-main.~arg0 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   AS2-rlist
+.   .   .   CONVIFACE l(12) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   CONVNOP l(12) tc(1) hascall uint32
+.   .   .   .   .   NAME-main.~r4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+
+.   .   AS l(12) tc(1)
+.   .   .   NAME-fmt.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   .   SLICELIT l(12) esc(no) tc(1) SLICE-[]interface {}
+.   .   .   .   LITERAL-1 l(12) untyped number
+.   .   .   SLICELIT-list
+.   .   .   .   NAME-main.~arg0 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   AS l(12) tc(1)
+.   .   .   NAME-fmt.n a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(12) tc(1)
+.   .   .   NAME-fmt.err a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   INLMARK l(12) x(3)
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   AS2FUNC l(274) tc(1)
+.   .   AS2FUNC-list
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+.   .   AS2FUNC-rlist
+.   .   .   CALLFUNC l(274) tc(1) isddd(true) STRUCT-(int, error)
+.   .   .   .   NAME-fmt.Fprintln a(true) l(262) x(0) class(PFUNC) tc(1) used FUNC-func(io.Writer, ...interface {}) (int, error)
+.   .   .   CALLFUNC-list
+.   .   .   .   CONVIFACE l(274) esc(h) tc(1) io.Writer
+.   .   .   .   .   NAME-os.Stdout a(true) l(60) x(0) class(PEXTERN) tc(1) used PTR-*os.File
+
+.   .   .   .   NAME-fmt.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   AS2 l(274) tc(1)
+.   .   AS2-list
+.   .   .   NAME-fmt..autotmp_3 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt..autotmp_4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   AS2-rlist
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   AS2 l(12) tc(1)
+.   .   AS2-list
+.   .   .   NAME-fmt.n a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt.err a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   AS2-rlist
+.   .   .   NAME-fmt..autotmp_3 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt..autotmp_4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   GOTO l(12) tc(1) main..i2
+
+.   .   LABEL l(12) tc(1) main..i2
+
+.   .   DCL l(13)
+.   .   .   NAME-fmt.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   DCL l(13)
+.   .   .   NAME-fmt.n a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(13)
+.   .   .   NAME-fmt.err a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   DCL l(13)
+.   .   .   NAME-main.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(13)
+.   .   .   NAME-main.b a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(13)
+.   .   .   NAME-main.c a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(13)
+.   .   .   NAME-main.d a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(13)
+.   .   .   NAME-main.~r4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+
+.   .   AS2 l(13) tc(1)
+.   .   AS2-list
+.   .   .   NAME-main.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   .   NAME-main.b a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   .   NAME-main.c a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   .   NAME-main.d a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   AS2-rlist
+.   .   .   INDEX l(13) tc(1) byte
+.   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   INDEX l(13) tc(1) byte
+.   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   ADD l(13) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-1 l(13) tc(1) int
+
+.   .   .   INDEX l(13) tc(1) byte
+.   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   ADD l(13) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-2 l(13) tc(1) int
+
+.   .   .   INDEX l(13) tc(1) byte
+.   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   ADD l(13) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-3 l(13) tc(1) int
+
+.   .   AS l(13) tc(1)
+.   .   .   NAME-main.~r4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+
+.   .   INLMARK l(13) x(4)
+
+.   .   AS2 l(13) tc(1)
+.   .   AS2-list
+.   .   .   NAME-main.~r4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+.   .   AS2-rlist
+.   .   .   OR l(35) tc(1) uint32
+.   .   .   .   OR l(35) tc(1) uint32
+.   .   .   .   .   OR l(35) tc(1) uint32
+.   .   .   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   NAME-main.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   .   LITERAL-255 l(35) tc(1) uint32
+.   .   .   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   .   .   LSH l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   .   NAME-main.b a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   .   .   LITERAL-8 l(35) tc(1) uint
+.   .   .   .   .   .   .   LITERAL-65280 l(35) tc(1) uint32
+.   .   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   .   LSH l(35) tc(1) uint32
+.   .   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   NAME-main.c a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   .   LITERAL-16 l(35) tc(1) uint
+.   .   .   .   .   .   LITERAL-16711680 l(35) tc(1) uint32
+.   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   LSH l(35) tc(1) uint32
+.   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   NAME-main.d a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   LITERAL-24 l(35) tc(1) uint
+.   .   .   .   .   LITERAL-4278190080 l(35) tc(1) uint32
+
+.   .   GOTO l(13) tc(1) main..i3
+
+.   .   LABEL l(13) tc(1) main..i3
+
+.   .   AS2 l(13) tc(1)
+.   .   AS2-list
+.   .   .   NAME-main.~arg0 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   AS2-rlist
+.   .   .   CONVIFACE l(13) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   CONVNOP l(13) tc(1) hascall uint32
+.   .   .   .   .   NAME-main.~r4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+
+.   .   AS l(13) tc(1)
+.   .   .   NAME-fmt.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   .   SLICELIT l(13) esc(no) tc(1) SLICE-[]interface {}
+.   .   .   .   LITERAL-1 l(13) untyped number
+.   .   .   SLICELIT-list
+.   .   .   .   NAME-main.~arg0 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   AS l(13) tc(1)
+.   .   .   NAME-fmt.n a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(13) tc(1)
+.   .   .   NAME-fmt.err a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   INLMARK l(13) x(5)
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   AS2FUNC l(274) tc(1)
+.   .   AS2FUNC-list
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+.   .   AS2FUNC-rlist
+.   .   .   CALLFUNC l(274) tc(1) isddd(true) STRUCT-(int, error)
+.   .   .   .   NAME-fmt.Fprintln a(true) l(262) x(0) class(PFUNC) tc(1) used FUNC-func(io.Writer, ...interface {}) (int, error)
+.   .   .   CALLFUNC-list
+.   .   .   .   CONVIFACE l(274) esc(h) tc(1) io.Writer
+.   .   .   .   .   NAME-os.Stdout a(true) l(60) x(0) class(PEXTERN) tc(1) used PTR-*os.File
+
+.   .   .   .   NAME-fmt.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   AS2 l(274) tc(1)
+.   .   AS2-list
+.   .   .   NAME-fmt..autotmp_3 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt..autotmp_4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   AS2-rlist
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   AS2 l(13) tc(1)
+.   .   AS2-list
+.   .   .   NAME-fmt.n a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt.err a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   AS2-rlist
+.   .   .   NAME-fmt..autotmp_3 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt..autotmp_4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   GOTO l(13) tc(1) main..i4
+
+.   .   LABEL l(13) tc(1) main..i4
+
+.   .   DCL l(14)
+.   .   .   NAME-fmt.a a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   DCL l(14)
+.   .   .   NAME-fmt.n a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(14)
+.   .   .   NAME-fmt.err a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS2 l(14) tc(1)
+.   .   AS2-list
+.   .   .   NAME-main.~arg0 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   AS2-rlist
+.   .   .   CONVIFACE l(14) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   OR l(14) tc(1) uint32
+.   .   .   .   .   OR l(14) tc(1) uint32
+.   .   .   .   .   .   OR l(14) tc(1) uint32
+.   .   .   .   .   .   .   CONV l(14) tc(1) uint32
+.   .   .   .   .   .   .   .   INDEX l(14) tc(1) byte
+.   .   .   .   .   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   .   CONV l(14) tc(1) uint32
+.   .   .   .   .   .   .   .   LSH l(14) tc(1) byte
+.   .   .   .   .   .   .   .   .   INDEX l(14) tc(1) byte
+.   .   .   .   .   .   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   .   .   .   .   .   ADD l(14) tc(1) int
+.   .   .   .   .   .   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   .   .   .   .   .   LITERAL-1 l(14) tc(1) int
+.   .   .   .   .   .   .   .   .   LITERAL-8 l(14) tc(1) uint
+.   .   .   .   .   .   CONV l(14) tc(1) uint32
+.   .   .   .   .   .   .   LSH l(14) tc(1) byte
+.   .   .   .   .   .   .   .   INDEX l(14) tc(1) byte
+.   .   .   .   .   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   .   .   .   .   ADD l(14) tc(1) int
+.   .   .   .   .   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   .   .   .   .   LITERAL-2 l(14) tc(1) int
+.   .   .   .   .   .   .   .   LITERAL-16 l(14) tc(1) uint
+.   .   .   .   .   CONV l(14) tc(1) uint32
+.   .   .   .   .   .   LSH l(14) tc(1) byte
+.   .   .   .   .   .   .   INDEX l(14) tc(1) byte
+.   .   .   .   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   .   .   .   ADD l(14) tc(1) int
+.   .   .   .   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   .   .   .   LITERAL-3 l(14) tc(1) int
+.   .   .   .   .   .   .   LITERAL-24 l(14) tc(1) uint
+
+.   .   AS l(14) tc(1)
+.   .   .   NAME-fmt.a a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   .   SLICELIT l(14) esc(no) tc(1) SLICE-[]interface {}
+.   .   .   .   LITERAL-1 l(14) untyped number
+.   .   .   SLICELIT-list
+.   .   .   .   NAME-main.~arg0 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   AS l(14) tc(1)
+.   .   .   NAME-fmt.n a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(14) tc(1)
+.   .   .   NAME-fmt.err a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   INLMARK l(14) x(6)
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   AS2FUNC l(274) tc(1)
+.   .   AS2FUNC-list
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+.   .   AS2FUNC-rlist
+.   .   .   CALLFUNC l(274) tc(1) isddd(true) STRUCT-(int, error)
+.   .   .   .   NAME-fmt.Fprintln a(true) l(262) x(0) class(PFUNC) tc(1) used FUNC-func(io.Writer, ...interface {}) (int, error)
+.   .   .   CALLFUNC-list
+.   .   .   .   CONVIFACE l(274) esc(h) tc(1) io.Writer
+.   .   .   .   .   NAME-os.Stdout a(true) l(60) x(0) class(PEXTERN) tc(1) used PTR-*os.File
+
+.   .   .   .   NAME-fmt.a a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   AS2 l(274) tc(1)
+.   .   AS2-list
+.   .   .   NAME-fmt..autotmp_3 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt..autotmp_4 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   AS2-rlist
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   AS2 l(14) tc(1)
+.   .   AS2-list
+.   .   .   NAME-fmt.n a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt.err a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   AS2-rlist
+.   .   .   NAME-fmt..autotmp_3 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt..autotmp_4 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   GOTO l(14) tc(1) main..i5
+
+.   .   LABEL l(14) tc(1) main..i5
+
+.   .   DCL l(15)
+.   .   .   NAME-fmt.a a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   DCL l(15)
+.   .   .   NAME-fmt.n a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(15)
+.   .   .   NAME-fmt.err a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS2 l(15) tc(1)
+.   .   AS2-list
+.   .   .   NAME-main.~arg0 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   AS2-rlist
+.   .   .   CONVIFACE l(15) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-main..stmp_0 a(true) l(15) x(0) class(PEXTERN) tc(1) used string
+
+.   .   AS l(15) tc(1)
+.   .   .   NAME-fmt.a a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   .   SLICELIT l(15) esc(no) tc(1) SLICE-[]interface {}
+.   .   .   .   LITERAL-1 l(15) untyped number
+.   .   .   SLICELIT-list
+.   .   .   .   NAME-main.~arg0 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   AS l(15) tc(1)
+.   .   .   NAME-fmt.n a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(15) tc(1)
+.   .   .   NAME-fmt.err a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   INLMARK l(15) x(7)
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   AS2FUNC l(274) tc(1)
+.   .   AS2FUNC-list
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+.   .   AS2FUNC-rlist
+.   .   .   CALLFUNC l(274) tc(1) isddd(true) STRUCT-(int, error)
+.   .   .   .   NAME-fmt.Fprintln a(true) l(262) x(0) class(PFUNC) tc(1) used FUNC-func(io.Writer, ...interface {}) (int, error)
+.   .   .   CALLFUNC-list
+.   .   .   .   CONVIFACE l(274) esc(h) tc(1) io.Writer
+.   .   .   .   .   NAME-os.Stdout a(true) l(60) x(0) class(PEXTERN) tc(1) used PTR-*os.File
+
+.   .   .   .   NAME-fmt.a a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   AS2 l(274) tc(1)
+.   .   AS2-list
+.   .   .   NAME-fmt..autotmp_3 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt..autotmp_4 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   AS2-rlist
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   AS2 l(15) tc(1)
+.   .   AS2-list
+.   .   .   NAME-fmt.n a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt.err a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   AS2-rlist
+.   .   .   NAME-fmt..autotmp_3 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt..autotmp_4 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   GOTO l(15) tc(1) main..i6
+
+.   .   LABEL l(15) tc(1) main..i6
+
+.   VARKILL l(10) tc(1)
+.   .   NAME-main..autotmp_41 a(true) l(10) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+after walk main
+.   DCL l(10)
+.   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   AS l(10) colas(true) tc(1)
+.   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   LITERAL-0 l(10) tc(1) int
+
+.   FOR l(10) tc(1)
+.   .   LT-init
+.   .   .   AS l(10) tc(1)
+.   .   .   .   NAME-main..autotmp_41 a(true) l(10) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LEN l(10) tc(1) int
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   LT l(10) tc(1) hascall bool
+.   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_41 a(true) l(10) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   BLOCK l(10)
+.   .   BLOCK-list
+.   .   .   AS l(10) tc(1) int
+.   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   ADD l(10) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-4 l(10) tc(1) int
+.   FOR-body
+.   .   VARKILL l(10) tc(1)
+.   .   .   NAME-main..autotmp_41 a(true) l(10) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   DCL l(11)
+.   .   .   NAME-fmt.a a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   DCL l(11)
+.   .   .   NAME-fmt.n a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(11)
+.   .   .   NAME-fmt.err a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(11) tc(1) hascall
+.   .   .   NAME-main..autotmp_42 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used uint32
+.   .   .   CALLFUNC l(11) tc(1) hascall uint32
+.   .   .   .   NAME-main.readLittleEndian32_1 a(true) l(21) x(0) class(PFUNC) tc(1) used FUNC-func(byte, byte, byte, byte) uint32
+.   .   .   CALLFUNC-list
+.   .   .   .   AS l(11) tc(1) hascall
+.   .   .   .   .   NAME-main..autotmp_45 a(true) l(11) x(0) class(PAUTO) esc(N) used byte
+.   .   .   .   .   INDEX l(11) tc(1) hascall byte
+.   .   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   .   AS l(11) tc(1) hascall
+.   .   .   .   .   NAME-main..autotmp_46 a(true) l(11) x(0) class(PAUTO) esc(N) used byte
+.   .   .   .   .   INDEX l(11) tc(1) hascall byte
+.   .   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   .   ADD l(11) tc(1) int
+.   .   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   .   LITERAL-1 l(11) tc(1) int
+
+.   .   .   .   AS l(11) tc(1) hascall
+.   .   .   .   .   NAME-main..autotmp_47 a(true) l(11) x(0) class(PAUTO) esc(N) used byte
+.   .   .   .   .   INDEX l(11) tc(1) hascall byte
+.   .   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   .   ADD l(11) tc(1) int
+.   .   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   .   LITERAL-2 l(11) tc(1) int
+
+.   .   .   .   AS l(11) tc(1) hascall
+.   .   .   .   .   NAME-main..autotmp_48 a(true) l(11) x(0) class(PAUTO) esc(N) used byte
+.   .   .   .   .   INDEX l(11) tc(1) hascall byte
+.   .   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   .   ADD l(11) tc(1) int
+.   .   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   .   LITERAL-3 l(11) tc(1) int
+.   .   .   CALLFUNC-rlist
+.   .   .   .   NAME-main..autotmp_45 a(true) l(11) x(0) class(PAUTO) esc(N) used byte
+
+.   .   .   .   NAME-main..autotmp_46 a(true) l(11) x(0) class(PAUTO) esc(N) used byte
+
+.   .   .   .   NAME-main..autotmp_47 a(true) l(11) x(0) class(PAUTO) esc(N) used byte
+
+.   .   .   .   NAME-main..autotmp_48 a(true) l(11) x(0) class(PAUTO) esc(N) used byte
+
+.   .   BLOCK-init
+.   .   .   AS l(11) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_50 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used UNSAFEPTR-unsafe.Pointer
+.   .   .   .   CALLFUNC l(11) tc(1) hascall UNSAFEPTR-unsafe.Pointer
+.   .   .   .   .   NAME-runtime.convT32 a(true) x(0) class(PFUNC) tc(1) used FUNC-func(uint32) unsafe.Pointer
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   NAME-main..autotmp_42 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used uint32
+
+.   .   .   AS l(11) tc(1)
+.   .   .   .   NAME-main..autotmp_49 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   EFACE l(11) tc(1) INTER-interface {}
+.   .   .   .   .   ADDR a(true) l(11) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.uint32 a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   NAME-main..autotmp_50 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used UNSAFEPTR-unsafe.Pointer
+.   .   BLOCK l(11) hascall
+.   .   BLOCK-list
+.   .   .   AS l(11) tc(1)
+.   .   .   .   NAME-main.~arg0 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   .   .   NAME-main..autotmp_49 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   VARKILL l(11) tc(1)
+.   .   .   NAME-main..autotmp_42 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used uint32
+
+.   .   EMPTY-init
+.   .   .   AS l(11) tc(1)
+.   .   .   .   NAME-main..autotmp_53 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+
+.   .   .   AS l(11) tc(1)
+.   .   .   .   NAME-main..autotmp_51 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   .   .   ADDR l(11) tc(1) PTR-*[1]interface {}
+.   .   .   .   .   NAME-main..autotmp_53 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+
+.   .   .   BLOCK l(11)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(11) tc(1) hascall
+.   .   .   .   .   INDEX l(11) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(11) tc(1) implicit(true) assigned hascall ARRAY-[1]interface {}
+.   .   .   .   .   .   .   NAME-main..autotmp_51 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   .   .   .   .   LITERAL-0 l(11) tc(1) int
+.   .   .   .   .   NAME-main.~arg0 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   BLOCK l(11)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(11) tc(1) hascall
+.   .   .   .   .   NAME-fmt.a a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   .   .   .   SLICEARR l(11) tc(1) hascall SLICE-[]interface {}
+.   .   .   .   .   .   NAME-main..autotmp_51 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   EMPTY l(11) tc(1) hascall
+.   .   .   NAME-fmt.a a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   AS l(11) tc(1)
+.   .   .   NAME-fmt.n a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(11) tc(1)
+.   .   .   NAME-fmt.err a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   INLMARK l(11) x(1)
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   BLOCK-init
+.   .   .   CALLFUNC l(274) tc(1) isddd(true) hascall STRUCT-(int, error)
+.   .   .   .   NAME-fmt.Fprintln a(true) l(262) x(0) class(PFUNC) tc(1) used FUNC-func(io.Writer, ...interface {}) (int, error)
+.   .   .   CALLFUNC-rlist
+.   .   .   .   EFACE l(274) tc(1) io.Writer
+.   .   .   .   .   ADDR a(true) l(274) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-go.itab.*os.File,io.Writer a(true) l(274) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   NAME-os.Stdout a(true) l(60) x(0) class(PEXTERN) tc(1) used PTR-*os.File
+
+.   .   .   .   NAME-fmt.a a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   BLOCK l(274) hascall
+.   .   BLOCK-list
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+.   .   .   .   RESULT l(274) x(40) tc(1) int
+
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+.   .   .   .   RESULT l(274) x(48) tc(1) error
+
+.   .   BLOCK l(274)
+.   .   BLOCK-list
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-fmt..autotmp_3 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-fmt..autotmp_4 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   BLOCK l(11)
+.   .   BLOCK-list
+.   .   .   AS l(11) tc(1)
+.   .   .   .   NAME-fmt.n a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   NAME-fmt..autotmp_3 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   AS l(11) tc(1)
+.   .   .   .   NAME-fmt.err a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   .   .   NAME-fmt..autotmp_4 a(true) l(11) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   GOTO l(11) tc(1) main..i0
+
+.   .   LABEL l(11) tc(1) main..i0
+
+.   .   DCL l(12)
+.   .   .   NAME-fmt.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   DCL l(12)
+.   .   .   NAME-fmt.n a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(12)
+.   .   .   NAME-fmt.err a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   DCL l(12)
+.   .   .   NAME-main.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(12)
+.   .   .   NAME-main.b a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(12)
+.   .   .   NAME-main.c a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(12)
+.   .   .   NAME-main.d a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(12)
+.   .   .   NAME-main.~r4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+
+.   .   BLOCK-init
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-main..autotmp_54 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   ADD l(12) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-1 l(12) tc(1) int
+
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-main..autotmp_55 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   ADD l(12) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-2 l(12) tc(1) int
+
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-main..autotmp_56 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   ADD l(12) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-3 l(12) tc(1) int
+.   .   BLOCK l(12) hascall
+.   .   BLOCK-list
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-main..autotmp_57 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   .   INDEX l(12) tc(1) hascall byte
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   NAME-main..autotmp_54 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-main..autotmp_58 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   .   INDEX l(12) tc(1) hascall byte
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   NAME-main..autotmp_55 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-main..autotmp_59 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   .   INDEX l(12) tc(1) hascall byte
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   NAME-main..autotmp_56 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   .   AS l(12) tc(1) hascall
+.   .   .   .   NAME-main.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   INDEX l(12) tc(1) hascall byte
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   AS l(12) tc(1) hascall
+.   .   .   .   NAME-main.b a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   NAME-main..autotmp_57 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   .   AS l(12) tc(1) hascall
+.   .   .   .   NAME-main.c a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   NAME-main..autotmp_58 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   .   AS l(12) tc(1) hascall
+.   .   .   .   NAME-main.d a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   NAME-main..autotmp_59 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   AS l(12) tc(1)
+.   .   .   NAME-main.~r4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+
+.   .   INLMARK l(12) x(2)
+
+.   .   BLOCK-init
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-main..autotmp_60 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used uint32
+.   .   .   .   OR l(31) tc(1) uint32
+.   .   .   .   .   OR l(31) tc(1) uint32
+.   .   .   .   .   .   OR l(31) tc(1) uint32
+.   .   .   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   .   .   NAME-main.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   .   LSH l(31) tc(1) uint32
+.   .   .   .   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   .   .   .   NAME-main.b a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   .   .   LITERAL-8 l(31) tc(1) uint
+.   .   .   .   .   .   LSH l(31) tc(1) uint32
+.   .   .   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   .   .   NAME-main.c a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   .   LITERAL-16 l(31) tc(1) uint
+.   .   .   .   .   LSH l(31) tc(1) uint32
+.   .   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   .   NAME-main.d a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   LITERAL-24 l(31) tc(1) uint
+.   .   BLOCK l(12) hascall
+.   .   BLOCK-list
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-main.~r4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+.   .   .   .   NAME-main..autotmp_60 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used uint32
+
+.   .   GOTO l(12) tc(1) main..i1
+
+.   .   LABEL l(12) tc(1) main..i1
+
+.   .   BLOCK-init
+.   .   .   AS l(12) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_62 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used UNSAFEPTR-unsafe.Pointer
+.   .   .   .   CALLFUNC l(12) tc(1) hascall UNSAFEPTR-unsafe.Pointer
+.   .   .   .   .   NAME-runtime.convT32 a(true) x(0) class(PFUNC) tc(1) used FUNC-func(uint32) unsafe.Pointer
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   CONVNOP l(12) tc(1) uint32
+.   .   .   .   .   .   NAME-main.~r4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-main..autotmp_61 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   EFACE l(12) tc(1) INTER-interface {}
+.   .   .   .   .   ADDR a(true) l(12) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.uint32 a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   NAME-main..autotmp_62 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used UNSAFEPTR-unsafe.Pointer
+.   .   BLOCK l(12) hascall
+.   .   BLOCK-list
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-main.~arg0 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   .   .   NAME-main..autotmp_61 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   EMPTY-init
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-main..autotmp_65 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-main..autotmp_63 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   .   .   ADDR l(12) tc(1) PTR-*[1]interface {}
+.   .   .   .   .   NAME-main..autotmp_65 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+
+.   .   .   BLOCK l(12)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(12) tc(1) hascall
+.   .   .   .   .   INDEX l(12) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(12) tc(1) implicit(true) assigned hascall ARRAY-[1]interface {}
+.   .   .   .   .   .   .   NAME-main..autotmp_63 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   .   .   .   .   LITERAL-0 l(12) tc(1) int
+.   .   .   .   .   NAME-main.~arg0 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   BLOCK l(12)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(12) tc(1) hascall
+.   .   .   .   .   NAME-fmt.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   .   .   .   SLICEARR l(12) tc(1) hascall SLICE-[]interface {}
+.   .   .   .   .   .   NAME-main..autotmp_63 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   EMPTY l(12) tc(1) hascall
+.   .   .   NAME-fmt.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   AS l(12) tc(1)
+.   .   .   NAME-fmt.n a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(12) tc(1)
+.   .   .   NAME-fmt.err a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   INLMARK l(12) x(3)
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   BLOCK-init
+.   .   .   CALLFUNC l(274) tc(1) isddd(true) hascall STRUCT-(int, error)
+.   .   .   .   NAME-fmt.Fprintln a(true) l(262) x(0) class(PFUNC) tc(1) used FUNC-func(io.Writer, ...interface {}) (int, error)
+.   .   .   CALLFUNC-rlist
+.   .   .   .   EFACE l(274) tc(1) io.Writer
+.   .   .   .   .   ADDR a(true) l(274) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-go.itab.*os.File,io.Writer a(true) l(274) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   NAME-os.Stdout a(true) l(60) x(0) class(PEXTERN) tc(1) used PTR-*os.File
+
+.   .   .   .   NAME-fmt.a a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   BLOCK l(274) hascall
+.   .   BLOCK-list
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+.   .   .   .   RESULT l(274) x(40) tc(1) int
+
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+.   .   .   .   RESULT l(274) x(48) tc(1) error
+
+.   .   BLOCK l(274)
+.   .   BLOCK-list
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-fmt..autotmp_3 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-fmt..autotmp_4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   BLOCK l(12)
+.   .   BLOCK-list
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-fmt.n a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   NAME-fmt..autotmp_3 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-fmt.err a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   .   .   NAME-fmt..autotmp_4 a(true) l(12) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   GOTO l(12) tc(1) main..i2
+
+.   .   LABEL l(12) tc(1) main..i2
+
+.   .   DCL l(13)
+.   .   .   NAME-fmt.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   DCL l(13)
+.   .   .   NAME-fmt.n a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(13)
+.   .   .   NAME-fmt.err a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   DCL l(13)
+.   .   .   NAME-main.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(13)
+.   .   .   NAME-main.b a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(13)
+.   .   .   NAME-main.c a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(13)
+.   .   .   NAME-main.d a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+
+.   .   DCL l(13)
+.   .   .   NAME-main.~r4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+
+.   .   BLOCK-init
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-main..autotmp_66 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   ADD l(13) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-1 l(13) tc(1) int
+
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-main..autotmp_67 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   ADD l(13) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-2 l(13) tc(1) int
+
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-main..autotmp_68 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   ADD l(13) tc(1) int
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   LITERAL-3 l(13) tc(1) int
+.   .   BLOCK l(13) hascall
+.   .   BLOCK-list
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-main..autotmp_69 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   .   INDEX l(13) tc(1) hascall byte
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   NAME-main..autotmp_66 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-main..autotmp_70 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   .   INDEX l(13) tc(1) hascall byte
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   NAME-main..autotmp_67 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-main..autotmp_71 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   .   INDEX l(13) tc(1) hascall byte
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   NAME-main..autotmp_68 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   .   AS l(13) tc(1) hascall
+.   .   .   .   NAME-main.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   INDEX l(13) tc(1) hascall byte
+.   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   AS l(13) tc(1) hascall
+.   .   .   .   NAME-main.b a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   NAME-main..autotmp_69 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   .   AS l(13) tc(1) hascall
+.   .   .   .   NAME-main.c a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   NAME-main..autotmp_70 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   .   AS l(13) tc(1) hascall
+.   .   .   .   NAME-main.d a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   NAME-main..autotmp_71 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   AS l(13) tc(1)
+.   .   .   NAME-main.~r4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+
+.   .   INLMARK l(13) x(4)
+
+.   .   BLOCK-init
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-main..autotmp_72 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used uint32
+.   .   .   .   OR l(35) tc(1) uint32
+.   .   .   .   .   OR l(35) tc(1) uint32
+.   .   .   .   .   .   OR l(35) tc(1) uint32
+.   .   .   .   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   .   NAME-main.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   .   .   LITERAL-255 l(35) tc(1) uint32
+.   .   .   .   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   LSH l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   .   .   NAME-main.b a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   .   .   .   LITERAL-8 l(35) tc(1) uint
+.   .   .   .   .   .   .   .   LITERAL-65280 l(35) tc(1) uint32
+.   .   .   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   .   .   LSH l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   .   NAME-main.c a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   .   .   LITERAL-16 l(35) tc(1) uint
+.   .   .   .   .   .   .   LITERAL-16711680 l(35) tc(1) uint32
+.   .   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   .   LSH l(35) tc(1) uint32
+.   .   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   NAME-main.d a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used byte
+.   .   .   .   .   .   .   LITERAL-24 l(35) tc(1) uint
+.   .   .   .   .   .   LITERAL-4278190080 l(35) tc(1) uint32
+.   .   BLOCK l(13) hascall
+.   .   BLOCK-list
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-main.~r4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+.   .   .   .   NAME-main..autotmp_72 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used uint32
+
+.   .   GOTO l(13) tc(1) main..i3
+
+.   .   LABEL l(13) tc(1) main..i3
+
+.   .   BLOCK-init
+.   .   .   AS l(13) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_74 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used UNSAFEPTR-unsafe.Pointer
+.   .   .   .   CALLFUNC l(13) tc(1) hascall UNSAFEPTR-unsafe.Pointer
+.   .   .   .   .   NAME-runtime.convT32 a(true) x(0) class(PFUNC) tc(1) used FUNC-func(uint32) unsafe.Pointer
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   CONVNOP l(13) tc(1) uint32
+.   .   .   .   .   .   NAME-main.~r4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used uint32
+
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-main..autotmp_73 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   EFACE l(13) tc(1) INTER-interface {}
+.   .   .   .   .   ADDR a(true) l(13) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.uint32 a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   NAME-main..autotmp_74 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used UNSAFEPTR-unsafe.Pointer
+.   .   BLOCK l(13) hascall
+.   .   BLOCK-list
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-main.~arg0 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   .   .   NAME-main..autotmp_73 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   EMPTY-init
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-main..autotmp_77 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-main..autotmp_75 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   .   .   ADDR l(13) tc(1) PTR-*[1]interface {}
+.   .   .   .   .   NAME-main..autotmp_77 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+
+.   .   .   BLOCK l(13)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(13) tc(1) hascall
+.   .   .   .   .   INDEX l(13) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(13) tc(1) implicit(true) assigned hascall ARRAY-[1]interface {}
+.   .   .   .   .   .   .   NAME-main..autotmp_75 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   .   .   .   .   LITERAL-0 l(13) tc(1) int
+.   .   .   .   .   NAME-main.~arg0 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   BLOCK l(13)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(13) tc(1) hascall
+.   .   .   .   .   NAME-fmt.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   .   .   .   SLICEARR l(13) tc(1) hascall SLICE-[]interface {}
+.   .   .   .   .   .   NAME-main..autotmp_75 a(true) l(13) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   EMPTY l(13) tc(1) hascall
+.   .   .   NAME-fmt.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   AS l(13) tc(1)
+.   .   .   NAME-fmt.n a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(13) tc(1)
+.   .   .   NAME-fmt.err a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   INLMARK l(13) x(5)
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   BLOCK-init
+.   .   .   CALLFUNC l(274) tc(1) isddd(true) hascall STRUCT-(int, error)
+.   .   .   .   NAME-fmt.Fprintln a(true) l(262) x(0) class(PFUNC) tc(1) used FUNC-func(io.Writer, ...interface {}) (int, error)
+.   .   .   CALLFUNC-rlist
+.   .   .   .   EFACE l(274) tc(1) io.Writer
+.   .   .   .   .   ADDR a(true) l(274) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-go.itab.*os.File,io.Writer a(true) l(274) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   NAME-os.Stdout a(true) l(60) x(0) class(PEXTERN) tc(1) used PTR-*os.File
+
+.   .   .   .   NAME-fmt.a a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   BLOCK l(274) hascall
+.   .   BLOCK-list
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+.   .   .   .   RESULT l(274) x(40) tc(1) int
+
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+.   .   .   .   RESULT l(274) x(48) tc(1) error
+
+.   .   BLOCK l(274)
+.   .   BLOCK-list
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-fmt..autotmp_3 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-fmt..autotmp_4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   BLOCK l(13)
+.   .   BLOCK-list
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-fmt.n a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   NAME-fmt..autotmp_3 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   AS l(13) tc(1)
+.   .   .   .   NAME-fmt.err a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   .   .   NAME-fmt..autotmp_4 a(true) l(13) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   GOTO l(13) tc(1) main..i4
+
+.   .   LABEL l(13) tc(1) main..i4
+
+.   .   DCL l(14)
+.   .   .   NAME-fmt.a a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   DCL l(14)
+.   .   .   NAME-fmt.n a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(14)
+.   .   .   NAME-fmt.err a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   BLOCK-init
+.   .   .   AS l(14) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_80 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) assigned used UNSAFEPTR-unsafe.Pointer
+.   .   .   .   CALLFUNC l(14) tc(1) hascall UNSAFEPTR-unsafe.Pointer
+.   .   .   .   .   NAME-runtime.convT32 a(true) x(0) class(PFUNC) tc(1) used FUNC-func(uint32) unsafe.Pointer
+.   .   .   .   CALLFUNC-list
+.   .   .   .   .   AS l(14) tc(1) hascall
+.   .   .   .   .   .   NAME-main..autotmp_79 a(true) l(14) x(0) class(PAUTO) esc(N) used uint32
+.   .   .   .   .   .   OR l(14) tc(1) hascall uint32
+.   .   .   .   .   .   .   OR l(14) tc(1) hascall uint32
+.   .   .   .   .   .   .   .   OR l(14) tc(1) hascall uint32
+.   .   .   .   .   .   .   .   .   CONV l(14) tc(1) hascall uint32
+.   .   .   .   .   .   .   .   .   .   INDEX l(14) tc(1) hascall byte
+.   .   .   .   .   .   .   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   .   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   .   .   .   CONV l(14) tc(1) hascall uint32
+.   .   .   .   .   .   .   .   .   .   LSH l(14) tc(1) hascall byte
+.   .   .   .   .   .   .   .   .   .   .   INDEX l(14) tc(1) hascall byte
+.   .   .   .   .   .   .   .   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   .   .   .   .   .   .   .   ADD l(14) tc(1) int
+.   .   .   .   .   .   .   .   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   .   .   .   .   .   .   .   LITERAL-1 l(14) tc(1) int
+.   .   .   .   .   .   .   .   .   .   .   LITERAL-8 l(14) tc(1) uint
+.   .   .   .   .   .   .   .   CONV l(14) tc(1) hascall uint32
+.   .   .   .   .   .   .   .   .   LSH l(14) tc(1) hascall byte
+.   .   .   .   .   .   .   .   .   .   INDEX l(14) tc(1) hascall byte
+.   .   .   .   .   .   .   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   .   .   .   .   .   .   ADD l(14) tc(1) int
+.   .   .   .   .   .   .   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   .   .   .   .   .   .   LITERAL-2 l(14) tc(1) int
+.   .   .   .   .   .   .   .   .   .   LITERAL-16 l(14) tc(1) uint
+.   .   .   .   .   .   .   CONV l(14) tc(1) hascall uint32
+.   .   .   .   .   .   .   .   LSH l(14) tc(1) hascall byte
+.   .   .   .   .   .   .   .   .   INDEX l(14) tc(1) hascall byte
+.   .   .   .   .   .   .   .   .   .   NAME-main.foo a(true) l(7) x(0) class(PEXTERN) tc(1) used SLICE-[]byte
+.   .   .   .   .   .   .   .   .   .   ADD l(14) tc(1) int
+.   .   .   .   .   .   .   .   .   .   .   NAME-main.i a(true) g(1) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   .   .   .   .   .   .   .   LITERAL-3 l(14) tc(1) int
+.   .   .   .   .   .   .   .   .   LITERAL-24 l(14) tc(1) uint
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   NAME-main..autotmp_79 a(true) l(14) x(0) class(PAUTO) esc(N) used uint32
+
+.   .   .   AS l(14) tc(1)
+.   .   .   .   NAME-main..autotmp_78 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   EFACE l(14) tc(1) INTER-interface {}
+.   .   .   .   .   ADDR a(true) l(14) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.uint32 a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   NAME-main..autotmp_80 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) assigned used UNSAFEPTR-unsafe.Pointer
+.   .   BLOCK l(14) hascall
+.   .   BLOCK-list
+.   .   .   AS l(14) tc(1)
+.   .   .   .   NAME-main.~arg0 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   .   .   NAME-main..autotmp_78 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   EMPTY-init
+.   .   .   AS l(14) tc(1)
+.   .   .   .   NAME-main..autotmp_83 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+
+.   .   .   AS l(14) tc(1)
+.   .   .   .   NAME-main..autotmp_81 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   .   .   ADDR l(14) tc(1) PTR-*[1]interface {}
+.   .   .   .   .   NAME-main..autotmp_83 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+
+.   .   .   BLOCK l(14)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(14) tc(1) hascall
+.   .   .   .   .   INDEX l(14) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(14) tc(1) implicit(true) assigned hascall ARRAY-[1]interface {}
+.   .   .   .   .   .   .   NAME-main..autotmp_81 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   .   .   .   .   LITERAL-0 l(14) tc(1) int
+.   .   .   .   .   NAME-main.~arg0 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   BLOCK l(14)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(14) tc(1) hascall
+.   .   .   .   .   NAME-fmt.a a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   .   .   .   SLICEARR l(14) tc(1) hascall SLICE-[]interface {}
+.   .   .   .   .   .   NAME-main..autotmp_81 a(true) l(14) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   EMPTY l(14) tc(1) hascall
+.   .   .   NAME-fmt.a a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   AS l(14) tc(1)
+.   .   .   NAME-fmt.n a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(14) tc(1)
+.   .   .   NAME-fmt.err a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   INLMARK l(14) x(6)
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   BLOCK-init
+.   .   .   CALLFUNC l(274) tc(1) isddd(true) hascall STRUCT-(int, error)
+.   .   .   .   NAME-fmt.Fprintln a(true) l(262) x(0) class(PFUNC) tc(1) used FUNC-func(io.Writer, ...interface {}) (int, error)
+.   .   .   CALLFUNC-rlist
+.   .   .   .   EFACE l(274) tc(1) io.Writer
+.   .   .   .   .   ADDR a(true) l(274) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-go.itab.*os.File,io.Writer a(true) l(274) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   NAME-os.Stdout a(true) l(60) x(0) class(PEXTERN) tc(1) used PTR-*os.File
+
+.   .   .   .   NAME-fmt.a a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   BLOCK l(274) hascall
+.   .   BLOCK-list
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+.   .   .   .   RESULT l(274) x(40) tc(1) int
+
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+.   .   .   .   RESULT l(274) x(48) tc(1) error
+
+.   .   BLOCK l(274)
+.   .   BLOCK-list
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-fmt..autotmp_3 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-fmt..autotmp_4 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   BLOCK l(14)
+.   .   BLOCK-list
+.   .   .   AS l(14) tc(1)
+.   .   .   .   NAME-fmt.n a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   NAME-fmt..autotmp_3 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   AS l(14) tc(1)
+.   .   .   .   NAME-fmt.err a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   .   .   NAME-fmt..autotmp_4 a(true) l(14) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   GOTO l(14) tc(1) main..i5
+
+.   .   LABEL l(14) tc(1) main..i5
+
+.   .   DCL l(15)
+.   .   .   NAME-fmt.a a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   DCL l(15)
+.   .   .   NAME-fmt.n a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(15)
+.   .   .   NAME-fmt.err a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   BLOCK-init
+.   .   .   AS l(15) tc(1)
+.   .   .   .   NAME-main..autotmp_84 a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   EFACE l(15) tc(1) INTER-interface {}
+.   .   .   .   .   ADDR a(true) l(15) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.string a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   ADDR l(15) tc(1) PTR-*string
+.   .   .   .   .   .   NAME-main..stmp_0 a(true) l(15) x(0) class(PEXTERN) tc(1) addrtaken used string
+.   .   BLOCK l(15) hascall
+.   .   BLOCK-list
+.   .   .   AS l(15) tc(1)
+.   .   .   .   NAME-main.~arg0 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   .   .   NAME-main..autotmp_84 a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   EMPTY-init
+.   .   .   AS l(15) tc(1)
+.   .   .   .   NAME-main..autotmp_87 a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+
+.   .   .   AS l(15) tc(1)
+.   .   .   .   NAME-main..autotmp_85 a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   .   .   ADDR l(15) tc(1) PTR-*[1]interface {}
+.   .   .   .   .   NAME-main..autotmp_87 a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[1]interface {}
+
+.   .   .   BLOCK l(15)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(15) tc(1) hascall
+.   .   .   .   .   INDEX l(15) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(15) tc(1) implicit(true) assigned hascall ARRAY-[1]interface {}
+.   .   .   .   .   .   .   NAME-main..autotmp_85 a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   .   .   .   .   LITERAL-0 l(15) tc(1) int
+.   .   .   .   .   NAME-main.~arg0 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   BLOCK l(15)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(15) tc(1) hascall
+.   .   .   .   .   NAME-fmt.a a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   .   .   .   SLICEARR l(15) tc(1) hascall SLICE-[]interface {}
+.   .   .   .   .   .   NAME-main..autotmp_85 a(true) l(15) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[1]interface {}
+.   .   EMPTY l(15) tc(1) hascall
+.   .   .   NAME-fmt.a a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   AS l(15) tc(1)
+.   .   .   NAME-fmt.n a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(15) tc(1)
+.   .   .   NAME-fmt.err a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   INLMARK l(15) x(7)
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   BLOCK-init
+.   .   .   CALLFUNC l(274) tc(1) isddd(true) hascall STRUCT-(int, error)
+.   .   .   .   NAME-fmt.Fprintln a(true) l(262) x(0) class(PFUNC) tc(1) used FUNC-func(io.Writer, ...interface {}) (int, error)
+.   .   .   CALLFUNC-rlist
+.   .   .   .   EFACE l(274) tc(1) io.Writer
+.   .   .   .   .   ADDR a(true) l(274) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-go.itab.*os.File,io.Writer a(true) l(274) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   NAME-os.Stdout a(true) l(60) x(0) class(PEXTERN) tc(1) used PTR-*os.File
+
+.   .   .   .   NAME-fmt.a a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   BLOCK l(274) hascall
+.   .   BLOCK-list
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+.   .   .   .   RESULT l(274) x(40) tc(1) int
+
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+.   .   .   .   RESULT l(274) x(48) tc(1) error
+
+.   .   BLOCK l(274)
+.   .   BLOCK-list
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-fmt..autotmp_3 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-fmt..autotmp_4 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_44 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_43 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   BLOCK l(15)
+.   .   BLOCK-list
+.   .   .   AS l(15) tc(1)
+.   .   .   .   NAME-fmt.n a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   NAME-fmt..autotmp_3 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   AS l(15) tc(1)
+.   .   .   .   NAME-fmt.err a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   .   .   NAME-fmt..autotmp_4 a(true) l(15) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   GOTO l(15) tc(1) main..i6
+
+.   .   LABEL l(15) tc(1) main..i6
+
+.   VARKILL l(10) tc(1)
+.   .   NAME-main..autotmp_41 a(true) l(10) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+before walk readLittleEndian32_1
+.   DCL l(22)
+.   .   NAME-main.r a(true) g(6) l(22) x(0) class(PAUTO) esc(no) tc(1) used uint32
+
+.   AS l(22) colas(true) tc(1)
+.   .   NAME-main.r a(true) g(6) l(22) x(0) class(PAUTO) esc(no) tc(1) used uint32
+.   .   OR l(22) tc(1) uint32
+.   .   .   OR l(22) tc(1) uint32
+.   .   .   .   OR l(22) tc(1) uint32
+.   .   .   .   .   CONV l(22) tc(1) uint32
+.   .   .   .   .   .   NAME-main.a a(true) g(2) l(21) x(0) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   LSH l(22) tc(1) uint32
+.   .   .   .   .   .   CONV l(22) tc(1) uint32
+.   .   .   .   .   .   .   NAME-main.b a(true) g(3) l(21) x(1) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   LITERAL-8 l(22) tc(1) uint
+.   .   .   .   LSH l(22) tc(1) uint32
+.   .   .   .   .   CONV l(22) tc(1) uint32
+.   .   .   .   .   .   NAME-main.c a(true) g(4) l(21) x(2) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   LITERAL-16 l(22) tc(1) uint
+.   .   .   LSH l(22) tc(1) uint32
+.   .   .   .   CONV l(22) tc(1) uint32
+.   .   .   .   .   NAME-main.d a(true) g(5) l(21) x(3) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   LITERAL-24 l(22) tc(1) uint
+
+.   IF l(23) tc(1)
+.   .   NOT l(23) tc(1) bool
+.   .   .   NAME-main.x a(true) l(19) x(0) class(PEXTERN) tc(1) assigned used bool
+.   IF-body
+.   .   AS l(24) tc(1)
+.   .   .   NAME-main.x a(true) l(19) x(0) class(PEXTERN) tc(1) assigned used bool
+.   .   .   LITERAL-true tc(1) main.true bool
+
+.   .   DCL l(25)
+.   .   .   NAME-fmt.a a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   DCL l(25)
+.   .   .   NAME-fmt.n a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25)
+.   .   .   NAME-fmt.err a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-main..autotmp_16 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   NAME-main.a a(true) g(2) l(21) x(0) class(PPARAM) esc(no) tc(1) used byte
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-main..autotmp_17 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   NAME-main.b a(true) g(3) l(21) x(1) class(PPARAM) esc(no) tc(1) used byte
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-main..autotmp_18 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   NAME-main.c a(true) g(4) l(21) x(2) class(PPARAM) esc(no) tc(1) used byte
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-main..autotmp_19 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   NAME-main.d a(true) g(5) l(21) x(3) class(PPARAM) esc(no) tc(1) used byte
+
+.   .   AS2 l(25) tc(1)
+.   .   AS2-list
+.   .   .   NAME-main.~arg0 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   NAME-main.~arg1 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   NAME-main.~arg2 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   NAME-main.~arg3 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   NAME-main.~arg4 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   AS2-rlist
+.   .   .   CONVIFACE l(25) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-main..autotmp_16 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   .   CONVIFACE l(25) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-main..autotmp_17 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   .   CONVIFACE l(25) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-main..autotmp_18 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   .   CONVIFACE l(25) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-main..autotmp_19 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   .   CONVIFACE l(25) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-main.r a(true) g(6) l(22) x(0) class(PAUTO) esc(no) tc(1) used uint32
+
+.   .   VARKILL l(25) tc(1)
+.   .   .   NAME-main..autotmp_19 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   VARKILL l(25) tc(1)
+.   .   .   NAME-main..autotmp_18 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   VARKILL l(25) tc(1)
+.   .   .   NAME-main..autotmp_17 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   VARKILL l(25) tc(1)
+.   .   .   NAME-main..autotmp_16 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt.a a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   .   SLICELIT l(25) esc(no) tc(1) SLICE-[]interface {}
+.   .   .   .   LITERAL-5 l(25) untyped number
+.   .   .   SLICELIT-list
+.   .   .   .   NAME-main.~arg0 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   .   NAME-main.~arg1 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   .   NAME-main.~arg2 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   .   NAME-main.~arg3 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   .   NAME-main.~arg4 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt.n a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt.err a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   INLMARK l(25) x(0)
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(274) tc(1)
+.   .   .   NAME-main..autotmp_21 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   AS2FUNC l(274) tc(1)
+.   .   AS2FUNC-list
+.   .   .   NAME-main..autotmp_20 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   NAME-main..autotmp_21 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+.   .   AS2FUNC-rlist
+.   .   .   CALLFUNC l(274) tc(1) isddd(true) STRUCT-(int, error)
+.   .   .   .   NAME-fmt.Fprintln a(true) l(262) x(0) class(PFUNC) tc(1) used FUNC-func(io.Writer, ...interface {}) (int, error)
+.   .   .   CALLFUNC-list
+.   .   .   .   CONVIFACE l(274) esc(h) tc(1) io.Writer
+.   .   .   .   .   NAME-os.Stdout a(true) l(60) x(0) class(PEXTERN) tc(1) used PTR-*os.File
+
+.   .   .   .   NAME-fmt.a a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   AS2 l(274) tc(1)
+.   .   AS2-list
+.   .   .   NAME-fmt..autotmp_3 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt..autotmp_4 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   AS2-rlist
+.   .   .   NAME-main..autotmp_20 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   NAME-main..autotmp_21 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_21 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_20 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   AS2 l(25) tc(1)
+.   .   AS2-list
+.   .   .   NAME-fmt.n a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt.err a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   AS2-rlist
+.   .   .   NAME-fmt..autotmp_3 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   NAME-fmt..autotmp_4 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   GOTO l(25) tc(1) main..i0
+
+.   .   LABEL l(25) tc(1) main..i0
+
+.   RETURN l(27) tc(1)
+.   RETURN-list
+.   .   NAME-main.r a(true) g(6) l(22) x(0) class(PAUTO) esc(no) tc(1) used uint32
+after walk readLittleEndian32_1
+.   DCL l(22)
+.   .   NAME-main.r a(true) g(6) l(22) x(0) class(PAUTO) esc(no) tc(1) used uint32
+
+.   AS l(22) colas(true) tc(1)
+.   .   NAME-main.r a(true) g(6) l(22) x(0) class(PAUTO) esc(no) tc(1) used uint32
+.   .   OR l(22) tc(1) uint32
+.   .   .   OR l(22) tc(1) uint32
+.   .   .   .   OR l(22) tc(1) uint32
+.   .   .   .   .   CONV l(22) tc(1) uint32
+.   .   .   .   .   .   NAME-main.a a(true) g(2) l(21) x(0) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   LSH l(22) tc(1) uint32
+.   .   .   .   .   .   CONV l(22) tc(1) uint32
+.   .   .   .   .   .   .   NAME-main.b a(true) g(3) l(21) x(1) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   LITERAL-8 l(22) tc(1) uint
+.   .   .   .   LSH l(22) tc(1) uint32
+.   .   .   .   .   CONV l(22) tc(1) uint32
+.   .   .   .   .   .   NAME-main.c a(true) g(4) l(21) x(2) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   LITERAL-16 l(22) tc(1) uint
+.   .   .   LSH l(22) tc(1) uint32
+.   .   .   .   CONV l(22) tc(1) uint32
+.   .   .   .   .   NAME-main.d a(true) g(5) l(21) x(3) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   LITERAL-24 l(22) tc(1) uint
+
+.   IF l(23) tc(1)
+.   .   NOT l(23) tc(1) bool
+.   .   .   NAME-main.x a(true) l(19) x(0) class(PEXTERN) tc(1) assigned used bool
+.   IF-body
+.   .   AS l(24) tc(1)
+.   .   .   NAME-main.x a(true) l(19) x(0) class(PEXTERN) tc(1) assigned used bool
+.   .   .   LITERAL-true tc(1) main.true bool
+
+.   .   DCL l(25)
+.   .   .   NAME-fmt.a a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   DCL l(25)
+.   .   .   NAME-fmt.n a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25)
+.   .   .   NAME-fmt.err a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-main..autotmp_16 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   NAME-main.a a(true) g(2) l(21) x(0) class(PPARAM) esc(no) tc(1) used byte
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-main..autotmp_17 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   NAME-main.b a(true) g(3) l(21) x(1) class(PPARAM) esc(no) tc(1) used byte
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-main..autotmp_18 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   NAME-main.c a(true) g(4) l(21) x(2) class(PPARAM) esc(no) tc(1) used byte
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-main..autotmp_19 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+.   .   .   NAME-main.d a(true) g(5) l(21) x(3) class(PPARAM) esc(no) tc(1) used byte
+
+.   .   BLOCK-init
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-main..autotmp_22 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   EFACE l(25) tc(1) INTER-interface {}
+.   .   .   .   .   ADDR a(true) l(25) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.uint8 a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   ADDR l(25) tc(1) PTR-*uint8
+.   .   .   .   .   .   INDEX l(25) tc(1) addrtaken bounded uint8
+.   .   .   .   .   .   .   NAME-runtime.staticbytes a(true) l(11) x(0) class(PEXTERN) tc(1) addrtaken used ARRAY-[256]uint8
+.   .   .   .   .   .   .   NAME-main..autotmp_16 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-main..autotmp_23 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   EFACE l(25) tc(1) INTER-interface {}
+.   .   .   .   .   ADDR a(true) l(25) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.uint8 a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   ADDR l(25) tc(1) PTR-*uint8
+.   .   .   .   .   .   INDEX l(25) tc(1) addrtaken bounded uint8
+.   .   .   .   .   .   .   NAME-runtime.staticbytes a(true) l(11) x(0) class(PEXTERN) tc(1) addrtaken used ARRAY-[256]uint8
+.   .   .   .   .   .   .   NAME-main..autotmp_17 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-main..autotmp_24 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   EFACE l(25) tc(1) INTER-interface {}
+.   .   .   .   .   ADDR a(true) l(25) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.uint8 a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   ADDR l(25) tc(1) PTR-*uint8
+.   .   .   .   .   .   INDEX l(25) tc(1) addrtaken bounded uint8
+.   .   .   .   .   .   .   NAME-runtime.staticbytes a(true) l(11) x(0) class(PEXTERN) tc(1) addrtaken used ARRAY-[256]uint8
+.   .   .   .   .   .   .   NAME-main..autotmp_18 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-main..autotmp_25 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   EFACE l(25) tc(1) INTER-interface {}
+.   .   .   .   .   ADDR a(true) l(25) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.uint8 a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   ADDR l(25) tc(1) PTR-*uint8
+.   .   .   .   .   .   INDEX l(25) tc(1) addrtaken bounded uint8
+.   .   .   .   .   .   .   NAME-runtime.staticbytes a(true) l(11) x(0) class(PEXTERN) tc(1) addrtaken used ARRAY-[256]uint8
+.   .   .   .   .   .   .   NAME-main..autotmp_19 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   .   AS l(25) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_27 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used UNSAFEPTR-unsafe.Pointer
+.   .   .   .   CALLFUNC l(25) tc(1) hascall UNSAFEPTR-unsafe.Pointer
+.   .   .   .   .   NAME-runtime.convT32 a(true) x(0) class(PFUNC) tc(1) used FUNC-func(uint32) unsafe.Pointer
+.   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   NAME-main.r a(true) g(6) l(22) x(0) class(PAUTO) esc(no) tc(1) used uint32
+
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-main..autotmp_26 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   EFACE l(25) tc(1) INTER-interface {}
+.   .   .   .   .   ADDR a(true) l(25) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-type.uint32 a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   NAME-main..autotmp_27 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used UNSAFEPTR-unsafe.Pointer
+.   .   BLOCK l(25) hascall
+.   .   BLOCK-list
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-main.~arg0 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   .   .   NAME-main..autotmp_22 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-main.~arg1 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   .   .   NAME-main..autotmp_23 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-main.~arg2 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   .   .   NAME-main..autotmp_24 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-main.~arg3 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   .   .   NAME-main..autotmp_25 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-main.~arg4 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+.   .   .   .   NAME-main..autotmp_26 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   VARKILL l(25) tc(1)
+.   .   .   NAME-main..autotmp_19 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   VARKILL l(25) tc(1)
+.   .   .   NAME-main..autotmp_18 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   VARKILL l(25) tc(1)
+.   .   .   NAME-main..autotmp_17 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   VARKILL l(25) tc(1)
+.   .   .   NAME-main..autotmp_16 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used byte
+
+.   .   EMPTY-init
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-main..autotmp_30 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[5]interface {}
+
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-main..autotmp_28 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[5]interface {}
+.   .   .   .   ADDR l(25) tc(1) PTR-*[5]interface {}
+.   .   .   .   .   NAME-main..autotmp_30 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[5]interface {}
+
+.   .   .   BLOCK l(25)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(25) tc(1) hascall
+.   .   .   .   .   INDEX l(25) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(25) tc(1) implicit(true) assigned hascall ARRAY-[5]interface {}
+.   .   .   .   .   .   .   NAME-main..autotmp_28 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[5]interface {}
+.   .   .   .   .   .   LITERAL-0 l(25) tc(1) int
+.   .   .   .   .   NAME-main.~arg0 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   BLOCK l(25)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(25) tc(1) hascall
+.   .   .   .   .   INDEX l(25) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(25) tc(1) implicit(true) assigned hascall ARRAY-[5]interface {}
+.   .   .   .   .   .   .   NAME-main..autotmp_28 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[5]interface {}
+.   .   .   .   .   .   LITERAL-1 l(25) tc(1) int
+.   .   .   .   .   NAME-main.~arg1 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   BLOCK l(25)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(25) tc(1) hascall
+.   .   .   .   .   INDEX l(25) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(25) tc(1) implicit(true) assigned hascall ARRAY-[5]interface {}
+.   .   .   .   .   .   .   NAME-main..autotmp_28 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[5]interface {}
+.   .   .   .   .   .   LITERAL-2 l(25) tc(1) int
+.   .   .   .   .   NAME-main.~arg2 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   BLOCK l(25)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(25) tc(1) hascall
+.   .   .   .   .   INDEX l(25) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(25) tc(1) implicit(true) assigned hascall ARRAY-[5]interface {}
+.   .   .   .   .   .   .   NAME-main..autotmp_28 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[5]interface {}
+.   .   .   .   .   .   LITERAL-3 l(25) tc(1) int
+.   .   .   .   .   NAME-main.~arg3 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   BLOCK l(25)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(25) tc(1) hascall
+.   .   .   .   .   INDEX l(25) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(25) tc(1) implicit(true) assigned hascall ARRAY-[5]interface {}
+.   .   .   .   .   .   .   NAME-main..autotmp_28 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[5]interface {}
+.   .   .   .   .   .   LITERAL-4 l(25) tc(1) int
+.   .   .   .   .   NAME-main.~arg4 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used INTER-interface {}
+
+.   .   .   BLOCK l(25)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(25) tc(1) hascall
+.   .   .   .   .   NAME-fmt.a a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   .   .   .   SLICEARR l(25) tc(1) hascall SLICE-[]interface {}
+.   .   .   .   .   .   NAME-main..autotmp_28 a(true) l(25) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[5]interface {}
+.   .   EMPTY l(25) tc(1) hascall
+.   .   .   NAME-fmt.a a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt.n a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt.err a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   INLMARK l(25) x(0)
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_3 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   DCL l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(25) tc(1)
+.   .   .   NAME-fmt..autotmp_4 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   AS l(274) tc(1)
+.   .   .   NAME-main..autotmp_21 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   BLOCK-init
+.   .   .   CALLFUNC l(274) tc(1) isddd(true) hascall STRUCT-(int, error)
+.   .   .   .   NAME-fmt.Fprintln a(true) l(262) x(0) class(PFUNC) tc(1) used FUNC-func(io.Writer, ...interface {}) (int, error)
+.   .   .   CALLFUNC-rlist
+.   .   .   .   EFACE l(274) tc(1) io.Writer
+.   .   .   .   .   ADDR a(true) l(274) tc(1) PTR-*uint8
+.   .   .   .   .   .   NAME-go.itab.*os.File,io.Writer a(true) l(274) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   NAME-os.Stdout a(true) l(60) x(0) class(PEXTERN) tc(1) used PTR-*os.File
+
+.   .   .   .   NAME-fmt.a a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used SLICE-[]interface {}
+.   .   BLOCK l(274) hascall
+.   .   BLOCK-list
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-main..autotmp_20 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+.   .   .   .   RESULT l(274) x(40) tc(1) int
+
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-main..autotmp_21 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+.   .   .   .   RESULT l(274) x(48) tc(1) error
+
+.   .   BLOCK l(274)
+.   .   BLOCK-list
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-fmt..autotmp_3 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   NAME-main..autotmp_20 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   .   AS l(274) tc(1)
+.   .   .   .   NAME-fmt..autotmp_4 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   .   .   NAME-main..autotmp_21 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_21 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) assigned used error
+
+.   .   VARKILL l(274) tc(1)
+.   .   .   NAME-main..autotmp_20 a(true) l(274) x(0) class(PAUTO) esc(N) tc(1) used int
+
+.   .   BLOCK l(25)
+.   .   BLOCK-list
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-fmt.n a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+.   .   .   .   NAME-fmt..autotmp_3 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used int
+
+.   .   .   AS l(25) tc(1)
+.   .   .   .   NAME-fmt.err a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+.   .   .   .   NAME-fmt..autotmp_4 a(true) l(25) x(0) class(PAUTO) esc(no) tc(1) assigned used error
+
+.   .   GOTO l(25) tc(1) main..i0
+
+.   .   LABEL l(25) tc(1) main..i0
+
+.   RETURN l(27) tc(1)
+.   RETURN-list
+.   .   AS l(27) tc(1)
+.   .   .   NAME-main.~r4 a(true) g(1) l(21) x(8) class(PPARAMOUT) esc(no) uint32
+.   .   .   NAME-main.r a(true) g(6) l(22) x(0) class(PAUTO) esc(no) tc(1) used uint32
+enter readLittleEndian32_1
+.   AS l(21)
+.   .   NAME-main.~r4 a(true) g(1) l(21) x(8) class(PPARAMOUT) esc(no) uint32
+
+before walk type..hash.[5]interface {}
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   RANGE l(1) colas(true) tc(1) ARRAY-[5]interface {}
+.   .   DEREF l(1) tc(1) ARRAY-[5]interface {}
+.   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[5]interface {}
+.   RANGE-list
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   RANGE-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   .   CALLFUNC l(1) tc(1) uintptr
+.   .   .   .   NAME-runtime.nilinterhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*interface {}, uintptr) uintptr
+.   .   .   CALLFUNC-list
+.   .   .   .   ADDR l(1) tc(1) PTR-*interface {}
+.   .   .   .   .   INDEX l(1) tc(1) addrtaken bounded INTER-interface {}
+.   .   .   .   .   .   DEREF l(1) tc(1) implicit(true) addrtaken ARRAY-[5]interface {}
+.   .   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[5]interface {}
+.   .   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   .   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+after walk type..hash.[5]interface {}
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   FOR-init
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LITERAL-5 l(1) tc(1) int
+.   FOR l(1) colas(true) tc(1) ARRAY-[5]interface {}
+.   .   LT l(1) tc(1) bool
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   ADD l(1) tc(1) int
+.   .   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LITERAL-1 l(1) tc(1) int
+.   FOR-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1) hascall
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   .   CALLFUNC l(1) tc(1) hascall uintptr
+.   .   .   .   NAME-runtime.nilinterhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*interface {}, uintptr) uintptr
+.   .   .   CALLFUNC-list
+.   .   .   .   AS l(1) tc(1) hascall
+.   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*interface {}
+.   .   .   .   .   ADDR l(1) tc(1) hascall PTR-*interface {}
+.   .   .   .   .   .   INDEX l(1) tc(1) addrtaken bounded hascall INTER-interface {}
+.   .   .   .   .   .   .   DEREF l(1) tc(1) implicit(true) addrtaken hascall ARRAY-[5]interface {}
+.   .   .   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[5]interface {}
+.   .   .   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   CALLFUNC-rlist
+.   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*interface {}
+
+.   .   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+.   .   .   NAME-main.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+enter type..hash.[5]interface {}
+.   AS l(1)
+.   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+
+before walk type..eq.[5]interface {}
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   RANGE l(1) colas(true) tc(1) ARRAY-[5]interface {}
+.   .   DEREF l(1) tc(1) ARRAY-[5]interface {}
+.   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[5]interface {}
+.   RANGE-list
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   RANGE-body
+.   .   IF l(1) tc(1)
+.   .   .   NE l(1) tc(1) bool
+.   .   .   .   INDEX l(1) tc(1) bounded INTER-interface {}
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) ARRAY-[5]interface {}
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[5]interface {}
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   .   INDEX l(1) tc(1) bounded INTER-interface {}
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) ARRAY-[5]interface {}
+.   .   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*[5]interface {}
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   IF-body
+.   .   .   RETURN l(1) tc(1)
+.   .   .   RETURN-list
+.   .   .   .   LITERAL-false l(1) tc(1) bool
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   LITERAL-true l(1) tc(1) bool
+after walk type..eq.[5]interface {}
+.   DCL l(1)
+.   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   FOR-init
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LITERAL-5 l(1) tc(1) int
+.   FOR l(1) colas(true) tc(1) ARRAY-[5]interface {}
+.   .   LT l(1) tc(1) bool
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   ADD l(1) tc(1) int
+.   .   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LITERAL-1 l(1) tc(1) int
+.   FOR-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   NAME-main..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   IF-init
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   INDEX l(1) tc(1) bounded hascall INTER-interface {}
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) hascall ARRAY-[5]interface {}
+.   .   .   .   .   .   NAME-main.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*[5]interface {}
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   INDEX l(1) tc(1) bounded hascall INTER-interface {}
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) hascall ARRAY-[5]interface {}
+.   .   .   .   .   .   NAME-main.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[5]interface {}
+.   .   .   .   .   NAME-main.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   IF l(1) tc(1)
+.   .   .   OROR l(1) tc(1) hascall bool
+.   .   .   .   NE l(1) tc(1) bool
+.   .   .   .   .   ITAB l(1) tc(1) PTR-*uintptr
+.   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   .   ITAB l(1) tc(1) PTR-*uintptr
+.   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   NOT l(1) tc(1) hascall bool
+.   .   .   .   .   CALLFUNC l(1) tc(1) hascall bool
+.   .   .   .   .   .   NAME-runtime.efaceeq a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*uintptr, unsafe.Pointer, unsafe.Pointer) bool
+.   .   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   .   ITAB l(1) tc(1) PTR-*uintptr
+.   .   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   .   .   .   .   IDATA l(1) tc(1) UNSAFEPTR-unsafe.Pointer
+.   .   .   .   .   .   .   NAME-main..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   .   .   .   .   IDATA l(1) tc(1) UNSAFEPTR-unsafe.Pointer
+.   .   .   .   .   .   .   NAME-main..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   IF-body
+.   .   .   RETURN l(1) tc(1)
+.   .   .   RETURN-list
+.   .   .   .   AS l(1) tc(1)
+.   .   .   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   .   .   LITERAL-false l(1) tc(1) bool
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   LITERAL-true l(1) tc(1) bool
+enter type..eq.[5]interface {}
+.   AS l(1)
+.   .   NAME-main.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+
+before walk readLittleEndian32_2
+.   RETURN l(31) tc(1)
+.   RETURN-list
+.   .   OR l(31) tc(1) uint32
+.   .   .   OR l(31) tc(1) uint32
+.   .   .   .   OR l(31) tc(1) uint32
+.   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   NAME-main.a a(true) g(2) l(30) x(0) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   LSH l(31) tc(1) uint32
+.   .   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   .   NAME-main.b a(true) g(3) l(30) x(1) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   LITERAL-8 l(31) tc(1) uint
+.   .   .   .   LSH l(31) tc(1) uint32
+.   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   NAME-main.c a(true) g(4) l(30) x(2) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   LITERAL-16 l(31) tc(1) uint
+.   .   .   LSH l(31) tc(1) uint32
+.   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   NAME-main.d a(true) g(5) l(30) x(3) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   LITERAL-24 l(31) tc(1) uint
+after walk readLittleEndian32_2
+.   RETURN l(31) tc(1)
+.   RETURN-list
+.   .   AS l(31) tc(1)
+.   .   .   NAME-main.~r4 a(true) g(1) l(30) x(8) class(PPARAMOUT) esc(no) uint32
+.   .   .   OR l(31) tc(1) uint32
+.   .   .   .   OR l(31) tc(1) uint32
+.   .   .   .   .   OR l(31) tc(1) uint32
+.   .   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   .   NAME-main.a a(true) g(2) l(30) x(0) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   LSH l(31) tc(1) uint32
+.   .   .   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   .   .   NAME-main.b a(true) g(3) l(30) x(1) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   .   LITERAL-8 l(31) tc(1) uint
+.   .   .   .   .   LSH l(31) tc(1) uint32
+.   .   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   .   NAME-main.c a(true) g(4) l(30) x(2) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   LITERAL-16 l(31) tc(1) uint
+.   .   .   .   LSH l(31) tc(1) uint32
+.   .   .   .   .   CONV l(31) tc(1) uint32
+.   .   .   .   .   .   NAME-main.d a(true) g(5) l(30) x(3) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   LITERAL-24 l(31) tc(1) uint
+enter readLittleEndian32_2
+.   AS l(30)
+.   .   NAME-main.~r4 a(true) g(1) l(30) x(8) class(PPARAMOUT) esc(no) uint32
+
+before walk readLittleEndian32_3
+.   RETURN l(35) tc(1)
+.   RETURN-list
+.   .   OR l(35) tc(1) uint32
+.   .   .   OR l(35) tc(1) uint32
+.   .   .   .   OR l(35) tc(1) uint32
+.   .   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   NAME-main.a a(true) g(2) l(34) x(0) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   LITERAL-255 l(35) tc(1) uint32
+.   .   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   .   LSH l(35) tc(1) uint32
+.   .   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   NAME-main.b a(true) g(3) l(34) x(1) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   .   LITERAL-8 l(35) tc(1) uint
+.   .   .   .   .   .   LITERAL-65280 l(35) tc(1) uint32
+.   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   LSH l(35) tc(1) uint32
+.   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   NAME-main.c a(true) g(4) l(34) x(2) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   LITERAL-16 l(35) tc(1) uint
+.   .   .   .   .   LITERAL-16711680 l(35) tc(1) uint32
+.   .   .   AND l(35) tc(1) uint32
+.   .   .   .   LSH l(35) tc(1) uint32
+.   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   NAME-main.d a(true) g(5) l(34) x(3) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   LITERAL-24 l(35) tc(1) uint
+.   .   .   .   LITERAL-4278190080 l(35) tc(1) uint32
+after walk readLittleEndian32_3
+.   RETURN l(35) tc(1)
+.   RETURN-list
+.   .   AS l(35) tc(1)
+.   .   .   NAME-main.~r4 a(true) g(1) l(34) x(8) class(PPARAMOUT) esc(no) uint32
+.   .   .   OR l(35) tc(1) uint32
+.   .   .   .   OR l(35) tc(1) uint32
+.   .   .   .   .   OR l(35) tc(1) uint32
+.   .   .   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   NAME-main.a a(true) g(2) l(34) x(0) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   .   LITERAL-255 l(35) tc(1) uint32
+.   .   .   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   .   .   LSH l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   .   NAME-main.b a(true) g(3) l(34) x(1) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   .   .   LITERAL-8 l(35) tc(1) uint
+.   .   .   .   .   .   .   LITERAL-65280 l(35) tc(1) uint32
+.   .   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   .   LSH l(35) tc(1) uint32
+.   .   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   .   NAME-main.c a(true) g(4) l(34) x(2) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   .   LITERAL-16 l(35) tc(1) uint
+.   .   .   .   .   .   LITERAL-16711680 l(35) tc(1) uint32
+.   .   .   .   AND l(35) tc(1) uint32
+.   .   .   .   .   LSH l(35) tc(1) uint32
+.   .   .   .   .   .   CONV l(35) tc(1) uint32
+.   .   .   .   .   .   .   NAME-main.d a(true) g(5) l(34) x(3) class(PPARAM) esc(no) tc(1) used byte
+.   .   .   .   .   .   LITERAL-24 l(35) tc(1) uint
+.   .   .   .   .   LITERAL-4278190080 l(35) tc(1) uint32
+enter readLittleEndian32_3
+.   AS l(34)
+.   .   NAME-main.~r4 a(true) g(1) l(34) x(8) class(PPARAMOUT) esc(no) uint32

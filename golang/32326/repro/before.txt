@@ -1,0 +1,56 @@
+$ go run minimal.go 
+^\SIGQUIT: quit
+PC=0x7fff581e078e m=0 sigcode=0
+
+goroutine 0 [idle]:
+runtime.kevent(0x7ffe00000005, 0x0, 0x0, 0x7ffeefbfcdd8, 0x7ffe00000040, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/sys_darwin.go:267 +0x51
+runtime.netpoll(0xc00003e501, 0x1)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll_kqueue.go:73 +0x147
+runtime.findrunnable(0xc00002e000, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:2380 +0x4f0
+runtime.schedule()
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:2525 +0x208
+runtime.park_m(0xc000000180)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/proc.go:2605 +0x9c
+runtime.mcall(0x104db6b)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/asm_amd64.s:299 +0x5b
+
+goroutine 1 [IO wait]:
+internal/poll.runtime_pollWait(0x1554ea0, 0x72, 0xc00007ce08)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/runtime/netpoll.go:182 +0x55
+internal/poll.(*pollDesc).wait(0xc000064198, 0x72, 0xffffffffffffff01, 0x10de4c0, 0x115d230)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:87 +0x9a
+internal/poll.(*pollDesc).waitRead(0xc000064198, 0xc00007cf01, 0xa, 0xa)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_poll_runtime.go:92 +0x3d
+internal/poll.(*FD).Read(0xc000064180, 0xc00007cf5e, 0xa, 0xa, 0x0, 0x0, 0x0)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/internal/poll/fd_unix.go:169 +0x1c8
+os.(*File).read(0xc00000e028, 0xc00007cf5e, 0xa, 0xa, 0x2, 0x2, 0xc00000e030)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file_unix.go:249 +0x4e
+os.(*File).Read(0xc00000e028, 0xc00007cf5e, 0xa, 0xa, 0x1094e21, 0xc00007cf88, 0x1004d2b)
+	/Users/emmanuelodeke/go/src/go.googlesource.com/go/src/os/file.go:108 +0x69
+main.main()
+	/Users/emmanuelodeke/Desktop/openSrc/bugs/golang/32326/repro/minimal.go:14 +0xd1
+
+rax    0x4
+rbx    0x7ffeefbfcd70
+rcx    0x7ffeefbfcca8
+rdx    0x0
+rdi    0x5
+rsi    0x0
+rbp    0x7ffeefbfccb0
+rsp    0x7ffeefbfcca8
+r8     0x40
+r9     0x0
+r10    0x7ffeefbfcdd8
+r11    0x206
+r12    0xc
+r13    0x32
+r14    0x10db56a
+r15    0x0
+rip    0x7fff581e078e
+rflags 0x207
+cs     0x7
+fs     0x0
+gs     0x0
+exit status 2

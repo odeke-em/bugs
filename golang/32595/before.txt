@@ -1,0 +1,595 @@
+# command-line-arguments [command-line-arguments.test]
+
+before walk TestIssue32595
+.   DCL l(9)
+.   .   NAME-foo.deref a(true) g(2) l(9) x(0) class(PAUTO) esc(no) tc(1) used INTER-interface {}
+
+.   AS l(9) tc(1)
+.   .   NAME-foo..autotmp_5 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[0]byte
+.   .   NEW l(9) esc(h) tc(1) PTR-*[0]byte
+.   .   .   TYPE <S> l(9) tc(1) type=ARRAY-[0]byte ARRAY-[0]byte
+.   .   NEW-list
+.   .   .   TYPE <S> l(9) tc(1) type=ARRAY-[0]byte ARRAY-[0]byte
+
+.   AS l(9) tc(1)
+.   .   NAME-foo..autotmp_6 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used reflect.Value
+.   .   CALLFUNC l(9) tc(1) reflect.Value
+.   .   .   NAME-reflect.ValueOf a(true) l(2310) x(0) class(PFUNC) tc(1) used FUNC-func(interface {}) reflect.Value
+.   .   CALLFUNC-list
+.   .   .   CONVIFACE l(9) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-foo..autotmp_5 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[0]byte
+
+.   AS l(9) tc(1)
+.   .   NAME-foo..autotmp_7 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used reflect.Value
+.   .   CALLMETH l(9) tc(1) reflect.Value
+.   .   .   DOTMETH l(9) tc(1) reflect.Value.Elem FUNC-method(reflect.Value) func() reflect.Value
+.   .   .   .   NAME-foo..autotmp_6 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used reflect.Value
+
+.   AS l(9) colas(true) tc(1)
+.   .   NAME-foo.deref a(true) g(2) l(9) x(0) class(PAUTO) esc(no) tc(1) used INTER-interface {}
+.   .   CALLMETH l(9) tc(1) INTER-interface {}
+.   .   .   DOTMETH l(9) tc(1) reflect.Value.Interface FUNC-method(reflect.Value) func() interface {}
+.   .   .   .   NAME-foo..autotmp_7 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used reflect.Value
+
+.   VARKILL l(9) tc(1)
+.   .   NAME-foo..autotmp_7 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used reflect.Value
+
+.   VARKILL l(9) tc(1)
+.   .   NAME-foo..autotmp_6 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used reflect.Value
+
+.   VARKILL l(9) tc(1)
+.   .   NAME-foo..autotmp_5 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[0]byte
+
+.   DCL l(10) tc(1)
+.   .   NAME-foo.want a(true) g(3) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used ARRAY-[0]byte
+
+.   AS l(10) tc(1)
+.   .   NAME-foo.want a(true) g(3) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used ARRAY-[0]byte
+
+.   DCL l(11)
+.   .   NAME-foo.g a(true) g(4) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+
+.   DCL l(11)
+.   .   NAME-foo.w a(true) g(5) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+
+.   AS l(11) tc(1)
+.   .   NAME-foo..autotmp_8 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used ARRAY-[0]byte
+.   .   NAME-foo.want a(true) g(3) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used ARRAY-[0]byte
+
+.   AS l(11) tc(1)
+.   .   NAME-foo..autotmp_9 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   CALLFUNC l(11) tc(1) bool
+.   .   .   NAME-reflect.DeepEqual a(true) l(187) x(0) class(PFUNC) tc(1) used FUNC-func(interface {}, interface {}) bool
+.   .   CALLFUNC-list
+.   .   .   NAME-foo.deref a(true) g(2) l(9) x(0) class(PAUTO) esc(no) tc(1) used INTER-interface {}
+
+.   .   .   CONVIFACE l(11) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-foo..autotmp_8 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used ARRAY-[0]byte
+
+.   AS2 l(11) colas(true) tc(1)
+.   AS2-list
+.   .   NAME-foo.g a(true) g(4) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+
+.   .   NAME-foo.w a(true) g(5) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+.   AS2-rlist
+.   .   NAME-foo..autotmp_9 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   .   LITERAL-true tc(1) foo.true bool
+
+.   VARKILL l(11) tc(1)
+.   .   NAME-foo..autotmp_9 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   VARKILL l(11) tc(1)
+.   .   NAME-foo..autotmp_8 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used ARRAY-[0]byte
+
+.   IF l(11) tc(1)
+.   .   NE l(11) tc(1) bool
+.   .   .   NAME-foo.g a(true) g(4) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+.   .   .   NAME-foo.w a(true) g(5) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+.   IF-body
+.   .   AS l(12) tc(1)
+.   .   .   NAME-foo..autotmp_9 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   .   NAME-foo.g a(true) g(4) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+
+.   .   AS l(12) tc(1)
+.   .   .   NAME-foo..autotmp_11 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   .   NAME-foo.w a(true) g(5) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+
+.   .   CALLMETH l(12) tc(1)
+.   .   .   DOTMETH l(12) tc(1) testing.(*common).Fatalf FUNC-method(*testing.common) func(string, ...interface {})
+.   .   .   .   ADDR l(12) tc(1) implicit(true) PTR-*testing.common
+.   .   .   .   .   DOTPTR l(12) x(0) tc(1) implicit(true) addrtaken testing.common testing.common
+.   .   .   .   .   .   NAME-foo.t a(true) g(1) l(8) x(0) class(PPARAM) esc(h) tc(1) used PTR-*testing.T
+.   .   .   DDDARG l(12) esc(no) PTR-*[2]interface {}
+.   .   CALLMETH-list
+.   .   .   LITERAL-"got=%t want=%t" l(12) tc(1) string
+
+.   .   .   CONVIFACE l(12) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-foo..autotmp_9 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   .   .   CONVIFACE l(12) esc(h) tc(1) implicit(true) INTER-interface {}
+.   .   .   .   NAME-foo..autotmp_11 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   .   VARKILL l(12) tc(1)
+.   .   .   NAME-foo..autotmp_11 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   .   VARKILL l(12) tc(1)
+.   .   .   NAME-foo..autotmp_9 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   .   VARKILL l(12) tc(1)
+.   .   .   NAME-foo..autotmp_10 a(true) l(12) x(0) class(PAUTO) esc(N) used ARRAY-[2]interface {}
+after walk TestIssue32595
+.   DCL l(9)
+.   .   NAME-foo.deref a(true) g(2) l(9) x(0) class(PAUTO) esc(no) tc(1) used INTER-interface {}
+
+.   AS l(9) tc(1)
+.   .   NAME-foo..autotmp_5 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[0]byte
+.   .   NEWOBJ l(9) tc(1) nonnil PTR-*[0]byte
+.   .   .   ADDR a(true) l(9) tc(1) PTR-*uint8
+.   .   .   .   NAME-type.[0]uint8 a(true) x(0) class(PEXTERN) tc(1) uint8
+
+.   AS l(9) tc(1) hascall
+.   .   NAME-foo..autotmp_6 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used reflect.Value
+.   .   CALLFUNC l(9) tc(1) hascall reflect.Value
+.   .   .   NAME-reflect.ValueOf a(true) l(2310) x(0) class(PFUNC) tc(1) used FUNC-func(interface {}) reflect.Value
+.   .   CALLFUNC-rlist
+.   .   .   EFACE l(9) tc(1) INTER-interface {}
+.   .   .   .   ADDR a(true) l(9) tc(1) PTR-*uint8
+.   .   .   .   .   NAME-type.*[0]uint8 a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   NAME-foo..autotmp_5 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[0]byte
+
+.   AS l(9) tc(1) hascall
+.   .   NAME-foo..autotmp_7 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used reflect.Value
+.   .   CALLMETH l(9) tc(1) hascall reflect.Value
+.   .   .   DOTMETH l(9) tc(1) reflect.Value.Elem FUNC-method(reflect.Value) func() reflect.Value
+.   .   CALLMETH-rlist
+.   .   .   NAME-foo..autotmp_6 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used reflect.Value
+
+.   AS l(9) colas(true) tc(1) hascall
+.   .   NAME-foo.deref a(true) g(2) l(9) x(0) class(PAUTO) esc(no) tc(1) used INTER-interface {}
+.   .   CALLMETH l(9) tc(1) hascall INTER-interface {}
+.   .   .   DOTMETH l(9) tc(1) reflect.Value.Interface FUNC-method(reflect.Value) func() interface {}
+.   .   CALLMETH-rlist
+.   .   .   NAME-foo..autotmp_7 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used reflect.Value
+
+.   VARKILL l(9) tc(1)
+.   .   NAME-foo..autotmp_7 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used reflect.Value
+
+.   VARKILL l(9) tc(1)
+.   .   NAME-foo..autotmp_6 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used reflect.Value
+
+.   VARKILL l(9) tc(1)
+.   .   NAME-foo..autotmp_5 a(true) l(9) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[0]byte
+
+.   DCL l(10) tc(1)
+.   .   NAME-foo.want a(true) g(3) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used ARRAY-[0]byte
+
+.   AS l(10) tc(1)
+.   .   NAME-foo.want a(true) g(3) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used ARRAY-[0]byte
+
+.   DCL l(11)
+.   .   NAME-foo.g a(true) g(4) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+
+.   DCL l(11)
+.   .   NAME-foo.w a(true) g(5) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+
+.   AS l(11) tc(1)
+.   .   NAME-foo..autotmp_8 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used ARRAY-[0]byte
+.   .   NAME-foo.want a(true) g(3) l(10) x(0) class(PAUTO) esc(no) tc(1) assigned used ARRAY-[0]byte
+
+.   AS l(11) tc(1) hascall
+.   .   NAME-foo..autotmp_9 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   CALLFUNC l(11) tc(1) hascall bool
+.   .   .   NAME-reflect.DeepEqual a(true) l(187) x(0) class(PFUNC) tc(1) used FUNC-func(interface {}, interface {}) bool
+.   .   CALLFUNC-rlist
+.   .   .   NAME-foo.deref a(true) g(2) l(9) x(0) class(PAUTO) esc(no) tc(1) used INTER-interface {}
+
+.   .   .   EFACE l(11) tc(1) INTER-interface {}
+.   .   .   .   ADDR a(true) l(11) tc(1) PTR-*uint8
+.   .   .   .   .   NAME-type.[0]uint8 a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   ADDR l(11) tc(1) PTR-*uintptr
+.   .   .   .   .   NAME-runtime.zerobase a(true) l(11) x(0) class(PEXTERN) tc(1) addrtaken used uintptr
+
+.   BLOCK l(11)
+.   BLOCK-list
+.   .   AS l(11) tc(1)
+.   .   .   NAME-foo.g a(true) g(4) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+.   .   .   NAME-foo..autotmp_9 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   .   AS l(11) tc(1)
+.   .   .   NAME-foo.w a(true) g(5) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+.   .   .   LITERAL-true tc(1) foo.true bool
+
+.   VARKILL l(11) tc(1)
+.   .   NAME-foo..autotmp_9 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   VARKILL l(11) tc(1)
+.   .   NAME-foo..autotmp_8 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used ARRAY-[0]byte
+
+.   IF l(11) tc(1)
+.   .   NE l(11) tc(1) bool
+.   .   .   NAME-foo.g a(true) g(4) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+.   .   .   NAME-foo.w a(true) g(5) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+.   IF-body
+.   .   AS l(12) tc(1)
+.   .   .   NAME-foo..autotmp_9 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   .   NAME-foo.g a(true) g(4) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+
+.   .   AS l(12) tc(1)
+.   .   .   NAME-foo..autotmp_11 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+.   .   .   NAME-foo.w a(true) g(5) l(11) x(0) class(PAUTO) esc(no) tc(1) used bool
+
+.   .   CALLMETH-init
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-foo..autotmp_10 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[2]interface {}
+
+.   .   .   AS l(12) tc(1)
+.   .   .   .   NAME-foo..autotmp_13 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[2]interface {}
+.   .   .   .   ADDR l(12) tc(1) PTR-*[2]interface {}
+.   .   .   .   .   NAME-foo..autotmp_10 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[2]interface {}
+
+.   .   .   BLOCK l(12)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(12) tc(1) hascall
+.   .   .   .   .   INDEX l(12) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(12) tc(1) implicit(true) assigned hascall ARRAY-[2]interface {}
+.   .   .   .   .   .   .   NAME-foo..autotmp_13 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[2]interface {}
+.   .   .   .   .   .   LITERAL-0 l(12) tc(1) int
+.   .   .   .   .   EFACE l(12) tc(1) hascall INTER-interface {}
+.   .   .   .   .   .   ADDR a(true) l(12) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   NAME-type.bool a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   .   ADDR l(12) tc(1) hascall PTR-*uint8
+.   .   .   .   .   .   .   INDEX l(12) tc(1) addrtaken bounded hascall uint8
+.   .   .   .   .   .   .   .   NAME-runtime.staticbytes a(true) l(11) x(0) class(PEXTERN) tc(1) addrtaken used ARRAY-[256]uint8
+.   .   .   .   .   .   .   .   CONV l(12) tc(1) uint8
+.   .   .   .   .   .   .   .   .   NAME-foo..autotmp_9 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   .   .   BLOCK l(12)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(12) tc(1) hascall
+.   .   .   .   .   INDEX l(12) tc(1) assigned bounded hascall INTER-interface {}
+.   .   .   .   .   .   DEREF l(12) tc(1) implicit(true) assigned hascall ARRAY-[2]interface {}
+.   .   .   .   .   .   .   NAME-foo..autotmp_13 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[2]interface {}
+.   .   .   .   .   .   LITERAL-1 l(12) tc(1) int
+.   .   .   .   .   EFACE l(12) tc(1) hascall INTER-interface {}
+.   .   .   .   .   .   ADDR a(true) l(12) tc(1) PTR-*uint8
+.   .   .   .   .   .   .   NAME-type.bool a(true) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   .   .   ADDR l(12) tc(1) hascall PTR-*uint8
+.   .   .   .   .   .   .   INDEX l(12) tc(1) addrtaken bounded hascall uint8
+.   .   .   .   .   .   .   .   NAME-runtime.staticbytes a(true) l(11) x(0) class(PEXTERN) tc(1) addrtaken used ARRAY-[256]uint8
+.   .   .   .   .   .   .   .   CONV l(12) tc(1) uint8
+.   .   .   .   .   .   .   .   .   NAME-foo..autotmp_11 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   .   .   BLOCK l(12)
+.   .   .   BLOCK-list
+.   .   .   .   AS l(12) tc(1) hascall
+.   .   .   .   .   NAME-foo..autotmp_12 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]interface {}
+.   .   .   .   .   SLICEARR l(12) tc(1) hascall SLICE-[]interface {}
+.   .   .   .   .   .   NAME-foo..autotmp_13 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used PTR-*[2]interface {}
+.   .   CALLMETH l(12) tc(1) hascall
+.   .   .   DOTMETH l(12) tc(1) hascall testing.(*common).Fatalf FUNC-method(*testing.common) func(string, ...interface {})
+.   .   .   DDDARG l(12) esc(no) PTR-*[2]interface {}
+.   .   CALLMETH-list
+.   .   .   AS l(12) tc(1) hascall
+.   .   .   .   NAME-foo..autotmp_14 a(true) l(12) x(0) class(PAUTO) esc(N) used PTR-*testing.common
+.   .   .   .   ADDR l(12) tc(1) implicit(true) hascall PTR-*testing.common
+.   .   .   .   .   DOTPTR l(12) x(0) tc(1) implicit(true) addrtaken hascall testing.common testing.common
+.   .   .   .   .   .   NAME-foo.t a(true) g(1) l(8) x(0) class(PPARAM) esc(h) tc(1) used PTR-*testing.T
+.   .   CALLMETH-rlist
+.   .   .   NAME-foo..autotmp_14 a(true) l(12) x(0) class(PAUTO) esc(N) used PTR-*testing.common
+
+.   .   .   LITERAL-"got=%t want=%t" l(12) tc(1) string
+
+.   .   .   NAME-foo..autotmp_12 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used SLICE-[]interface {}
+
+.   .   VARKILL l(12) tc(1)
+.   .   .   NAME-foo..autotmp_11 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   .   VARKILL l(12) tc(1)
+.   .   .   NAME-foo..autotmp_9 a(true) l(11) x(0) class(PAUTO) esc(N) tc(1) assigned used bool
+
+.   .   VARKILL l(12) tc(1)
+.   .   .   NAME-foo..autotmp_10 a(true) l(12) x(0) class(PAUTO) esc(N) tc(1) addrtaken assigned used ARRAY-[2]interface {}
+
+before walk type..hash.[2]interface {}
+.   DCL l(1)
+.   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   RANGE l(1) colas(true) tc(1) ARRAY-[2]interface {}
+.   .   DEREF l(1) tc(1) ARRAY-[2]interface {}
+.   .   .   NAME-foo.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   RANGE-list
+.   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   RANGE-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-foo.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   .   CALLFUNC l(1) tc(1) uintptr
+.   .   .   .   NAME-runtime.nilinterhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*interface {}, uintptr) uintptr
+.   .   .   CALLFUNC-list
+.   .   .   .   ADDR l(1) tc(1) PTR-*interface {}
+.   .   .   .   .   INDEX l(1) tc(1) addrtaken bounded INTER-interface {}
+.   .   .   .   .   .   DEREF l(1) tc(1) implicit(true) addrtaken ARRAY-[2]interface {}
+.   .   .   .   .   .   .   NAME-foo.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   .   .   .   .   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   .   .   .   NAME-foo.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   NAME-foo.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+after walk type..hash.[2]interface {}
+.   DCL l(1)
+.   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   FOR-init
+.   .   AS l(1) tc(1)
+.   .   .   NAME-foo..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1)
+.   .   .   NAME-foo..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LITERAL-2 l(1) tc(1) int
+.   FOR l(1) colas(true) tc(1) ARRAY-[2]interface {}
+.   .   LT l(1) tc(1) bool
+.   .   .   NAME-foo..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-foo..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   AS l(1) tc(1)
+.   .   .   NAME-foo..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   ADD l(1) tc(1) int
+.   .   .   .   NAME-foo..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LITERAL-1 l(1) tc(1) int
+.   FOR-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   NAME-foo..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1) hascall
+.   .   .   NAME-foo.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+.   .   .   CALLFUNC l(1) tc(1) hascall uintptr
+.   .   .   .   NAME-runtime.nilinterhash a(true) l(1) x(0) class(PFUNC) tc(1) used FUNC-func(*interface {}, uintptr) uintptr
+.   .   .   CALLFUNC-list
+.   .   .   .   AS l(1) tc(1) hascall
+.   .   .   .   .   NAME-foo..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*interface {}
+.   .   .   .   .   ADDR l(1) tc(1) hascall PTR-*interface {}
+.   .   .   .   .   .   INDEX l(1) tc(1) addrtaken bounded hascall INTER-interface {}
+.   .   .   .   .   .   .   DEREF l(1) tc(1) implicit(true) addrtaken hascall ARRAY-[2]interface {}
+.   .   .   .   .   .   .   .   NAME-foo.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   .   .   .   .   .   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   CALLFUNC-rlist
+.   .   .   .   NAME-foo..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) used PTR-*interface {}
+
+.   .   .   .   NAME-foo.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-foo.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+.   .   .   NAME-foo.h a(true) g(3) l(1) x(8) class(PPARAM) tc(1) assigned used uintptr
+enter type..hash.[2]interface {}
+.   AS l(1)
+.   .   NAME-foo.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) uintptr
+
+before walk type..eq.[2]interface {}
+.   DCL l(1)
+.   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   RANGE l(1) colas(true) tc(1) ARRAY-[2]interface {}
+.   .   DEREF l(1) tc(1) ARRAY-[2]interface {}
+.   .   .   NAME-foo.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   RANGE-list
+.   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   RANGE-body
+.   .   IF l(1) tc(1)
+.   .   .   NE l(1) tc(1) bool
+.   .   .   .   INDEX l(1) tc(1) bounded INTER-interface {}
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) ARRAY-[2]interface {}
+.   .   .   .   .   .   NAME-foo.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   .   .   .   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   .   INDEX l(1) tc(1) bounded INTER-interface {}
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) ARRAY-[2]interface {}
+.   .   .   .   .   .   NAME-foo.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   .   .   .   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   IF-body
+.   .   .   RETURN l(1) tc(1)
+.   .   .   RETURN-list
+.   .   .   .   LITERAL-false l(1) tc(1) bool
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   LITERAL-true l(1) tc(1) bool
+after walk type..eq.[2]interface {}
+.   DCL l(1)
+.   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   FOR-init
+.   .   AS l(1) tc(1)
+.   .   .   NAME-foo..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   AS l(1) tc(1)
+.   .   .   NAME-foo..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   LITERAL-2 l(1) tc(1) int
+.   FOR l(1) colas(true) tc(1) ARRAY-[2]interface {}
+.   .   LT l(1) tc(1) bool
+.   .   .   NAME-foo..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   NAME-foo..autotmp_5 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   AS l(1) tc(1)
+.   .   .   NAME-foo..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   ADD l(1) tc(1) int
+.   .   .   .   NAME-foo..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   .   .   LITERAL-1 l(1) tc(1) int
+.   FOR-body
+.   .   AS l(1) tc(1)
+.   .   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   .   NAME-foo..autotmp_4 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   .   IF-init
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-foo..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   INDEX l(1) tc(1) bounded hascall INTER-interface {}
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) hascall ARRAY-[2]interface {}
+.   .   .   .   .   .   NAME-foo.q a(true) g(3) l(1) x(8) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   .   .   .   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+
+.   .   .   AS l(1) tc(1) hascall
+.   .   .   .   NAME-foo..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   INDEX l(1) tc(1) bounded hascall INTER-interface {}
+.   .   .   .   .   DEREF l(1) tc(1) implicit(true) hascall ARRAY-[2]interface {}
+.   .   .   .   .   .   NAME-foo.p a(true) g(2) l(1) x(0) class(PPARAM) tc(1) used PTR-*[2]interface {}
+.   .   .   .   .   NAME-foo.i a(true) g(4) l(1) x(0) class(PAUTO) tc(1) assigned used int
+.   .   IF l(1) tc(1)
+.   .   .   OROR l(1) tc(1) hascall bool
+.   .   .   .   NE l(1) tc(1) bool
+.   .   .   .   .   ITAB l(1) tc(1) PTR-*uintptr
+.   .   .   .   .   .   NAME-foo..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   .   ITAB l(1) tc(1) PTR-*uintptr
+.   .   .   .   .   .   NAME-foo..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   .   .   NOT l(1) tc(1) hascall bool
+.   .   .   .   .   CALLFUNC l(1) tc(1) hascall bool
+.   .   .   .   .   .   NAME-runtime.efaceeq a(true) x(0) class(PFUNC) tc(1) used FUNC-func(*uintptr, unsafe.Pointer, unsafe.Pointer) bool
+.   .   .   .   .   CALLFUNC-rlist
+.   .   .   .   .   .   ITAB l(1) tc(1) PTR-*uintptr
+.   .   .   .   .   .   .   NAME-foo..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   .   .   .   .   IDATA l(1) tc(1) UNSAFEPTR-unsafe.Pointer
+.   .   .   .   .   .   .   NAME-foo..autotmp_7 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+
+.   .   .   .   .   .   IDATA l(1) tc(1) UNSAFEPTR-unsafe.Pointer
+.   .   .   .   .   .   .   NAME-foo..autotmp_6 a(true) l(1) x(0) class(PAUTO) esc(N) tc(1) assigned used INTER-interface {}
+.   .   IF-body
+.   .   .   RETURN l(1) tc(1)
+.   .   .   RETURN-list
+.   .   .   .   AS l(1) tc(1)
+.   .   .   .   .   NAME-foo.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   .   .   LITERAL-false l(1) tc(1) bool
+
+.   RETURN l(1) tc(1)
+.   RETURN-list
+.   .   AS l(1) tc(1)
+.   .   .   NAME-foo.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+.   .   .   LITERAL-true l(1) tc(1) bool
+enter type..eq.[2]interface {}
+.   AS l(1)
+.   .   NAME-foo.~r2 a(true) g(1) l(1) x(16) class(PPARAMOUT) bool
+
+before walk glob..func1
+.   CALLFUNC l(8) tc(1)
+.   .   NAME-testing.Init a(true) l(259) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   RETURN l(9) tc(1)
+.   RETURN-list
+.   .   LITERAL-true tc(1) foo.true bool
+after walk glob..func1
+.   CALLFUNC l(8) tc(1) hascall
+.   .   NAME-testing.Init a(true) l(259) x(0) class(PFUNC) tc(1) used FUNC-func()
+
+.   RETURN l(9) tc(1)
+.   RETURN-list
+.   .   AS l(9) tc(1)
+.   .   .   NAME-foo.~r0 a(true) g(1) l(7) x(0) class(PPARAMOUT) esc(no) bool
+.   .   .   LITERAL-true tc(1) foo.true bool
+enter glob..func1
+.   AS l(7)
+.   .   NAME-foo.~r0 a(true) g(1) l(7) x(0) class(PPARAMOUT) esc(no) bool
+
+before walk init
+.   AS l(7) tc(1)
+.   .   NAME-_ a(true) l(7) x(0) tc(1) bool
+.   .   CALLFUNC l(10) tc(1) bool
+.   .   .   CLOSURE l(7) tc(1) FUNC-func() bool
+after walk init
+.   AS l(7) tc(1) hascall
+.   .   NAME-_ a(true) l(7) x(0) tc(1) bool
+.   .   CALLFUNC l(10) tc(1) hascall bool
+.   .   .   NAME-foo.glob..func1 a(true) l(7) x(0) class(PFUNC) tc(1) FUNC-func() bool
+# command-line-arguments.test
+
+before walk init.0
+.   AS l(35) tc(1)
+.   .   NAME-testdeps.ImportPath a(true) l(54) x(0) class(PEXTERN) tc(1) assigned string
+.   .   LITERAL-"" l(35) tc(1) string
+after walk init.0
+.   AS l(35) tc(1)
+.   .   NAME-testdeps.ImportPath a(true) l(54) x(0) class(PEXTERN) tc(1) assigned string
+.   .   LITERAL-"" l(35) tc(1) string
+
+before walk main
+.   DCL l(42)
+.   .   NAME-main.m a(true) g(1) l(42) x(0) class(PAUTO) esc(no) tc(1) used PTR-*testing.M
+
+.   AS l(42) tc(1)
+.   .   NAME-main..autotmp_1 a(true) l(42) x(0) class(PAUTO) esc(N) tc(1) assigned used testdeps.TestDeps
+.   .   STRUCTLIT l(42) tc(1) testdeps.TestDeps
+
+.   AS l(42) colas(true) tc(1)
+.   .   NAME-main.m a(true) g(1) l(42) x(0) class(PAUTO) esc(no) tc(1) used PTR-*testing.M
+.   .   CALLFUNC l(42) tc(1) PTR-*testing.M
+.   .   .   NAME-testing.MainStart a(true) l(1077) x(0) class(PFUNC) tc(1) used FUNC-func(testing.testDeps, []testing.InternalTest, []testing.InternalBenchmark, []testing.InternalExample) *testing.M
+.   .   CALLFUNC-list
+.   .   .   CONVIFACE l(42) esc(h) tc(1) implicit(true) testing.testDeps
+.   .   .   .   NAME-main..autotmp_1 a(true) l(42) x(0) class(PAUTO) esc(N) tc(1) assigned used testdeps.TestDeps
+
+.   .   .   NAME-main.tests a(true) l(20) x(0) class(PEXTERN) tc(1) used SLICE-[]testing.InternalTest
+
+.   .   .   NAME-main.benchmarks a(true) l(26) x(0) class(PEXTERN) tc(1) used SLICE-[]testing.InternalBenchmark
+
+.   .   .   NAME-main.examples a(true) l(30) x(0) class(PEXTERN) tc(1) used SLICE-[]testing.InternalExample
+
+.   VARKILL l(42) tc(1)
+.   .   NAME-main..autotmp_1 a(true) l(42) x(0) class(PAUTO) esc(N) tc(1) assigned used testdeps.TestDeps
+
+.   AS l(44) tc(1)
+.   .   NAME-main..autotmp_2 a(true) l(44) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   CALLMETH l(44) tc(1) int
+.   .   .   DOTMETH l(44) tc(1) testing.(*M).Run FUNC-method(*testing.M) func() int
+.   .   .   .   NAME-main.m a(true) g(1) l(42) x(0) class(PAUTO) esc(no) tc(1) used PTR-*testing.M
+
+.   CALLFUNC l(44) tc(1)
+.   .   NAME-os.Exit a(true) l(61) x(0) class(PFUNC) tc(1) used FUNC-func(int)
+.   CALLFUNC-list
+.   .   NAME-main..autotmp_2 a(true) l(44) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   VARKILL l(44) tc(1)
+.   .   NAME-main..autotmp_2 a(true) l(44) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+after walk main
+.   DCL l(42)
+.   .   NAME-main.m a(true) g(1) l(42) x(0) class(PAUTO) esc(no) tc(1) used PTR-*testing.M
+
+.   EMPTY-init
+.   .   AS l(42) tc(1)
+.   .   .   NAME-main..autotmp_1 a(true) l(42) x(0) class(PAUTO) esc(N) tc(1) assigned used testdeps.TestDeps
+.   EMPTY l(42) tc(1) hascall
+.   .   NAME-main..autotmp_1 a(true) l(42) x(0) class(PAUTO) esc(N) tc(1) assigned used testdeps.TestDeps
+
+.   AS l(42) colas(true) tc(1) hascall
+.   .   NAME-main.m a(true) g(1) l(42) x(0) class(PAUTO) esc(no) tc(1) used PTR-*testing.M
+.   .   CALLFUNC l(42) tc(1) hascall PTR-*testing.M
+.   .   .   NAME-testing.MainStart a(true) l(1077) x(0) class(PFUNC) tc(1) used FUNC-func(testing.testDeps, []testing.InternalTest, []testing.InternalBenchmark, []testing.InternalExample) *testing.M
+.   .   CALLFUNC-rlist
+.   .   .   EFACE l(42) tc(1) testing.testDeps
+.   .   .   .   ADDR a(true) l(42) tc(1) PTR-*uint8
+.   .   .   .   .   NAME-go.itab.testing/internal/testdeps.TestDeps,testing.testDeps a(true) l(42) x(0) class(PEXTERN) tc(1) uint8
+.   .   .   .   ADDR l(42) tc(1) PTR-*uintptr
+.   .   .   .   .   NAME-runtime.zerobase a(true) l(42) x(0) class(PEXTERN) tc(1) addrtaken used uintptr
+
+.   .   .   NAME-main.tests a(true) l(20) x(0) class(PEXTERN) tc(1) used SLICE-[]testing.InternalTest
+
+.   .   .   NAME-main.benchmarks a(true) l(26) x(0) class(PEXTERN) tc(1) used SLICE-[]testing.InternalBenchmark
+
+.   .   .   NAME-main.examples a(true) l(30) x(0) class(PEXTERN) tc(1) used SLICE-[]testing.InternalExample
+
+.   VARKILL l(42) tc(1)
+.   .   NAME-main..autotmp_1 a(true) l(42) x(0) class(PAUTO) esc(N) tc(1) assigned used testdeps.TestDeps
+
+.   AS l(44) tc(1) hascall
+.   .   NAME-main..autotmp_2 a(true) l(44) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+.   .   CALLMETH l(44) tc(1) hascall int
+.   .   .   DOTMETH l(44) tc(1) testing.(*M).Run FUNC-method(*testing.M) func() int
+.   .   CALLMETH-rlist
+.   .   .   NAME-main.m a(true) g(1) l(42) x(0) class(PAUTO) esc(no) tc(1) used PTR-*testing.M
+
+.   CALLFUNC l(44) tc(1) hascall
+.   .   NAME-os.Exit a(true) l(61) x(0) class(PFUNC) tc(1) used FUNC-func(int)
+.   CALLFUNC-rlist
+.   .   NAME-main..autotmp_2 a(true) l(44) x(0) class(PAUTO) esc(N) tc(1) assigned used int
+
+.   VARKILL l(44) tc(1)
+.   .   NAME-main..autotmp_2 a(true) l(44) x(0) class(PAUTO) esc(N) tc(1) assigned used int

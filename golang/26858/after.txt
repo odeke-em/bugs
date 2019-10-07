@@ -1,0 +1,92 @@
+goos: darwin
+goarch: amd64
+pkg: net/http
+BenchmarkCookieString-8                      	 2000000	       659 ns/op	     360 B/op	       5 allocs/op
+BenchmarkCookieString-8                      	 2000000	       658 ns/op	     360 B/op	       5 allocs/op
+BenchmarkCookieString-8                      	 2000000	       685 ns/op	     360 B/op	       5 allocs/op
+BenchmarkReadSetCookies-8                    	  500000	      2472 ns/op	     976 B/op	      15 allocs/op
+BenchmarkReadSetCookies-8                    	  500000	      2474 ns/op	     976 B/op	      15 allocs/op
+BenchmarkReadSetCookies-8                    	 1000000	      2423 ns/op	     976 B/op	      15 allocs/op
+BenchmarkReadCookies-8                       	  500000	      2879 ns/op	    2168 B/op	      16 allocs/op
+BenchmarkReadCookies-8                       	  500000	      2773 ns/op	    2168 B/op	      16 allocs/op
+BenchmarkReadCookies-8                       	  500000	      2927 ns/op	    2168 B/op	      16 allocs/op
+BenchmarkHeaderWriteSubset-8                 	 3000000	       412 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHeaderWriteSubset-8                 	 5000000	       372 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHeaderWriteSubset-8                 	 5000000	       364 ns/op	       0 B/op	       0 allocs/op
+BenchmarkServerMatch-8                       	100000000	        18.1 ns/op
+BenchmarkServerMatch-8                       	100000000	        18.0 ns/op
+BenchmarkServerMatch-8                       	100000000	        18.5 ns/op
+BenchmarkReadRequestChrome-8                 	  500000	      2025 ns/op	 301.67 MB/s	    1456 B/op	      14 allocs/op
+BenchmarkReadRequestChrome-8                 	 1000000	      2017 ns/op	 302.88 MB/s	    1456 B/op	      14 allocs/op
+BenchmarkReadRequestChrome-8                 	 1000000	      2020 ns/op	 302.40 MB/s	    1456 B/op	      14 allocs/op
+BenchmarkReadRequestCurl-8                   	 1000000	      1142 ns/op	  68.30 MB/s	     880 B/op	       9 allocs/op
+BenchmarkReadRequestCurl-8                   	 1000000	      1147 ns/op	  67.96 MB/s	     880 B/op	       9 allocs/op
+BenchmarkReadRequestCurl-8                   	 1000000	      1143 ns/op	  68.19 MB/s	     880 B/op	       9 allocs/op
+BenchmarkReadRequestApachebench-8            	 1000000	      1161 ns/op	  70.62 MB/s	     883 B/op	       9 allocs/op
+BenchmarkReadRequestApachebench-8            	 1000000	      1152 ns/op	  71.17 MB/s	     883 B/op	       9 allocs/op
+BenchmarkReadRequestApachebench-8            	 1000000	      1149 ns/op	  71.32 MB/s	     883 B/op	       9 allocs/op
+BenchmarkReadRequestSiege-8                  	 1000000	      1469 ns/op	 102.72 MB/s	     965 B/op	      11 allocs/op
+BenchmarkReadRequestSiege-8                  	 1000000	      1481 ns/op	 101.91 MB/s	     965 B/op	      11 allocs/op
+BenchmarkReadRequestSiege-8                  	 1000000	      1482 ns/op	 101.87 MB/s	     965 B/op	      11 allocs/op
+BenchmarkReadRequestWrk-8                    	 2000000	       820 ns/op	  48.74 MB/s	     832 B/op	       7 allocs/op
+BenchmarkReadRequestWrk-8                    	 2000000	       817 ns/op	  48.91 MB/s	     832 B/op	       7 allocs/op
+BenchmarkReadRequestWrk-8                    	 2000000	       825 ns/op	  48.45 MB/s	     832 B/op	       7 allocs/op
+BenchmarkServeMux-8                          	   30000	     57454 ns/op	   17280 B/op	     360 allocs/op
+BenchmarkServeMux-8                          	   30000	     52581 ns/op	   17280 B/op	     360 allocs/op
+BenchmarkServeMux-8                          	   30000	     49258 ns/op	   17280 B/op	     360 allocs/op
+BenchmarkServeMux_SkipServe-8                	   50000	     31960 ns/op	       0 B/op	       0 allocs/op
+BenchmarkServeMux_SkipServe-8                	   50000	     32594 ns/op	       0 B/op	       0 allocs/op
+BenchmarkServeMux_SkipServe-8                	   50000	     30672 ns/op	       0 B/op	       0 allocs/op
+BenchmarkClientServer-8                      	   20000	     79629 ns/op	    4829 B/op	      63 allocs/op
+BenchmarkClientServer-8                      	   20000	     79688 ns/op	    4827 B/op	      63 allocs/op
+BenchmarkClientServer-8                      	   20000	     80572 ns/op	    4828 B/op	      63 allocs/op
+BenchmarkClientServerParallel4-8             	   30000	     59035 ns/op	    9512 B/op	      81 allocs/op
+BenchmarkClientServerParallel4-8             	    5000	   1490580 ns/op	    9245 B/op	      83 allocs/op
+BenchmarkClientServerParallel4-8             	       1	36639174326 ns/op	   39992 B/op	     226 allocs/op
+BenchmarkClientServerParallel64-8            	    50000	    528146 ns/op	    4260 B/op	      63 allocs/op
+BenchmarkClientServerParallel64-8            	    50000	    528418 ns/op	    4237 B/op	      63 allocs/op
+BenchmarkClientServerParallel64-8            	    50000	    528177 ns/op	    4231 B/op	      63 allocs/op
+BenchmarkClientServerParallelTLS4-8          	    100000	     13419 ns/op	    4642 B/op	      66 allocs/op
+BenchmarkClientServerParallelTLS4-8          	    50000	     39998 ns/op	    4914 B/op	      72 allocs/op
+BenchmarkClientServerParallelTLS4-8          	    50000	     27614 ns/op	    4806 B/op	      70 allocs/op
+BenchmarkClientServerParallelTLS64-8         	    100000	     13142 ns/op	    4277 B/op	      63 allocs/op
+BenchmarkClientServerParallelTLS64-8         	    100000	     13448 ns/op	    4118 B/op	      63 allocs/op
+BenchmarkClientServerParallelTLS64-8         	    100000	    265247 ns/op	    4366 B/op	      66 allocs/op
+BenchmarkServer-8                            	   20000	     89847 ns/op	    2241 B/op	      20 allocs/op
+BenchmarkServer-8                            	   20000	     90855 ns/op	    2241 B/op	      20 allocs/op
+BenchmarkServer-8                            	   20000	     97192 ns/op	    2240 B/op	      20 allocs/op
+BenchmarkClient-8                            	   20000	     90625 ns/op	    3344 B/op	      47 allocs/op
+BenchmarkClient-8                            	   20000	     89153 ns/op	    3344 B/op	      47 allocs/op
+BenchmarkClient-8                            	   20000	     90145 ns/op	    3345 B/op	      47 allocs/op
+BenchmarkServerFakeConnNoKeepAlive-8         	  100000	     16545 ns/op	    4640 B/op	      50 allocs/op
+BenchmarkServerFakeConnNoKeepAlive-8         	  100000	     17412 ns/op	    4642 B/op	      50 allocs/op
+BenchmarkServerFakeConnNoKeepAlive-8         	  100000	     16619 ns/op	    4641 B/op	      50 allocs/op
+BenchmarkServerFakeConnWithKeepAlive-8       	  200000	      9004 ns/op	    2442 B/op	      22 allocs/op
+BenchmarkServerFakeConnWithKeepAlive-8       	  200000	      9130 ns/op	    2442 B/op	      22 allocs/op
+BenchmarkServerFakeConnWithKeepAlive-8       	  200000	      9130 ns/op	    2442 B/op	      22 allocs/op
+BenchmarkServerFakeConnWithKeepAliveLite-8   	  200000	      6326 ns/op	    1301 B/op	      12 allocs/op
+BenchmarkServerFakeConnWithKeepAliveLite-8   	  200000	      6287 ns/op	    1301 B/op	      12 allocs/op
+BenchmarkServerFakeConnWithKeepAliveLite-8   	  200000	      6131 ns/op	    1301 B/op	      12 allocs/op
+BenchmarkServerHandlerTypeLen-8              	  200000	      7489 ns/op	    2121 B/op	      20 allocs/op
+BenchmarkServerHandlerTypeLen-8              	  200000	      7614 ns/op	    2121 B/op	      20 allocs/op
+BenchmarkServerHandlerTypeLen-8              	  200000	      7736 ns/op	    2120 B/op	      20 allocs/op
+BenchmarkServerHandlerNoLen-8                	  200000	      6662 ns/op	    2088 B/op	      17 allocs/op
+BenchmarkServerHandlerNoLen-8                	  200000	      6655 ns/op	    2088 B/op	      17 allocs/op
+BenchmarkServerHandlerNoLen-8                	  200000	      6750 ns/op	    2088 B/op	      17 allocs/op
+BenchmarkServerHandlerNoType-8               	  200000	      6957 ns/op	    2088 B/op	      18 allocs/op
+BenchmarkServerHandlerNoType-8               	  200000	      7122 ns/op	    2088 B/op	      18 allocs/op
+BenchmarkServerHandlerNoType-8               	  200000	      7007 ns/op	    2088 B/op	      18 allocs/op
+BenchmarkServerHandlerNoHeader-8             	  200000	      6559 ns/op	    1301 B/op	      12 allocs/op
+BenchmarkServerHandlerNoHeader-8             	  200000	      7441 ns/op	    1301 B/op	      12 allocs/op
+BenchmarkServerHandlerNoHeader-8             	  200000	      6404 ns/op	    1301 B/op	      12 allocs/op
+BenchmarkServerHijack-8                      	  100000	     18658 ns/op	   16095 B/op	      48 allocs/op
+BenchmarkServerHijack-8                      	  100000	     18444 ns/op	   16094 B/op	      48 allocs/op
+BenchmarkServerHijack-8                      	  100000	     18478 ns/op	   16095 B/op	      48 allocs/op
+BenchmarkCloseNotifier-8                     	   10000	    126196 ns/op	    3399 B/op	      51 allocs/op
+BenchmarkCloseNotifier-8                     	   10000	    170513 ns/op	    3394 B/op	      51 allocs/op
+BenchmarkCloseNotifier-8                     	    3000	    440773 ns/op	    3404 B/op	      51 allocs/op
+BenchmarkResponseStatusLine-8                	100000000	        13.6 ns/op	       0 B/op	       0 allocs/op
+BenchmarkResponseStatusLine-8                	100000000	        14.1 ns/op	       0 B/op	       0 allocs/op
+BenchmarkResponseStatusLine-8                	100000000	        14.0 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	net/http	300.515s
