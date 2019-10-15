@@ -1,0 +1,38 @@
+package main
+
+func main() {
+	cst := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, "this call was relayed by the reverse proxy")
+	}))
+	defer cst.Close()
+
+	ln, err := net.Listen("tcp", ":0")
+	if err != nil {
+		log.Fatalf("Failed to find available port: %v", err)
+	}
+	defer ln.Close()
+
+	backendURL, _ := url.Parse(cst.URL)
+	rpxy := httputil.NewSingleHostReverseProxy(backendURL)
+}
+
+func runClients(addr string, wg *sync.WaitGroup) {
+	for i := 0; i < n; i++ {
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			for {
+				buf := bytes.NewBufferString(bodyString)
+				req, _ := http.NewRequest("POST", "http://localhost:8080", buf)
+				req.Header.Add("Expect", "100-continue")
+
+				resp, err := client.Do(req)
+				if err != nil {
+					fmt.Printf("Request Failed: %s\n", err.Error())
+				} else {
+					resp.Body.Close()
+				}
+			}
+		}()
+	}
+}

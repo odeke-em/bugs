@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"io/ioutil"
 	"log"
+	"net"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -14,7 +15,7 @@ func TestHandler(t *testing.T) {
 	errsChan := make(chan error, 1)
 	cst := httptest.NewUnstartedServer(http.HandlerFunc(func(rw http.ResponseWriter, req *http.Request) {
 		time.Sleep(2 * time.Second)
-		_, err := rw.Write([]byte("Hello, World!"))
+		_, err := rw.Write([]byte("Hello, Worlds!"))
 		errsChan <- err
 	}))
 	cst.Config.WriteTimeout = 1 * time.Second
@@ -25,7 +26,8 @@ func TestHandler(t *testing.T) {
 
 	res, err := cst.Client().Get(cst.URL)
 	if err != nil {
-		t.Errorf("Failed to invoke server: %v", err)
+            ne := err.(net.Error)
+            t.Fatalf("Failed to invoke server: %v timeout: %t", err, ne.Timeout())
 	}
 
 	var blob []byte

@@ -1,0 +1,12 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/odeke-em/bugs/golang/28310
+BenchmarkReuseRequest-8   	   20721	     57681 ns/op	    4694 B/op	      65 allocs/op
+BenchmarkReuseRequest-8   	   20332	     60927 ns/op	    4695 B/op	      65 allocs/op
+BenchmarkReuseRequest-8   	   19497	     59840 ns/op	    4695 B/op	      65 allocs/op
+BenchmarkReuseRequest-8   	   19916	     59264 ns/op	    4692 B/op	      65 allocs/op
+BenchmarkReuseRequest-8   	   20248	     61995 ns/op	    4695 B/op	      65 allocs/op
+BenchmarkReuseRequest-8   	   19990	     63561 ns/op	    4696 B/op	      65 allocs/op
+BenchmarkReuseRequest-8   	   19410	     62359 ns/op	    4696 B/op	      65 allocs/op
+PASS
+ok  	github.com/odeke-em/bugs/golang/28310	19.675s

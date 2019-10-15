@@ -1,0 +1,5 @@
+BenchmarkReuseRequest-8   	   20478	     60964 ns/op	    4691 B/op	      65 allocs/op
+BenchmarkReuseRequest-8   	   20253	     60808 ns/op	    4697 B/op	      65 allocs/op
+BenchmarkReuseRequest-8   	   19873	     60550 ns/op	    4696 B/op	      65 allocs/op
+BenchmarkReuseRequest-8   	   20166	     60791 ns/op	    4699 B/op	      65 allocs/op
+BenchmarkReuseRequest-8   	   17275	     63197 ns/op	    4701 B/op	      65 allocs/op
