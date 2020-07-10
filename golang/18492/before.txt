@@ -1,0 +1,5 @@
+BenchmarkTypeSwitch-8    	    2011	    572145 ns/op
+BenchmarkTypeSwitch-8    	    2148	    555198 ns/op
+BenchmarkTypeSwitch-8    	    2050	    579787 ns/op
+BenchmarkTypeSwitch-8    	    2040	    586727 ns/op
+BenchmarkTypeSwitch-8    	    1983	    583754 ns/op
