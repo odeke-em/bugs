@@ -1,0 +1,13 @@
+global:
+  scrape_interval: 10s
+
+  external_labels:
+    monitor: 'otlc'
+        
+scrape_configs:
+  - job_name: 'otlc'
+                  
+    scrape_interval: 10s
+        
+    static_configs:
+        - targets: ['localhost:8888', 'localhost:1234']
